@@ -38,6 +38,12 @@ jobs:
           ./result/bin/pkgre-indexer check registry registry/artifacts.toml
           ./result/bin/pkgre-indexer render registry registry/artifacts.toml site
           ./result/bin/pkgre-indexer verify registry registry/artifacts.toml site
+      - name: Verify monotonic publication
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          mkdir previous
+          curl --fail --silent --show-error --retry 3 https://rust.pkg.re/release.json --output previous/release.json
+          ./result/bin/pkgre-indexer verify-monotonic previous site
       - name: Configure GitHub Pages
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5

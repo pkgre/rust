@@ -503,6 +503,7 @@ schema = 1
 "pkcs5" = "core"
 "pkcs8" = "core"
 "pkg-config" = "core"
+"pkgre-indexer" = "pkgre"
 "plain" = "core"
 "pnet_datalink" = "core"
 "polling" = "core"

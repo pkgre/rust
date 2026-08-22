@@ -1,0 +1,48 @@
+schema = 2
+
+[registry]
+name = "matrix"
+index = "sparse+https://rust.pkg.re/matrix/"
+download = "https://rust.pkg.re/crates/{sha256-checksum}.crate"
+may-depend-on = [
+    "core",
+    "matrix",
+]
+cargo-version = "1.95.0"
+
+[mirror]
+js_int = ["0.2.2"]
+js_option = ["0.2.0"]
+matrix-pickle = ["0.2.3"]
+matrix-pickle-derive = ["0.2.3"]
+matrix-sdk = ["0.18.0"]
+matrix-sdk-base = ["0.18.0"]
+matrix-sdk-common = ["0.18.0"]
+matrix-sdk-crypto = ["0.18.0"]
+matrix-sdk-ffi-macros = []
+matrix-sdk-indexeddb = ["0.18.0"]
+matrix-sdk-qrcode = []
+matrix-sdk-search = []
+matrix-sdk-sqlite = ["0.18.0"]
+matrix-sdk-store-encryption = ["0.18.0"]
+matrix-sdk-test = []
+matrix-sdk-test-utils = []
+matrix_indexed_db_futures = ["0.7.0"]
+matrix_indexed_db_futures_macros_internal = ["1.0.0"]
+olm-rs = []
+ruma = ["0.16.0"]
+ruma-appservice-api = []
+ruma-client-api = ["0.24.0"]
+ruma-common = ["0.19.0"]
+ruma-events = ["0.34.0"]
+ruma-federation-api = []
+ruma-html = ["0.8.0"]
+ruma-identifiers-validation = ["0.12.1"]
+ruma-identity-service-api = []
+ruma-macros = ["0.19.0"]
+ruma-push-gateway-api = []
+ruma-signatures = []
+ruma-state-res = []
+vodozemac = ["0.10.0"]
+
+[publish]

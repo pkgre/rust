@@ -26,7 +26,7 @@ jobs:
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           repository: pkgre/pkgre
-          ref: 575b93742dc5acdfa39c6e9170a4ebda817bf630
+          ref: 27d4cf7c657ef72283f9c61ec0c8ea572ed548d3
           path: tooling
           persist-credentials: false
       - name: Install Nix

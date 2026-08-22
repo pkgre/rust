@@ -26,7 +26,7 @@ jobs:
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           repository: pkgre/pkgre
-          ref: 27d4cf7c657ef72283f9c61ec0c8ea572ed548d3
+          ref: 0c09d95f5debf9f3475c4828e5fb836f9f1cc22b
           path: tooling
           persist-credentials: false
       - name: Install Nix
@@ -35,11 +35,10 @@ jobs:
         run: nix build --print-build-logs ./tooling#indexer
       - name: Validate, render, and reproduce site
         run: |
-          ./result/bin/pkgre-indexer check registry registry/artifacts.toml
-          ./result/bin/pkgre-indexer render registry registry/artifacts.toml site
-          ./result/bin/pkgre-indexer verify registry registry/artifacts.toml site
+          ./result/bin/pkgre-indexer check registry
+          ./result/bin/pkgre-indexer render registry site
+          ./result/bin/pkgre-indexer verify registry site
       - name: Verify monotonic publication
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
           mkdir previous
           curl --fail --silent --show-error --retry 3 https://rust.pkg.re/release.json --output previous/release.json

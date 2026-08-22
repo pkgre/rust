@@ -1,0 +1,1 @@
+{"name":"readlock","vers":"0.1.11","deps":[{"name":"rclite","req":"^0.4.1","features":[],"optional":true,"default_features":true,"target":null,"kind":"normal"}],"cksum":"6da6f291b23556edd9edaf655a0be2ad8ef8002ff5f1bca62b264f3f58b53f34","features":{},"features2":{"lite":["dep:rclite"]},"yanked":false,"rust_version":"1.64","pubtime":"2026-02-06T12:37:32Z","v":2}

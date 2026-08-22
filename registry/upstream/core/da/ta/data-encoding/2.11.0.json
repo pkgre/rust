@@ -1,0 +1,1 @@
+{"name":"data-encoding","vers":"2.11.0","deps":[],"cksum":"a4ae5f15dda3c708c0ade84bfee31ccab44a3da4f88015ed22f63732abe300c8","features":{"alloc":[],"default":["std"],"std":["alloc"]},"yanked":false,"rust_version":"1.48","pubtime":"2026-04-24T12:02:50Z"}

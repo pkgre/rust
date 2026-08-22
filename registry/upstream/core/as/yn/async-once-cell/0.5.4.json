@@ -1,0 +1,1 @@
+{"name":"async-once-cell","vers":"0.5.4","deps":[{"name":"critical-section","req":"^1","features":[],"optional":true,"default_features":true,"target":null,"kind":"normal"}],"cksum":"4288f83726785267c6f2ef073a3d83dc3f9b81464e9f99898240cced85fce35a","features":{"std":[]},"features2":{"critical-section":["dep:critical-section"]},"yanked":false,"pubtime":"2024-10-07T01:51:24Z","v":2}

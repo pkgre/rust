@@ -1,0 +1,1 @@
+{"name":"thread_local","vers":"1.1.10","deps":[{"name":"cfg-if","req":"^1.0.0","features":[],"optional":false,"default_features":true,"target":null,"kind":"normal"}],"cksum":"1ad99c4c6d32803332c548b1af0540b357b3f5fc0be8f6c6bfe8b2e6ae784070","features":{"nightly":[]},"yanked":false,"rust_version":"1.63","pubtime":"2026-07-10T21:20:29Z"}

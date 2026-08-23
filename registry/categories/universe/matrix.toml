@@ -1,14 +1,5 @@
-schema = 2
-
-[registry]
-name = "matrix"
-index = "sparse+https://rust.pkg.re/matrix/"
-download = "https://static.crates.io/crates"
-may-depend-on = [
-    "core",
-    "matrix",
-]
-cargo-version = "1.95.0"
+schema = 3
+may-depend-on = ["universe/general", "universe/matrix"]
 
 [mirror]
 js_int = ["0.2.2"]
@@ -45,4 +36,3 @@ ruma-signatures = []
 ruma-state-res = []
 vodozemac = ["0.10.0"]
 
-[publish]

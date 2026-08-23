@@ -1,4 +1,4 @@
-schema = 2
+schema = 3
 
 [registry]
 name = "pkgre"
@@ -7,6 +7,7 @@ download = "https://rust.pkg.re/crates/{sha256-checksum}.crate"
 
 [[names]]
 name = "pkgre-indexer"
+category = "tooling"
 source = "publish"
 
 [[packages]]
@@ -15,7 +16,7 @@ version = "0.1.1"
 state = "active"
 crate-sha256 = "3257df14bc1ae9d6f2eb99d5db90e5d2a9fbc13c870044c9db5ba89bcc0b96a2"
 source-row-sha256 = "b12f0350b65d153f4073d2090dadbbfd497e5746315872d1230d530fc8e46f92"
-index-row-sha256 = "3847ce0a3bf5372a14df0de20bb4600291d5ecf37f62ca68c670ffd329eadbbb"
+index-row-sha256 = "31fa100948a1cd8bc4f2ae717d11e498bdbebd9d24b09d4a0e90e52ef90c4338"
 
 [packages.source]
 kind = "git-tag"
@@ -33,7 +34,7 @@ version = "0.2.0"
 state = "active"
 crate-sha256 = "9292cd7e7248ea3ee2a65184a492f107ae6af4a1186c41f57383973bc7686568"
 source-row-sha256 = "22a932799227a0e62387095572fa0b3a40508b4d0f238c5d62796891bf84250f"
-index-row-sha256 = "eed2f61f2f45894b7ef00bc311cabb1267562e1ebebd707879ccc83697beafe8"
+index-row-sha256 = "1e35f5362b139c9a69c8322c41f3a0573e3d893a181f83a015c3b80bdfb68765"
 
 [packages.source]
 kind = "git-tag"

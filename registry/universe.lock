@@ -1,3516 +1,4558 @@
-schema = 2
+schema = 3
 
 [registry]
-name = "core"
-index = "sparse+https://rust.pkg.re/core/"
+name = "universe"
+index = "sparse+https://rust.pkg.re/universe/"
 download = "https://static.crates.io/crates"
 
 [[names]]
 name = "accessory"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "actix-router"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "adler2"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "adler32"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "aead"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "aes"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "agent-client-protocol"
+category = "acp"
 source = "mirror"
 
 [[names]]
 name = "agent-client-protocol-derive"
+category = "acp"
 source = "mirror"
 
 [[names]]
 name = "agent-client-protocol-schema"
+category = "acp"
 source = "mirror"
 
 [[names]]
 name = "ahash"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "aho-corasick"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "allocator-api2"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "android_logger"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "android_system_properties"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "annotate-snippets"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "anstream"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "anstyle"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "anstyle-parse"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "anstyle-query"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "anstyle-wincon"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "anyhow"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "anymap2"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "aquamarine"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "arbitrary"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "archery"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "argh"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "array-ops"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "arrayref"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "arraystring"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "arrayvec"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "as_variant"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "assert-impl"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "assert-json-diff"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "assert2"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "assert_matches"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "assert_matches2"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "assign"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "async-channel"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "async-compression"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "async-executor"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "async-io"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "async-lock"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "async-net"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "async-once-cell"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "async-process"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "async-signal"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "async-std"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "async-stream"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "async-stream-impl"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "async-task"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "async-trait"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "atoi"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "atomic"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "atomic-waker"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "atty"
+category = "terminal"
 source = "mirror"
 
 [[names]]
 name = "auditable-serde"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "autocfg"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "automod"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "aws-lc-fips-sys"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "aws-lc-rs"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "aws-lc-sys"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "axum"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "axum-core"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "axum-macros"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "backon"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "backtrace"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "base16ct"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "base58"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "base64"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "base64ct"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "bencher"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "bigdecimal"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "bin-proto"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "bincode"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "bindgen"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "bit-set"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "bit-vec"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "bitflags"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "bitmaps"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "bitvec"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "blake2"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "blake2b_simd"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "blake3"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "blink-alloc"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "blobby"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "block-buffer"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "block-padding"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "blocking"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "borrow-or-share"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "borsh"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "borsh-derive"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "brotli"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "brotli-decompressor"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "bs58"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "bstr"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "bumpalo"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "bytecheck"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "bytecount"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "bytemuck"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "byteorder"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "bytes"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "bytesize"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "bzip2"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "caps"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "cbc"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "cc"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "censor"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "cesu8"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "cfg-if"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "cfg_aliases"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "chacha20"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "chacha20poly1305"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "chrono"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "chrono-tz"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "ciborium"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "cipher"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "circular"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "claims"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "clap"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "clap-cargo"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "clap_builder"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "clap_derive"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "clap_lex"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "cloudflare-zlib-sys"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "cmake"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "codegenrs"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "codspeed-criterion-compat"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "color-print"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "colorchoice"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "combine"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "compiler_builtins"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "compression-codecs"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "compression-core"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "concurrent-queue"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "config"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "console_log"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "const-oid"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "const-random"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "const-str"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "const_panic"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "const_panic_proc_macros"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "constant_time_eq"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "convert_case"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "cookie"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "cookie_store"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "core-foundation"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "core-foundation-sys"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "count_instructions"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "cpufeatures"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "crabgrind"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "crc"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "crc32fast"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "criterion"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "critical-section"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "crossbeam-channel"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "crossbeam-utils"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "crypto-bigint"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "crypto-common"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "csv"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "ctor"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "ctr"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "ctutils"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "curl"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "curve25519-dalek"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "curve25519-dalek-derive"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "darling"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "darling_core"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "darling_macro"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "data-encoding"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "databake"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "date_header"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "deadpool"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "deadpool-runtime"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "deadpool-sync"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "debugger_test"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "debugger_test_parser"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "decancer"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "deflate64"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "defmt"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "delegate-display"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "der"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "der_derive"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "deranged"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "deranged-macros"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "derivative"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "derive_more"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "derive_more-impl"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "detone"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "dhat"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "diffy"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "digest"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "directories-next"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "dirs"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "dirs-sys"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "displaydoc"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "dissimilar"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "divan"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "doc-comment"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "document-features"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "downcast-rs"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "dunce"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "dyn-clone"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "easy-parallel"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "ecdsa"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "ed25519"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "ed25519-dalek"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "either"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "elain"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "elliptic-curve"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "email_address"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "embassy-time"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "encoding_rs"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "env_logger"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "equivalent"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "erased-serde"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "errno"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "event-listener"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "event-listener-strategy"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "eventsource-stream"
+category = "sse"
 source = "mirror"
 
 [[names]]
 name = "expect-test"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "eyeball"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "eyeball-im"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "eyre"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "fallible-iterator"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "fallible-streaming-iterator"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "fancy-regex"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "fancy_constructor"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "fastbloom"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "faster-hex"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "fastrand"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "ff"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "ff_derive"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "fiat-crypto"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "filedescriptor"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "find-msvc-tools"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "fixedbitset"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "flagset"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "flaky_test"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "flate2"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "fluent-uri"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "flume"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "flurry"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "fnv"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "foldhash"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "form_urlencoded"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "fraction"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "fs_extra"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "fsevent-sys"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "fst"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "futures"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "futures-channel"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "futures-concurrency"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "futures-core"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "futures-executor"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "futures-io"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "futures-lite"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "futures-macro"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "futures-sink"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "futures-task"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "futures-test"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "futures-time"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "futures-timer"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "futures-util"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "fxhash"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "garde"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "generic-array"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "getopts"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "getrandom"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "glob"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "gloo-timers"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "gloo-utils"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "gonzales"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "group"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "growable-bloom-filter"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "gungraun"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "h2"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "h3"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "h3-quinn"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "half"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "harfbuzz-traits"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "hashbrown"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "hashlink"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "hdrhistogram"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "heapless"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "heck"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "hegeltest"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "hermit-abi"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "hex"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "hex-literal"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "hex-simd"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "hickory-resolver"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "hkdf"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "hmac"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "html5ever"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "http"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "http-body"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "http-body-util"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "http-range-header"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "httparse"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "httpdate"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "hybrid-array"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "hyper"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "hyper-rustls"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "hyper-tls"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "hyper-util"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "iai"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "iana-time-zone"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "iana-time-zone-haiku"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "icu_collections"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "icu_locale_core"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "icu_normalizer"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "icu_normalizer_data"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "icu_properties"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "icu_properties_data"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "icu_provider"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "id-arena"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "ident_case"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "idna"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "idna_adapter"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "imbl"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "imbl-sized-chunks"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "impartial-ord"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "include_dir"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "include_dir_macros"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "indexmap"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "indoc"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "inotify"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "inotify-sys"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "inout"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "input_buffer"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "insta"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "io-uring"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "ioslice"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "ipnet"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "iri-string"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "is_terminal_polyfill"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "itertools"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "itoa"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "java-locator"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "javac"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "jiff"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "jni"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "jni-macros"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "jni-sys"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "jni-sys-macros"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "jobserver"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "js-sys"
+category = "general"
+source = "mirror"
+
+[[names]]
+name = "js_int"
+category = "matrix"
+source = "mirror"
+
+[[names]]
+name = "js_option"
+category = "matrix"
 source = "mirror"
 
 [[names]]
 name = "jsonschema"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "jsonschema-macros"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "jsonschema-regex"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "jsonschema-value"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "jsonwebtoken"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "juniper"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "konst"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "konst_proc_macros"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "kqueue"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "kqueue-sys"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "kstring"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "kuznyechik"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "language-tags"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "lazy_static"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "leb128fmt"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "lending-stream"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "lexopt"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "libc"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "libloading"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "liblzma"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "libm"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "libredox"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "libsqlite3-sys"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "libtest-mimic"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "libz-ng-sys"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "libz-sys"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "linear-map"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "linked-hash-map"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "linux-raw-sys"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "litemap"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "lock_api"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "log"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "loom"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "lru"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "lru-slab"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "lz4"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "macro_rules_attribute"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "macroific"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "macroific_attr_parse"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "macroific_core"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "macroific_macro"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "magma"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "magnus"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "malloc_size_of"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "maplit"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "markup5ever"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "matchers"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "matches"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "matchit"
+category = "general"
+source = "mirror"
+
+[[names]]
+name = "matrix-pickle"
+category = "matrix"
+source = "mirror"
+
+[[names]]
+name = "matrix-pickle-derive"
+category = "matrix"
+source = "mirror"
+
+[[names]]
+name = "matrix-sdk"
+category = "matrix"
+source = "mirror"
+
+[[names]]
+name = "matrix-sdk-base"
+category = "matrix"
+source = "mirror"
+
+[[names]]
+name = "matrix-sdk-common"
+category = "matrix"
+source = "mirror"
+
+[[names]]
+name = "matrix-sdk-crypto"
+category = "matrix"
+source = "mirror"
+
+[[names]]
+name = "matrix-sdk-ffi-macros"
+category = "matrix"
+source = "mirror"
+
+[[names]]
+name = "matrix-sdk-indexeddb"
+category = "matrix"
+source = "mirror"
+
+[[names]]
+name = "matrix-sdk-qrcode"
+category = "matrix"
+source = "mirror"
+
+[[names]]
+name = "matrix-sdk-search"
+category = "matrix"
+source = "mirror"
+
+[[names]]
+name = "matrix-sdk-sqlite"
+category = "matrix"
+source = "mirror"
+
+[[names]]
+name = "matrix-sdk-store-encryption"
+category = "matrix"
+source = "mirror"
+
+[[names]]
+name = "matrix-sdk-test"
+category = "matrix"
+source = "mirror"
+
+[[names]]
+name = "matrix-sdk-test-utils"
+category = "matrix"
+source = "mirror"
+
+[[names]]
+name = "matrix_indexed_db_futures"
+category = "matrix"
+source = "mirror"
+
+[[names]]
+name = "matrix_indexed_db_futures_macros_internal"
+category = "matrix"
 source = "mirror"
 
 [[names]]
 name = "md-5"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "memchr"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "memmap2"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "memoffset"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "memory-stats"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "memuse"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "merlin"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "metrohash"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "micromap"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "mime"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "mime2ext"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "mime_guess"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "minimal-lexical"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "miniserde"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "miniz_oxide"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "mio"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "mio-aio"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "mockall"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "multer"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "nanoserde"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "native-tls"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "new_debug_unreachable"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "nix"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "no-panic"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "nohash-hasher"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "nom"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "notify"
+category = "filesystem"
 source = "mirror"
 
 [[names]]
 name = "notify-types"
+category = "filesystem"
 source = "mirror"
 
 [[names]]
 name = "ntest"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "nu-ansi-term"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "num"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "num-bigint"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "num-bigint-dig"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "num-cmp"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "num-complex"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "num-conv"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "num-integer"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "num-iter"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "num-rational"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "num-traits"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "num_cpus"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "num_threads"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "oauth2"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "oauth2-reqwest"
+category = "general"
+source = "mirror"
+
+[[names]]
+name = "olm-rs"
+category = "matrix"
 source = "mirror"
 
 [[names]]
 name = "once_cell"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "once_cell_polyfill"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "opaque-debug"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "openssl-probe"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "openssl-sys"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "opt-level"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "option-ext"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "outref"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "owning_ref"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "owo-colors"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "p256"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "p384"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "page_size"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "parking"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "parking_lot"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "parking_lot_core"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "partial-io"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "password-hash"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "paste"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "paste-test-suite"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "pastey"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "path-tree"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "pbkdf2"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "pcg-mwc"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "pem"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "pem-rfc7468"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "percent-encoding"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "permutohedron"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "petgraph"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "phf"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "phf_codegen"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "phf_generator"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "phf_macros"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "phf_shared"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "pin-project"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "pin-project-internal"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "pin-project-lite"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "pin-utils"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "piper"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "pkcs1"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "pkcs5"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "pkcs8"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "pkg-config"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "plain"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "pnet_datalink"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "polling"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "pollster"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "poly1305"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "portable-atomic"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "portable-atomic-util"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "portable-pty"
+category = "terminal"
 source = "mirror"
 
 [[names]]
 name = "postcard"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "postgres-types"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "potential_utf"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "powerfmt"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "powerfmt-macros"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "ppv-lite86"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "precomputed-hash"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "pretty_assertions"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "pretty_env_logger"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "prettyplease"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "primeorder"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "proc-macro-crate"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "proc-macro-error-attr2"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "proc-macro-error2"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "proc-macro2"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "process-wrap"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "proptest"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "proptest-derive"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "prost"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "prost-derive"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "pulldown-cmark"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "pulldown-cmark-escape"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "pure-rust-locales"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "pyo3"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "qlog"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "quick-error"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "quickcheck"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "quickcheck_macros"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "quinn"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "quinn-proto"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "quinn-udp"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "quote"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "r-efi"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rand"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rand_chacha"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rand_core"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rand_distr"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rand_isaac"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rand_pcg"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rand_xorshift"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rand_xoshiro"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rapidhash"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rayon"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rayon-core"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rb-sys"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rcgen"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rclite"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "readlock"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "readlock-tokio"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "redox_syscall"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "redox_users"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "ref-cast"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "ref-cast-impl"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "ref-cast-test-suite"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "referencing"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "refpool"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "regex"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "regex-automata"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "regex-lite"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "regex-syntax"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "regex-test"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "remoteprocess"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "reqwest"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rfc6979"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "ring"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "ring-compat"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rkyv"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rlp"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rmcp"
+category = "mcp"
 source = "mirror"
 
 [[names]]
 name = "rmcp-macros"
+category = "mcp"
 source = "mirror"
 
 [[names]]
 name = "rmp"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rmp-serde"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "roaring"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "ron"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "route-recognizer"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "routefinder"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rpds"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rsa"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rstest"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rstest_reuse"
+category = "general"
+source = "mirror"
+
+[[names]]
+name = "ruma"
+category = "matrix"
+source = "mirror"
+
+[[names]]
+name = "ruma-appservice-api"
+category = "matrix"
+source = "mirror"
+
+[[names]]
+name = "ruma-client-api"
+category = "matrix"
+source = "mirror"
+
+[[names]]
+name = "ruma-common"
+category = "matrix"
+source = "mirror"
+
+[[names]]
+name = "ruma-events"
+category = "matrix"
+source = "mirror"
+
+[[names]]
+name = "ruma-federation-api"
+category = "matrix"
+source = "mirror"
+
+[[names]]
+name = "ruma-html"
+category = "matrix"
+source = "mirror"
+
+[[names]]
+name = "ruma-identifiers-validation"
+category = "matrix"
+source = "mirror"
+
+[[names]]
+name = "ruma-identity-service-api"
+category = "matrix"
+source = "mirror"
+
+[[names]]
+name = "ruma-macros"
+category = "matrix"
+source = "mirror"
+
+[[names]]
+name = "ruma-push-gateway-api"
+category = "matrix"
+source = "mirror"
+
+[[names]]
+name = "ruma-signatures"
+category = "matrix"
+source = "mirror"
+
+[[names]]
+name = "ruma-state-res"
+category = "matrix"
 source = "mirror"
 
 [[names]]
 name = "rusqlite"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rusqlite-macros"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rust-argon2"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rust-base58"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rust_decimal"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rustc-hash"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rustc-hex"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rustc-rayon"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rustc-std-workspace-alloc"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rustc-std-workspace-core"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rustc_version"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rustix"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rustls"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rustls-native-certs"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rustls-pemfile"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rustls-pki-types"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rustls-platform-verifier"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rustls-platform-verifier-android"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rustls-webpki"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rustversion"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "rusty-fork"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "ryu"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "same-file"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "scale-info"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "schannel"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "schemars"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "schemars_derive"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "scopeguard"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "seahash"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "sealed"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "sec1"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "security-framework"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "security-framework-sys"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "self_cell"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "semver"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "seq-macro"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "serde"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "serde-untagged"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "serde-wasm-bindgen"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "serde-xml-rs"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "serde_assert"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "serde_bytes"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "serde_core"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "serde_derive"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "serde_derive_internals"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "serde_html_form"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "serde_json"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "serde_path_to_error"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "serde_repr"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "serde_spanned"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "serde_stacker"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "serde_test"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "serde_test2"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "serde_urlencoded"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "serde_with"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "serde_with_macros"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "serde_yaml"
+category = "yaml"
 source = "mirror"
 
 [[names]]
 name = "serde_yaml_ng"
+category = "yaml"
 source = "mirror"
 
 [[names]]
 name = "serdect"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "serial2"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "serial_test"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "sha-1"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "sha1"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "sha1_smol"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "sha2"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "sha2-asm"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "sha3"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "sharded-slab"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "shared_library"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "shell-words"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "shlex"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "signal-hook"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "signal-hook-registry"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "signature"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "signature_derive"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "simd-adler32"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "simd_cesu8"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "simdutf8"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "similar-asserts"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "simple_asn1"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "siphasher"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "slab"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "slog"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "smallvec"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "smol"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "smol-macros"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "smol_str"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "snapbox"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "socket2"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "spdx"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "spin"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "spin_on"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "spki"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "spmc"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "sqlx"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "sse-stream"
+category = "sse"
 source = "mirror"
 
 [[names]]
 name = "stable_deref_trait"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "static_assertions"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "stream_assert"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "streebog"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "string_cache"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "string_cache_codegen"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "strip-ansi-escapes"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "strsim"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "strum"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "strum_macros"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "subtle"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "sval"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "sval_derive"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "sval_ref"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "syn"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "syn-test-suite"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "sync_wrapper"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "synstructure"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "synstructure_test_traits"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "sysctl"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "system-configuration"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "tap"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "tar"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "tempdir"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "tempfile"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "tendril"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "term-transcript"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "termcolor"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "terminal_size"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "test-case"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "tester"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "thiserror"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "thiserror-impl"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "thread_local"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "time"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "time-core"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "time-macros"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "timerfd"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "tinymap"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "tinystr"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "tinyvec"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "tinyvec_macros"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "tokio"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "tokio-executor"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "tokio-io"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "tokio-macros"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "tokio-native-tls"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "tokio-rustls"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "tokio-stream"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "tokio-sync"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "tokio-test"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "tokio-tungstenite"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "tokio-util"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "toml"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "toml-test-data"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "toml-test-harness"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "toml_datetime"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "toml_edit"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "toml_parser"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "toml_write"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "toml_writer"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "tower"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "tower-http"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "tower-layer"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "tower-service"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "tower-test"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "tracing"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "tracing-attributes"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "tracing-core"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "tracing-futures"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "tracing-log"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "tracing-mock"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "tracing-serde"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "tracing-subscriber"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "trash"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "triomphe"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "try-lock"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "trybuild"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "trycmd"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "tungstenite"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "twox-hash"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "typed-arena"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "typenum"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "typewit"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "typewit_proc_macros"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "ucd-trie"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "uds_windows"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "ulid"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "uncased"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "unic-emoji-char"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "unicase"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "unicode-bidi"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "unicode-general-category"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "unicode-ident"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "unicode-normalization"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "unicode-segmentation"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "unicode-width"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "unicode-xid"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "uniffi"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "universal-hash"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "unsafe-libyaml"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "untrusted"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "unty"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "ureq"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "url"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "urlencoding"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "utf16_iter"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "utf8_iter"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "utf8parse"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "uuid"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "uuid-rng-internal"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "uuid-simd"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "validator"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "valuable"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "valuable-derive"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "valuable-serde"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "value-bag"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "vcpkg"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "version-sync"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "version_check"
+category = "general"
+source = "mirror"
+
+[[names]]
+name = "vodozemac"
+category = "matrix"
 source = "mirror"
 
 [[names]]
 name = "vsimd"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "vte_generate_state_changes"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "waker-fn"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "walkdir"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "want"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "wasi"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "wasip2"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "wasip3"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "wasm-bindgen"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "wasm-bindgen-futures"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "wasm-bindgen-macro"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "wasm-bindgen-macro-support"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "wasm-bindgen-shared"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "wasm-bindgen-test"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "wasm-encoder"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "wasm-metadata"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "wasm-streams"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "wasm_evt_listener"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "wasmparser"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "wasmprinter"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "wasmtime"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "wast"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "wat"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "web-sys"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "web-time"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "web_atoms"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "webpki-root-certs"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "webpki-roots"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "which"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "wildmatch"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "winapi"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "winapi-i686-pc-windows-gnu"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "winapi-util"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "winapi-x86_64-pc-windows-gnu"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "windows"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "windows-bindgen"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "windows-collections"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "windows-core"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "windows-future"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "windows-implement"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "windows-interface"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "windows-link"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "windows-numerics"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "windows-registry"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "windows-result"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "windows-strings"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "windows-sys"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "windows-targets"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "windows-threading"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "windows_aarch64_gnullvm"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "windows_aarch64_msvc"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "windows_i686_gnu"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "windows_i686_gnullvm"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "windows_i686_msvc"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "windows_x86_64_gnu"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "windows_x86_64_gnullvm"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "windows_x86_64_msvc"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "winnow"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "winreg"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "wiremock"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "wit-bindgen"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "wit-bindgen-core"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "wit-bindgen-rust"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "wit-bindgen-rust-macro"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "wit-component"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "wit-parser"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "write16"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "writeable"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "wyhash"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "x25519-dalek"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "x509-parser"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "xxhash-c-sys"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "xxhash-rust"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "yaml_serde"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "yasna"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "yoke"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "yoke-derive"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "zerocopy"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "zerocopy-derive"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "zerofrom"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "zerofrom-derive"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "zeroize"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "zeroize_derive"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "zerotrie"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "zerovec"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "zerovec-derive"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "zlib-rs"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "zmij"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "zstd"
+category = "general"
 source = "mirror"
 
 [[names]]
 name = "zstd-safe"
+category = "general"
 source = "mirror"
 
 [[packages]]
@@ -6649,6 +7691,28 @@ index-row-sha256 = "0b7e939dc7642c0e99e3526e4b44e9e010549d362048bfe728e0ff25c608
 kind = "crates-io"
 
 [[packages]]
+name = "js_int"
+version = "0.2.2"
+state = "active"
+crate-sha256 = "d937f95470b270ce8b8950207715d71aa8e153c0d44c6684d59397ed4949160a"
+source-row-sha256 = "0d81166dd4246e2cd7824f7790e05b985c2dbb558ff0f0f87c5e3db12918e2b5"
+index-row-sha256 = "be2f7f6723ee37d030e83ca45c42fca16613e4fd017b8025a64f03e48f506a3b"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "js_option"
+version = "0.2.0"
+state = "active"
+crate-sha256 = "c7dd3e281add16813cf673bf74a32249b0aa0d1c8117519a17b3ada5e8552b3c"
+source-row-sha256 = "765460c1360f437d1a7bd67de217ff585ecc56d33fa5987974e83e53037d9822"
+index-row-sha256 = "fd529757989cf817b5ec450ff23be4de94aebd8fd157e1f90565a94812dd7b6a"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
 name = "jsonschema"
 version = "0.49.3"
 state = "active"
@@ -6996,6 +8060,127 @@ state = "active"
 crate-sha256 = "47e1ffaa40ddd1f3ed91f717a33c8c0ee23fff369e3aa8772b9605cc1d22f4c3"
 source-row-sha256 = "38a8dfb8d80a214dba1d240d408a65674e19a7670b55781c7f0a9bb0c14339c9"
 index-row-sha256 = "b3e9540711e9ef09928040798c2b401f54d1d25b474035d25e775b1b309cda0d"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "matrix-pickle"
+version = "0.2.3"
+state = "active"
+crate-sha256 = "b3d65d46b7379dd0afa4a42f9b2269821d31afdee0111b5e0d74e3bee03553a0"
+source-row-sha256 = "3cfe6174e58eae511b69ea8575fe64c169974b0a310fb2365e15dfdc1581fb9f"
+index-row-sha256 = "937f5f66d684a9515aa0835417ef9d2f634e49280f1c03dd989dab0e1de7d1f7"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "matrix-pickle-derive"
+version = "0.2.3"
+state = "active"
+crate-sha256 = "414b5e4c34009f2bc3fe35dd018f25755ca38858096574841c7332f99e2c7e77"
+source-row-sha256 = "39e62fbb8e9c83fc6dc185dd1d9cfaaab9ab87d5285b962d4b56dd1dc1be1d60"
+index-row-sha256 = "32fba701271d8a4d60005fe512ee5ba614e9a659b62bdfc08ed507a313e85a24"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "matrix-sdk"
+version = "0.18.0"
+state = "active"
+crate-sha256 = "7083d580527511ac5d9369e03b9f2b20902e76949f1b3964051f978e4d3756ae"
+source-row-sha256 = "0c331a46d4078eccf5028c1da3dc8bfef26a70f2f88ada814ee1296231a3bf45"
+index-row-sha256 = "8add80e5e405151d4515257ff0d1f4bb330b11439be5f840c7fa61b332621732"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "matrix-sdk-base"
+version = "0.18.0"
+state = "active"
+crate-sha256 = "e09a917eb1f7643d9d9a06b2f131e2ceb39df6910a7b830dac18bfd6db37a1f5"
+source-row-sha256 = "09258b87f329200756a44662bada86d9549831efa07fe38ea0cb010d82cbf5db"
+index-row-sha256 = "b373b39c4fe436858a3fc79fb8f469e6a238e56e02843c37bbbdfbdde97746ea"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "matrix-sdk-common"
+version = "0.18.0"
+state = "active"
+crate-sha256 = "2b9d1e0fee0f090180ef9457034adc547e80de9e6e3eb2e63aaac68a8476f836"
+source-row-sha256 = "06814bdfcb466e505cede89c32cef5b65404a86fd00782ebf62cd56e1b229ba9"
+index-row-sha256 = "030c683b46c18e283a4c231ce68bcedd46031e81f3f4eb9043064a766972f6bf"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "matrix-sdk-crypto"
+version = "0.18.0"
+state = "active"
+crate-sha256 = "c54afd2a326f51c13a6ad44ec86315a688fffeb3f1e287fb343e0e1836a3bdaf"
+source-row-sha256 = "189b189ddf5c3b9400e3a84a17f127c4fd612c517c41eaa0d861407f6fcda87e"
+index-row-sha256 = "ce878132fdc3984be8325487030aa94ff0e5db4aceb5a957eafcd2596a412e7b"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "matrix-sdk-indexeddb"
+version = "0.18.0"
+state = "active"
+crate-sha256 = "fef37395fffb7c916f7109ab0d16d8ca599403dd8164d08c0d966176b66ede47"
+source-row-sha256 = "cabc90d456a2b3db9e70967a641e242f5e1bb58630761f1a23f697e2fdf9644b"
+index-row-sha256 = "3231fe9d035bfe04948132c444e39159b7efae5cf93b640ba8f77101f9ef553b"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "matrix-sdk-sqlite"
+version = "0.18.0"
+state = "active"
+crate-sha256 = "a49133429271005745f8d5a05362d2ba6567274777250236799927ca30dc0670"
+source-row-sha256 = "63b95b57ac5276c9cd8e2d8d0db6623c1b2cfde6e2e23275f6a1df42de81adbd"
+index-row-sha256 = "391f962940f56d932abef7a292bc448289cee3cfd65dc48d58a4a81924061d9d"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "matrix-sdk-store-encryption"
+version = "0.18.0"
+state = "active"
+crate-sha256 = "2f48f304e553fb6200b1d7d1f77a88fd182076d4b25624e9dbfa42d6a37de35e"
+source-row-sha256 = "6d98e98ae1bca38414347b6f364c89a4d4a7b6570d8db4ab1f6d202eb3aec5a0"
+index-row-sha256 = "38e45a641bc9dd7673b4c9a97f92b9cd43fe175870e2702ee0c83264c6b4f130"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "matrix_indexed_db_futures"
+version = "0.7.0"
+state = "active"
+crate-sha256 = "245ff6a224b4df7b0c90dda2dd5a6eb46112708d49e8bdd8b007fccb09fea8e4"
+source-row-sha256 = "df0bff490bda702f63aa76393fbc90276814e641dc80ef061e2d1fd9c7312633"
+index-row-sha256 = "1a309d37447dc2d4359bb49c1293971de761e2d93b6e5dcc137d2a9d83e3ee9f"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "matrix_indexed_db_futures_macros_internal"
+version = "1.0.0"
+state = "active"
+crate-sha256 = "b428aee5c0fe9e5babd29e99d289b7f64718c444989aac0442d1fd6d3e3f66d1"
+source-row-sha256 = "52372619e92f55a7d0138dd9b62a6a9ce4138d68f43d821cd16468cda63f8a77"
+index-row-sha256 = "0955bd545714ac70ab60baff4fcc7109529049fdad986123b2b0c53624d3f232"
 
 [packages.source]
 kind = "crates-io"
@@ -8404,6 +9589,83 @@ state = "active"
 crate-sha256 = "b8573f03f5883dcaebdfcf4725caa1ecb9c15b2ef50c43a07b816e06799bb12d"
 source-row-sha256 = "36f1392ced5d0cad3429d2cfab0e0114ed3fc73efb15f9af2241800640d316a8"
 index-row-sha256 = "2766ed3c14096f6eb2342edc86011d8a111c57cd90ce45a572adabe58444a981"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "ruma"
+version = "0.16.0"
+state = "active"
+crate-sha256 = "ee4fe5bfacdb0e95e733da3b6c37d98edf46447a4a8e8dea824e0da266d8ad59"
+source-row-sha256 = "4b8a257ce051e9969ae6337a953975867c9ec3253d33b2bcaf4fb89f5339eff3"
+index-row-sha256 = "082f57bac7765a298010b254c18737352ec30652714c21e4f7ba296712d5bcfd"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "ruma-client-api"
+version = "0.24.0"
+state = "active"
+crate-sha256 = "bf7ca43a888ca569168d7e3901f4dd14a777b860bb19f4c08e35414162eb261c"
+source-row-sha256 = "b88dec1ba9cae09918b43323729ce30384978478d3dc2e3ebe9bb218869e7879"
+index-row-sha256 = "8e23ec4d5222cc3e83ca3fa1366754cf9cdb697d110163c2bcff903944027a61"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "ruma-common"
+version = "0.19.0"
+state = "active"
+crate-sha256 = "2c3b4f00112791b490acce57df1ce3eb3f88899b045bebcff8a29f75369640cc"
+source-row-sha256 = "b4bb8f3d78e73ddc89a69aa9dbbe3a0e9d0264b145eba07674bc6fecb6ccbc99"
+index-row-sha256 = "a95859ffe4fb038562e11bfd7de54299b463f7e1cffde7bcc5f68ec4035a2133"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "ruma-events"
+version = "0.34.0"
+state = "active"
+crate-sha256 = "85d2f90830fc131691349b96a69ff53444eb6c3e8dc7869c77961b43cfaf3344"
+source-row-sha256 = "faeee0a212919f91c0ef6a100bf2319dc99e1d375b1f8a719ae2c6c81c9b28fd"
+index-row-sha256 = "bb320e37ee9692384a82814504c56b525f733b07e11d3dab129382e307f2f5a8"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "ruma-html"
+version = "0.8.0"
+state = "active"
+crate-sha256 = "48d33a944650f4bbd2188dd204d39dd87a9a1498f14b3a13252910c90ed7cd43"
+source-row-sha256 = "fc9b646606298aeb6f0153f0b6937aa8e8161c13e04a49e8459c76b9721b11a4"
+index-row-sha256 = "ecd847476d053c8874b4c77afb56a3374c8099c3b912d47b5d512e702f651c48"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "ruma-identifiers-validation"
+version = "0.12.1"
+state = "active"
+crate-sha256 = "9d6cff00317675f487c4e7ccfb18875a14c5a14867b51d13f2a826053f03c432"
+source-row-sha256 = "ae2d20766d90130abbd1230ed0225b31d31e1e722338cd0f013f6b319f642f59"
+index-row-sha256 = "09149a3f033f72796f0d86b4384cd3c1ae796e63e7a03f29bdd00d6368b0ea15"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "ruma-macros"
+version = "0.19.0"
+state = "active"
+crate-sha256 = "c8cfb39eaa9b9fd389126ff941e060b496add5cbbfef559d80c46e571dda459c"
+source-row-sha256 = "1bc8df317d9197c02dfa203aacfcf7c83d6931856871c07c2e63080702ad36c6"
+index-row-sha256 = "bd9eb8ab245214b8128e3c470013a84deba8fe89683f0491010904b59f8a32a5"
 
 [packages.source]
 kind = "crates-io"
@@ -10186,6 +11448,17 @@ state = "active"
 crate-sha256 = "0b928f33d975fc6ad9f86c8f283853ad26bdd5b10b7f1542aa2fa15e2289105a"
 source-row-sha256 = "026c6afbf849b283ad5bc7f6f2d296212492c0ec4515e725e8e593ccaed572ae"
 index-row-sha256 = "aafd2299f81bcfc752d6fae12a79e899113ed5e0dfc850fffdfdce49c6c515ee"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "vodozemac"
+version = "0.10.0"
+state = "active"
+crate-sha256 = "b98bf83c0992966775b8012f194b07b44928996163e5a05b741b43891571ae5b"
+source-row-sha256 = "1a1e2e52eca217a4eebd01c4099eb8ffc57ff1886e2cd00c6f6f117e3608f679"
+index-row-sha256 = "08d9662fab5ac215f7bafd0f9b6103e14e36c27a38887f2787b5c782a7bc52fe"
 
 [packages.source]
 kind = "crates-io"

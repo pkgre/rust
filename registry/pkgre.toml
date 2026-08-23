@@ -1,21 +1,15 @@
-schema = 2
+schema = 3
 
 [registry]
 name = "pkgre"
 index = "sparse+https://rust.pkg.re/pkgre/"
 download = "https://rust.pkg.re/crates/{sha256-checksum}.crate"
-may-depend-on = [
-    "core",
-    "matrix",
-    "pkgre",
-]
 cargo-version = "1.95.0"
 
-[mirror]
+[categories.tooling]
+may-depend-on = ["pkgre/tooling", "universe/general"]
 
-[publish.pkgre-indexer]
+[categories.tooling.publish.pkgre-indexer]
 git = "https://github.com/pkgre/pkgre"
-tags = [
-    "indexer/v0.1.1",
-    "indexer/v0.2.0",
-]
+tags = ["indexer/v0.1.1", "indexer/v0.2.0"]
+

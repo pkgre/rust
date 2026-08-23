@@ -1,0 +1,1 @@
+{"name":"futures-task","vers":"0.3.33","deps":[],"cksum":"b231ed28831efb4a61a08580c4bc233ec56bc009f4cd8f52da2c3cb97df0c109","features":{"alloc":[],"cfg-target-has-atomic":[],"default":["std"],"std":["alloc"],"unstable":[]},"yanked":false,"rust_version":"1.71","pubtime":"2026-07-18T11:50:44Z"}

@@ -1,0 +1,369 @@
+schema = 2
+
+[registry]
+name = "matrix"
+index = "sparse+https://rust.pkg.re/matrix/"
+download = "https://static.crates.io/crates"
+
+[[names]]
+name = "js_int"
+source = "mirror"
+
+[[names]]
+name = "js_option"
+source = "mirror"
+
+[[names]]
+name = "matrix-pickle"
+source = "mirror"
+
+[[names]]
+name = "matrix-pickle-derive"
+source = "mirror"
+
+[[names]]
+name = "matrix-sdk"
+source = "mirror"
+
+[[names]]
+name = "matrix-sdk-base"
+source = "mirror"
+
+[[names]]
+name = "matrix-sdk-common"
+source = "mirror"
+
+[[names]]
+name = "matrix-sdk-crypto"
+source = "mirror"
+
+[[names]]
+name = "matrix-sdk-ffi-macros"
+source = "mirror"
+
+[[names]]
+name = "matrix-sdk-indexeddb"
+source = "mirror"
+
+[[names]]
+name = "matrix-sdk-qrcode"
+source = "mirror"
+
+[[names]]
+name = "matrix-sdk-search"
+source = "mirror"
+
+[[names]]
+name = "matrix-sdk-sqlite"
+source = "mirror"
+
+[[names]]
+name = "matrix-sdk-store-encryption"
+source = "mirror"
+
+[[names]]
+name = "matrix-sdk-test"
+source = "mirror"
+
+[[names]]
+name = "matrix-sdk-test-utils"
+source = "mirror"
+
+[[names]]
+name = "matrix_indexed_db_futures"
+source = "mirror"
+
+[[names]]
+name = "matrix_indexed_db_futures_macros_internal"
+source = "mirror"
+
+[[names]]
+name = "olm-rs"
+source = "mirror"
+
+[[names]]
+name = "ruma"
+source = "mirror"
+
+[[names]]
+name = "ruma-appservice-api"
+source = "mirror"
+
+[[names]]
+name = "ruma-client-api"
+source = "mirror"
+
+[[names]]
+name = "ruma-common"
+source = "mirror"
+
+[[names]]
+name = "ruma-events"
+source = "mirror"
+
+[[names]]
+name = "ruma-federation-api"
+source = "mirror"
+
+[[names]]
+name = "ruma-html"
+source = "mirror"
+
+[[names]]
+name = "ruma-identifiers-validation"
+source = "mirror"
+
+[[names]]
+name = "ruma-identity-service-api"
+source = "mirror"
+
+[[names]]
+name = "ruma-macros"
+source = "mirror"
+
+[[names]]
+name = "ruma-push-gateway-api"
+source = "mirror"
+
+[[names]]
+name = "ruma-signatures"
+source = "mirror"
+
+[[names]]
+name = "ruma-state-res"
+source = "mirror"
+
+[[names]]
+name = "vodozemac"
+source = "mirror"
+
+[[packages]]
+name = "js_int"
+version = "0.2.2"
+state = "active"
+crate-sha256 = "d937f95470b270ce8b8950207715d71aa8e153c0d44c6684d59397ed4949160a"
+source-row-sha256 = "0d81166dd4246e2cd7824f7790e05b985c2dbb558ff0f0f87c5e3db12918e2b5"
+index-row-sha256 = "4ffe20ac5fcf4c82b927b4814f5501f034a190b9275468842ae46b4691eef8d3"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "js_option"
+version = "0.2.0"
+state = "active"
+crate-sha256 = "c7dd3e281add16813cf673bf74a32249b0aa0d1c8117519a17b3ada5e8552b3c"
+source-row-sha256 = "765460c1360f437d1a7bd67de217ff585ecc56d33fa5987974e83e53037d9822"
+index-row-sha256 = "a75327865c0b6cb31dc787f5c6fff02d55d716bbdfa18e067729f43ec8f124ed"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "matrix-pickle"
+version = "0.2.3"
+state = "active"
+crate-sha256 = "b3d65d46b7379dd0afa4a42f9b2269821d31afdee0111b5e0d74e3bee03553a0"
+source-row-sha256 = "3cfe6174e58eae511b69ea8575fe64c169974b0a310fb2365e15dfdc1581fb9f"
+index-row-sha256 = "9e61e67d1b069d64b7423f93dca937b7a195397b9db1cf3173a18ea193a3c39b"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "matrix-pickle-derive"
+version = "0.2.3"
+state = "active"
+crate-sha256 = "414b5e4c34009f2bc3fe35dd018f25755ca38858096574841c7332f99e2c7e77"
+source-row-sha256 = "39e62fbb8e9c83fc6dc185dd1d9cfaaab9ab87d5285b962d4b56dd1dc1be1d60"
+index-row-sha256 = "4dc017394e259ee21b2fdb9a2d008dc4a3be1fe59fcb92755196fe193a4cfff8"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "matrix-sdk"
+version = "0.18.0"
+state = "active"
+crate-sha256 = "7083d580527511ac5d9369e03b9f2b20902e76949f1b3964051f978e4d3756ae"
+source-row-sha256 = "0c331a46d4078eccf5028c1da3dc8bfef26a70f2f88ada814ee1296231a3bf45"
+index-row-sha256 = "82c0383d03b36d7f71779745a1ea885154d64b2ac6ab4385f1c15ec39e4d389c"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "matrix-sdk-base"
+version = "0.18.0"
+state = "active"
+crate-sha256 = "e09a917eb1f7643d9d9a06b2f131e2ceb39df6910a7b830dac18bfd6db37a1f5"
+source-row-sha256 = "09258b87f329200756a44662bada86d9549831efa07fe38ea0cb010d82cbf5db"
+index-row-sha256 = "223000c70a7d83eeef470d036bb059aa2d141b15023b5525d1757c091749b9ab"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "matrix-sdk-common"
+version = "0.18.0"
+state = "active"
+crate-sha256 = "2b9d1e0fee0f090180ef9457034adc547e80de9e6e3eb2e63aaac68a8476f836"
+source-row-sha256 = "06814bdfcb466e505cede89c32cef5b65404a86fd00782ebf62cd56e1b229ba9"
+index-row-sha256 = "36eb33b3efdaf3b0ab22318cef8c6fd1cfe8cc2e156db537f0313105af5fe64e"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "matrix-sdk-crypto"
+version = "0.18.0"
+state = "active"
+crate-sha256 = "c54afd2a326f51c13a6ad44ec86315a688fffeb3f1e287fb343e0e1836a3bdaf"
+source-row-sha256 = "189b189ddf5c3b9400e3a84a17f127c4fd612c517c41eaa0d861407f6fcda87e"
+index-row-sha256 = "bef8b3bc7f8d454f56abb65677656688d150ed6d589d7eefb117cf6fce0a3b10"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "matrix-sdk-indexeddb"
+version = "0.18.0"
+state = "active"
+crate-sha256 = "fef37395fffb7c916f7109ab0d16d8ca599403dd8164d08c0d966176b66ede47"
+source-row-sha256 = "cabc90d456a2b3db9e70967a641e242f5e1bb58630761f1a23f697e2fdf9644b"
+index-row-sha256 = "1983e2bee5487e43c07255dcc034439c9bb193d9a7d6569fdd8cbbf1ab616959"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "matrix-sdk-sqlite"
+version = "0.18.0"
+state = "active"
+crate-sha256 = "a49133429271005745f8d5a05362d2ba6567274777250236799927ca30dc0670"
+source-row-sha256 = "63b95b57ac5276c9cd8e2d8d0db6623c1b2cfde6e2e23275f6a1df42de81adbd"
+index-row-sha256 = "e8f5cee83c3fac78d429c2da86b88260f2243d76114f22b45478eba8f0fd919e"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "matrix-sdk-store-encryption"
+version = "0.18.0"
+state = "active"
+crate-sha256 = "2f48f304e553fb6200b1d7d1f77a88fd182076d4b25624e9dbfa42d6a37de35e"
+source-row-sha256 = "6d98e98ae1bca38414347b6f364c89a4d4a7b6570d8db4ab1f6d202eb3aec5a0"
+index-row-sha256 = "5ece137de6d3eadc517dcf71276654f23ca31a11de00a6049a876fac3cf5b36a"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "matrix_indexed_db_futures"
+version = "0.7.0"
+state = "active"
+crate-sha256 = "245ff6a224b4df7b0c90dda2dd5a6eb46112708d49e8bdd8b007fccb09fea8e4"
+source-row-sha256 = "df0bff490bda702f63aa76393fbc90276814e641dc80ef061e2d1fd9c7312633"
+index-row-sha256 = "d4cc6636fea56c96a8aa2ec6466969087124ad012cbf2d285de986e22736117b"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "matrix_indexed_db_futures_macros_internal"
+version = "1.0.0"
+state = "active"
+crate-sha256 = "b428aee5c0fe9e5babd29e99d289b7f64718c444989aac0442d1fd6d3e3f66d1"
+source-row-sha256 = "52372619e92f55a7d0138dd9b62a6a9ce4138d68f43d821cd16468cda63f8a77"
+index-row-sha256 = "7de58d205f892c0efa84d0147993a816fce0e31f8c0a2b989d32e1b7fd0fad1a"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "ruma"
+version = "0.16.0"
+state = "active"
+crate-sha256 = "ee4fe5bfacdb0e95e733da3b6c37d98edf46447a4a8e8dea824e0da266d8ad59"
+source-row-sha256 = "4b8a257ce051e9969ae6337a953975867c9ec3253d33b2bcaf4fb89f5339eff3"
+index-row-sha256 = "22c26e78d244201ebbcbf464eaeda261b083d60656638c5a059df0d282813a93"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "ruma-client-api"
+version = "0.24.0"
+state = "active"
+crate-sha256 = "bf7ca43a888ca569168d7e3901f4dd14a777b860bb19f4c08e35414162eb261c"
+source-row-sha256 = "b88dec1ba9cae09918b43323729ce30384978478d3dc2e3ebe9bb218869e7879"
+index-row-sha256 = "216da51af3a5fb2a82c19072aaa103f4e3a2c6d644e49cb762b3890ee24f4669"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "ruma-common"
+version = "0.19.0"
+state = "active"
+crate-sha256 = "2c3b4f00112791b490acce57df1ce3eb3f88899b045bebcff8a29f75369640cc"
+source-row-sha256 = "b4bb8f3d78e73ddc89a69aa9dbbe3a0e9d0264b145eba07674bc6fecb6ccbc99"
+index-row-sha256 = "5f5f04d0310ae77fab84b049ed12175e72cae44e7c2305f5b06ce426aaab158e"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "ruma-events"
+version = "0.34.0"
+state = "active"
+crate-sha256 = "85d2f90830fc131691349b96a69ff53444eb6c3e8dc7869c77961b43cfaf3344"
+source-row-sha256 = "faeee0a212919f91c0ef6a100bf2319dc99e1d375b1f8a719ae2c6c81c9b28fd"
+index-row-sha256 = "8720b1235ada27cedce02ad5f10b30b2804476d3b60e112d1250307ce088ab03"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "ruma-html"
+version = "0.8.0"
+state = "active"
+crate-sha256 = "48d33a944650f4bbd2188dd204d39dd87a9a1498f14b3a13252910c90ed7cd43"
+source-row-sha256 = "fc9b646606298aeb6f0153f0b6937aa8e8161c13e04a49e8459c76b9721b11a4"
+index-row-sha256 = "86eb9e293acf762e9dd2510597189c7446521cd94248219851bbba280a2e9e55"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "ruma-identifiers-validation"
+version = "0.12.1"
+state = "active"
+crate-sha256 = "9d6cff00317675f487c4e7ccfb18875a14c5a14867b51d13f2a826053f03c432"
+source-row-sha256 = "ae2d20766d90130abbd1230ed0225b31d31e1e722338cd0f013f6b319f642f59"
+index-row-sha256 = "d9193d3f5081c815b922f7f8de295918f868713fb00472353c93ffaea4da52b8"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "ruma-macros"
+version = "0.19.0"
+state = "active"
+crate-sha256 = "c8cfb39eaa9b9fd389126ff941e060b496add5cbbfef559d80c46e571dda459c"
+source-row-sha256 = "1bc8df317d9197c02dfa203aacfcf7c83d6931856871c07c2e63080702ad36c6"
+index-row-sha256 = "d9c1c16566362b2807fdd55ee96804edaf616491657d442a329b40cacbb1b8a1"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "vodozemac"
+version = "0.10.0"
+state = "active"
+crate-sha256 = "b98bf83c0992966775b8012f194b07b44928996163e5a05b741b43891571ae5b"
+source-row-sha256 = "1a1e2e52eca217a4eebd01c4099eb8ffc57ff1886e2cd00c6f6f117e3608f679"
+index-row-sha256 = "938b668b0bcab30153526e7f0423288caafb5c1f1cf73c47d093679c3005ef82"
+
+[packages.source]
+kind = "crates-io"

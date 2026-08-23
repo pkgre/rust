@@ -1,0 +1,1 @@
+{"name":"borrow-or-share","vers":"0.2.4","deps":[],"cksum":"dc0b364ead1874514c8c2855ab558056ebfeb775653e7ae45ff72f28f8f3166c","features":{"alloc":[],"default":["alloc"],"std":["alloc"]},"yanked":false,"rust_version":"1.65","pubtime":"2025-11-02T17:53:51Z"}

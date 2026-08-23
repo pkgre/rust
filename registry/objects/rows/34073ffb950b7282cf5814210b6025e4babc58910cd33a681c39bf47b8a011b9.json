@@ -1,0 +1,1 @@
+{"name":"windows-threading","vers":"0.2.1","deps":[{"name":"windows-link","req":"^0.2.1","features":[],"optional":false,"default_features":false,"target":null,"kind":"normal"}],"cksum":"3949bd5b99cafdf1c7ca86b43ca564028dfe27d66958f2470940f73d86d75b37","features":{},"yanked":false,"rust_version":"1.82","pubtime":"2025-10-06T17:35:22Z"}

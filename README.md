@@ -29,7 +29,7 @@ Small categories are inline under `[categories.<name>]` in `registry/<registry>.
 
 ## Model
 
-`registry/{universe,pkgre}.toml` + external category files = complete human-edited desired state: fixed registry/category policy + exact crates.io mirror versions + approved first-party HTTPS Git tags. `pkgre-indexer lock` reconciles that state into canonical adjacent locks + content-addressed objects; validates permanent package homes, source classes, and category dependency edges; renders the Pages site from scratch; verifies byte identity; rejects mutation, disappearance, reactivation, or source-class mixing.
+`registry/{universe,pkgre}.toml` + external category files = complete human-edited desired state: fixed registry/category policy + exact crates.io mirror versions + approved first-party HTTPS Git tags. New mirror identities/versions enter an established catalog only through the evidence-bound `update-plan`/`update-inspect`/`update-approve`/`update-apply` workflow; direct `lock` admission is rejected. `lock` handles initial bootstrap, empty name reservations, removals, and Git publication tags; reconciles permitted state into canonical adjacent locks + content-addressed objects; validates permanent package homes, source classes, and category dependency edges; renders the Pages site from scratch; verifies byte identity; rejects mutation, disappearance, reactivation, or source-class mixing.
 
 Imported packages retain exact crates.io checksums + source rows. First-party releases lock Git tag object + peeled commit + package path + Cargo version, require explicit curated-registry routing, and package twice byte-identically under pinned Cargo.
 
@@ -62,7 +62,8 @@ Every mirrored manifest dependency should set `registry = "universe"`; first-par
 |---|---|
 | `registry/<registry>.toml` | Human authority: registry policy + inline category declarations |
 | `registry/categories/<registry>/<category>.toml` | Human authority: one large external category declaration |
-| `registry/<registry>.lock` | Generated authority: permanent category/source-class homes, lifecycle, archive/source-row/routed-row hashes, immutable Git provenance |
+| `registry/<registry>.lock` | Generated authority: permanent category/source-class homes, lifecycle, archive/source-row/routed-row hashes, immutable Git provenance, updater admission bindings |
+| `registry/_reviews/admissions/<candidate-binding-sha256>.toml` | Managed evidence: immutable approved candidate + apply-time revalidation, reverse-bound from its generated lock |
 | `registry/objects/crates/<sha256>.crate` | Exact active Git publication archives; mirror archives are checksum-verified then discarded |
 | `registry/objects/rows/<sha256>.json` | Exact retained unrouted source rows, including removed identities |
 

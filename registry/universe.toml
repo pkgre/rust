@@ -1,0 +1,57 @@
+schema = 3
+
+[registry]
+name = "universe"
+index = "sparse+https://rust.pkg.re/universe/"
+download = "https://static.crates.io/crates"
+cargo-version = "1.95.0"
+
+[categories.acp]
+may-depend-on = ["universe/acp", "universe/general"]
+
+[categories.acp.mirror]
+agent-client-protocol = ["2.0.0"]
+agent-client-protocol-derive = ["2.0.0"]
+agent-client-protocol-schema = ["1.5.0"]
+
+[categories.filesystem]
+may-depend-on = ["universe/filesystem", "universe/general"]
+
+[categories.filesystem.mirror]
+notify = ["8.2.0"]
+notify-types = ["2.1.0"]
+
+[categories.general]
+file = "categories/universe/general.toml"
+
+[categories.matrix]
+file = "categories/universe/matrix.toml"
+
+[categories.mcp]
+may-depend-on = ["universe/general", "universe/mcp", "universe/sse"]
+
+[categories.mcp.mirror]
+rmcp = ["1.4.0", "1.8.0"]
+rmcp-macros = ["1.4.0"]
+
+[categories.sse]
+may-depend-on = ["universe/general", "universe/sse"]
+
+[categories.sse.mirror]
+eventsource-stream = ["0.2.3"]
+sse-stream = ["0.2.1"]
+
+[categories.terminal]
+may-depend-on = ["universe/general", "universe/terminal"]
+
+[categories.terminal.mirror]
+atty = ["0.2.14"]
+portable-pty = ["0.9.0"]
+
+[categories.yaml]
+may-depend-on = ["universe/general", "universe/yaml"]
+
+[categories.yaml.mirror]
+serde_yaml = ["0.9.34+deprecated"]
+serde_yaml_ng = ["0.10.0"]
+

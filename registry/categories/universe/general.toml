@@ -1,11 +1,5 @@
-schema = 2
-
-[registry]
-name = "core"
-index = "sparse+https://rust.pkg.re/core/"
-download = "https://static.crates.io/crates"
-may-depend-on = ["core"]
-cargo-version = "1.95.0"
+schema = 3
+may-depend-on = ["universe/general"]
 
 [mirror]
 accessory = ["2.1.0"]
@@ -14,9 +8,6 @@ adler2 = ["2.0.1"]
 adler32 = []
 aead = ["0.5.2"]
 aes = ["0.8.4"]
-agent-client-protocol = ["2.0.0"]
-agent-client-protocol-derive = ["2.0.0"]
-agent-client-protocol-schema = ["1.5.0"]
 ahash = ["0.8.12"]
 aho-corasick = ["1.1.4"]
 allocator-api2 = ["0.2.21"]
@@ -28,10 +19,7 @@ anstyle = ["1.0.14"]
 anstyle-parse = ["1.0.0"]
 anstyle-query = ["1.1.5"]
 anstyle-wincon = ["3.0.11"]
-anyhow = [
-    "1.0.102",
-    "1.0.104",
-]
+anyhow = ["1.0.102", "1.0.104"]
 anymap2 = ["0.13.0"]
 aquamarine = ["0.6.0"]
 arbitrary = []
@@ -61,29 +49,16 @@ async-std = []
 async-stream = ["0.3.6"]
 async-stream-impl = ["0.3.6"]
 async-task = ["4.7.1"]
-async-trait = [
-    "0.1.89",
-    "0.1.91",
-]
+async-trait = ["0.1.89", "0.1.91"]
 atoi = []
 atomic = []
 atomic-waker = ["1.1.2"]
-atty = ["0.2.14"]
 auditable-serde = []
-autocfg = [
-    "1.5.0",
-    "1.5.1",
-]
+autocfg = ["1.5.0", "1.5.1"]
 automod = []
 aws-lc-fips-sys = []
-aws-lc-rs = [
-    "1.16.2",
-    "1.18.0",
-]
-aws-lc-sys = [
-    "0.39.1",
-    "0.44.0",
-]
+aws-lc-rs = ["1.16.2", "1.18.0"]
+aws-lc-sys = ["0.39.1", "0.44.0"]
 axum = ["0.8.8"]
 axum-core = ["0.5.6"]
 axum-macros = []
@@ -100,11 +75,7 @@ bincode = []
 bindgen = []
 bit-set = ["0.8.0"]
 bit-vec = ["0.8.0"]
-bitflags = [
-    "1.3.2",
-    "2.11.0",
-    "2.13.1",
-]
+bitflags = ["1.3.2", "2.11.0", "2.13.1"]
 bitmaps = ["3.2.1"]
 bitvec = []
 blake2 = []
@@ -112,10 +83,7 @@ blake2b_simd = []
 blake3 = ["1.8.6"]
 blink-alloc = []
 blobby = []
-block-buffer = [
-    "0.10.4",
-    "0.12.1",
-]
+block-buffer = ["0.10.4", "0.12.1"]
 block-padding = ["0.3.3"]
 blocking = ["1.6.2"]
 borrow-or-share = ["0.2.4"]
@@ -125,62 +93,33 @@ brotli = []
 brotli-decompressor = []
 bs58 = ["0.5.1"]
 bstr = []
-bumpalo = [
-    "3.20.2",
-    "3.20.3",
-]
+bumpalo = ["3.20.2", "3.20.3"]
 bytecheck = []
 bytecount = ["0.6.9"]
 bytemuck = []
 byteorder = ["1.5.0"]
-bytes = [
-    "1.11.1",
-    "1.12.1",
-]
+bytes = ["1.11.1", "1.12.1"]
 bytesize = ["2.7.0"]
 bzip2 = []
 caps = []
 cbc = ["0.1.2"]
-cc = [
-    "1.2.57",
-    "1.4.0",
-]
+cc = ["1.2.57", "1.4.0"]
 censor = []
 cesu8 = ["1.1.0"]
 cfg-if = ["1.0.4"]
-cfg_aliases = [
-    "0.1.1",
-    "0.2.1",
-    "0.2.2",
-]
-chacha20 = [
-    "0.9.1",
-    "0.10.0",
-    "0.10.1",
-]
+cfg_aliases = ["0.1.1", "0.2.1", "0.2.2"]
+chacha20 = ["0.9.1", "0.10.0", "0.10.1"]
 chacha20poly1305 = ["0.10.1"]
-chrono = [
-    "0.4.44",
-    "0.4.45",
-]
+chrono = ["0.4.44", "0.4.45"]
 chrono-tz = []
 ciborium = []
 cipher = ["0.4.4"]
 circular = []
 claims = []
-clap = [
-    "4.6.0",
-    "4.6.5",
-]
+clap = ["4.6.0", "4.6.5"]
 clap-cargo = []
-clap_builder = [
-    "4.6.0",
-    "4.6.5",
-]
-clap_derive = [
-    "4.6.0",
-    "4.6.4",
-]
+clap_builder = ["4.6.0", "4.6.5"]
+clap_derive = ["4.6.0", "4.6.4"]
 clap_lex = ["1.1.0"]
 cloudflare-zlib-sys = []
 cmake = ["0.1.58"]
@@ -195,10 +134,7 @@ compression-core = ["0.4.32"]
 concurrent-queue = ["2.5.0"]
 config = []
 console_log = []
-const-oid = [
-    "0.9.6",
-    "0.10.2",
-]
+const-oid = ["0.9.6", "0.10.2"]
 const-random = []
 const-str = []
 const_panic = ["0.2.15"]
@@ -210,10 +146,7 @@ cookie_store = []
 core-foundation = ["0.10.1"]
 core-foundation-sys = ["0.8.7"]
 count_instructions = []
-cpufeatures = [
-    "0.2.17",
-    "0.3.0",
-]
+cpufeatures = ["0.2.17", "0.3.0"]
 crabgrind = []
 crc = []
 crc32fast = ["1.5.0"]
@@ -222,11 +155,7 @@ critical-section = []
 crossbeam-channel = []
 crossbeam-utils = ["0.8.22"]
 crypto-bigint = ["0.5.5"]
-crypto-common = [
-    "0.1.6",
-    "0.1.7",
-    "0.2.2",
-]
+crypto-common = ["0.1.6", "0.1.7", "0.2.2"]
 csv = []
 ctor = []
 ctr = ["0.9.2"]
@@ -254,28 +183,16 @@ der_derive = []
 deranged = ["0.5.8"]
 deranged-macros = []
 derivative = ["2.2.0"]
-derive_more = [
-    "1.0.0",
-    "2.1.1",
-]
-derive_more-impl = [
-    "1.0.0",
-    "2.1.1",
-]
+derive_more = ["1.0.0", "2.1.1"]
+derive_more-impl = ["1.0.0", "2.1.1"]
 detone = []
 dhat = []
 diffy = []
-digest = [
-    "0.10.7",
-    "0.11.3",
-]
+digest = ["0.10.7", "0.11.3"]
 directories-next = []
 dirs = ["6.0.0"]
 dirs-sys = ["0.5.0"]
-displaydoc = [
-    "0.2.5",
-    "0.2.7",
-]
+displaydoc = ["0.2.5", "0.2.7"]
 dissimilar = []
 divan = []
 doc-comment = []
@@ -299,7 +216,6 @@ erased-serde = []
 errno = ["0.3.14"]
 event-listener = ["5.4.2"]
 event-listener-strategy = ["0.5.4"]
-eventsource-stream = ["0.2.3"]
 expect-test = []
 eyeball = ["0.8.8"]
 eyeball-im = ["0.8.0"]
@@ -310,10 +226,7 @@ fancy-regex = ["0.18.0"]
 fancy_constructor = ["2.1.0"]
 fastbloom = []
 faster-hex = []
-fastrand = [
-    "2.3.0",
-    "2.5.0",
-]
+fastrand = ["2.3.0", "2.5.0"]
 ff = ["0.13.1"]
 ff_derive = []
 fiat-crypto = ["0.2.9"]
@@ -327,69 +240,31 @@ fluent-uri = ["0.4.1"]
 flume = []
 flurry = []
 fnv = ["1.0.7"]
-foldhash = [
-    "0.1.5",
-    "0.2.0",
-]
+foldhash = ["0.1.5", "0.2.0"]
 form_urlencoded = ["1.2.2"]
 fraction = ["0.15.4"]
 fs_extra = ["1.3.0"]
 fsevent-sys = ["4.1.0"]
 fst = []
-futures = [
-    "0.3.32",
-    "0.3.33",
-]
-futures-channel = [
-    "0.3.32",
-    "0.3.33",
-]
+futures = ["0.3.32", "0.3.33"]
+futures-channel = ["0.3.32", "0.3.33"]
 futures-concurrency = ["7.7.1"]
-futures-core = [
-    "0.3.32",
-    "0.3.33",
-]
-futures-executor = [
-    "0.3.32",
-    "0.3.33",
-]
-futures-io = [
-    "0.3.32",
-    "0.3.33",
-]
+futures-core = ["0.3.32", "0.3.33"]
+futures-executor = ["0.3.32", "0.3.33"]
+futures-io = ["0.3.32", "0.3.33"]
 futures-lite = ["2.6.1"]
-futures-macro = [
-    "0.3.32",
-    "0.3.33",
-]
-futures-sink = [
-    "0.3.32",
-    "0.3.33",
-]
-futures-task = [
-    "0.3.32",
-    "0.3.33",
-]
+futures-macro = ["0.3.32", "0.3.33"]
+futures-sink = ["0.3.32", "0.3.33"]
+futures-task = ["0.3.32", "0.3.33"]
 futures-test = []
 futures-time = []
 futures-timer = []
-futures-util = [
-    "0.3.32",
-    "0.3.33",
-]
+futures-util = ["0.3.32", "0.3.33"]
 fxhash = []
 garde = []
-generic-array = [
-    "0.14.7",
-    "0.14.9",
-]
+generic-array = ["0.14.7", "0.14.9"]
 getopts = []
-getrandom = [
-    "0.2.17",
-    "0.3.4",
-    "0.4.2",
-    "0.4.3",
-]
+getrandom = ["0.2.17", "0.3.4", "0.4.2", "0.4.3"]
 glob = []
 gloo-timers = ["0.3.0"]
 gloo-utils = ["0.2.0"]
@@ -402,25 +277,13 @@ h3 = []
 h3-quinn = []
 half = []
 harfbuzz-traits = []
-hashbrown = [
-    "0.12.3",
-    "0.14.5",
-    "0.15.5",
-    "0.16.1",
-    "0.17.1",
-]
-hashlink = [
-    "0.9.1",
-    "0.10.0",
-]
+hashbrown = ["0.12.3", "0.14.5", "0.15.5", "0.16.1", "0.17.1"]
+hashlink = ["0.9.1", "0.10.0"]
 hdrhistogram = []
 heapless = []
 heck = ["0.5.0"]
 hegeltest = []
-hermit-abi = [
-    "0.1.19",
-    "0.5.2",
-]
+hermit-abi = ["0.1.19", "0.5.2"]
 hex = ["0.4.3"]
 hex-literal = []
 hex-simd = []
@@ -428,80 +291,37 @@ hickory-resolver = []
 hkdf = ["0.12.4"]
 hmac = ["0.12.1"]
 html5ever = ["0.39.0"]
-http = [
-    "1.4.0",
-    "1.5.0",
-]
-http-body = [
-    "1.0.1",
-    "1.1.0",
-]
-http-body-util = [
-    "0.1.3",
-    "0.1.4",
-]
+http = ["1.4.0", "1.5.0"]
+http-body = ["1.0.1", "1.1.0"]
+http-body-util = ["0.1.3", "0.1.4"]
 http-range-header = []
 httparse = ["1.10.1"]
 httpdate = ["1.0.3"]
 hybrid-array = ["0.4.14"]
-hyper = [
-    "1.8.1",
-    "1.11.0",
-]
-hyper-rustls = [
-    "0.27.7",
-    "0.27.9",
-]
+hyper = ["1.8.1", "1.11.0"]
+hyper-rustls = ["0.27.7", "0.27.9"]
 hyper-tls = []
 hyper-util = ["0.1.20"]
 iai = []
 iana-time-zone = ["0.1.65"]
 iana-time-zone-haiku = ["0.1.2"]
-icu_collections = [
-    "2.1.1",
-    "2.2.0",
-]
-icu_locale_core = [
-    "2.1.1",
-    "2.2.0",
-]
-icu_normalizer = [
-    "2.1.1",
-    "2.2.0",
-]
-icu_normalizer_data = [
-    "2.1.1",
-    "2.2.0",
-]
-icu_properties = [
-    "2.1.2",
-    "2.2.0",
-]
-icu_properties_data = [
-    "2.1.2",
-    "2.2.0",
-]
-icu_provider = [
-    "2.1.1",
-    "2.2.0",
-]
+icu_collections = ["2.1.1", "2.2.0"]
+icu_locale_core = ["2.1.1", "2.2.0"]
+icu_normalizer = ["2.1.1", "2.2.0"]
+icu_normalizer_data = ["2.1.1", "2.2.0"]
+icu_properties = ["2.1.2", "2.2.0"]
+icu_properties_data = ["2.1.2", "2.2.0"]
+icu_provider = ["2.1.1", "2.2.0"]
 id-arena = ["2.3.0"]
 ident_case = ["1.0.1"]
 idna = ["1.1.0"]
-idna_adapter = [
-    "1.2.1",
-    "1.2.2",
-]
+idna_adapter = ["1.2.1", "1.2.2"]
 imbl = ["6.1.0"]
 imbl-sized-chunks = ["0.1.3"]
 impartial-ord = ["1.0.6"]
 include_dir = ["0.7.4"]
 include_dir_macros = ["0.7.4"]
-indexmap = [
-    "1.9.3",
-    "2.13.0",
-    "2.14.0",
-]
+indexmap = ["1.9.3", "2.13.0", "2.14.0"]
 indoc = []
 inotify = ["0.11.1"]
 inotify-sys = ["0.1.5"]
@@ -510,49 +330,25 @@ input_buffer = []
 insta = []
 io-uring = []
 ioslice = []
-ipnet = [
-    "2.12.0",
-    "2.12.1",
-]
+ipnet = ["2.12.0", "2.12.1"]
 iri-string = ["0.7.10"]
 is_terminal_polyfill = ["1.70.2"]
-itertools = [
-    "0.10.5",
-    "0.14.0",
-]
-itoa = [
-    "1.0.17",
-    "1.0.18",
-]
+itertools = ["0.10.5", "0.14.0"]
+itoa = ["1.0.17", "1.0.18"]
 java-locator = []
 javac = []
 jiff = []
-jni = [
-    "0.21.1",
-    "0.22.4",
-]
+jni = ["0.21.1", "0.22.4"]
 jni-macros = ["0.22.4"]
-jni-sys = [
-    "0.3.1",
-    "0.4.1",
-]
+jni-sys = ["0.3.1", "0.4.1"]
 jni-sys-macros = ["0.4.1"]
-jobserver = [
-    "0.1.34",
-    "0.1.35",
-]
-js-sys = [
-    "0.3.91",
-    "0.3.103",
-]
+jobserver = ["0.1.34", "0.1.35"]
+js-sys = ["0.3.91", "0.3.103"]
 jsonschema = ["0.49.3"]
 jsonschema-macros = []
 jsonschema-regex = ["0.49.3"]
 jsonschema-value = ["0.49.3"]
-jsonwebtoken = [
-    "10.4.0",
-    "11.0.0",
-]
+jsonwebtoken = ["10.4.0", "11.0.0"]
 juniper = []
 konst = ["0.4.3"]
 konst_proc_macros = []
@@ -565,33 +361,21 @@ lazy_static = ["1.5.0"]
 leb128fmt = ["0.1.0"]
 lending-stream = []
 lexopt = []
-libc = [
-    "0.2.183",
-    "0.2.189",
-]
+libc = ["0.2.183", "0.2.189"]
 libloading = []
 liblzma = []
 libm = ["0.2.16"]
 libredox = ["0.1.14"]
-libsqlite3-sys = [
-    "0.30.1",
-    "0.35.0",
-]
+libsqlite3-sys = ["0.30.1", "0.35.0"]
 libtest-mimic = []
 libz-ng-sys = []
 libz-sys = []
 linear-map = []
 linked-hash-map = []
 linux-raw-sys = ["0.12.1"]
-litemap = [
-    "0.8.1",
-    "0.8.2",
-]
+litemap = ["0.8.1", "0.8.2"]
 lock_api = ["0.4.14"]
-log = [
-    "0.4.29",
-    "0.4.33",
-]
+log = ["0.4.29", "0.4.33"]
 loom = []
 lru = []
 lru-slab = ["0.1.2"]
@@ -610,10 +394,7 @@ matchers = ["0.2.0"]
 matches = []
 matchit = ["0.8.4"]
 md-5 = []
-memchr = [
-    "2.8.0",
-    "2.8.3",
-]
+memchr = ["2.8.0", "2.8.3"]
 memmap2 = []
 memoffset = []
 memory-stats = []
@@ -627,25 +408,17 @@ mime_guess = []
 minimal-lexical = ["0.2.1"]
 miniserde = []
 miniz_oxide = ["0.8.9"]
-mio = [
-    "1.1.1",
-    "1.2.2",
-]
+mio = ["1.1.1", "1.2.2"]
 mio-aio = []
 mockall = []
 multer = []
 nanoserde = []
 native-tls = []
 new_debug_unreachable = ["1.0.6"]
-nix = [
-    "0.28.0",
-    "0.31.3",
-]
+nix = ["0.28.0", "0.31.3"]
 no-panic = []
 nohash-hasher = []
 nom = ["7.1.3"]
-notify = ["8.2.0"]
-notify-types = ["2.1.0"]
 ntest = []
 nu-ansi-term = ["0.50.3"]
 num = ["0.4.3"]
@@ -682,10 +455,7 @@ partial-io = []
 password-hash = []
 paste = ["1.0.15"]
 paste-test-suite = []
-pastey = [
-    "0.2.1",
-    "0.2.3",
-]
+pastey = ["0.2.1", "0.2.3"]
 path-tree = []
 pbkdf2 = ["0.12.2"]
 pcg-mwc = []
@@ -707,10 +477,7 @@ piper = ["0.2.5"]
 pkcs1 = ["0.7.5"]
 pkcs5 = []
 pkcs8 = ["0.10.2"]
-pkg-config = [
-    "0.3.32",
-    "0.3.33",
-]
+pkg-config = ["0.3.32", "0.3.33"]
 plain = []
 pnet_datalink = []
 polling = ["3.11.0"]
@@ -718,13 +485,9 @@ pollster = []
 poly1305 = ["0.8.0"]
 portable-atomic = []
 portable-atomic-util = []
-portable-pty = ["0.9.0"]
 postcard = []
 postgres-types = []
-potential_utf = [
-    "0.1.4",
-    "0.1.5",
-]
+potential_utf = ["0.1.4", "0.1.5"]
 powerfmt = ["0.2.0"]
 powerfmt-macros = []
 ppv-lite86 = ["0.2.21"]
@@ -736,10 +499,7 @@ primeorder = ["0.13.6"]
 proc-macro-crate = ["3.5.0"]
 proc-macro-error-attr2 = ["2.0.0"]
 proc-macro-error2 = ["2.0.1"]
-proc-macro2 = [
-    "1.0.106",
-    "1.0.107",
-]
+proc-macro2 = ["1.0.106", "1.0.107"]
 process-wrap = ["9.1.0"]
 proptest = []
 proptest-derive = []
@@ -753,43 +513,14 @@ qlog = []
 quick-error = []
 quickcheck = []
 quickcheck_macros = []
-quinn = [
-    "0.11.9",
-    "0.11.11",
-]
-quinn-proto = [
-    "0.11.14",
-    "0.11.16",
-]
-quinn-udp = [
-    "0.5.14",
-    "0.5.15",
-]
-quote = [
-    "1.0.45",
-    "1.0.47",
-]
-r-efi = [
-    "5.3.0",
-    "6.0.0",
-]
-rand = [
-    "0.8.7",
-    "0.9.2",
-    "0.9.5",
-    "0.10.0",
-    "0.10.2",
-]
-rand_chacha = [
-    "0.3.1",
-    "0.9.0",
-]
-rand_core = [
-    "0.6.4",
-    "0.9.5",
-    "0.10.0",
-    "0.10.1",
-]
+quinn = ["0.11.9", "0.11.11"]
+quinn-proto = ["0.11.14", "0.11.16"]
+quinn-udp = ["0.5.14", "0.5.15"]
+quote = ["1.0.45", "1.0.47"]
+r-efi = ["5.3.0", "6.0.0"]
+rand = ["0.8.7", "0.9.2", "0.9.5", "0.10.0", "0.10.2"]
+rand_chacha = ["0.3.1", "0.9.0"]
+rand_core = ["0.6.4", "0.9.5", "0.10.0", "0.10.1"]
 rand_distr = []
 rand_isaac = []
 rand_pcg = ["0.10.2"]
@@ -805,47 +536,23 @@ readlock = ["0.1.11"]
 readlock-tokio = ["0.1.6"]
 redox_syscall = ["0.5.18"]
 redox_users = ["0.5.2"]
-ref-cast = [
-    "1.0.25",
-    "1.0.26",
-]
-ref-cast-impl = [
-    "1.0.25",
-    "1.0.26",
-]
+ref-cast = ["1.0.25", "1.0.26"]
+ref-cast-impl = ["1.0.25", "1.0.26"]
 ref-cast-test-suite = []
 referencing = ["0.49.3"]
 refpool = []
-regex = [
-    "1.12.3",
-    "1.13.1",
-]
-regex-automata = [
-    "0.4.14",
-    "0.4.16",
-]
+regex = ["1.12.3", "1.13.1"]
+regex-automata = ["0.4.14", "0.4.16"]
 regex-lite = []
-regex-syntax = [
-    "0.8.10",
-    "0.8.11",
-]
+regex-syntax = ["0.8.10", "0.8.11"]
 regex-test = []
 remoteprocess = []
-reqwest = [
-    "0.12.28",
-    "0.13.2",
-    "0.13.4",
-]
+reqwest = ["0.12.28", "0.13.2", "0.13.4"]
 rfc6979 = ["0.4.0"]
 ring = ["0.17.14"]
 ring-compat = []
 rkyv = []
 rlp = []
-rmcp = [
-    "1.4.0",
-    "1.8.0",
-]
-rmcp-macros = ["1.4.0"]
 rmp = ["0.8.15"]
 rmp-serde = ["1.3.1"]
 roaring = []
@@ -856,64 +563,33 @@ rpds = []
 rsa = ["0.9.10"]
 rstest = []
 rstest_reuse = []
-rusqlite = [
-    "0.32.1",
-    "0.37.0",
-]
+rusqlite = ["0.32.1", "0.37.0"]
 rusqlite-macros = []
 rust-argon2 = []
 rust-base58 = []
 rust_decimal = []
-rustc-hash = [
-    "2.1.1",
-    "2.1.3",
-]
+rustc-hash = ["2.1.1", "2.1.3"]
 rustc-hex = []
 rustc-rayon = []
 rustc-std-workspace-alloc = []
 rustc-std-workspace-core = []
 rustc_version = ["0.4.1"]
 rustix = ["1.1.4"]
-rustls = [
-    "0.23.37",
-    "0.23.43",
-]
-rustls-native-certs = [
-    "0.8.3",
-    "0.8.4",
-]
+rustls = ["0.23.37", "0.23.43"]
+rustls-native-certs = ["0.8.3", "0.8.4"]
 rustls-pemfile = []
-rustls-pki-types = [
-    "1.14.0",
-    "1.15.1",
-]
-rustls-platform-verifier = [
-    "0.6.2",
-    "0.7.0",
-]
+rustls-pki-types = ["1.14.0", "1.15.1"]
+rustls-platform-verifier = ["0.6.2", "0.7.0"]
 rustls-platform-verifier-android = ["0.1.1"]
-rustls-webpki = [
-    "0.103.9",
-    "0.103.13",
-]
-rustversion = [
-    "1.0.22",
-    "1.0.23",
-]
+rustls-webpki = ["0.103.9", "0.103.13"]
+rustversion = ["1.0.22", "1.0.23"]
 rusty-fork = []
 ryu = ["1.0.23"]
 same-file = ["1.0.6"]
 scale-info = []
 schannel = ["0.1.29"]
-schemars = [
-    "0.9.0",
-    "1.2.1",
-    "1.2.2",
-]
-schemars_derive = [
-    "1.2.1",
-    "1.2.2",
-]
+schemars = ["0.9.0", "1.2.1", "1.2.2"]
+schemars_derive = ["1.2.1", "1.2.2"]
 scopeguard = ["1.2.0"]
 seahash = []
 sealed = ["0.6.0"]
@@ -921,37 +597,19 @@ sec1 = ["0.7.3"]
 security-framework = ["3.7.0"]
 security-framework-sys = ["2.17.0"]
 self_cell = []
-semver = [
-    "1.0.27",
-    "1.0.28",
-]
+semver = ["1.0.27", "1.0.28"]
 seq-macro = []
-serde = [
-    "1.0.228",
-    "1.0.229",
-]
+serde = ["1.0.228", "1.0.229"]
 serde-untagged = []
 serde-wasm-bindgen = ["0.6.5"]
 serde-xml-rs = []
 serde_assert = []
 serde_bytes = ["0.11.19"]
-serde_core = [
-    "1.0.228",
-    "1.0.229",
-]
-serde_derive = [
-    "1.0.228",
-    "1.0.229",
-]
-serde_derive_internals = [
-    "0.29.1",
-    "0.30.0",
-]
+serde_core = ["1.0.228", "1.0.229"]
+serde_derive = ["1.0.228", "1.0.229"]
+serde_derive_internals = ["0.29.1", "0.30.0"]
 serde_html_form = ["0.4.1"]
-serde_json = [
-    "1.0.149",
-    "1.0.151",
-]
+serde_json = ["1.0.149", "1.0.151"]
 serde_path_to_error = ["0.1.20"]
 serde_repr = []
 serde_spanned = ["1.1.1"]
@@ -961,8 +619,6 @@ serde_test2 = []
 serde_urlencoded = ["0.7.1"]
 serde_with = ["3.21.0"]
 serde_with_macros = ["3.21.0"]
-serde_yaml = ["0.9.34+deprecated"]
-serde_yaml_ng = ["0.10.0"]
 serdect = []
 serial2 = ["0.2.38"]
 serial_test = []
@@ -975,10 +631,7 @@ sha3 = []
 sharded-slab = ["0.1.7"]
 shared_library = ["0.1.9"]
 shell-words = ["1.1.1"]
-shlex = [
-    "1.3.0",
-    "2.0.1",
-]
+shlex = ["1.3.0", "2.0.1"]
 signal-hook = []
 signal-hook-registry = ["1.4.8"]
 signature = ["2.2.0"]
@@ -991,25 +644,18 @@ simple_asn1 = []
 siphasher = ["1.0.3"]
 slab = ["0.4.12"]
 slog = []
-smallvec = [
-    "1.15.1",
-    "1.15.2",
-]
+smallvec = ["1.15.1", "1.15.2"]
 smol = []
 smol-macros = []
 smol_str = []
 snapbox = []
-socket2 = [
-    "0.6.3",
-    "0.6.5",
-]
+socket2 = ["0.6.3", "0.6.5"]
 spdx = []
 spin = ["0.9.9"]
 spin_on = []
 spki = ["0.7.3"]
 spmc = []
 sqlx = []
-sse-stream = ["0.2.1"]
 stable_deref_trait = ["1.2.1"]
 static_assertions = []
 stream_assert = []
@@ -1024,12 +670,7 @@ subtle = ["2.6.1"]
 sval = []
 sval_derive = []
 sval_ref = []
-syn = [
-    "1.0.109",
-    "2.0.117",
-    "2.0.119",
-    "3.0.3",
-]
+syn = ["1.0.109", "2.0.117", "2.0.119", "3.0.3"]
 syn-test-suite = []
 sync_wrapper = ["1.0.2"]
 synstructure = ["0.13.2"]
@@ -1046,80 +687,38 @@ termcolor = []
 terminal_size = []
 test-case = []
 tester = []
-thiserror = [
-    "1.0.69",
-    "2.0.18",
-    "2.0.19",
-]
-thiserror-impl = [
-    "1.0.69",
-    "2.0.18",
-    "2.0.19",
-]
-thread_local = [
-    "1.1.9",
-    "1.1.10",
-]
+thiserror = ["1.0.69", "2.0.18", "2.0.19"]
+thiserror-impl = ["1.0.69", "2.0.18", "2.0.19"]
+thread_local = ["1.1.9", "1.1.10"]
 time = ["0.3.55"]
 time-core = ["0.1.9"]
 time-macros = ["0.2.32"]
 timerfd = []
 tinymap = []
-tinystr = [
-    "0.8.2",
-    "0.8.3",
-]
-tinyvec = [
-    "1.11.0",
-    "1.12.0",
-]
+tinystr = ["0.8.2", "0.8.3"]
+tinyvec = ["1.11.0", "1.12.0"]
 tinyvec_macros = ["0.1.1"]
-tokio = [
-    "1.50.0",
-    "1.53.1",
-]
+tokio = ["1.50.0", "1.53.1"]
 tokio-executor = []
 tokio-io = []
-tokio-macros = [
-    "2.6.1",
-    "2.7.2",
-]
+tokio-macros = ["2.6.1", "2.7.2"]
 tokio-native-tls = []
 tokio-rustls = ["0.26.4"]
-tokio-stream = [
-    "0.1.18",
-    "0.1.19",
-]
+tokio-stream = ["0.1.18", "0.1.19"]
 tokio-sync = []
 tokio-test = []
 tokio-tungstenite = ["0.30.0"]
-tokio-util = [
-    "0.7.18",
-    "0.7.19",
-]
-toml = [
-    "0.9.12+spec-1.1.0",
-    "1.1.4+spec-1.1.0",
-]
+tokio-util = ["0.7.18", "0.7.19"]
+toml = ["0.9.12+spec-1.1.0", "1.1.4+spec-1.1.0"]
 toml-test-data = []
 toml-test-harness = []
-toml_datetime = [
-    "0.6.11",
-    "0.7.5+spec-1.1.0",
-    "1.1.1+spec-1.1.0",
-]
-toml_edit = [
-    "0.22.27",
-    "0.25.13+spec-1.1.0",
-]
+toml_datetime = ["0.6.11", "0.7.5+spec-1.1.0", "1.1.1+spec-1.1.0"]
+toml_edit = ["0.22.27", "0.25.13+spec-1.1.0"]
 toml_parser = ["1.1.3+spec-1.1.0"]
 toml_write = ["0.1.2"]
 toml_writer = ["1.1.2+spec-1.1.0"]
 tower = ["0.5.3"]
-tower-http = [
-    "0.6.8",
-    "0.6.11",
-]
+tower-http = ["0.6.8", "0.6.11"]
 tower-layer = ["0.3.3"]
 tower-service = ["0.3.3"]
 tower-test = []
@@ -1139,10 +738,7 @@ trycmd = []
 tungstenite = ["0.30.0"]
 twox-hash = []
 typed-arena = []
-typenum = [
-    "1.19.0",
-    "1.20.1",
-]
+typenum = ["1.19.0", "1.20.1"]
 typewit = ["1.15.2"]
 typewit_proc_macros = []
 ucd-trie = []
@@ -1169,10 +765,7 @@ urlencoding = ["2.1.3"]
 utf16_iter = []
 utf8_iter = ["1.0.4"]
 utf8parse = ["0.2.2"]
-uuid = [
-    "1.22.0",
-    "1.24.0",
-]
+uuid = ["1.22.0", "1.24.0"]
 uuid-rng-internal = []
 uuid-simd = ["0.8.0"]
 validator = []
@@ -1189,54 +782,27 @@ waker-fn = []
 walkdir = ["2.5.0"]
 want = ["0.3.1"]
 wasi = ["0.11.1+wasi-snapshot-preview1"]
-wasip2 = [
-    "1.0.2+wasi-0.2.9",
-    "1.0.4+wasi-0.2.12",
-]
+wasip2 = ["1.0.2+wasi-0.2.9", "1.0.4+wasi-0.2.12"]
 wasip3 = ["0.4.0+wasi-0.3.0-rc-2026-01-06"]
-wasm-bindgen = [
-    "0.2.114",
-    "0.2.126",
-]
-wasm-bindgen-futures = [
-    "0.4.64",
-    "0.4.76",
-]
-wasm-bindgen-macro = [
-    "0.2.114",
-    "0.2.126",
-]
-wasm-bindgen-macro-support = [
-    "0.2.114",
-    "0.2.126",
-]
-wasm-bindgen-shared = [
-    "0.2.114",
-    "0.2.126",
-]
+wasm-bindgen = ["0.2.114", "0.2.126"]
+wasm-bindgen-futures = ["0.4.64", "0.4.76"]
+wasm-bindgen-macro = ["0.2.114", "0.2.126"]
+wasm-bindgen-macro-support = ["0.2.114", "0.2.126"]
+wasm-bindgen-shared = ["0.2.114", "0.2.126"]
 wasm-bindgen-test = []
 wasm-encoder = ["0.244.0"]
 wasm-metadata = ["0.244.0"]
-wasm-streams = [
-    "0.4.2",
-    "0.5.0",
-]
+wasm-streams = ["0.4.2", "0.5.0"]
 wasm_evt_listener = ["0.1.0"]
 wasmparser = ["0.244.0"]
 wasmprinter = []
 wasmtime = []
 wast = []
 wat = []
-web-sys = [
-    "0.3.91",
-    "0.3.103",
-]
+web-sys = ["0.3.91", "0.3.103"]
 web-time = ["1.1.0"]
 web_atoms = ["0.2.6"]
-webpki-root-certs = [
-    "1.0.6",
-    "1.0.9",
-]
+webpki-root-certs = ["1.0.6", "1.0.9"]
 webpki-roots = ["1.0.9"]
 which = []
 wildmatch = ["2.6.1"]
@@ -1256,77 +822,28 @@ windows-numerics = ["0.3.1"]
 windows-registry = []
 windows-result = ["0.4.1"]
 windows-strings = ["0.5.1"]
-windows-sys = [
-    "0.45.0",
-    "0.52.0",
-    "0.60.2",
-    "0.61.2",
-]
-windows-targets = [
-    "0.42.2",
-    "0.52.6",
-    "0.53.5",
-]
+windows-sys = ["0.45.0", "0.52.0", "0.60.2", "0.61.2"]
+windows-targets = ["0.42.2", "0.52.6", "0.53.5"]
 windows-threading = ["0.2.1"]
-windows_aarch64_gnullvm = [
-    "0.42.2",
-    "0.52.6",
-    "0.53.1",
-]
-windows_aarch64_msvc = [
-    "0.42.2",
-    "0.52.6",
-    "0.53.1",
-]
-windows_i686_gnu = [
-    "0.42.2",
-    "0.52.6",
-    "0.53.1",
-]
-windows_i686_gnullvm = [
-    "0.52.6",
-    "0.53.1",
-]
-windows_i686_msvc = [
-    "0.42.2",
-    "0.52.6",
-    "0.53.1",
-]
-windows_x86_64_gnu = [
-    "0.42.2",
-    "0.52.6",
-    "0.53.1",
-]
-windows_x86_64_gnullvm = [
-    "0.42.2",
-    "0.52.6",
-    "0.53.1",
-]
-windows_x86_64_msvc = [
-    "0.42.2",
-    "0.52.6",
-    "0.53.1",
-]
-winnow = [
-    "0.7.15",
-    "1.0.4",
-]
+windows_aarch64_gnullvm = ["0.42.2", "0.52.6", "0.53.1"]
+windows_aarch64_msvc = ["0.42.2", "0.52.6", "0.53.1"]
+windows_i686_gnu = ["0.42.2", "0.52.6", "0.53.1"]
+windows_i686_gnullvm = ["0.52.6", "0.53.1"]
+windows_i686_msvc = ["0.42.2", "0.52.6", "0.53.1"]
+windows_x86_64_gnu = ["0.42.2", "0.52.6", "0.53.1"]
+windows_x86_64_gnullvm = ["0.42.2", "0.52.6", "0.53.1"]
+windows_x86_64_msvc = ["0.42.2", "0.52.6", "0.53.1"]
+winnow = ["0.7.15", "1.0.4"]
 winreg = ["0.10.1"]
 wiremock = []
-wit-bindgen = [
-    "0.51.0",
-    "0.57.1",
-]
+wit-bindgen = ["0.51.0", "0.57.1"]
 wit-bindgen-core = ["0.51.0"]
 wit-bindgen-rust = ["0.51.0"]
 wit-bindgen-rust-macro = ["0.51.0"]
 wit-component = ["0.244.0"]
 wit-parser = ["0.244.0"]
 write16 = []
-writeable = [
-    "0.6.2",
-    "0.6.3",
-]
+writeable = ["0.6.2", "0.6.3"]
 wyhash = []
 x25519-dalek = ["2.0.1"]
 x509-parser = []
@@ -1334,53 +851,19 @@ xxhash-c-sys = []
 xxhash-rust = ["0.8.18"]
 yaml_serde = []
 yasna = []
-yoke = [
-    "0.8.1",
-    "0.8.3",
-]
-yoke-derive = [
-    "0.8.1",
-    "0.8.2",
-]
-zerocopy = [
-    "0.8.42",
-    "0.8.55",
-]
-zerocopy-derive = [
-    "0.8.42",
-    "0.8.55",
-]
-zerofrom = [
-    "0.1.6",
-    "0.1.8",
-]
-zerofrom-derive = [
-    "0.1.6",
-    "0.1.7",
-]
-zeroize = [
-    "1.8.2",
-    "1.9.0",
-]
+yoke = ["0.8.1", "0.8.3"]
+yoke-derive = ["0.8.1", "0.8.2"]
+zerocopy = ["0.8.42", "0.8.55"]
+zerocopy-derive = ["0.8.42", "0.8.55"]
+zerofrom = ["0.1.6", "0.1.8"]
+zerofrom-derive = ["0.1.6", "0.1.7"]
+zeroize = ["1.8.2", "1.9.0"]
 zeroize_derive = ["1.5.0"]
-zerotrie = [
-    "0.2.3",
-    "0.2.4",
-]
-zerovec = [
-    "0.11.5",
-    "0.11.6",
-]
-zerovec-derive = [
-    "0.11.2",
-    "0.11.3",
-]
+zerotrie = ["0.2.3", "0.2.4"]
+zerovec = ["0.11.5", "0.11.6"]
+zerovec-derive = ["0.11.2", "0.11.3"]
 zlib-rs = []
-zmij = [
-    "1.0.21",
-    "1.0.23",
-]
+zmij = ["1.0.21", "1.0.23"]
 zstd = []
 zstd-safe = []
 
-[publish]

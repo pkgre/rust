@@ -43,6 +43,13 @@ jobs:
           mkdir previous
           curl --fail --silent --show-error --retry 3 https://rust.pkg.re/release.json --output previous/release.json
           ./result/bin/pkgre-indexer verify-monotonic previous site
+      - name: Add landing page
+        run: |
+          if grep -Eiq "<(script|style)([[:space:]>])|[[:space:]](style|on[a-z]+)[[:space:]]*=|rel[[:space:]]*=[[:space:]]*[\"']?stylesheet" index.html; then
+            echo "index.html must not contain CSS or JavaScript" >&2
+            exit 1
+          fi
+          install -m 0644 index.html site/index.html
       - name: Configure GitHub Pages
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5

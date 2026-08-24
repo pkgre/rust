@@ -32,14 +32,14 @@ may-depend-on = ["universe/general", "universe/mcp", "universe/sse"]
 
 [categories.mcp.mirror]
 rmcp = ["1.4.0", "1.8.0"]
-rmcp-macros = ["1.4.0"]
+rmcp-macros = ["1.4.0", "1.8.0"]
 
 [categories.sse]
 may-depend-on = ["universe/general", "universe/sse"]
 
 [categories.sse.mirror]
 eventsource-stream = ["0.2.3"]
-sse-stream = ["0.2.1"]
+sse-stream = ["0.2.1", "0.2.5"]
 
 [categories.terminal]
 may-depend-on = ["universe/general", "universe/terminal"]

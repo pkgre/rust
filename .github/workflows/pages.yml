@@ -33,9 +33,19 @@ jobs:
         uses: cachix/install-nix-action@13d8dd58da0234aa297dedd986986ccb8e7f3e24 # v31
       - name: Build pinned indexer
         run: nix build --print-build-logs ./tooling#indexer
-      - name: Validate, render, and reproduce site
+      - name: Require fully applied admissions
+        run: ./result/bin/pkgre-indexer check registry
+      - name: Require converged catalog
         run: |
-          ./result/bin/pkgre-indexer check registry
+          ./result/bin/pkgre-indexer lock registry
+          changes="$(git status --porcelain=v1 --untracked-files=all -- registry)"
+          if [[ -n "$changes" ]]; then
+            printf '%s\n' "$changes" >&2
+            echo "registry is not fully applied and converged; run pkgre-indexer update-apply or lock and commit every result" >&2
+            exit 1
+          fi
+      - name: Render and reproduce site
+        run: |
           ./result/bin/pkgre-indexer render registry site
           ./result/bin/pkgre-indexer verify registry site
       - name: Verify monotonic publication

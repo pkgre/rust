@@ -11,5 +11,5 @@ may-depend-on = ["pkgre/tooling", "universe/general"]
 
 [categories.tooling.publish.pkgre-indexer]
 git = "https://github.com/pkgre/pkgre"
-tags = ["indexer/v0.1.1", "indexer/v0.2.0"]
+tags = ["indexer/v0.1.1", "indexer/v0.2.0", "indexer/v0.3.0"]
 

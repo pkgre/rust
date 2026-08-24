@@ -7,7 +7,7 @@ Public declarative curated Cargo sparse registries served at [rust.pkg.re](https
 | `universe` | `sparse+https://rust.pkg.re/universe/` | crates.io mirror | `https://static.crates.io/crates` |
 | `pkgre` | `sparse+https://rust.pkg.re/pkgre/` | approved first-party Git tags | `https://rust.pkg.re/crates/{sha256-checksum}.crate` |
 
-A registry is mirror-only or Git-only because Cargo exposes one `dl` URL per registry; [`pkgre-indexer`](https://github.com/pkgre/pkgre) rejects mixed source classes. `universe` controls admitted metadata + checksums while Cargo downloads checksum-constrained mirror bytes directly from crates.io; mirrored `.crate` files are not committed. `pkgre` retains + serves only active content-addressed Git publication archives.
+Cargo exposes one `dl` URL per registry. The generated `registry/downloads.json` binds every active `(registry,name,version,sha256)` identity to its locked `crates-io` or `git-tag` source class for the stateless `dl.rust.pkg.re` router; [`pkgre-indexer`](https://github.com/pkgre/pkgre) permits a mixed-source registry only when its `download` value is that registry's exact checksum-bound router template. The current production declarations intentionally retain direct source-specific URLs until the router is deployed and validated: `universe` downloads checksum-constrained mirror bytes from crates.io without committing them; `pkgre` retains + serves only active content-addressed Git publication archives.
 
 ## Categories
 
@@ -29,7 +29,7 @@ Small categories are inline under `[categories.<name>]` in `registry/<registry>.
 
 ## Model
 
-`registry/{universe,pkgre}.toml` + external category files = complete human-edited desired state: fixed registry/category policy + exact crates.io mirror versions + approved first-party HTTPS Git tags. New mirror identities/versions enter an established catalog only through evidence-bound batch admission with `update-plan`/`update-inspect`/`update-apply`; direct `lock` admission is rejected. `lock` handles initial bootstrap, empty name reservations, removals, and Git publication tags; reconciles permitted state into canonical adjacent locks + content-addressed objects; validates permanent package homes, source classes, and category dependency edges; renders the Pages site from scratch; verifies byte identity; rejects mutation, disappearance, reactivation, or source-class mixing.
+`registry/{universe,pkgre}.toml` + external category files = complete human-edited desired state: fixed registry/category policy + exact crates.io mirror versions + approved first-party HTTPS Git tags. New mirror identities/versions enter an established catalog only through evidence-bound batch admission with `update-plan`/`update-inspect`/`update-apply`; direct `lock` admission is rejected. `lock` handles initial bootstrap, empty name reservations, removals, and Git publication tags; reconciles permitted state into canonical adjacent locks + content-addressed objects + `downloads.json`; validates permanent package homes, source classes, category dependency edges, and router-bound mixed-source policy; renders the Pages site from scratch; verifies byte identity; rejects mutation, disappearance, reactivation, or unsafe source-class mixing.
 
 `update-plan` writes its review template outside `registry/`; it does not create an intermediate repository state or PR. After optional evidence edits, `update-apply` atomically installs the exact manifest, generated evidence lock, declarations, registry locks, and row objects together; one batch therefore has one fully applied registry PR. CI rejects an unpaired, stale, orphaned, or catalog-unbound admission through `check`, then runs `lock` and rejects any resulting tracked or untracked `registry/` change.
 
@@ -65,6 +65,7 @@ Every mirrored manifest dependency should set `registry = "universe"`; first-par
 | `registry/<registry>.toml` | Human authority: registry policy + inline category declarations |
 | `registry/categories/<registry>/<category>.toml` | Human authority: one large external category declaration |
 | `registry/<registry>.lock` | Generated authority: permanent category/source-class homes, lifecycle, archive/source-row/routed-row hashes, immutable Git provenance, updater admission bindings |
+| `registry/downloads.json` | Generated canonical router projection: one source-class route per active checksum-bound package identity |
 | `registry/admissions/<batch>.toml` | Human authority: canonical exact package/version/category requests + optional typed review evidence |
 | `registry/admissions/<batch>.lock` | Generated evidence: policy/API/archive/source facts for the complete batch; every admitted package binds its SHA-256 |
 | `registry/objects/crates/<sha256>.crate` | Exact active Git publication archives; mirror archives are checksum-verified then discarded |

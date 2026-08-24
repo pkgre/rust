@@ -4,10 +4,10 @@ Public declarative curated Cargo sparse registries served at [rust.pkg.re](https
 
 | Registry | Sparse index | Source class | Archive download |
 |---|---|---|---|
-| `universe` | `sparse+https://rust.pkg.re/universe/` | crates.io mirror | `https://static.crates.io/crates` |
-| `pkgre` | `sparse+https://rust.pkg.re/pkgre/` | approved first-party Git tags | `https://rust.pkg.re/crates/{sha256-checksum}.crate` |
+| `universe` | `sparse+https://rust.pkg.re/universe/` | crates.io mirror | `https://dl.rust.pkg.re/v1/universe/{crate}/{version}/{sha256-checksum}` |
+| `pkgre` | `sparse+https://rust.pkg.re/pkgre/` | approved first-party Git tags | `https://dl.rust.pkg.re/v1/pkgre/{crate}/{version}/{sha256-checksum}` |
 
-Cargo exposes one `dl` URL per registry. The generated `registry/downloads.json` binds every active `(registry,name,version,sha256)` identity to its locked `crates-io` or `git-tag` source class for the stateless `dl.rust.pkg.re` router; [`pkgre-indexer`](https://github.com/pkgre/pkgre) permits a mixed-source registry only when its `download` value is that registry's exact checksum-bound router template. The current production declarations intentionally retain direct source-specific URLs until the router is deployed and validated: `universe` downloads checksum-constrained mirror bytes from crates.io without committing them; `pkgre` retains + serves only active content-addressed Git publication archives.
+Cargo exposes one `dl` URL per registry. The generated `registry/downloads.json` binds every active `(registry,name,version,sha256)` identity to its locked `crates-io` or `git-tag` source class. Both production declarations use their exact registry-bound checksum-bearing router template. The stateless router derives only hardcoded source-specific destinations: `universe` redirects checksum-constrained mirror identities to crates.io without committing them; `pkgre` redirects approved Git identities to active content-addressed publication archives. [`pkgre-indexer`](https://github.com/pkgre/pkgre) permits a mixed-source registry only when its `download` value is that registry's exact router template.
 
 ## Categories
 

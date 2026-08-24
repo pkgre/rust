@@ -3,7 +3,7 @@ schema = 3
 [registry]
 name = "pkgre"
 index = "sparse+https://rust.pkg.re/pkgre/"
-download = "https://rust.pkg.re/crates/{sha256-checksum}.crate"
+download = "https://dl.rust.pkg.re/v1/pkgre/{crate}/{version}/{sha256-checksum}"
 cargo-version = "1.95.0"
 
 [categories.tooling]

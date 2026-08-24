@@ -3,7 +3,7 @@ schema = 3
 [registry]
 name = "universe"
 index = "sparse+https://rust.pkg.re/universe/"
-download = "https://static.crates.io/crates"
+download = "https://dl.rust.pkg.re/v1/universe/{crate}/{version}/{sha256-checksum}"
 cargo-version = "1.95.0"
 
 [categories.acp]

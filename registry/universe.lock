@@ -7878,6 +7878,18 @@ index-row-sha256 = "012bb0fecee786b1f68c620b33959bbd0b320086dc454b2ac232ca6288c7
 kind = "crates-io"
 
 [[packages]]
+name = "libredox"
+version = "0.1.18"
+state = "active"
+crate-sha256 = "c943259e342f1e06ff2da7a83eabdfe7f92ce10262688dbf1895ff0b3e6e4652"
+source-row-sha256 = "b5297a8897c395d2fbadd7029d5d204765d763706cacc918271e64ac15792fc2"
+index-row-sha256 = "4697daa9eb48f3b4d2c462b25d8450c83cf45256252aee6941f055400ac86350"
+admission-sha256 = "b76c8495075bb4b194da0aea2a31ac06f9f7e0dbd77c70f819e182ad7b79f111"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
 name = "libsqlite3-sys"
 version = "0.30.1"
 state = "active"
@@ -9561,6 +9573,18 @@ index-row-sha256 = "54b00ca954a8156e781cae0d65c264f90e78f32663f7a86770ecb6bb24a6
 kind = "crates-io"
 
 [[packages]]
+name = "rmcp-macros"
+version = "1.8.0"
+state = "active"
+crate-sha256 = "1aad0035b69380782d78ea95b508327e6deaa2235909053e596eea8f27b5e1d5"
+source-row-sha256 = "8915c616579df86bf026493f93c5041b706bc71bc9abfba4fa29c81ce2e38e99"
+index-row-sha256 = "70a6f0748019a9be10188ec2e1bbca713af606f34f57331992044c1f79d991fa"
+admission-sha256 = "b76c8495075bb4b194da0aea2a31ac06f9f7e0dbd77c70f819e182ad7b79f111"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
 name = "rmp"
 version = "0.8.15"
 state = "active"
@@ -10502,6 +10526,18 @@ state = "active"
 crate-sha256 = "eb4dc4d33c68ec1f27d386b5610a351922656e1fdf5c05bbaad930cd1519479a"
 source-row-sha256 = "5c4501f0049420aced4073687fdd758ccf5e70c492817662336c683a155a9c65"
 index-row-sha256 = "85feecba287f587ebc2230c49292a8000c45da3f819fe00bae8de674fdc1afe7"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "sse-stream"
+version = "0.2.5"
+state = "active"
+crate-sha256 = "c123f296ade4ec4b8b0f6162116e6629f5146922ca5ab40ca9d3c2e73ab4761e"
+source-row-sha256 = "4823d908286838661578e27f34aa18fb6933d31f32737e4a8302edd12ba5e258"
+index-row-sha256 = "395a2f302b5b6735704e5de9aaeefa8a0b2e8f0860346cfa480e99c88f631579"
+admission-sha256 = "b76c8495075bb4b194da0aea2a31ac06f9f7e0dbd77c70f819e182ad7b79f111"
 
 [packages.source]
 kind = "crates-io"

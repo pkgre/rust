@@ -1,0 +1,299 @@
+schema = 2
+manifest-sha256 = "914801db921e64a400c5f7160224b89d1860d24256b559551bd1a4b33ecc10d4"
+admitted-at = "2026-08-24T02:39:41Z"
+
+[plan]
+schema = 2
+indexer-version = "0.3.0"
+catalog-sha256 = "2ce63c33d20fe2ccb6e0393218b948c2f8c3513e1cca53a168685b30c8e5a42a"
+evaluated-at = "2026-08-24T02:39:41Z"
+min-release-age-days = 30
+dormant-release-gap-days = 365
+
+[[plan.candidates]]
+registry = "universe"
+category = "universe/general"
+name = "libredox"
+activity = "active"
+sparse-index-sha256 = "9eb7125ca9d0f803fb6d82c17888fcd67ef7523a57b02aaef7ea85a9bbc1661f"
+decision-history-sha256 = "e29441353a62153930eb25309d842bbbc3da9e1a9e276a74e124fa0fd4952b75"
+age-seconds = 4624665
+decision = "automatic"
+reasons = []
+
+[plan.candidates.lane]
+kind = "zero-minor"
+minor = 1
+
+[plan.candidates.base]
+version = "0.1.14"
+published-at = "2026-02-28T14:10:21Z"
+source-row-sha256 = "d263278dc86736ba340fa511b811bbec7313c9c013d05a3abe0707a516c3f29e"
+crate-sha256 = "1744e39d1d6a9948f4f388969627434e31128196de472883b39f148769bfe30a"
+
+[plan.candidates.candidate]
+version = "0.1.18"
+published-at = "2026-07-01T14:01:56Z"
+source-row-sha256 = "b5297a8897c395d2fbadd7029d5d204765d763706cacc918271e64ac15792fc2"
+crate-sha256 = "c943259e342f1e06ff2da7a83eabdfe7f92ce10262688dbf1895ff0b3e6e4652"
+
+[plan.candidates.base-archive]
+analysis-sha256 = "31e9589f4d2acdc446db554113c2d8a65547e02c95d4239b359126e45d56b7b5"
+compressed-bytes = 9536
+unpacked-bytes = 45056
+files = 7
+vcs-commit = "094dc72d36d9840520c5dad1dd37c0109d5da071"
+vcs-path = ""
+
+[plan.candidates.base-archive.build-surface]
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "7c71874517b656de2231676d6c9f62667c34d307b07803b5d6f881084fc2d1df"
+compressed-bytes = 9737
+unpacked-bytes = 46080
+files = 7
+vcs-commit = "bedf0129b9ad533c3c094b9648f4bac8936d7c99"
+vcs-path = ""
+
+[plan.candidates.candidate-archive.build-surface]
+
+[plan.candidates.archive-delta]
+delta-sha256 = "1dfbee55c44eb99ea261d148913311897ae44cf1823c9263f5d27c567926e704"
+added = []
+removed = []
+changed = [
+    ".cargo_vcs_info.json",
+    "Cargo.lock",
+    "Cargo.toml",
+    "Cargo.toml.orig",
+    "src/lib.rs",
+]
+build-surface-changed = false
+
+[plan.candidates.dependencies]
+new_packages = []
+
+[[plan.candidates.dependencies.added]]
+name = "redox_syscall"
+package = "redox_syscall"
+requirement = "^0.9"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.removed]]
+name = "redox_syscall"
+package = "redox_syscall"
+requirement = "^0.7"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[plan.candidates.api]
+response-sha256 = "6f07fbef8c26478dcf6663873421a1b3eaf6f7ef20b2ad2fd5b43af4bc24fd61"
+
+[plan.candidates.api.base]
+publisher-id = 2668
+publisher-login = "jackpot51"
+repository = "https://gitlab.redox-os.org/redox-os/libredox.git"
+
+[plan.candidates.api.candidate]
+publisher-id = 2668
+publisher-login = "jackpot51"
+repository = "https://gitlab.redox-os.org/redox-os/libredox.git"
+
+[plan.candidates.source]
+level = "unavailable"
+reason = "not-promoted"
+
+[[plan.candidates]]
+registry = "universe"
+category = "universe/mcp"
+name = "rmcp-macros"
+activity = "active"
+sparse-index-sha256 = "f6d599939e9b446d741278d5b486b3391eb9244a690732ded702db92fe267339"
+decision-history-sha256 = "33a96cee354732f513096220679db680b884d535315744994e2015b10da9f605"
+age-seconds = 5321465
+decision = "automatic"
+reasons = []
+
+[plan.candidates.lane]
+kind = "major"
+major = 1
+
+[plan.candidates.base]
+version = "1.4.0"
+published-at = "2026-04-10T14:48:42Z"
+source-row-sha256 = "e8b5cce115eb9ae49dfa5604c742bd1e2a9d6c0bda48765aa292518bd66ead9a"
+crate-sha256 = "b2391e4ae47f314e70eaafb6c7bd82e495e770b935448864446302143019151f"
+
+[plan.candidates.candidate]
+version = "1.8.0"
+published-at = "2026-06-23T12:28:36Z"
+source-row-sha256 = "8915c616579df86bf026493f93c5041b706bc71bc9abfba4fa29c81ce2e38e99"
+crate-sha256 = "1aad0035b69380782d78ea95b508327e6deaa2235909053e596eea8f27b5e1d5"
+
+[plan.candidates.base-archive]
+analysis-sha256 = "99c3b05cd164160b02d9c1a91bd1a04648fedc29891e1080c16da24140cf1e15"
+compressed-bytes = 20940
+unpacked-bytes = 104960
+files = 15
+vcs-commit = "4628720f89d27a01d4a126ea9f82f0775df9ed52"
+vcs-path = "crates/rmcp-macros"
+
+[plan.candidates.base-archive.build-surface]
+"manifest:Cargo.toml.orig:proc-macro" = "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+"manifest:Cargo.toml:proc-macro" = "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "615452d94505c4ccb8190fc903ffcd214b52455181d766b7b0f49489ff9c4510"
+compressed-bytes = 21611
+unpacked-bytes = 108032
+files = 15
+vcs-commit = "25220361d5540715294c501c289d79de4bec2bfc"
+vcs-path = "crates/rmcp-macros"
+
+[plan.candidates.candidate-archive.build-surface]
+"manifest:Cargo.toml.orig:proc-macro" = "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+"manifest:Cargo.toml:proc-macro" = "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+
+[plan.candidates.archive-delta]
+delta-sha256 = "3d11c2b7335d2ace3da02d91316ad7b8a407ea5b2d80cd184a90bb95ac34f4e6"
+added = []
+removed = []
+changed = [
+    ".cargo_vcs_info.json",
+    "CHANGELOG.md",
+    "Cargo.lock",
+    "Cargo.toml",
+    "src/prompt.rs",
+    "src/tool.rs",
+]
+build-surface-changed = false
+
+[plan.candidates.dependencies]
+added = []
+removed = []
+new_packages = []
+
+[plan.candidates.api]
+response-sha256 = "5e5a56a0ddaf60a3b8ad10c84c66ffffdcd8fd6a4ffbd897b1af4c329000e064"
+
+[plan.candidates.api.base]
+publisher-id = 341684
+publisher-login = "alexhancock"
+repository = "https://github.com/modelcontextprotocol/rust-sdk/"
+
+[plan.candidates.api.candidate]
+publisher-id = 341684
+publisher-login = "alexhancock"
+repository = "https://github.com/modelcontextprotocol/rust-sdk/"
+
+[plan.candidates.source]
+level = "unavailable"
+reason = "not-promoted"
+
+[[plan.candidates]]
+registry = "universe"
+category = "universe/sse"
+name = "sse-stream"
+activity = "active"
+sparse-index-sha256 = "85deecd05fd405736aaede841d0629eff1a028c10d87e095de42d4182a359fbb"
+decision-history-sha256 = "1bdd610147df565904691549ab4977d7830963c253f2a2c539bd11029600a66f"
+age-seconds = 2835695
+decision = "automatic"
+reasons = []
+
+[plan.candidates.lane]
+kind = "zero-minor"
+minor = 2
+
+[plan.candidates.base]
+version = "0.2.1"
+published-at = "2025-06-18T10:41:13Z"
+source-row-sha256 = "5c4501f0049420aced4073687fdd758ccf5e70c492817662336c683a155a9c65"
+crate-sha256 = "eb4dc4d33c68ec1f27d386b5610a351922656e1fdf5c05bbaad930cd1519479a"
+
+[plan.candidates.candidate]
+version = "0.2.5"
+published-at = "2026-07-22T06:58:06Z"
+source-row-sha256 = "4823d908286838661578e27f34aa18fb6933d31f32737e4a8302edd12ba5e258"
+crate-sha256 = "c123f296ade4ec4b8b0f6162116e6629f5146922ca5ab40ca9d3c2e73ab4761e"
+
+[plan.candidates.base-archive]
+analysis-sha256 = "4dd636a2b69ef0cec5d214d3396267100678cc51ff970bde731c03a71df90cde"
+compressed-bytes = 20239
+unpacked-bytes = 96768
+files = 20
+vcs-commit = "4d2d2e01a6b1155eb52743164d62574e340ffa96"
+vcs-path = ""
+
+[plan.candidates.base-archive.build-surface]
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "a6e70d7caa5954880e6883c159e03eddbb8e4ca503f2f1437a4d3b400de2b064"
+compressed-bytes = 26787
+unpacked-bytes = 119296
+files = 22
+vcs-commit = "52a409aebbdf081d49894cc3130e3de2f04b39ee"
+vcs-path = ""
+
+[plan.candidates.candidate-archive.build-surface]
+
+[plan.candidates.archive-delta]
+delta-sha256 = "7751049a6ac5a631f1212144d35de2d49da45d5f24a491c37ae4940f042b48d8"
+added = [
+    "LICENSE-APACHE",
+    "LICENSE-MIT",
+]
+removed = []
+changed = [
+    ".cargo_vcs_info.json",
+    "Cargo.lock",
+    "Cargo.toml",
+    "Cargo.toml.orig",
+    "README.md",
+    "src/stream.rs",
+    "tests/test_bytes_parse.rs",
+    "tests/test_with_reqwest.rs",
+]
+build-surface-changed = false
+
+[plan.candidates.dependencies]
+added = []
+removed = []
+new_packages = []
+
+[plan.candidates.api]
+response-sha256 = "a3935b93fd07b43de14718944bbc0a412f196a44c1175948700ba914059a716f"
+
+[plan.candidates.api.base]
+publisher-id = 129899
+publisher-login = "4t145"
+repository = "https://github.com/4t145/sse-stream/"
+
+[plan.candidates.api.candidate]
+publisher-id = 129899
+publisher-login = "4t145"
+repository = "https://github.com/4t145/sse-stream/"
+
+[plan.candidates.source]
+level = "unavailable"
+reason = "not-promoted"
+
+[[admit]]
+category = "universe/general"
+name = "libredox"
+version = "0.1.18"
+
+[[admit]]
+category = "universe/mcp"
+name = "rmcp-macros"
+version = "1.8.0"
+
+[[admit]]
+category = "universe/sse"
+name = "sse-stream"
+version = "0.2.5"

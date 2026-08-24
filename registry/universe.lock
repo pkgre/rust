@@ -8318,6 +8318,18 @@ index-row-sha256 = "e5b131f105cbe8ee114a038f189c0981233a65492a26bc10d4eac08fee1b
 kind = "crates-io"
 
 [[packages]]
+name = "nohash-hasher"
+version = "0.2.0"
+state = "active"
+crate-sha256 = "2bf50223579dc7cdcfb3bfcacf7069ff68243f8c363f62ffa99cf000a6b9c451"
+source-row-sha256 = "f841cfe4ad12b6a37e3d55d27404591e8073a099d5ca9e7e5c443db6310a6619"
+index-row-sha256 = "bbe06e875928da025a7fbc26eba5f2694debdf2a6dafe9b0b5685a87a91e6d4d"
+admission-sha256 = "40f8e7cacf9c478c9c61164a29be14b493eed342f15b268ee823d34c75fc4d21"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
 name = "nom"
 version = "7.1.3"
 state = "active"

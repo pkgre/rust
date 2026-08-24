@@ -1,0 +1,63 @@
+schema = 1
+indexer-version = "0.2.0"
+catalog-sha256 = "6e2d71214a461512fa9b8facadea14beefe011ac0ad27529926b594e18450d0e"
+evaluated-at = "2026-08-24T00:29:42Z"
+admitted-at = "2026-08-24T00:32:02Z"
+min-release-age-days = 30
+dormant-release-gap-days = 365
+
+[candidate]
+registry = "universe"
+category = "universe/general"
+name = "nohash-hasher"
+activity = "new"
+sparse-index-sha256 = "9d62bdd5ffbef7a7b6c22e79fefca66ed76e9a83cc37a682d318f1fb84daaead"
+decision-history-sha256 = "5c46acb3594c642eefefcbe3299041558546d34e422a2651c98aad9c368a6cdd"
+age-seconds = 205591889
+decision = "review-required"
+reasons = [
+    "new-package",
+    "explicit-candidate",
+]
+
+[candidate.candidate]
+version = "0.2.0"
+published-at = "2020-02-17T11:38:13Z"
+source-row-sha256 = "f841cfe4ad12b6a37e3d55d27404591e8073a099d5ca9e7e5c443db6310a6619"
+crate-sha256 = "2bf50223579dc7cdcfb3bfcacf7069ff68243f8c363f62ffa99cf000a6b9c451"
+
+[candidate.candidate-archive]
+analysis-sha256 = "7f2a0cdd907081a465b13ac9bac04fea6e8c2af95c899b9082d37c748644d42d"
+compressed-bytes = 8051
+unpacked-bytes = 35840
+files = 9
+vcs-commit = "99b021664e9d7fd3e1f7ffb8633a137e21e12149"
+
+[candidate.candidate-archive.build-surface]
+
+[candidate.dependencies]
+added = []
+removed = []
+new_packages = []
+
+[candidate.api]
+response-sha256 = "81b8ca0b1ae3f11fafc5c110e4719ae5d8d67301f233347bdb615074533d1bc5"
+
+[candidate.api.candidate]
+publisher-id = 2332
+publisher-login = "twittner"
+repository = "https://github.com/paritytech/nohash-hasher"
+
+[candidate.source]
+level = "publisher-asserted"
+repository = "https://github.com/paritytech/nohash-hasher"
+commit = "99b021664e9d7fd3e1f7ffb8633a137e21e12149"
+path = ""
+comparison_sha256 = "93565a0cffb43dcb717be8c8ed7843ec53ab606c2a26d0f5b11329560fada592"
+
+[[candidate.approvals]]
+kind = "full-archive"
+binding-sha256 = "40f8e7cacf9c478c9c61164a29be14b493eed342f15b268ee823d34c75fc4d21"
+approved-at = "2026-08-24T00:31:38Z"
+note = "Full-archive review approved for nohash-hasher 0.2.0, crates.io archive SHA-256 2bf50223579dc7cdcfb3bfcacf7069ff68243f8c363f62ffa99cf000a6b9c451. Reviewed all nine regular archive members: Cargo manifests, VCS metadata, editor/Git metadata, Apache-2.0 and MIT licenses, README, and src/lib.rs. The archive has no executable files, binary members, dependencies, build script, procedural macro, native link declaration, separate binary/example/bench target, unsafe code, process spawning, filesystem/network/environment access, or bundled generated binary data. It is a small no_std-capable integer identity-hasher library with an optional default std feature. Its material inherent risk is deliberate absence of real hashing: untrusted or unsuitable key domains can cause collisions or denial of service, and custom IsEnabled implementations must uphold the documented one-integer-write invariant; this is accepted because that behavior and constraint are the package's explicit, compact, fully reviewed purpose. The new package is permanently routed to universe/general; it adds no dependency edges, so category policy is satisfied. crates.io identifies publisher twittner (account 2332) and repository https://github.com/paritytech/nohash-hasher; the archive's embedded commit 99b021664e9d7fd3e1f7ffb8633a137e21e12149 corresponded exactly to the publisher-asserted repository source under the indexer's Cargo-publication normalization. No Trusted Publishing attestation is present for this 2020 release. The dual Apache-2.0 OR MIT declaration matches the included license texts. No unexplained metadata, file, mode, checksum, source, or build-surface discrepancy was found."
+note-sha256 = "af7a726062205a0d0840b4d62145f3626c8ce8d4faef77eafbcd93636153e504"

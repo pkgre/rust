@@ -45,3 +45,21 @@ commit = "0c09d95f5debf9f3475c4828e5fb836f9f1cc22b"
 package = "pkgre-indexer"
 path = "indexer"
 cargo-version = "1.95.0"
+
+[[packages]]
+name = "pkgre-indexer"
+version = "0.3.0"
+state = "active"
+crate-sha256 = "467be746eb89eb14da496a5d95a2cf13d20652644cf4ef18355be0723d95a755"
+source-row-sha256 = "f0a80df4bf810cb3a8f1b300e7637499f4dae72e2fb5f3bdbec636a59b30b28f"
+index-row-sha256 = "c43500740d185ab19b4cab188c8ef37df8cf035928a5161e347439126664f9ad"
+
+[packages.source]
+kind = "git-tag"
+git = "https://github.com/pkgre/pkgre"
+tag = "indexer/v0.3.0"
+tag-oid = "b47ccfda09ecf5a11d229037d58b5f320d783e58"
+commit = "b08d2b9f7f486b0e0ec9c138730b241478f775f3"
+package = "pkgre-indexer"
+path = "indexer"
+cargo-version = "1.95.0"

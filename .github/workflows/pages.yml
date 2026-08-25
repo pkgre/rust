@@ -26,7 +26,7 @@ jobs:
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           repository: pkgre/pkgre
-          ref: c708a5e60f7e94037fe0b4b9d99292e3583f9657
+          ref: ae1dfbfd4e965dffb538e356f005e4fbb32fdb77
           path: tooling
           persist-credentials: false
       - name: Install Nix
@@ -52,6 +52,7 @@ jobs:
         run: |
           mkdir previous
           curl --fail --silent --show-error --retry 3 https://rust.pkg.re/release.json --output previous/release.json
+          curl --fail --silent --show-error --retry 3 https://rust.pkg.re/downloads.json --output previous/downloads.json
           ./result/bin/pkgre-indexer verify-monotonic previous site
       - name: Add landing page
         run: |

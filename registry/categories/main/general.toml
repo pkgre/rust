@@ -1,5 +1,5 @@
-schema = 3
-may-depend-on = ["universe/general"]
+schema = 4
+may-depend-on = ["main/general"]
 
 [mirror]
 accessory = ["2.1.0"]

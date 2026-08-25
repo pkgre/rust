@@ -1,5 +1,5 @@
 schema = 2
-manifest-sha256 = "914801db921e64a400c5f7160224b89d1860d24256b559551bd1a4b33ecc10d4"
+manifest-sha256 = "c00bb6f83446170fc124dbb420e657b4f122fe4c4c14ce89f188f925571717c8"
 admitted-at = "2026-08-24T02:39:41Z"
 
 [plan]
@@ -11,8 +11,8 @@ min-release-age-days = 30
 dormant-release-gap-days = 365
 
 [[plan.candidates]]
-registry = "universe"
-category = "universe/general"
+registry = "main"
+category = "main/general"
 name = "libredox"
 activity = "active"
 sparse-index-sha256 = "9eb7125ca9d0f803fb6d82c17888fcd67ef7523a57b02aaef7ea85a9bbc1661f"
@@ -109,8 +109,8 @@ level = "unavailable"
 reason = "not-promoted"
 
 [[plan.candidates]]
-registry = "universe"
-category = "universe/mcp"
+registry = "main"
+category = "main/mcp"
 name = "rmcp-macros"
 activity = "active"
 sparse-index-sha256 = "f6d599939e9b446d741278d5b486b3391eb9244a690732ded702db92fe267339"
@@ -196,8 +196,8 @@ level = "unavailable"
 reason = "not-promoted"
 
 [[plan.candidates]]
-registry = "universe"
-category = "universe/sse"
+registry = "main"
+category = "main/sse"
 name = "sse-stream"
 activity = "active"
 sparse-index-sha256 = "85deecd05fd405736aaede841d0629eff1a028c10d87e095de42d4182a359fbb"
@@ -284,16 +284,16 @@ level = "unavailable"
 reason = "not-promoted"
 
 [[admit]]
-category = "universe/general"
+category = "main/general"
 name = "libredox"
 version = "0.1.18"
 
 [[admit]]
-category = "universe/mcp"
+category = "main/mcp"
 name = "rmcp-macros"
 version = "1.8.0"
 
 [[admit]]
-category = "universe/sse"
+category = "main/sse"
 name = "sse-stream"
 version = "0.2.5"

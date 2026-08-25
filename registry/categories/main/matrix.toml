@@ -1,5 +1,5 @@
-schema = 3
-may-depend-on = ["universe/general", "universe/matrix"]
+schema = 4
+may-depend-on = ["main/general", "main/matrix"]
 
 [mirror]
 js_int = ["0.2.2"]

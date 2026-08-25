@@ -61,6 +61,13 @@ jobs:
             exit 1
           fi
           install -m 0644 index.html site/index.html
+      - name: Add origin health canary
+        run: |
+          expected='pkgre-origin rust v1'
+          test "$(cat origin-health/v1.txt)" = "$expected"
+          test "$(wc -c < origin-health/v1.txt)" -eq 21
+          install -D -m 0644 origin-health/v1.txt site/origin-health/v1.txt
+          cmp origin-health/v1.txt site/origin-health/v1.txt
       - name: Configure GitHub Pages
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5

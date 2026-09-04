@@ -1,4 +1,4 @@
-schema = 4
+schema = 5
 may-depend-on = ["main/general", "main/matrix"]
 
 [mirror]

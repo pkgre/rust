@@ -1,4 +1,4 @@
-name: Validate and deploy registries
+name: Validate registry
 
 on:
   pull_request:
@@ -8,10 +8,6 @@ on:
 
 permissions:
   contents: read
-
-concurrency:
-  group: pages-${{ github.ref }}
-  cancel-in-progress: true
 
 jobs:
   validate:
@@ -26,7 +22,7 @@ jobs:
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           repository: pkgre/pkgre
-          ref: ae1dfbfd4e965dffb538e356f005e4fbb32fdb77
+          ref: be61fe2c0126fd4dfbe2552d16140d4734087ec8
           path: tooling
           persist-credentials: false
       - name: Install Nix
@@ -34,74 +30,13 @@ jobs:
       - name: Build pinned indexer
         run: nix build --print-build-logs ./tooling#indexer
       - name: Require fully applied admissions
-        run: ./result/bin/pkgre-indexer check registry
+        run: ./result/bin/pkgre-rust check registry
       - name: Require converged catalog
         run: |
-          ./result/bin/pkgre-indexer lock registry
+          ./result/bin/pkgre-rust lock registry
           changes="$(git status --porcelain=v1 --untracked-files=all -- registry)"
           if [[ -n "$changes" ]]; then
             printf '%s\n' "$changes" >&2
-            echo "registry is not fully applied and converged; run pkgre-indexer update-apply or lock and commit every result" >&2
+            echo "registry is not fully applied and converged; run pkgre-rust lock and commit every result" >&2
             exit 1
           fi
-      - name: Render and reproduce site
-        run: |
-          ./result/bin/pkgre-indexer render registry site
-          ./result/bin/pkgre-indexer verify registry site
-      - name: Verify monotonic publication
-        run: |
-          mkdir previous
-          curl --fail --silent --show-error --retry 3 https://rust.pkg.re/release.json --output previous/release.json
-          curl --fail --silent --show-error --retry 3 https://rust.pkg.re/downloads.json --output previous/downloads.json
-          ./result/bin/pkgre-indexer verify-monotonic previous site
-      - name: Add landing page
-        run: |
-          if grep -Eiq "<(script|style)([[:space:]>])|[[:space:]](style|on[a-z]+)[[:space:]]*=|rel[[:space:]]*=[[:space:]]*[\"']?stylesheet" index.html; then
-            echo "index.html must not contain CSS or JavaScript" >&2
-            exit 1
-          fi
-          install -m 0644 index.html site/index.html
-      - name: Add origin health canary
-        run: |
-          expected='pkgre-origin rust v1'
-          test "$(cat origin-health/v1.txt)" = "$expected"
-          test "$(wc -c < origin-health/v1.txt)" -eq 21
-          install -D -m 0644 origin-health/v1.txt site/origin-health/v1.txt
-          cmp origin-health/v1.txt site/origin-health/v1.txt
-      - name: Configure GitHub Pages
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
-      - name: Archive Pages artifact
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        run: |
-          tar \
-            --dereference --hard-dereference \
-            --directory site \
-            -cvf "$RUNNER_TEMP/artifact.tar" \
-            --exclude=.git \
-            --exclude=.github \
-            .
-      - name: Upload Pages artifact
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
-        with:
-          name: github-pages
-          path: ${{ runner.temp }}/artifact.tar
-          retention-days: 1
-          if-no-files-found: error
-
-  deploy:
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-    needs: validate
-    runs-on: ubuntu-24.04
-    timeout-minutes: 10
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4

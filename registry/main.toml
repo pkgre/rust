@@ -3,7 +3,7 @@ schema = 5
 [registry]
 name = "main"
 index = "sparse+https://rust.pkg.re/"
-download = "https://dl.rust.pkg.re/v1/main/{crate}/{version}/{sha256-checksum}"
+download = "https://rust.pkg.re/v1/main/{crate}/{version}/{sha256-checksum}"
 cargo-version = "1.95.0"
 audience = "public"
 delivery = "retained"

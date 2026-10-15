@@ -1519,6 +1519,10 @@ name = "linux-raw-sys"
 category = "general"
 
 [[names]]
+name = "listenfd"
+category = "general"
+
+[[names]]
 name = "litemap"
 category = "general"
 
@@ -3308,6 +3312,10 @@ category = "general"
 
 [[names]]
 name = "want"
+category = "general"
+
+[[names]]
+name = "warp"
 category = "general"
 
 [[names]]

@@ -1,0 +1,130 @@
+schema = 2
+manifest-sha256 = "754f36a3aa4752fbec7ebbbafac6182c92cc7e5ea9a23959671c2b67799e12f0"
+admitted-at = "2026-10-15T09:53:55Z"
+
+[plan]
+schema = 2
+indexer-version = "0.5.0"
+catalog-sha256 = "5cea513d8e1db8bf691c3252febc23b40d919bc44afd3bf84e2be7d690d8ed2d"
+evaluated-at = "2026-10-15T09:53:55Z"
+min-release-age-days = 30
+dormant-release-gap-days = 365
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "listenfd"
+activity = "new"
+sparse-index-sha256 = "97d33c2ecec0bfd15fe3185fdd398efc4734b3b585c7afbc807344cab56cb726"
+decision-history-sha256 = "3ec148af1572c731cd68697bdc63faf430123843d09c8bc3ffe2d21b35bd6d60"
+age-seconds = 54755083
+decision = "review-required"
+reasons = [
+    "new-package",
+    "new-dependency",
+    "source-unavailable",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "1.0.2"
+published-at = "2025-01-19T16:09:12Z"
+source-row-sha256 = "765cedb556eee6ae075675ccbf646f28439973f4c8632d63d53b71065ea83933"
+crate-sha256 = "b87bc54a4629b4294d0b3ef041b64c40c611097a677d9dc07b2c67739fe39dba"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "a802b8f66541e10d8be7822717cfa2b29cc57a59e9342eb6ead221b4109006f7"
+compressed-bytes = 18792
+unpacked-bytes = 100864
+files = 19
+vcs-commit = "119770e00c0bf6b88b652251cbfe578e545efbcc"
+vcs-path = ""
+
+[plan.candidates.candidate-archive.build-surface]
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "hyper",
+    "libc",
+    "tokio",
+    "uuid",
+    "warp",
+    "winapi",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "hyper"
+package = "hyper"
+requirement = "^0.14.16"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "libc"
+package = "libc"
+requirement = "^0.2.40"
+features = []
+optional = false
+default-features = true
+target = "cfg(not(windows))"
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "tokio"
+package = "tokio"
+requirement = "^1.15.0"
+features = ["full"]
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "uuid"
+package = "uuid"
+requirement = "^1.0.0"
+features = []
+optional = false
+default-features = true
+target = "cfg(windows)"
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "warp"
+package = "warp"
+requirement = "^0.3.2"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "winapi"
+package = "winapi"
+requirement = "^0.3.4"
+features = [
+    "processthreadsapi",
+    "winsock2",
+]
+optional = false
+default-features = true
+target = "cfg(windows)"
+kind = "normal"
+
+[plan.candidates.api]
+response-sha256 = "e402fd9c10cae0cfa077f26a98cb889f08e463057127ee5b1dea94ea6ae1b231"
+
+[plan.candidates.api.candidate]
+publisher-id = 39
+publisher-login = "mitsuhiko"
+
+[plan.candidates.source]
+level = "unavailable"
+reason = "version-has-no-supported-repository"
+
+[[admit]]
+category = "main/general"
+name = "listenfd"
+version = "1.0.2"

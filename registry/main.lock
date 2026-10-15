@@ -7332,6 +7332,19 @@ admitted-at = "2025-12-23T00:00:07Z"
 kind = "crates-io"
 
 [[packages]]
+name = "listenfd"
+version = "1.0.2"
+state = "active"
+crate-sha256 = "b87bc54a4629b4294d0b3ef041b64c40c611097a677d9dc07b2c67739fe39dba"
+source-row-sha256 = "765cedb556eee6ae075675ccbf646f28439973f4c8632d63d53b71065ea83933"
+index-row-sha256 = "538b4e5e7ceb15fc8432aa177ce5d64d9f56a15206c06174dd018585d2c05f46"
+admission-sha256 = "ec092fb4f131c4f45961baaadfb7dc105cef3c5de4c8fad72416301d4304c098"
+admitted-at = "2025-01-19T16:09:12Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
 name = "litemap"
 version = "0.8.1"
 state = "active"

@@ -3063,6 +3063,16 @@
     },
     {
       "registry": "main",
+      "name": "listenfd",
+      "version": "1.0.2",
+      "sha256": "b87bc54a4629b4294d0b3ef041b64c40c611097a677d9dc07b2c67739fe39dba",
+      "delivery": {
+        "delivery": "retained",
+        "path": "main/objects/crates/b87bc54a4629b4294d0b3ef041b64c40c611097a677d9dc07b2c67739fe39dba.crate"
+      }
+    },
+    {
+      "registry": "main",
       "name": "litemap",
       "version": "0.8.1",
       "sha256": "6373607a59f0be73a39b6fe456b8192fcc3585f602af20751600e974dd455e77",

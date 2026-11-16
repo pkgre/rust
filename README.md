@@ -6,11 +6,11 @@ Public declarative curated Cargo sparse registry served at [rust.pkg.re](https:/
 
 | Cargo alias | Catalog alias | Sparse index | Sources | Archive download |
 |---|---|---|---|---|
-| `pkgre` | `main` | `sparse+https://rust.pkg.re/` | crates.io mirrors + first-party/fork Git tags | `https://dl.rust.pkg.re/v1/main/{crate}/{version}/{sha256-checksum}` |
+| `pkgre` | `main` | `sparse+https://rust.pkg.re/` | crates.io mirrors + first-party/fork Git tags | `https://rust.pkg.re/v1/main/{crate}/{version}/{sha256-checksum}` |
 
-Cargo aliases are consumer-local; `main` is the catalog/index identity. Schema 4 remains multi-registry capable:an additional catalog registry such as `staging` renders below `https://rust.pkg.re/staging/`, receives its own categories/lock/routes, and does not move existing `main` identities.
+Cargo aliases are consumer-local; `main` is the catalog/index identity. Schema 5 remains multi-registry capable:an additional catalog registry such as `staging` renders below `https://rust.pkg.re/r/staging/`, receives its own categories/lock/routes, and does not move existing `main` identities. The serving gate `check-transition` rejects a candidate that adds or removes a registry, so a new alias needs a fresh accepted baseline before the service publishes it.
 
-Cargo exposes one `dl` URL per registry. Generated `registry/downloads.json` binds every active `(registry,name,version,sha256)` identity to its locked `crates-io` or `git-tag` source. The stateless router derives only hardcoded source-specific destinations:crates.io identities redirect to their original static archive; Git-tag identities redirect to their active content-addressed publication archive. No crates.io `.crate` files are committed.
+Cargo exposes one `dl` URL per registry. `main` declares `audience = "public"` and `delivery = "retained"`:every `.crate` archive of an active identity, crates.io mirrors and Git tags alike, is committed once as `registry/objects/crates/<sha256>.crate`. Generated `registry/downloads.json` binds every `(registry,name,version,sha256)` identity to its retained archive. The serving origin `pkgre-rust-serve` answers from a validated in-memory projection of an accepted commit of this repository:the `/v1` route redirects to or serves the content-addressed body. It publishes a new commit of `main` only when `check-transition` accepts it as a successor of the last accepted commit, and otherwise keeps serving the last accepted snapshot.
 
 ## Categories
 
@@ -32,13 +32,13 @@ Small categories are inline under `[categories.<name>]` in `registry/<registry>.
 
 ## Model
 
-`registry/main.toml` + external category files = complete human-edited desired state:fixed registry/category policy + exact crates.io mirror versions + approved first-party HTTPS Git tags. New mirror identities/versions enter an established catalog only through evidence-bound batch admission with `update-plan`/`update-inspect`/`update-apply`; direct `lock` admission is rejected. `lock` handles initial bootstrap, empty name reservations, removals, and Git publication tags; reconciles permitted state into canonical adjacent locks + content-addressed objects + `downloads.json`; validates permanent package homes, category dependency edges, source integrity, and router policy; renders the Pages site from scratch; verifies byte identity; rejects mutation, disappearance, reactivation, or ambiguous cross-registry dependency routing.
+`registry/main.toml` + external category files = complete human-edited desired state:fixed registry/category policy + exact crates.io mirror versions + approved first-party HTTPS Git tags. New mirror identities/versions enter an established catalog only through evidence-bound batch admission with `update-plan`/`update-inspect`/`update-apply`; direct `lock` admission is rejected. `lock` handles initial bootstrap, empty name reservations, removals, and Git publication tags; reconciles permitted state into canonical adjacent locks + content-addressed objects + `downloads.json`; validates permanent package homes, category dependency edges, source integrity, and router policy; verifies the staged objects + routed rows, test-renders the staged copy, and installs it atomically; rejects mutation, disappearance, reactivation, or ambiguous cross-registry dependency routing.
 
 `update-plan` writes its review template outside `registry/`; it does not create an intermediate repository state or PR. After optional evidence edits, `update-apply` atomically installs the exact manifest, generated evidence lock, declarations, registry locks, row objects, and router catalog together; one batch therefore has one fully applied registry PR. CI rejects an unpaired, stale, orphaned, or catalog-unbound admission through `check`, then runs `lock` and rejects any resulting tracked or untracked `registry/` change.
 
 Imported packages retain exact crates.io checksums + source rows. Git releases lock tag object + peeled commit + package path + Cargo version, require explicit curated-registry dependency routing, and package twice byte-identically under pinned Cargo.
 
-Removal = retain package key but remove version/tag from the human list → lock transitions `active→removed` irreversibly; source row remains; rendered row becomes yanked; an unshared Git archive is deleted and no longer served. Re-adding a removed identity fails closed.
+Removal = retain package key but remove version/tag from the human list → lock transitions `active→removed` irreversibly; source row and route remain; rendered row becomes yanked; an unshared retained archive is deleted and no longer served. Re-adding a removed identity fails closed. The serving gate `check-transition` currently rejects an `active→removed` change, so the service publishes a merged removal only after a fresh accepted baseline.
 
 Approval means an exact artifact was admitted; not a warranty that package code is benign, correct, or maintained. Builds should remain isolated because approved build scripts/procedural macros execute code.
 
@@ -69,10 +69,10 @@ Create + commit `.cargo/disabled-crates-io/`. Every manifest dependency should s
 | `registry/<registry>.toml` | Human authority:registry policy + inline category declarations |
 | `registry/categories/<registry>/<category>.toml` | Human authority:one large external category declaration |
 | `registry/<registry>.lock` | Generated authority:permanent category homes, lifecycle, archive/source-row/routed-row hashes, immutable source provenance, optional admission-batch hash |
-| `registry/downloads.json` | Generated canonical router projection:one source route per active checksum-bound package identity |
+| `registry/downloads.json` | Generated canonical route projection:one checksum-bound route per package identity, to its retained archive |
 | `registry/admissions/<batch>.toml` | Human authority:canonical exact package/version/category requests + optional typed review evidence |
 | `registry/admissions/<batch>.lock` | Generated evidence:policy/API/archive/source facts for the complete batch; every admitted package binds its SHA-256 |
-| `registry/objects/crates/<sha256>.crate` | Exact active Git publication archives; mirror archives are checksum-verified then discarded |
+| `registry/objects/crates/<sha256>.crate` | Exact retained archives of active identities:Git publications and, under `delivery = "retained"`, checksum-verified crates.io mirrors |
 | `registry/objects/rows/<sha256>.json` | Exact retained unrouted source rows, including removed identities |
 
 Curator schema/workflow/security documentation:[`pkgre/pkgre`](https://github.com/pkgre/pkgre).

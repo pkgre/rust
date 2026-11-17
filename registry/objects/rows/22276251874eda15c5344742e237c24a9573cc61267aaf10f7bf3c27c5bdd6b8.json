@@ -1,0 +1,1 @@
+{"name":"impl-rlp","vers":"0.4.0","deps":[{"name":"rlp","req":"^0.6","features":[],"optional":false,"default_features":false,"target":null,"kind":"normal"}],"cksum":"54ed8ad1f3877f7e775b8cbf30ed1bd3209a95401817f19a0eb4402d13f8cf90","features":{"default":["std"],"std":["rlp/std"]},"yanked":false,"rust_version":"1.56.1","pubtime":"2024-09-11T09:48:36Z"}

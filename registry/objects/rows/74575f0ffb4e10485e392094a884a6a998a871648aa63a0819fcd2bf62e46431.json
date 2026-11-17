@@ -1,0 +1,1 @@
+{"name":"trie-root","vers":"0.18.0","deps":[{"name":"hash-db","req":"^0.16.0","features":[],"optional":false,"default_features":false,"target":null,"kind":"normal"}],"cksum":"d4ed310ef5ab98f5fa467900ed906cb9232dd5376597e00fd4cba2a449d06c0b","features":{"default":["std"],"std":["hash-db/std"]},"yanked":false,"pubtime":"2023-03-14T15:25:09Z"}

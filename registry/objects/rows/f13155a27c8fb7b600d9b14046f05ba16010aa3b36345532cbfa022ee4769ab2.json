@@ -1,0 +1,1 @@
+{"name":"keccak","vers":"0.1.6","deps":[{"name":"cpufeatures","req":"^0.2","features":[],"optional":false,"default_features":true,"target":"cfg(target_arch = \"aarch64\")","kind":"normal"}],"cksum":"cb26cec98cce3a3d96cbb7bced3c4b16e3d13f27ec56dbd62cbc8f39cfb9d653","features":{"asm":[],"no_unroll":[],"simd":[]},"yanked":false,"pubtime":"2026-02-13T17:56:37Z"}

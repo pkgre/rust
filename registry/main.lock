@@ -7,6 +7,10 @@ download = "https://rust.pkg.re/v1/main/{crate}/{version}/{sha256-checksum}"
 audience = "public"
 
 [[names]]
+name = "ab_glyph"
+category = "general"
+
+[[names]]
 name = "accessory"
 category = "general"
 
@@ -28,6 +32,10 @@ category = "general"
 
 [[names]]
 name = "aes"
+category = "general"
+
+[[names]]
+name = "afl"
 category = "general"
 
 [[names]]
@@ -55,11 +63,23 @@ name = "allocator-api2"
 category = "general"
 
 [[names]]
+name = "alloy-rlp"
+category = "general"
+
+[[names]]
+name = "alloy-rlp-derive"
+category = "general"
+
+[[names]]
 name = "android_logger"
 category = "general"
 
 [[names]]
 name = "android_system_properties"
+category = "general"
+
+[[names]]
+name = "anes"
 category = "general"
 
 [[names]]
@@ -95,6 +115,10 @@ name = "anymap2"
 category = "general"
 
 [[names]]
+name = "approx"
+category = "general"
+
+[[names]]
 name = "aquamarine"
 category = "general"
 
@@ -108,6 +132,58 @@ category = "general"
 
 [[names]]
 name = "argh"
+category = "general"
+
+[[names]]
+name = "ark-algebra-bench-templates"
+category = "general"
+
+[[names]]
+name = "ark-algebra-test-templates"
+category = "general"
+
+[[names]]
+name = "ark-bls12-381"
+category = "general"
+
+[[names]]
+name = "ark-bn254"
+category = "general"
+
+[[names]]
+name = "ark-ec"
+category = "general"
+
+[[names]]
+name = "ark-ff"
+category = "general"
+
+[[names]]
+name = "ark-ff-asm"
+category = "general"
+
+[[names]]
+name = "ark-ff-macros"
+category = "general"
+
+[[names]]
+name = "ark-poly"
+category = "general"
+
+[[names]]
+name = "ark-serialize"
+category = "general"
+
+[[names]]
+name = "ark-serialize-derive"
+category = "general"
+
+[[names]]
+name = "ark-std"
+category = "general"
+
+[[names]]
+name = "ark-test-curves"
 category = "general"
 
 [[names]]
@@ -128,6 +204,10 @@ category = "general"
 
 [[names]]
 name = "as_variant"
+category = "general"
+
+[[names]]
+name = "assert-eq-float"
 category = "general"
 
 [[names]]
@@ -228,6 +308,14 @@ category = "terminal"
 
 [[names]]
 name = "auditable-serde"
+category = "general"
+
+[[names]]
+name = "aurora-engine-modexp"
+category = "general"
+
+[[names]]
+name = "auto_impl"
 category = "general"
 
 [[names]]
@@ -359,6 +447,10 @@ name = "blocking"
 category = "general"
 
 [[names]]
+name = "bn-rs"
+category = "general"
+
+[[names]]
 name = "borrow-or-share"
 category = "general"
 
@@ -391,6 +483,10 @@ name = "bumpalo"
 category = "general"
 
 [[names]]
+name = "byte-slice-cast"
+category = "general"
+
+[[names]]
 name = "bytecheck"
 category = "general"
 
@@ -420,6 +516,14 @@ category = "general"
 
 [[names]]
 name = "caps"
+category = "general"
+
+[[names]]
+name = "cargo_metadata"
+category = "general"
+
+[[names]]
+name = "cast"
 category = "general"
 
 [[names]]
@@ -464,6 +568,14 @@ category = "general"
 
 [[names]]
 name = "ciborium"
+category = "general"
+
+[[names]]
+name = "ciborium-io"
+category = "general"
+
+[[names]]
+name = "ciborium-ll"
 category = "general"
 
 [[names]]
@@ -523,6 +635,10 @@ name = "colorchoice"
 category = "general"
 
 [[names]]
+name = "colored"
+category = "general"
+
+[[names]]
 name = "combine"
 category = "general"
 
@@ -547,7 +663,15 @@ name = "config"
 category = "general"
 
 [[names]]
+name = "console"
+category = "general"
+
+[[names]]
 name = "console_log"
+category = "general"
+
+[[names]]
+name = "const-hex"
 category = "general"
 
 [[names]]
@@ -560,6 +684,14 @@ category = "general"
 
 [[names]]
 name = "const-str"
+category = "general"
+
+[[names]]
+name = "const_format"
+category = "general"
+
+[[names]]
+name = "const_format_proc_macros"
 category = "general"
 
 [[names]]
@@ -619,6 +751,10 @@ name = "criterion"
 category = "general"
 
 [[names]]
+name = "criterion-plot"
+category = "general"
+
+[[names]]
 name = "critical-section"
 category = "general"
 
@@ -627,7 +763,19 @@ name = "crossbeam-channel"
 category = "general"
 
 [[names]]
+name = "crossbeam-deque"
+category = "general"
+
+[[names]]
+name = "crossbeam-epoch"
+category = "general"
+
+[[names]]
 name = "crossbeam-utils"
+category = "general"
+
+[[names]]
+name = "crunchy"
 category = "general"
 
 [[names]]
@@ -747,6 +895,10 @@ name = "derivative"
 category = "general"
 
 [[names]]
+name = "derive_arbitrary"
+category = "general"
+
+[[names]]
 name = "derive_more"
 category = "general"
 
@@ -760,6 +912,10 @@ category = "general"
 
 [[names]]
 name = "dhat"
+category = "general"
+
+[[names]]
+name = "diesel"
 category = "general"
 
 [[names]]
@@ -831,6 +987,10 @@ name = "ed25519-dalek"
 category = "general"
 
 [[names]]
+name = "educe"
+category = "general"
+
+[[names]]
 name = "either"
 category = "general"
 
@@ -855,7 +1015,23 @@ name = "encoding_rs"
 category = "general"
 
 [[names]]
+name = "enum-ordinalize"
+category = "general"
+
+[[names]]
+name = "enum-ordinalize-derive"
+category = "general"
+
+[[names]]
+name = "enumflags2"
+category = "general"
+
+[[names]]
 name = "env_logger"
+category = "general"
+
+[[names]]
+name = "environmental"
 category = "general"
 
 [[names]]
@@ -871,6 +1047,26 @@ name = "errno"
 category = "general"
 
 [[names]]
+name = "ethbloom"
+category = "general"
+
+[[names]]
+name = "ethereum"
+category = "ethereum"
+
+[[names]]
+name = "ethereum-types"
+category = "general"
+
+[[names]]
+name = "ethereum_ssz"
+category = "general"
+
+[[names]]
+name = "ethnum"
+category = "general"
+
+[[names]]
 name = "event-listener"
 category = "general"
 
@@ -881,6 +1077,10 @@ category = "general"
 [[names]]
 name = "eventsource-stream"
 category = "sse"
+
+[[names]]
+name = "exhaustigen"
+category = "general"
 
 [[names]]
 name = "expect-test"
@@ -927,6 +1127,14 @@ name = "fastrand"
 category = "general"
 
 [[names]]
+name = "fastrlp"
+category = "general"
+
+[[names]]
+name = "fastrlp-derive"
+category = "general"
+
+[[names]]
 name = "ff"
 category = "general"
 
@@ -944,6 +1152,10 @@ category = "general"
 
 [[names]]
 name = "find-msvc-tools"
+category = "general"
+
+[[names]]
+name = "fixed-hash"
 category = "general"
 
 [[names]]
@@ -983,6 +1195,10 @@ name = "foldhash"
 category = "general"
 
 [[names]]
+name = "font-kit"
+category = "general"
+
+[[names]]
 name = "form_urlencoded"
 category = "general"
 
@@ -1000,6 +1216,10 @@ category = "general"
 
 [[names]]
 name = "fst"
+category = "general"
+
+[[names]]
+name = "funty"
 category = "general"
 
 [[names]]
@@ -1127,6 +1347,14 @@ name = "harfbuzz-traits"
 category = "general"
 
 [[names]]
+name = "hash-db"
+category = "general"
+
+[[names]]
+name = "hash256-std-hasher"
+category = "general"
+
+[[names]]
 name = "hashbrown"
 category = "general"
 
@@ -1176,6 +1404,10 @@ category = "general"
 
 [[names]]
 name = "hmac"
+category = "general"
+
+[[names]]
+name = "honggfuzz"
 category = "general"
 
 [[names]]
@@ -1239,6 +1471,10 @@ name = "iana-time-zone-haiku"
 category = "general"
 
 [[names]]
+name = "ibig"
+category = "general"
+
+[[names]]
 name = "icu_collections"
 category = "general"
 
@@ -1283,6 +1519,10 @@ name = "idna_adapter"
 category = "general"
 
 [[names]]
+name = "image"
+category = "general"
+
+[[names]]
 name = "imbl"
 category = "general"
 
@@ -1295,6 +1535,26 @@ name = "impartial-ord"
 category = "general"
 
 [[names]]
+name = "impl-codec"
+category = "general"
+
+[[names]]
+name = "impl-num-traits"
+category = "general"
+
+[[names]]
+name = "impl-rlp"
+category = "general"
+
+[[names]]
+name = "impl-serde"
+category = "general"
+
+[[names]]
+name = "impl-trait-for-tuples"
+category = "general"
+
+[[names]]
 name = "include_dir"
 category = "general"
 
@@ -1304,6 +1564,10 @@ category = "general"
 
 [[names]]
 name = "indexmap"
+category = "general"
+
+[[names]]
+name = "indicatif"
 category = "general"
 
 [[names]]
@@ -1352,6 +1616,10 @@ category = "general"
 
 [[names]]
 name = "itertools"
+category = "general"
+
+[[names]]
+name = "itertools-num"
 category = "general"
 
 [[names]]
@@ -1424,6 +1692,18 @@ category = "general"
 
 [[names]]
 name = "juniper"
+category = "general"
+
+[[names]]
+name = "k256"
+category = "general"
+
+[[names]]
+name = "keccak"
+category = "general"
+
+[[names]]
+name = "keccak-hasher"
 category = "general"
 
 [[names]]
@@ -1703,6 +1983,10 @@ name = "micromap"
 category = "general"
 
 [[names]]
+name = "miette"
+category = "general"
+
+[[names]]
 name = "mime"
 category = "general"
 
@@ -1855,6 +2139,10 @@ name = "once_cell_polyfill"
 category = "general"
 
 [[names]]
+name = "oorandom"
+category = "general"
+
+[[names]]
 name = "opaque-debug"
 category = "general"
 
@@ -1899,6 +2187,14 @@ name = "page_size"
 category = "general"
 
 [[names]]
+name = "parity-scale-codec"
+category = "general"
+
+[[names]]
+name = "parity-scale-codec-derive"
+category = "general"
+
+[[names]]
 name = "parking"
 category = "general"
 
@@ -1935,6 +2231,10 @@ name = "path-tree"
 category = "general"
 
 [[names]]
+name = "pathfinder_geometry"
+category = "general"
+
+[[names]]
 name = "pbkdf2"
 category = "general"
 
@@ -1956,6 +2256,14 @@ category = "general"
 
 [[names]]
 name = "permutohedron"
+category = "general"
+
+[[names]]
+name = "pest"
+category = "general"
+
+[[names]]
+name = "pest_generator"
 category = "general"
 
 [[names]]
@@ -2035,6 +2343,22 @@ name = "plain"
 category = "general"
 
 [[names]]
+name = "plotters"
+category = "general"
+
+[[names]]
+name = "plotters-backend"
+category = "general"
+
+[[names]]
+name = "plotters-bitmap"
+category = "general"
+
+[[names]]
+name = "plotters-svg"
+category = "general"
+
+[[names]]
 name = "pnet_datalink"
 category = "general"
 
@@ -2064,6 +2388,10 @@ category = "terminal"
 
 [[names]]
 name = "postcard"
+category = "general"
+
+[[names]]
+name = "postgres"
 category = "general"
 
 [[names]]
@@ -2107,6 +2435,10 @@ name = "primeorder"
 category = "general"
 
 [[names]]
+name = "primitive-types"
+category = "general"
+
+[[names]]
 name = "proc-macro-crate"
 category = "general"
 
@@ -2135,11 +2467,19 @@ name = "proptest-derive"
 category = "general"
 
 [[names]]
+name = "proptest-macro"
+category = "general"
+
+[[names]]
 name = "prost"
 category = "general"
 
 [[names]]
 name = "prost-derive"
+category = "general"
+
+[[names]]
+name = "psm"
 category = "general"
 
 [[names]]
@@ -2195,6 +2535,10 @@ name = "r-efi"
 category = "general"
 
 [[names]]
+name = "radium"
+category = "general"
+
+[[names]]
 name = "rand"
 category = "general"
 
@@ -2224,6 +2568,14 @@ category = "general"
 
 [[names]]
 name = "rand_xoshiro"
+category = "general"
+
+[[names]]
+name = "random-fast-rng"
+category = "general"
+
+[[names]]
+name = "randomize"
 category = "general"
 
 [[names]]
@@ -2327,11 +2679,19 @@ name = "ring-compat"
 category = "general"
 
 [[names]]
+name = "ripemd"
+category = "general"
+
+[[names]]
 name = "rkyv"
 category = "general"
 
 [[names]]
 name = "rlp"
+category = "general"
+
+[[names]]
+name = "rlp-derive"
 category = "general"
 
 [[names]]
@@ -2380,6 +2740,18 @@ category = "general"
 
 [[names]]
 name = "rstest_reuse"
+category = "general"
+
+[[names]]
+name = "rug"
+category = "general"
+
+[[names]]
+name = "ruint"
+category = "general"
+
+[[names]]
+name = "ruint-macro"
 category = "general"
 
 [[names]]
@@ -2531,6 +2903,10 @@ name = "scale-info"
 category = "general"
 
 [[names]]
+name = "scale-info-derive"
+category = "general"
+
+[[names]]
 name = "schannel"
 category = "general"
 
@@ -2540,6 +2916,10 @@ category = "general"
 
 [[names]]
 name = "schemars_derive"
+category = "general"
+
+[[names]]
+name = "scoped-tls"
 category = "general"
 
 [[names]]
@@ -2572,6 +2952,10 @@ category = "general"
 
 [[names]]
 name = "semver"
+category = "general"
+
+[[names]]
+name = "semver-parser"
 category = "general"
 
 [[names]]
@@ -2815,6 +3199,10 @@ name = "sqlx"
 category = "general"
 
 [[names]]
+name = "sqlx-core"
+category = "general"
+
+[[names]]
 name = "sse-stream"
 category = "sse"
 
@@ -2823,7 +3211,15 @@ name = "stable_deref_trait"
 category = "general"
 
 [[names]]
+name = "stacker"
+category = "general"
+
+[[names]]
 name = "static_assertions"
+category = "general"
+
+[[names]]
+name = "stats_alloc"
 category = "general"
 
 [[names]]
@@ -2856,6 +3252,10 @@ category = "general"
 
 [[names]]
 name = "strum_macros"
+category = "general"
+
+[[names]]
+name = "substrate-bn"
 category = "general"
 
 [[names]]
@@ -2911,6 +3311,10 @@ name = "tar"
 category = "general"
 
 [[names]]
+name = "target-triple"
+category = "general"
+
+[[names]]
 name = "tempdir"
 category = "general"
 
@@ -2939,6 +3343,10 @@ name = "test-case"
 category = "general"
 
 [[names]]
+name = "test-strategy"
+category = "general"
+
+[[names]]
 name = "tester"
 category = "general"
 
@@ -2963,6 +3371,10 @@ name = "time-core"
 category = "general"
 
 [[names]]
+name = "time-humanize"
+category = "general"
+
+[[names]]
 name = "time-macros"
 category = "general"
 
@@ -2971,11 +3383,19 @@ name = "timerfd"
 category = "general"
 
 [[names]]
+name = "tiny-keccak"
+category = "general"
+
+[[names]]
 name = "tinymap"
 category = "general"
 
 [[names]]
 name = "tinystr"
+category = "general"
+
+[[names]]
+name = "tinytemplate"
 category = "general"
 
 [[names]]
@@ -3119,6 +3539,18 @@ name = "trash"
 category = "general"
 
 [[names]]
+name = "trie-root"
+category = "general"
+
+[[names]]
+name = "trie-standardmap"
+category = "general"
+
+[[names]]
+name = "triehash"
+category = "general"
+
+[[names]]
 name = "triomphe"
 category = "general"
 
@@ -3135,6 +3567,10 @@ name = "trycmd"
 category = "general"
 
 [[names]]
+name = "ttf-parser"
+category = "general"
+
+[[names]]
 name = "tungstenite"
 category = "general"
 
@@ -3144,6 +3580,10 @@ category = "general"
 
 [[names]]
 name = "typed-arena"
+category = "general"
+
+[[names]]
+name = "typemap"
 category = "general"
 
 [[names]]
@@ -3167,7 +3607,15 @@ name = "uds_windows"
 category = "general"
 
 [[names]]
+name = "uint"
+category = "general"
+
+[[names]]
 name = "ulid"
+category = "general"
+
+[[names]]
+name = "unarray"
 category = "general"
 
 [[names]]
@@ -3311,6 +3759,10 @@ name = "vte_generate_state_changes"
 category = "general"
 
 [[names]]
+name = "wait-timeout"
+category = "general"
+
+[[names]]
 name = "waker-fn"
 category = "general"
 
@@ -3376,6 +3828,10 @@ category = "general"
 
 [[names]]
 name = "wasm_evt_listener"
+category = "general"
+
+[[names]]
+name = "wasm_sync"
 category = "general"
 
 [[names]]
@@ -3583,11 +4039,19 @@ name = "wyhash"
 category = "general"
 
 [[names]]
+name = "wyz"
+category = "general"
+
+[[names]]
 name = "x25519-dalek"
 category = "general"
 
 [[names]]
 name = "x509-parser"
+category = "general"
+
+[[names]]
+name = "x86"
 category = "general"
 
 [[names]]
@@ -3648,6 +4112,10 @@ category = "general"
 
 [[names]]
 name = "zerovec-derive"
+category = "general"
+
+[[names]]
+name = "ziggy"
 category = "general"
 
 [[names]]
@@ -3799,6 +4267,19 @@ admitted-at = "2022-08-30T10:42:28Z"
 kind = "crates-io"
 
 [[packages]]
+name = "anes"
+version = "0.1.6"
+state = "active"
+crate-sha256 = "4b46cbb362ab8752921c97e041f5e366ee6297bd428a31275b9fcf1e380f7299"
+source-row-sha256 = "c630487ec7ddfa9831633dbbcb04bbe75802aabed3fdc013af84a90dd043fb64"
+index-row-sha256 = "21e41604b21f8cebc56fad323f6645456f6be6cf8abe814b0397c761ac3b883a"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2019-11-29T16:07:46Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
 name = "anstream"
 version = "1.0.0"
 state = "active"
@@ -3907,6 +4388,19 @@ admitted-at = "2024-10-08T15:30:06Z"
 kind = "crates-io"
 
 [[packages]]
+name = "arbitrary"
+version = "1.5.0"
+state = "active"
+crate-sha256 = "3bc62ac97cc33321f50863d514c3bc38a453947a8f9e781137e47c7401020aed"
+source-row-sha256 = "3d366c7c8df39f68ddf35be4b17ff060bad26ff2b71d9e918d468e34391568ed"
+index-row-sha256 = "73bfd7eb3e19751f671acc7e2bb949d8443804e44653c088389e86f4516668d0"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2026-10-06T23:00:58Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
 name = "archery"
 version = "1.2.3"
 state = "active"
@@ -3914,6 +4408,123 @@ crate-sha256 = "33ca55ee147b1926dbea904f50fe4902494e97bc742205abbbf10c709e43815f
 source-row-sha256 = "55a40a9728319a5a9846899bbea6d49bcbaab3ba71a9ff750e1dc48a595408da"
 index-row-sha256 = "07100a85c8ab9702edc8ddcaa5b038f1c57e2a2ba79c29ccc9be9c09d9891743"
 admitted-at = "2026-08-09T23:14:46Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "ark-bls12-381"
+version = "0.5.0"
+state = "active"
+crate-sha256 = "3df4dcc01ff89867cd86b0da835f23c3f02738353aaee7dde7495af71363b8d5"
+source-row-sha256 = "e40df74296accc32f2d7dc43a6a08f4b2e2e7d29c4c6e732481f6a7f35e3dcf1"
+index-row-sha256 = "46c424880133f826fb9b2aed8e7435a00af7b05fd8518e1e2476d7e60a722f34"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2024-10-28T12:02:16Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "ark-ec"
+version = "0.5.0"
+state = "active"
+crate-sha256 = "43d68f2d516162846c1238e755a7c4d131b892b70cc70c471a8e3ca3ed818fce"
+source-row-sha256 = "3caaa19e466b08dec8137be05d7388c3be10899c1d61281b6aef4ae3695ef9a5"
+index-row-sha256 = "71cd362b4b5339f1435ba3ec61a836f253e2349e7a54f4f420c579e1764ba9c6"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2024-10-28T11:04:28Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "ark-ff"
+version = "0.5.0"
+state = "active"
+crate-sha256 = "a177aba0ed1e0fbb62aa9f6d0502e9b46dad8c2eab04c14258a1212d2557ea70"
+source-row-sha256 = "c3a85ab8e40f2d144d6630ef8f0b4b0cb6713f490fe390e255e08995b3f4a639"
+index-row-sha256 = "ea37e6616290e0bda73aa83d1b1edffa7d4629f665bddf07af0ec55535cea315"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2024-10-28T11:01:35Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "ark-ff-asm"
+version = "0.5.0"
+state = "active"
+crate-sha256 = "62945a2f7e6de02a31fe400aa489f0e0f5b2502e69f95f853adb82a96c7a6b60"
+source-row-sha256 = "d8ac79072d3c6ae8f28f0d2e3695735d1c655ce18dce5bcc1f901642f4e2c3e1"
+index-row-sha256 = "8a2b55e8e5f586d95af6f0f5bc0997fca74a0003a63eb1bc42270ff7b971ce1d"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2024-10-28T11:00:23Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "ark-ff-macros"
+version = "0.5.0"
+state = "active"
+crate-sha256 = "09be120733ee33f7693ceaa202ca41accd5653b779563608f1234f78ae07c4b3"
+source-row-sha256 = "034aa3731655dda099238723ad04ebed1ab0d29aa5100f1a9e647ef2ed7e3744"
+index-row-sha256 = "ea44d400fd248f5e30d65804440697b0749ec1def284d53abf41eecbfc07e093"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2024-10-28T10:59:20Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "ark-poly"
+version = "0.5.0"
+state = "active"
+crate-sha256 = "579305839da207f02b89cd1679e50e67b4331e2f9294a57693e5051b7703fe27"
+source-row-sha256 = "1013d18a1a3053e2f358a15a90c0d3917b9ee56f259cc8fe59159eb03c52343d"
+index-row-sha256 = "09d8ca32ee2131343cc7d75b1851d68b78652cb7cde272003c16a3e67651d8c8"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2024-10-28T11:03:02Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "ark-serialize"
+version = "0.5.0"
+state = "active"
+crate-sha256 = "3f4d068aaf107ebcd7dfb52bc748f8030e0fc930ac8e360146ca54c1203088f7"
+source-row-sha256 = "ea48d4603cffe417d9510917b73e8dcda462d502c591031d37648128755a1a26"
+index-row-sha256 = "6d6a9fdc0ddcfbb2e37772eed5d3a4ab2e4e86c38f1fc1394700c2fadebb26b6"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2024-10-28T10:58:16Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "ark-serialize-derive"
+version = "0.5.0"
+state = "active"
+crate-sha256 = "213888f660fddcca0d257e88e54ac05bca01885f258ccdf695bafd77031bb69d"
+source-row-sha256 = "f7f16172a20eab61b0f96ad4b05a93cdadb1576d428839fd0e35a2d06bcedceb"
+index-row-sha256 = "2ae6eb87f9e22581794bbb5474be36491dc8f17ee2be8edb3bd9de3324f71bf8"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2024-10-28T10:57:09Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "ark-std"
+version = "0.5.0"
+state = "active"
+crate-sha256 = "246a225cc6131e9ee4f24619af0f19d67761fff15d7ccc22e42b80846e69449a"
+source-row-sha256 = "76795ede546ff92230a611de5c235f4471237f2580b47f51442740bfc1949362"
+index-row-sha256 = "b665445fbb6eef2c2882b7ebee2e4e133ff2e781e4dc23b75025865687f999a1"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2024-10-28T10:38:24Z"
 
 [packages.source]
 kind = "crates-io"
@@ -4135,6 +4746,19 @@ admitted-at = "2020-01-05T22:19:33Z"
 kind = "crates-io"
 
 [[packages]]
+name = "auto_impl"
+version = "1.4.0"
+state = "active"
+crate-sha256 = "683bf733a032aec4f8954e5c0ec9d5c2183c341c49d0939ad77acc0a19fa338a"
+source-row-sha256 = "49cef1237139527fb963003d83aed9d9de668e90576e62a8966dfe7d27375f29"
+index-row-sha256 = "518a677e18e8b7f961462bb1000d71b33e7c71f839c137dfdf9df2e4effeb692"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2026-10-03T23:54:20Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
 name = "autocfg"
 version = "1.5.0"
 state = "active"
@@ -4351,6 +4975,19 @@ admitted-at = "2024-02-01T19:11:58Z"
 kind = "crates-io"
 
 [[packages]]
+name = "bitvec"
+version = "1.1.1"
+state = "active"
+crate-sha256 = "ddcec3d12c579d40898fe0a9a358a803c23e9c52ca3c425707f81c9436211837"
+source-row-sha256 = "2562f9391ab55fe7924aa08e6508bc8ed4b630001c694dbc2bef0bc91a751e81"
+index-row-sha256 = "7fb8770b19ebb4632d677ded1e131bb0c01e93b15002fe11a3105c675b553c28"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2026-06-18T19:47:24Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
 name = "blake3"
 version = "1.8.6"
 state = "active"
@@ -4459,6 +5096,19 @@ admitted-at = "2026-05-22T14:59:11Z"
 kind = "crates-io"
 
 [[packages]]
+name = "byte-slice-cast"
+version = "1.2.3"
+state = "active"
+crate-sha256 = "7575182f7272186991736b70173b0ea045398f984bf5ebbb3804736ce1330c9d"
+source-row-sha256 = "f132762f901c025e5de85a722f3e32033f122c51be3cb77f48d73e794f275fde"
+index-row-sha256 = "edc97b30b46e62ad669ff12c267082d653b70d714ba42eb2b823f8f3748e7f5c"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2025-03-03T10:02:39Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
 name = "bytecount"
 version = "0.6.9"
 state = "active"
@@ -4514,6 +5164,19 @@ crate-sha256 = "7354288c522e7e980fafd2075d63d1285794c3a6a16cdd492f189ea406e5f18b
 source-row-sha256 = "51f2dded15df608d5881344957fba638b2a810dbba645d8944dc0b90ea40449c"
 index-row-sha256 = "79714b8eab7549fe627a4c2bf11376cb7452a6e7b2313906554fceac8f086c1f"
 admitted-at = "2026-08-02T03:27:39Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "cast"
+version = "0.3.0"
+state = "active"
+crate-sha256 = "37b2a672a2cb129a2e41c10b1224bb368f9f37a2b16b612598138befd7b37eb5"
+source-row-sha256 = "476b67290fa543483248964f5cde98da8bb69d71c3915876db1e8f2d8b5cc97d"
+index-row-sha256 = "9a3b19045ff8de816e3e1d86127ba5269c1852c7e61122d8001110bb605e3e3c"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2021-09-04T11:07:33Z"
 
 [packages.source]
 kind = "crates-io"
@@ -4682,6 +5345,45 @@ crate-sha256 = "1aa79e62e7697b8e29b513a68abacf485adcd1fe8284a4316c5ae868e6633327
 source-row-sha256 = "c28420ecbe522713f64ff2aba0243d8515f03a421a58a96b500d4bff5e4d3883"
 index-row-sha256 = "0770516286a67cd26b9f0ade61590b4ccfb987ac31c8c9e8cf0663b7d8794641"
 admitted-at = "2026-06-04T12:16:42Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "ciborium"
+version = "0.2.2"
+state = "active"
+crate-sha256 = "42e69ffd6f0917f5c029256a24d0161db17cea3997d185db0d35926308770f0e"
+source-row-sha256 = "bee89431bba67317c8986f8fdba13615385403d36c79c65d7b71fd883aa81ec0"
+index-row-sha256 = "b6857e7f25bbe159fd2850f3a2fed1a5b23d7d81de18b92c41cccc82abc7399a"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2024-01-24T03:04:25Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "ciborium-io"
+version = "0.2.2"
+state = "active"
+crate-sha256 = "05afea1e0a06c9be33d539b876f1ce3692f4afea2cb41f740e7743225ed1c757"
+source-row-sha256 = "016cfc6f135941e8e2290938d8b930d1a9d433f5a0676dfb0df739f2b1940627"
+index-row-sha256 = "1e32cc66840b7a98ded3ad04b8da4378062e9df7ac19e7fc168e7371416c0598"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2024-01-24T03:02:36Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "ciborium-ll"
+version = "0.2.2"
+state = "active"
+crate-sha256 = "57663b653d948a338bfb3eeba9bb2fd5fcfaecb9e199e87e1eda4d9e8b240fd9"
+source-row-sha256 = "2a5efe0b2f8cedf7a330ff8c65c6cf5311d085fe58c090240534056ddce128d3"
+index-row-sha256 = "be6df0658f5cb079379fe3295ed86e53dffa419ef3c2e9b974b348dd79b87a1e"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2024-01-24T03:03:42Z"
 
 [packages.source]
 kind = "crates-io"
@@ -4879,6 +5581,32 @@ admitted-at = "2026-01-07T23:11:57Z"
 kind = "crates-io"
 
 [[packages]]
+name = "const_format"
+version = "0.2.35"
+state = "active"
+crate-sha256 = "7faa7469a93a566e9ccc1c73fe783b4a65c274c5ace346038dca9c39fe0030ad"
+source-row-sha256 = "09c19f87625909458322cd314343be1582a2d43cf05547959fb37861eea955d0"
+index-row-sha256 = "619a5f15127aac3b1a18d4b78d0c1112c8edc2af52ea054fe20d6d4ffb555964"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2025-10-06T05:00:07Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "const_format_proc_macros"
+version = "0.2.34"
+state = "active"
+crate-sha256 = "1d57c2eccfb16dbac1f4e61e206105db5820c9d26c3c472bc17c774259ef7744"
+source-row-sha256 = "0342f7d17559d07f05bbf1d7ea598d7e2daa6c072c4f31656f45f7a163df167f"
+index-row-sha256 = "f3fa4e347bf60df6a77770933e3ae87d46dbee0e57c5fb8189e26a9bac01e737"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2024-12-06T21:09:55Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
 name = "const_panic"
 version = "0.2.15"
 state = "active"
@@ -4975,6 +5703,58 @@ admitted-at = "2025-07-13T15:09:03Z"
 kind = "crates-io"
 
 [[packages]]
+name = "criterion"
+version = "0.7.0"
+state = "active"
+crate-sha256 = "e1c047a62b0cc3e145fa84415a3191f628e980b194c2755aa12300a4e6cbd928"
+source-row-sha256 = "86c66412d7ad47d2434a05414c0d9d4f07c1ff5cebf6bd54f663f3d73cf99220"
+index-row-sha256 = "9cef37c17f09c13414d7effed39f34d5db4336073ea6db7e4f29eab58c5946a3"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2025-07-25T10:53:22Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "criterion-plot"
+version = "0.6.0"
+state = "active"
+crate-sha256 = "9b1bcc0dc7dfae599d84ad0b1a55f80cde8af3725da8313b528da95ef783e338"
+source-row-sha256 = "27c5e350caf1142bb9e853aa18d5536827b7db2891c95791a79dce5db3acc2bd"
+index-row-sha256 = "4fed6d171f2acc01b26365868de5dd04c5e0d965913766c6a04021faf748533d"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2025-07-25T10:53:04Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "crossbeam-deque"
+version = "0.8.8"
+state = "active"
+crate-sha256 = "622f3fc73690be383c7214310406f28a90e6edeadc3cea882f9d71e495b9711a"
+source-row-sha256 = "c1c628ad05c480f6c38f0bb0c0609465c31cc767b899e246ada0bdac1f2e25ab"
+index-row-sha256 = "83b0fd86859188d771405b43da76e544afe90b6142ac8efacbf483881ef4c971"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2026-09-05T17:47:08Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "crossbeam-epoch"
+version = "0.9.21"
+state = "active"
+crate-sha256 = "dc74980687109a3b14c72fd458107bf0baa1da1a1a805e178d15501ba9b86d9d"
+source-row-sha256 = "d486df57526ccfd2e77ba302d179a53525d6e601063313ba1902c16c200abdbb"
+index-row-sha256 = "bff5d718e4b1a6bac531909fea8bd43f21555dd5242da206a299d5c77f54e2b7"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2026-09-05T17:46:49Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
 name = "crossbeam-utils"
 version = "0.8.22"
 state = "active"
@@ -4982,6 +5762,19 @@ crate-sha256 = "61803da095bee82a81bb1a452ecc25d3b2f1416d1897eb86430c6159ef717c17
 source-row-sha256 = "aada44c6f9cab0319af9cb7837d09050e46ac63434b8141bfcb1a8b67d2cc2be"
 index-row-sha256 = "5535cceca13f916b7836f0372311c4337d3c779ddc4be012a4f09f220f3c108c"
 admitted-at = "2026-07-06T15:51:40Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "crunchy"
+version = "0.2.4"
+state = "active"
+crate-sha256 = "460fbee9c2c2f33933d720630a6a0bac33ba7053db5344fac858d4b8952d77d5"
+source-row-sha256 = "72d9a2d9456e08e178351993cdb3a14f648d2e4414dbb24b79ad955be9b01505"
+index-row-sha256 = "3fcad7cdf035b88f7239536fefc476614741d59eee520a687e9c2d082236d916"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2025-06-25T12:54:43Z"
 
 [packages.source]
 kind = "crates-io"
@@ -5227,6 +6020,19 @@ admitted-at = "2021-01-23T17:05:39Z"
 kind = "crates-io"
 
 [[packages]]
+name = "derive_arbitrary"
+version = "1.5.0"
+state = "active"
+crate-sha256 = "1b034bd7d5f032402a2479444dcc6f74e36a03f31854d41680fb240ef682a1ac"
+source-row-sha256 = "0c8e2c38003b0e3fe118b5a45a1652579a0359fd82ca0d64ac36a2efa0fab718"
+index-row-sha256 = "cd556f561fc6b121e367822677251ed24ba13e1b15c0a678276ba6f8979ce84f"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2026-10-06T23:00:50Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
 name = "derive_more"
 version = "1.0.0"
 state = "active"
@@ -5419,6 +6225,19 @@ admitted-at = "2025-07-09T16:24:38Z"
 kind = "crates-io"
 
 [[packages]]
+name = "educe"
+version = "0.6.0"
+state = "active"
+crate-sha256 = "1d7bc049e1bd8cdeb31b68bbd586a9464ecf9f3944af3958a7a9d0f8b9799417"
+source-row-sha256 = "e553955e808c049fa5ce4cbac44d6f6485057bccb3e1a3020d151d80e4311563"
+index-row-sha256 = "6483d2b8f01743ec27491347b1fb357bba204a4b185379be715f66caa15c63f8"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2024-06-01T07:36:58Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
 name = "either"
 version = "1.17.0"
 state = "active"
@@ -5455,6 +6274,45 @@ admitted-at = "2024-07-31T22:44:11Z"
 kind = "crates-io"
 
 [[packages]]
+name = "enum-ordinalize"
+version = "4.3.2"
+state = "active"
+crate-sha256 = "4a1091a7bb1f8f2c4b28f1fe2cef4980ca2d410a3d727d67ecc3178c9b0800f0"
+source-row-sha256 = "408abf795b6f8556f12dc0010bf870585b50f052ebd8df0a3fb84a49e4ac6875"
+index-row-sha256 = "71416982883b6bed334c79ceac8f21f472f9536e9de9b05ccad73cdf2a1b400f"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2025-10-28T06:41:04Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "enum-ordinalize-derive"
+version = "4.3.2"
+state = "active"
+crate-sha256 = "8ca9601fb2d62598ee17836250842873a413586e5d7ed88b356e38ddbb0ec631"
+source-row-sha256 = "9e8c5e69a8c7c8abdefdb3939ac854fc5d74921ab65d092f4d35e838e3f39730"
+index-row-sha256 = "3fa65214c5e8ab40564a8ee8fd5e331e8b53eca074ab35a8122e2c1632203319"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2025-10-28T06:40:48Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "environmental"
+version = "1.1.4"
+state = "active"
+crate-sha256 = "e48c92028aaa870e83d51c64e5d4e0b6981b360c522198c23959f219a4e1b15b"
+source-row-sha256 = "78e209e81f2e60e531ae42929f6c4aa142537fc3abcc3b438479717ef9bcaa9d"
+index-row-sha256 = "66d6717c2144ac926ee3cbed2edfb84452007e7dc4305277696b33e2d82576f4"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2022-11-30T14:28:07Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
 name = "equivalent"
 version = "1.0.2"
 state = "active"
@@ -5474,6 +6332,45 @@ crate-sha256 = "39cab71617ae0d63f51a36d69f866391735b51691dbda63cf6f96d042b63efeb
 source-row-sha256 = "eb20a134b5c399a0c4db1a1bec9b791a8ab60ba7dd025dd2c61f1ee6919d9682"
 index-row-sha256 = "39245736eccca44a0bbfea0e81569e72ebe38c0192faa84fd7773e2b5b370ba0"
 admitted-at = "2025-09-09T04:35:15Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "ethbloom"
+version = "0.14.1"
+state = "active"
+crate-sha256 = "8c321610643004cf908ec0f5f2aa0d8f1f8e14b540562a2887a1111ff1ecbf7b"
+source-row-sha256 = "4a2b690b568ee12d32ae9a34c431739dc2c845cc8764b849c03a7b8b182e22ff"
+index-row-sha256 = "e7a5457a02a1e3e312ec7d97ecff4c9965ca455414b3980c307489e2826e228e"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2024-09-12T11:06:00Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "ethereum"
+version = "0.18.2"
+state = "active"
+crate-sha256 = "3ee371ebb7479ed3258617557ab0b3247e741075cb6b02b820d188f68da44441"
+source-row-sha256 = "3992d96b9a7be050c7b03c6e9b463fbcaf900121f19bdbae67196b6226e9e003"
+index-row-sha256 = "2c232196bc8e5c8306870be18396e3ce00916781289deadc0536dadfdb1ddc3d"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2025-07-02T09:28:43Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "ethereum-types"
+version = "0.15.1"
+state = "active"
+crate-sha256 = "1ab15ed80916029f878e0267c3a9f92b67df55e79af370bf66199059ae2b4ee3"
+source-row-sha256 = "4bb4ab638c5cbaff9d9185637b2173c376ed07d6dae443456a606e81922584b5"
+index-row-sha256 = "a23bc5a30962e642f181f4e84ffa1ab55d9b4e5dc22d685c696cfc3dc751c052"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2024-09-12T11:05:19Z"
 
 [packages.source]
 kind = "crates-io"
@@ -5659,6 +6556,19 @@ admitted-at = "2026-01-30T06:51:20Z"
 kind = "crates-io"
 
 [[packages]]
+name = "fixed-hash"
+version = "0.8.0"
+state = "active"
+crate-sha256 = "835c052cb0c08c1acf6ffd71c022172e18723949c8282f2b9f27efbc51e64534"
+source-row-sha256 = "91c62dd51a57cd776556527a9384f4fa723732de13db0ce96ed72358ceef1cb4"
+index-row-sha256 = "b57f8907182e4d0b64b5bd3c932bb83396c7a77077b99a49b7f3502fd8392132"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2022-09-20T13:04:35Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
 name = "fixedbitset"
 version = "0.5.7"
 state = "active"
@@ -5774,6 +6684,19 @@ crate-sha256 = "76ee7a02da4d231650c7cea31349b889be2f45ddb3ef3032d2ec8185f6313fd2
 source-row-sha256 = "b90cc644cb7d31d3c02f6f88394ddf60d71658a82cb3c0dc5922e6362f6c54f4"
 index-row-sha256 = "26f57ccdf44cf47e439e5589af1b069d0577491469d8d9cfeaa6825cd1e66c97"
 admitted-at = "2022-01-05T21:39:46Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "funty"
+version = "2.0.0"
+state = "active"
+crate-sha256 = "e6d5a32815ae3f33302d95fdcb2ce17862f8c65363dcfd29360480ba1001fc9c"
+source-row-sha256 = "74eb31f8a0b57ffee2b227885a0d40a0fc80853925a6ef9fbe1839553ca8e8ed"
+index-row-sha256 = "dc2ffd25e640d5a6c56d74b7b722defb2bd4ba7209b32b0f9fc60d0eaec86517"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2021-11-28T08:56:54Z"
 
 [packages.source]
 kind = "crates-io"
@@ -6151,6 +7074,45 @@ admitted-at = "2026-06-15T12:52:41Z"
 kind = "crates-io"
 
 [[packages]]
+name = "hash-db"
+version = "0.15.2"
+state = "active"
+crate-sha256 = "d23bd4e7b5eda0d0f3a307e8b381fdc8ba9000f26fbe912250c0a4cc3956364a"
+source-row-sha256 = "af2dfc11781edc68206475428880dae8c081a63d7f78f0910eec444aad6a9dab"
+index-row-sha256 = "61e432a72071c7b8cb6384736463125c684759eaa9a1eb67fc28c35dace5128a"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2019-08-19T12:57:13Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "hash-db"
+version = "0.16.0"
+state = "active"
+crate-sha256 = "8e7d7786361d7425ae2fe4f9e407eb0efaa0840f5212d109cc018c40c35c6ab4"
+source-row-sha256 = "c545db9183ffc59fb79738d2e811f5c3fb3d34a57194c4e0623762fb1826b0aa"
+index-row-sha256 = "40e204741a447ee481193b74fe14c1b274d3e2fc9f98b2c80bb9572686d2af64"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2023-03-14T15:22:50Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "hash256-std-hasher"
+version = "0.15.2"
+state = "active"
+crate-sha256 = "92c171d55b98633f4ed3860808f004099b36c1cc29c42cfc53aa8591b21efcf2"
+source-row-sha256 = "c56eb6fc2cb92e12524d0656636192c3c6ee734a143ff8928dab1b687bfa15a8"
+index-row-sha256 = "f486f136fde010ebbc8c3faee094ef897c593be3e22a46b03bac28f162a67329"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2019-08-19T12:58:00Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
 name = "hashbrown"
 version = "0.12.3"
 state = "active"
@@ -6283,6 +7245,32 @@ admitted-at = "2021-03-03T10:48:58Z"
 kind = "crates-io"
 
 [[packages]]
+name = "hex-literal"
+version = "0.4.1"
+state = "active"
+crate-sha256 = "6fe2267d4ed49bc07b63801559be28c718ea06c4738b7a03c94df7386d2cde46"
+source-row-sha256 = "95a58d5977fff71c8eeea658819f42a90f49e718a70838fa235705f80c68e553"
+index-row-sha256 = "c424f8066997f60dab2d39f66cb515d3770268247e769f40d6219708911d7552"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2023-04-05T12:09:01Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "hex-literal"
+version = "1.1.0"
+state = "active"
+crate-sha256 = "e712f64ec3850b98572bffac52e2c6f282b29fe6c5fa6d42334b30be438d95c1"
+source-row-sha256 = "8151d1f931e0b0326710acc3ebfd4378d9611943bd82e8a011fd61b1d255f6bd"
+index-row-sha256 = "c3c462d48c908d5063ebb803bf11b912f1e914335d6694defc2d53a57dd49156"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2025-10-29T12:50:41Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
 name = "hkdf"
 version = "0.12.4"
 state = "active"
@@ -6302,6 +7290,19 @@ crate-sha256 = "6c49c37c09c17a53d937dfbb742eb3a961d65a994e6bcdcf37e7399d0cc8ab5e
 source-row-sha256 = "7afa75f616cb9a4c585ad8bfacb66e1e8099d9736836c91d87fa27d3356fc4b1"
 index-row-sha256 = "14ebde857c77e42619b74b07a81970152d0eb2c78b34729eab4ace313e7ad8ce"
 admitted-at = "2022-02-17T10:50:37Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "honggfuzz"
+version = "0.5.62"
+state = "active"
+crate-sha256 = "378465388ac845720910efa26a6f46f93d744debe65710b82f0e5310058c6703"
+source-row-sha256 = "4155d32532f6c91e1816aa28844aca54093ceaa9019976afc64d7a842d103a1b"
+index-row-sha256 = "e76733b922a7e3e07139394dc27058e84e948b3ea813577f5bc9cd91c04e2020"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2026-08-04T07:43:07Z"
 
 [packages.source]
 kind = "crates-io"
@@ -6775,6 +7776,97 @@ admitted-at = "2024-06-15T12:10:37Z"
 kind = "crates-io"
 
 [[packages]]
+name = "impl-codec"
+version = "0.6.0"
+state = "active"
+crate-sha256 = "ba6a270039626615617f3f36d15fc827041df3b78c439da2cadfa47455a77f2f"
+source-row-sha256 = "d3a2c649ad00193448c84d56edb992be04f0e9f14f3e90f801b13233af3be1a2"
+index-row-sha256 = "9051f23eab12ec97246e30ca75ffb02c3460b4b7cf67ce1a57d701d4fc87fb9e"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2022-02-04T11:00:37Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "impl-codec"
+version = "0.7.1"
+state = "active"
+crate-sha256 = "2d40b9d5e17727407e55028eafc22b2dc68781786e6d7eb8a21103f5058e3a14"
+source-row-sha256 = "1884ea5d894ac7d86432a2fb76b5c782a5d10ce45ae0be7a8e1dcb9480e291a2"
+index-row-sha256 = "abc30e8c605d4a78c0674d4f46d4f436b382e6656f31bf10e25ce8e36e91a15b"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2025-02-11T15:13:12Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "impl-rlp"
+version = "0.3.0"
+state = "active"
+crate-sha256 = "f28220f89297a075ddc7245cd538076ee98b01f2a9c23a53a4f1105d5a322808"
+source-row-sha256 = "3cbd51001e23b1bd5ec51b95887ad47798bc7801bbfa179b10012404408823bc"
+index-row-sha256 = "6d5365b2b7a63db7b67bc1962c1b2a17e63d751f9bd546d1784b21bf6ae37190"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2021-01-05T15:08:59Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "impl-rlp"
+version = "0.4.0"
+state = "active"
+crate-sha256 = "54ed8ad1f3877f7e775b8cbf30ed1bd3209a95401817f19a0eb4402d13f8cf90"
+source-row-sha256 = "22276251874eda15c5344742e237c24a9573cc61267aaf10f7bf3c27c5bdd6b8"
+index-row-sha256 = "fcf6ec6a06b4e5bde0b1498f4b0084bc080729d76ee6a36e7c4ad1e44bfb832d"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2024-09-11T09:48:36Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "impl-serde"
+version = "0.4.0"
+state = "active"
+crate-sha256 = "ebc88fc67028ae3db0c853baa36269d398d5f45b6982f95549ff5def78c935cd"
+source-row-sha256 = "6a18ac3cf175245917604ebb792fdd6fc0ee31e604af3ba7d63512fbb73a1aa2"
+index-row-sha256 = "cc0a26f425648fa0570ebf8dbdb1de2e95be865cd951437b9af1076d1f7df4d1"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2022-09-02T20:17:19Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "impl-serde"
+version = "0.5.0"
+state = "active"
+crate-sha256 = "4a143eada6a1ec4aefa5049037a26a6d597bfd64f8c026d07b77133e02b7dd0b"
+source-row-sha256 = "221ad4cf03fdfcb98628d7f7b79753411126b84f11f9623505887b6b45471d4e"
+index-row-sha256 = "16f80544140cdd6140973755c63d4990ffee0c13be5a9d0947e8f077ef8521b5"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2024-09-11T09:45:27Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "impl-trait-for-tuples"
+version = "0.2.3"
+state = "active"
+crate-sha256 = "a0eb5a3343abf848c0984fe4604b2b105da9539376e24fc0a3b0007411ae4fd9"
+source-row-sha256 = "c3e8e8842ba0f6b2ef39ae7633f4c9eaec65e47f3730758fd8202353dcc7c3e2"
+index-row-sha256 = "7fed3920ec5e84e188c5447075c921cfb5efd7f8a7587be96001c8ee0e6031e7"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2024-11-21T10:24:22Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
 name = "include_dir"
 version = "0.7.4"
 state = "active"
@@ -6926,6 +8018,19 @@ crate-sha256 = "b0fd2260e829bddf4cb6ea802289de2f86d6a7a690192fbe91b3f46e0f2c8473
 source-row-sha256 = "a7100de2844bd434ec7bf3e8552925a8967772316b41330558e0ada7e9633146"
 index-row-sha256 = "d1087e50568e8f857652bca0e6d8904abc34c1fcc1a4e97ece9286fec7b58a47"
 admitted-at = "2022-09-20T14:32:39Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "itertools"
+version = "0.13.0"
+state = "active"
+crate-sha256 = "413ee7dfc52ee1a4949ceeb7dbc8a33f2d6c088194d9f922fb8318faf1f01186"
+source-row-sha256 = "b7cf3a1455b3eaeb07437a5263c6afc4ca4f4a629e00cdb87b2f73b544c99cf5"
+index-row-sha256 = "b76279be288f3919c35440d864e75a9e330119a65b6b118221fccff10d38582d"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2024-05-16T15:37:32Z"
 
 [packages.source]
 kind = "crates-io"
@@ -7166,6 +8271,32 @@ crate-sha256 = "881733cbc631fc9e472e24447ce32a64bedf2da498d6d8570b08edc87de71f65
 source-row-sha256 = "37360f05cb91d5ceb1e52b029d145449fc2b3705f6b49237ff7521eeb3de3040"
 index-row-sha256 = "70faf6280943da25511896797478bf2de4e23c07b964cf839177e683e35141bf"
 admitted-at = "2026-07-24T10:59:32Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "k256"
+version = "0.13.4"
+state = "active"
+crate-sha256 = "f6e3919bbaa2945715f0bb6d3934a173d1e9a59ac23767fbaaef277265a7411b"
+source-row-sha256 = "7d1ac61925de36d381c878282a272bf12ab8707c8f7dae3fdf9ded39500fc99d"
+index-row-sha256 = "aac9f0bfeeea823c0f370be8b7d969448561778ea22f14c8440a3432d3e8390b"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2024-09-20T16:19:23Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "keccak"
+version = "0.1.6"
+state = "active"
+crate-sha256 = "cb26cec98cce3a3d96cbb7bced3c4b16e3d13f27ec56dbd62cbc8f39cfb9d653"
+source-row-sha256 = "f13155a27c8fb7b600d9b14046f05ba16010aa3b36345532cbfa022ee4769ab2"
+index-row-sha256 = "596282315e390ed939b5d2e06b37c865b30ba48650987bcbc2af1e51c7add439"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2026-02-13T17:56:37Z"
 
 [packages.source]
 kind = "crates-io"
@@ -7677,6 +8808,19 @@ admitted-at = "2026-07-08T00:49:54Z"
 kind = "crates-io"
 
 [[packages]]
+name = "memmap2"
+version = "0.9.11"
+state = "active"
+crate-sha256 = "d1219ed1b7f229ee7104d281dd01d6802fe28bb6e95d292942c4daacdeb798c0"
+source-row-sha256 = "ad29a2fea7d22679c366e7bb74ac207af98be1e185ca5c7ff39f04838d3a5c85"
+index-row-sha256 = "a7688fc4460d1cc0d4b696b25cceac5be90d06e203f2a2073ca5f8fa8b309f2c"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2026-06-22T16:04:03Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
 name = "micromap"
 version = "0.3.0"
 state = "active"
@@ -8025,6 +9169,19 @@ admitted-at = "2025-10-21T16:41:12Z"
 kind = "crates-io"
 
 [[packages]]
+name = "oorandom"
+version = "11.1.5"
+state = "active"
+crate-sha256 = "d6790f58c7ff633d8771f42965289203411a5e5c68388703c06e14f24770b41e"
+source-row-sha256 = "156f49c58afdb9f6dfe64d6d3f550beea8ca90fe7742bd8adc2450d2317090d2"
+index-row-sha256 = "16ee412597a3968cf6c0805934ddbdad1c4c135de64904de189386ffea51ecc0"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2025-03-07T13:10:16Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
 name = "opaque-debug"
 version = "0.3.1"
 state = "active"
@@ -8092,6 +9249,32 @@ crate-sha256 = "fe42f1670a52a47d448f14b6a5c61dd78fce51856e68edaa38f7ae3a46b8d6b6
 source-row-sha256 = "0b3bd6edda008c71e4f76488a1548e62bf2cd65143408ce7a2a0b65b9c43db80"
 index-row-sha256 = "f9ccf316b48babd008d8fee9ada7da7e92926ab116a3cb2e0fb0ba1bef2a3915"
 admitted-at = "2025-02-07T01:25:30Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "parity-scale-codec"
+version = "3.7.5"
+state = "active"
+crate-sha256 = "799781ae679d79a948e13d4824a40970bfa500058d245760dd857301059810fa"
+source-row-sha256 = "55bf0bd35fda7c314d482e170d92a22181b9b0f884db220d28e724c12223762b"
+index-row-sha256 = "b4a2796865ea0108097892a1db8a4e2d4598ebfd212c7d918bf7545c6a192863"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2025-05-20T11:07:30Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "parity-scale-codec-derive"
+version = "3.7.5"
+state = "active"
+crate-sha256 = "34b4653168b563151153c9e4c08ebed57fb8262bebfa79711552fa983c623e7a"
+source-row-sha256 = "2865b9083c4462e9fb7a4ddf27e28f7792a2a1226f21d3fc37d0ad17199a6eb6"
+index-row-sha256 = "8127acb229ebf52429df61c0ccc269f160e9645b9853f1c64cbc3ee3c55fedfb"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2025-05-20T11:07:20Z"
 
 [packages.source]
 kind = "crates-io"
@@ -8576,6 +9759,32 @@ admitted-at = "2023-11-16T02:38:26Z"
 kind = "crates-io"
 
 [[packages]]
+name = "primitive-types"
+version = "0.12.2"
+state = "active"
+crate-sha256 = "0b34d9fd68ae0b74a41b21c03c2f62847aa0ffea044eee893b4c140b37e244e2"
+source-row-sha256 = "4f37229d567fad86248216471971360ec8109a6ed82f23c649301b69a515e0aa"
+index-row-sha256 = "5343a4e121033847accbcfbe9bf26dd117175c14cbdf2f823a582d10b9699ffe"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2023-10-10T12:13:10Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "primitive-types"
+version = "0.13.1"
+state = "active"
+crate-sha256 = "d15600a7d856470b7d278b3fe0e311fe28c2526348549f8ef2ff7db3299c87f5"
+source-row-sha256 = "ee17b1d50c46a2b9c7b01a5ecdb6db24c4f5f229fc95fab4d61dd681aafff390"
+index-row-sha256 = "0eddc83dfe5e384e127c58566a8b82c032cec3b0cdeded40e0c8c51ff577a442"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2024-09-12T11:04:24Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
 name = "proc-macro-crate"
 version = "3.5.0"
 state = "active"
@@ -8643,6 +9852,19 @@ crate-sha256 = "2e842efad9119158434d193c6682e2ebee4b44d6ad801d7b349623b3f57cdf55
 source-row-sha256 = "ade28347562175c99b83e3788ad5e9f6d471bb0c9a1c12b2a2c6d7870e6a5b7d"
 index-row-sha256 = "d26438fb74728645e604652a41e505326bf2c07527dc20277f34014592104196"
 admitted-at = "2026-03-08T02:48:27Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "proptest"
+version = "1.11.0"
+state = "active"
+crate-sha256 = "4b45fcc2344c680f5025fe57779faef368840d0bd1f42f216291f0dc4ace4744"
+source-row-sha256 = "fa9843416e0384714b0acfaf538923d876ef91a7d9d4e5fc04c62e63150dab7e"
+index-row-sha256 = "18e18c85b365897857b8ce30fe6ec5f049ae3233fe545c7c2f1f391b437ccd15"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2026-03-24T11:01:38Z"
 
 [packages.source]
 kind = "crates-io"
@@ -8816,6 +10038,19 @@ admitted-at = "2026-02-03T09:53:46Z"
 kind = "crates-io"
 
 [[packages]]
+name = "radium"
+version = "0.7.0"
+state = "active"
+crate-sha256 = "dc33ff2d4973d518d823d61aa239014831e521c75da58e3df4840d3f47749d09"
+source-row-sha256 = "527e2d846660edf1be557b0062c244e58dd5f8e04b1818503f1125455eb019df"
+index-row-sha256 = "572918d5079ef047faed04355f8f2148bf089add6ffe5b6c18cb1f7ff57a2073"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2021-11-10T20:29:10Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
 name = "rand"
 version = "0.8.7"
 state = "active"
@@ -8960,6 +10195,19 @@ admitted-at = "2026-04-11T13:36:48Z"
 kind = "crates-io"
 
 [[packages]]
+name = "rand_xorshift"
+version = "0.4.0"
+state = "active"
+crate-sha256 = "513962919efc330f829edb2535844d1b912b0fbe2ca165d613e4e8788bb05a5a"
+source-row-sha256 = "ea1f2d15ef09b15fe63c775ee384399f2f9449b1cd5794196e031b12ae3ba849"
+index-row-sha256 = "f0b3ae8b01471e1b2c64c3bf00304f1afec308345a1e97e4034d757a24a1b011"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2025-01-27T14:40:36Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
 name = "rand_xoshiro"
 version = "0.7.0"
 state = "active"
@@ -8967,6 +10215,19 @@ crate-sha256 = "f703f4665700daf5512dcca5f43afa6af89f09db47fb56be587f80636bda2d41
 source-row-sha256 = "c13b43705c5d4594bc030d201d84a4e6efc5c270ebd233bdb2bb48affca33304"
 index-row-sha256 = "85cbf3291450c47d68ff1e04a9f10a455892035cd0cc634d627f3d608437aeb5"
 admitted-at = "2025-01-27T14:40:47Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "rayon"
+version = "1.12.0"
+state = "active"
+crate-sha256 = "fb39b166781f92d482534ef4b4b1b2568f42613b53e5b6c160e24cfbfa30926d"
+source-row-sha256 = "a2b70715176b3f427a34b697ac31b848a2b0b36d1361777bd8a1ea53522d6f55"
+index-row-sha256 = "86523193e086f481362a0634842e0d4cdf092768c44e104d25afae39a80ec8ac"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2026-04-14T00:56:56Z"
 
 [packages.source]
 kind = "crates-io"
@@ -9212,6 +10473,58 @@ admitted-at = "2025-03-11T19:42:03Z"
 kind = "crates-io"
 
 [[packages]]
+name = "ripemd"
+version = "0.1.3"
+state = "active"
+crate-sha256 = "bd124222d17ad93a644ed9d011a40f4fb64aa54275c08cc216524a9ea82fb09f"
+source-row-sha256 = "643517e5bdc0d2d3ae0badca050d454097cfbaf3dcab95f37f1908bd1129263a"
+index-row-sha256 = "a453eb227363d7ba4317af5bc40c45650aed00f07e0192e0acd60d43c27c4c0f"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2022-09-23T10:23:56Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "rlp"
+version = "0.5.2"
+state = "active"
+crate-sha256 = "bb919243f34364b6bd2fc10ef797edbfa75f33c252e7998527479c6d6b47e1ec"
+source-row-sha256 = "8eb25b3ce6e2aacddc429881aaed92bb129536c77b97737b323768ebda958a59"
+index-row-sha256 = "98b1692f83d29b98775f8a76093073cd8ddd226d8bde2088af2689247f19d4c4"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2022-10-21T09:51:09Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "rlp"
+version = "0.6.1"
+state = "active"
+crate-sha256 = "fa24e92bb2a83198bb76d661a71df9f7076b8c420b8696e4d3d97d50d94479e3"
+source-row-sha256 = "2f763c8a5f98e46f0d01e507265181e21f0a7c0e967cdb1fab480e02f5f19de0"
+index-row-sha256 = "ae17b4375dcb5895ec67bcef6e501ea78692c97656d1cd19a7dee40bdbf9de0a"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2024-09-11T10:15:27Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "rlp-derive"
+version = "0.2.0"
+state = "active"
+crate-sha256 = "652db34deaaa57929e10ca18e5454a32cb0efc351ae80d320334bbf907b908b3"
+source-row-sha256 = "fd4985191957b27f971e6e886455048fce17aa20d33e76afa5c9f9233a36dcd8"
+index-row-sha256 = "a422c59768f93d45c539e31f3e19e55a3d2de93d46b3b6bdd9339d04be979fd1"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2024-09-11T09:51:18Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
 name = "rmcp"
 version = "1.4.0"
 state = "active"
@@ -9292,6 +10605,32 @@ crate-sha256 = "b8573f03f5883dcaebdfcf4725caa1ecb9c15b2ef50c43a07b816e06799bb12d
 source-row-sha256 = "36f1392ced5d0cad3429d2cfab0e0114ed3fc73efb15f9af2241800640d316a8"
 index-row-sha256 = "2766ed3c14096f6eb2342edc86011d8a111c57cd90ce45a572adabe58444a981"
 admitted-at = "2026-01-06T15:00:37Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "ruint"
+version = "1.17.2"
+state = "active"
+crate-sha256 = "c141e807189ad38a07276942c6623032d3753c8859c146104ac2e4d68865945a"
+source-row-sha256 = "65f2919cedbe7308f8b139c8d0b3a1c8d61544ec75248288370c2c403ab1fef4"
+index-row-sha256 = "a6d4852514b6e699c7fb2289ec84b0fdee41c3b84308b9b31d992a78ffac6034"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2025-12-28T14:42:51Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "ruint-macro"
+version = "1.2.1"
+state = "active"
+crate-sha256 = "48fd7bd8a6377e15ad9d42a8ec25371b94ddc67abe7c8b9127bec79bebaaae18"
+source-row-sha256 = "f5e04cd068214660597a108c7f942c5131434742f5be416226410dabe3861eb7"
+index-row-sha256 = "8ffa2df88b666133aae356457af03fa7ee7d755d5aef89f4c5bfba30d011b498"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2024-06-03T16:39:36Z"
 
 [packages.source]
 kind = "crates-io"
@@ -9424,6 +10763,19 @@ crate-sha256 = "6b1e7f9a428571be2dc5bc0505c13fb6bf936822b894ec87abf8a08a4e51742d
 source-row-sha256 = "cb150959bd2450bdd42014652342f949d40ef4522f96a47b3f9b0db7b584e462"
 index-row-sha256 = "2e67810b7cf74c80e262ab50c969c488b970c630352196dd22ee3710a72ecdcd"
 admitted-at = "2026-07-02T19:13:03Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "rustc-hex"
+version = "2.1.0"
+state = "active"
+crate-sha256 = "3e75f6a532d0fd9f7f13144f392b6ad56a32696bfcd9c78f797f16bbb6f072d6"
+source-row-sha256 = "e3c624e16536b68b9ef5ed5edb06a8dc1bd3784a41cb7ce728c874aab5383ddc"
+index-row-sha256 = "bf6440cab7c7ba01f8f829fda938a1b76fc83bdc0565a03f91393c3d260add96"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2020-01-10T14:09:36Z"
 
 [packages.source]
 kind = "crates-io"
@@ -9628,6 +10980,32 @@ crate-sha256 = "93fc1dc3aaa9bfed95e02e6eadabb4baf7e3078b0bd1b4d7b6b0b68378900502
 source-row-sha256 = "ea5f758d0fdc3ccf50ba01adcd9d5b9b886982baba7212152d397709c317ee3d"
 index-row-sha256 = "e76885c0a79cc0a9292b3d87606646f0c07379b1937f65839e82b42cceec58b5"
 admitted-at = "2020-01-11T17:02:30Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "scale-info"
+version = "2.11.6"
+state = "active"
+crate-sha256 = "346a3b32eba2640d17a9cb5927056b08f3de90f65b72fe09402c2ad07d684d0b"
+source-row-sha256 = "bcc831975d2b5e4031f468f09ac4c0db5b1a1e9d269e86b8282f88779dbbbd81"
+index-row-sha256 = "c226365d804bddaae9f3f23c3b8bf8200d9e1824b27dd3153b2bab92fc166026"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2024-11-20T14:49:29Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "scale-info-derive"
+version = "2.11.6"
+state = "active"
+crate-sha256 = "c6630024bf739e2179b91fb424b28898baf819414262c5d376677dbff1fe7ebf"
+source-row-sha256 = "adca9f1a37de251b24274dc894bb9f1ce6032b650cf1a9a9e9360eafcfafe719"
+index-row-sha256 = "73a6598daf0bc8a12932a19b49383a6548758f852dbce8540d6c374c3261ba20"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2024-11-20T14:48:49Z"
 
 [packages.source]
 kind = "crates-io"
@@ -10065,6 +11443,19 @@ admitted-at = "2025-04-30T14:38:09Z"
 kind = "crates-io"
 
 [[packages]]
+name = "sha3"
+version = "0.10.9"
+state = "active"
+crate-sha256 = "77fd7028345d415a4034cf8777cd4f8ab1851274233b45f84e3d955502d93874"
+source-row-sha256 = "60fff8c6d078a13df3e3ad45ab85e586490fa75a2f9c89fed817394b439063aa"
+index-row-sha256 = "41073e5896778bc0b9b62e521d5f53ce26ea7cc9eea31d442d64c1a147723e20"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2026-04-19T16:47:09Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
 name = "sharded-slab"
 version = "0.1.7"
 state = "active"
@@ -10318,6 +11709,32 @@ admitted-at = "2025-10-09T05:24:54Z"
 kind = "crates-io"
 
 [[packages]]
+name = "static_assertions"
+version = "1.1.0"
+state = "active"
+crate-sha256 = "a2eb9349b6444b326872e140eb1cf5e7c522154d69e7a0ffb0fb81c06b37543f"
+source-row-sha256 = "fa0dee3fa95881377a1a737fda82c69ebd9692e21b2d0c060aabac357129044a"
+index-row-sha256 = "e4cfab79b6572049469f2bf2c42f30d5d75dccb0d5ce58545e2001f51174055c"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2019-11-03T17:02:11Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "stats_alloc"
+version = "0.1.10"
+state = "active"
+crate-sha256 = "5c0e04424e733e69714ca1bbb9204c1a57f09f5493439520f9f68c132ad25eec"
+source-row-sha256 = "77fbbcf46e24c962cdd40355590ef14e0ffedc8996f9257573020e8b2a35e239"
+index-row-sha256 = "46a4592cf6e64ec7443eaa9ff1d1b32c7855d73cd7a0d1b11063fa00e792f14f"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2022-03-30T13:36:01Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
 name = "string_cache"
 version = "0.9.0"
 state = "active"
@@ -10373,6 +11790,19 @@ crate-sha256 = "ab85eea0270ee17587ed4156089e10b9e6880ee688791d45a905f5b1ca36f664
 source-row-sha256 = "bef9e3f131496f4bdfecb66106de45fd8964547a2938e67e4e79d9a4e0cdc8a0"
 index-row-sha256 = "b6eafb142b7a01182b3d2b4a58456c186c462b9802306d2626bd4121f0ddea63"
 admitted-at = "2026-02-22T15:46:01Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "substrate-bn"
+version = "0.6.0"
+state = "active"
+crate-sha256 = "72b5bbfa79abbae15dd642ea8176a21a635ff3c00059961d1ea27ad04e5b441c"
+source-row-sha256 = "fe779c4f5b16286a3b089f41398afa5bebd76e891c7af7e4a26ec386527723ea"
+index-row-sha256 = "eed5b8a23dc791af23ee550dd2a67ab0fce5f6dc312a50f8f1316d73da2591e6"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2021-04-21T15:13:00Z"
 
 [packages.source]
 kind = "crates-io"
@@ -10457,6 +11887,19 @@ crate-sha256 = "728a70f3dbaf5bab7f0c4b1ac8d7ae5ea60a4b5549c8a5914361c99147a709d2
 source-row-sha256 = "ef536adbab1579ed6e8474b3dc25a6f5f810f568b1e1ef82f16d363f0d389ac1"
 index-row-sha256 = "e41c0b48e5e4fd9fd8a9a4383779709070828c16162c0d7fd8c63e8cd217a527"
 admitted-at = "2025-04-30T16:37:46Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "tap"
+version = "1.0.1"
+state = "active"
+crate-sha256 = "55937e1799185b12863d447f42597ed69d9928686b8d88a1df17376a097d8369"
+source-row-sha256 = "ac106ffc0c5a0f0b36b9ee5e745c8cb2e052a45184607ddf422cf48adad1d01d"
+index-row-sha256 = "8a1f774cf000178a86ec55ff665525932e6185ea302014362aff6a7843676eb4"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2021-02-13T02:43:25Z"
 
 [packages.source]
 kind = "crates-io"
@@ -10613,6 +12056,19 @@ crate-sha256 = "7e689342a48d2ea927c87ea50cabf8594854bf940e9310208848d680d668ed85
 source-row-sha256 = "fafb430f8fd698daafa6a76d0560b33ba5e7903f91f32d0f806b7ea93e0766e6"
 index-row-sha256 = "6d54d0f26f26ac9e1a39dbdcbe74f7c0de3abdcef0f2d14fdaed5ae0abf57b53"
 admitted-at = "2026-07-20T08:27:37Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "tiny-keccak"
+version = "2.0.2"
+state = "active"
+crate-sha256 = "2c9d3793400a45f954c52e73d068316d76b6f4e36977e3fcebb13a2721e80237"
+source-row-sha256 = "e1dbccba98b0dbaf8d9b6fef0ba500c45d00e95d027ae29404e21a3676c938b3"
+index-row-sha256 = "c52fcfbe5d6419a5e4098c0d3e3baff55709954d05055b6a748ab907d2e9b902"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2020-04-01T14:34:13Z"
 
 [packages.source]
 kind = "crates-io"
@@ -11038,6 +12494,32 @@ admitted-at = "2026-03-13T10:04:15Z"
 kind = "crates-io"
 
 [[packages]]
+name = "trie-root"
+version = "0.18.0"
+state = "active"
+crate-sha256 = "d4ed310ef5ab98f5fa467900ed906cb9232dd5376597e00fd4cba2a449d06c0b"
+source-row-sha256 = "74575f0ffb4e10485e392094a884a6a998a871648aa63a0819fcd2bf62e46431"
+index-row-sha256 = "54236cfd06a357ab92136637dd74e5286a9e37096b290b0274db0bf047b4e55b"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2023-03-14T15:25:09Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "triehash"
+version = "0.8.4"
+state = "active"
+crate-sha256 = "a1631b201eb031b563d2e85ca18ec8092508e262a3196ce9bd10a67ec87b9f5c"
+source-row-sha256 = "88ede4cc902918f874aabc496af30a705f5750e878998ef214e102ba792509a4"
+index-row-sha256 = "0fb2aa0d72935080b83baf89532724d40ef39e066aa43f86def09c9c53481f53"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2021-01-08T14:55:28Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
 name = "try-lock"
 version = "0.2.5"
 state = "active"
@@ -11098,6 +12580,32 @@ admitted-at = "2026-04-14T20:01:30Z"
 kind = "crates-io"
 
 [[packages]]
+name = "uint"
+version = "0.9.5"
+state = "active"
+crate-sha256 = "76f64bba2c53b04fcab63c01a7d7427eadc821e3bc48c34dc9ba29c501164b52"
+source-row-sha256 = "488f05eaec9547591ac63fc7c13309f0d5d4da707fa2b8a1eec4e21c251d071d"
+index-row-sha256 = "ae253448797d9f8ebe05ecb20ffb367534e8f4663e4736cbdab0ec5a60bcffed"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2022-11-29T17:19:14Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "uint"
+version = "0.10.2"
+state = "active"
+crate-sha256 = "2833f28e3adbd1b867292ee4053252ea89ab85e44e5e4701ffead8cada0539fa"
+source-row-sha256 = "c9072ffdf0de097941953a0e9a5bdaa18d995f475c3e44e7fb137c42256b4c28"
+index-row-sha256 = "9c491c80a22a0f4fa336df515eafc265cbadce32cfe53519572dac27e82a9790"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2026-10-02T07:40:54Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
 name = "ulid"
 version = "1.2.1"
 state = "active"
@@ -11105,6 +12613,19 @@ crate-sha256 = "470dbf6591da1b39d43c14523b2b469c86879a53e8b758c8e090a470fe7b1fbe
 source-row-sha256 = "8e3e7a14339dc3fa1d7d8b1b25afab7d18aa14f10edc71123f87baee7e49e0dd"
 index-row-sha256 = "7ca7e8a3108794a7545aac7591f3435240cda8bfe3a29e911fc48310c08a4527"
 admitted-at = "2025-03-17T02:13:23Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "unarray"
+version = "0.1.4"
+state = "active"
+crate-sha256 = "eaea85b334db583fe3274d12b4cd1880032beab409c0d774be044d4480ab9a94"
+source-row-sha256 = "3f1f27dbaeaf1b4189afd30ce396718f401355d54126f8ea119c0844685b3f3b"
+index-row-sha256 = "8c38c98e8b3c062bc75b8b238367ee8112617e24bd319da9079c97f25e556829"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2022-11-30T17:09:42Z"
 
 [packages.source]
 kind = "crates-io"
@@ -12406,6 +13927,19 @@ admitted-at = "2026-04-02T21:36:45Z"
 kind = "crates-io"
 
 [[packages]]
+name = "wyz"
+version = "0.5.1"
+state = "active"
+crate-sha256 = "05f360fc0b24296329c78fda852a1e9ae82de9cf7b27dae4b7f62f118f77b9ed"
+source-row-sha256 = "026862372244d2a2304fa2f4366b8852ee57927cadc2b7604ab9d6b91fe82549"
+index-row-sha256 = "a0711562c49430fb7fcb6f6c39d2dfc29b4dd0e80b203cbb0e59bb1c823bf3b4"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2022-11-16T04:53:04Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
 name = "x25519-dalek"
 version = "2.0.1"
 state = "active"
@@ -12677,6 +14211,19 @@ crate-sha256 = "625dc425cab0dca6dc3c3319506e6593dcb08a9f387ea3b284dbd52a92c40555
 source-row-sha256 = "c750cc35ebc60b02de7b15ac4267c4ac9bbc609436d366f3f9b6320a7e76c4f8"
 index-row-sha256 = "56ae5b8aa840036d7380cbc1340b4f1f894d92b14e59572d2d671059b5ede2cf"
 admitted-at = "2026-04-01T16:47:01Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "ziggy"
+version = "1.7.3"
+state = "active"
+crate-sha256 = "6debdb50ce10aa5ac4a2e066b048d884874b258856d1f2f0cde0d0c4eb575ea5"
+source-row-sha256 = "fd4f4c2617ce8b27ed5602bd31f78eae0879124f0c3be9d930446e54eb3720bc"
+index-row-sha256 = "c5498317c24f7dc5a6e4401c1ebf9fafab0bddf75b2be83153b4cb573d35fc5e"
+admission-sha256 = "924cfd86f3df80064ff91ceea9418b5e1b931e57b0d71725500ec7ca6bd946d0"
+admitted-at = "2026-09-01T09:33:02Z"
 
 [packages.source]
 kind = "crates-io"

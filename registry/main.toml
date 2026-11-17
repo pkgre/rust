@@ -16,6 +16,12 @@ agent-client-protocol = ["2.0.0"]
 agent-client-protocol-derive = ["2.0.0"]
 agent-client-protocol-schema = ["1.5.0"]
 
+[categories.ethereum]
+may-depend-on = ["main/ethereum", "main/general"]
+
+[categories.ethereum.mirror]
+ethereum = ["0.18.2"]
+
 [categories.filesystem]
 may-depend-on = ["main/filesystem", "main/general"]
 

@@ -20,6 +20,7 @@ Categories are catalog policy identities, not Cargo registry aliases. Every pack
 |---|---|---|
 | `main/general` | General crates.io packages | `main/general` |
 | `main/acp` | Agent Client Protocol packages | `main/acp`, `main/general` |
+| `main/ethereum` | Ethereum packages | `main/ethereum`, `main/general` |
 | `main/filesystem` | Filesystem notification packages | `main/filesystem`, `main/general` |
 | `main/matrix` | Matrix/Ruma package family | `main/general`, `main/matrix` |
 | `main/mcp` | Model Context Protocol packages | `main/general`, `main/mcp`, `main/sse` |

@@ -1,0 +1,1 @@
+{"name":"funty","vers":"2.0.0","deps":[{"name":"static_assertions","req":"^1","features":[],"optional":false,"default_features":true,"target":null,"kind":"dev"}],"cksum":"e6d5a32815ae3f33302d95fdcb2ce17862f8c65363dcfd29360480ba1001fc9c","features":{"default":["std"],"std":[]},"yanked":false,"pubtime":"2021-11-28T08:56:54Z"}

@@ -3913,6 +3913,16 @@
     },
     {
       "registry": "main",
+      "name": "pkgre",
+      "version": "0.5.0",
+      "sha256": "a4f84f78d28fb40a02c8d0226e510ed5ecbbd5d0d070d3c53713bd71d54db377",
+      "delivery": {
+        "delivery": "retained",
+        "path": "main/objects/crates/a4f84f78d28fb40a02c8d0226e510ed5ecbbd5d0d070d3c53713bd71d54db377.crate"
+      }
+    },
+    {
+      "registry": "main",
       "name": "pkgre-indexer",
       "version": "0.1.1",
       "sha256": "3257df14bc1ae9d6f2eb99d5db90e5d2a9fbc13c870044c9db5ba89bcc0b96a2",
@@ -3939,6 +3949,16 @@
       "delivery": {
         "delivery": "retained",
         "path": "main/objects/crates/467be746eb89eb14da496a5d95a2cf13d20652644cf4ef18355be0723d95a755.crate"
+      }
+    },
+    {
+      "registry": "main",
+      "name": "pkgre-rust",
+      "version": "0.5.0",
+      "sha256": "d48cf4d539bd76765021a3901fa8999ec3887e0a3df6c91f6cdc5298ff03c7cc",
+      "delivery": {
+        "delivery": "retained",
+        "path": "main/objects/crates/d48cf4d539bd76765021a3901fa8999ec3887e0a3df6c91f6cdc5298ff03c7cc.crate"
       }
     },
     {

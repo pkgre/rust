@@ -1,1 +1,23 @@
 schema = 1
+
+[[packages]]
+name = "pkgre"
+version = "0.5.0"
+crates-io-name = "pkgre"
+crate-sha256 = "ae0cbe44ae3c6956339c340c4fc5ad0600ec39d7e472889f5cdb93ee25ac452a"
+pkgre-crate-sha256 = "a4f84f78d28fb40a02c8d0226e510ed5ecbbd5d0d070d3c53713bd71d54db377"
+git = "https://github.com/pkgre/pkgre"
+tag = "rust/v0.5.0"
+commit = "9982e0c92f9984ae2e59469abddeda0205f910af"
+cargo-version = "1.95.0"
+
+[[packages]]
+name = "pkgre-rust"
+version = "0.5.0"
+crates-io-name = "pkgre-pkgs-pkgre-rust"
+crate-sha256 = "1c3930d832431e312a54a02ad1ccee9070618aaa9c59baa5ce0757634fe3beec"
+pkgre-crate-sha256 = "d48cf4d539bd76765021a3901fa8999ec3887e0a3df6c91f6cdc5298ff03c7cc"
+git = "https://github.com/pkgre/pkgre"
+tag = "rust/v0.5.0"
+commit = "9982e0c92f9984ae2e59469abddeda0205f910af"
+cargo-version = "1.95.0"

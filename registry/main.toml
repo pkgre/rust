@@ -39,9 +39,17 @@ rmcp-macros = ["1.4.0", "1.8.0"]
 [categories.pkgre]
 may-depend-on = ["main/general", "main/pkgre"]
 
+[categories.pkgre.publish.pkgre]
+git = "https://github.com/pkgre/pkgre"
+tags = ["rust/v0.5.0"]
+
 [categories.pkgre.publish.pkgre-indexer]
 git = "https://github.com/pkgre/pkgre"
 tags = ["indexer/v0.1.1", "indexer/v0.2.0", "indexer/v0.3.0"]
+
+[categories.pkgre.publish.pkgre-rust]
+git = "https://github.com/pkgre/pkgre"
+tags = ["rust/v0.5.0"]
 
 [categories.sse]
 may-depend-on = ["main/general", "main/sse"]

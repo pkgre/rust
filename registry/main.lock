@@ -2019,7 +2019,15 @@ name = "pkg-config"
 category = "general"
 
 [[names]]
+name = "pkgre"
+category = "pkgre"
+
+[[names]]
 name = "pkgre-indexer"
+category = "pkgre"
+
+[[names]]
+name = "pkgre-rust"
 category = "pkgre"
 
 [[names]]
@@ -8353,6 +8361,25 @@ admitted-at = "2026-04-12T09:24:38Z"
 kind = "crates-io"
 
 [[packages]]
+name = "pkgre"
+version = "0.5.0"
+state = "active"
+crate-sha256 = "a4f84f78d28fb40a02c8d0226e510ed5ecbbd5d0d070d3c53713bd71d54db377"
+source-row-sha256 = "e2ab6f0ac77f99d84acc6fcd8a906435c39cb01984741f0c2dd89518b62f5d7d"
+index-row-sha256 = "0d313387b26033587704681bca31383d5a46e0f4cad295bd49b1ee15a4a19f7a"
+admitted-at = "2026-11-17T07:29:10Z"
+
+[packages.source]
+kind = "git-tag"
+git = "https://github.com/pkgre/pkgre"
+tag = "rust/v0.5.0"
+tag-oid = "1c244139e07118e5ce151ede36059e94530cfa22"
+commit = "9982e0c92f9984ae2e59469abddeda0205f910af"
+package = "pkgre"
+path = "cli"
+cargo-version = "1.95.0"
+
+[[packages]]
 name = "pkgre-indexer"
 version = "0.1.1"
 state = "active"
@@ -8407,6 +8434,25 @@ tag-oid = "b47ccfda09ecf5a11d229037d58b5f320d783e58"
 commit = "b08d2b9f7f486b0e0ec9c138730b241478f775f3"
 package = "pkgre-indexer"
 path = "indexer"
+cargo-version = "1.95.0"
+
+[[packages]]
+name = "pkgre-rust"
+version = "0.5.0"
+state = "active"
+crate-sha256 = "d48cf4d539bd76765021a3901fa8999ec3887e0a3df6c91f6cdc5298ff03c7cc"
+source-row-sha256 = "23ab2adf90458baeddd2772da8ec58b8ab668586442296fcc594292b5af3351f"
+index-row-sha256 = "565f518b51777c731ec45a4c0e40199b8d561a880def6e63b2df0bb5dd103fe8"
+admitted-at = "2026-11-17T07:29:10Z"
+
+[packages.source]
+kind = "git-tag"
+git = "https://github.com/pkgre/pkgre"
+tag = "rust/v0.5.0"
+tag-oid = "1c244139e07118e5ce151ede36059e94530cfa22"
+commit = "9982e0c92f9984ae2e59469abddeda0205f910af"
+package = "pkgre-rust"
+path = "rust"
 cargo-version = "1.95.0"
 
 [[packages]]

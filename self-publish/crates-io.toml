@@ -1,0 +1,13 @@
+schema = 1
+
+# crates.io owners expected on every crate this workflow publishes.
+owners = ["sorpaas"]
+
+# A self-publishing repository: its releases also go to crates.io.
+[[repositories]]
+git = "https://github.com/pkgre/pkgre"
+tag-prefix = "rust/v"
+
+# Optional crates.io names; other crates get "pkgre-pkgs-" + name.
+[names]
+pkgre = "pkgre"

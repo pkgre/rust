@@ -77,6 +77,19 @@ Create + commit `.cargo/disabled-crates-io/`. Every manifest dependency should s
 
 Curator schema/workflow/security documentation:[`pkgre/pkgre`](https://github.com/pkgre/pkgre).
 
+## Self-publishing
+
+`self-publish/` declares which releases of a self-publishing repository also reach crates.io, and under which names. It sits beside `registry/`, which stays the reconciler's exclusive state, and holds exactly these two files:
+
+| Path | Authority/purpose |
+|---|---|
+| `self-publish/crates-io.toml` | Human authority:crates.io owners, the self-publishing repositories and their release-tag prefixes, name mappings, abandoned versions |
+| `self-publish/crates-io.lock` | Generated authority:one entry per crate version released to crates.io, with its crates.io name, both archive checksums, and the release tag and commit |
+
+A release tag `rust/vX.Y.Z` of `pkgre/pkgre` publishes each crate whose `publish` is `["pkgre"]` at that commit;`pkgre-rust` reaches crates.io as `pkgre-pkgs-pkgre-rust` unless `[names]` gives another name. Only `pkgre-rust self-publish-lock` writes the lock, and no one edits it by hand:a crates.io version cannot be replaced, so an entry is permanent. CI runs `pkgre-rust self-publish-check` against the accepted state of the change, and rejects any `self-publish/` change that a `pkgre-rust self-publish-lock` run would produce.
+
+Formats, name rules, the derivation and the upload routine:[`docs/self-publish.md`](https://github.com/pkgre/pkgre/blob/main/docs/self-publish.md).
+
 ## License
 
 Curator-authored catalog metadata + repository documentation:Apache-2.0. Retained first-party package archives:each package's own license; inclusion does not relicense them.

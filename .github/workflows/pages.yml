@@ -22,7 +22,7 @@ jobs:
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           repository: pkgre/pkgre
-          ref: 8d002db58f2840b3d38952c3b3fd8587dbf73b15
+          ref: ee9ec4d536f6b42c8223cc972f76602e95b9312e
           path: tooling
           persist-credentials: false
       - name: Install Nix
@@ -38,5 +38,61 @@ jobs:
           if [[ -n "$changes" ]]; then
             printf '%s\n' "$changes" >&2
             echo "registry is not fully applied and converged; run pkgre-rust lock and commit every result" >&2
+            exit 1
+          fi
+
+  self-publish:
+    name: Check self-publishing
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - name: Check out candidate
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          # two commits, so that the accepted state, the first parent of the
+          # checked-out commit, is present
+          fetch-depth: 2
+          persist-credentials: false
+      - name: Check out accepted state
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          PUSH_BEFORE: ${{ github.event.before }}
+        run: |
+          # the accepted state is the first parent of the checked-out commit:
+          # the base branch of a pull request's merge commit, or, for a push
+          # to main, which takes only squash merges, the commit before it
+          parent="$(git rev-parse --verify 'HEAD^')"
+          if [[ "$EVENT_NAME" == push && ! "$PUSH_BEFORE" =~ ^0+$ && "$PUSH_BEFORE" != "$parent" ]]; then
+            echo "the push adds more than one commit; its accepted state is not the parent of its head" >&2
+            exit 1
+          fi
+          git worktree add --detach accepted "$parent"
+      - name: Check out pinned tooling
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          repository: pkgre/pkgre
+          ref: ee9ec4d536f6b42c8223cc972f76602e95b9312e
+          path: tooling
+          persist-credentials: false
+      - name: Install Nix
+        uses: cachix/install-nix-action@13d8dd58da0234aa297dedd986986ccb8e7f3e24 # v31
+      - name: Build pinned indexer
+        run: nix build --print-build-logs ./tooling#indexer
+      - name: Prepare the self-publishing checks
+        run: |
+          # the derivation refuses to run Cargo below a Cargo configuration, so
+          # its temporary directory must lie below /tmp, and Cargo is the one
+          # that the tooling's development shell pins
+          echo "TMPDIR=$(mktemp -d /tmp/pkgre-self-publish.XXXXXX)" >> "$GITHUB_ENV"
+          echo "PKGRE_CARGO=$(nix develop ./tooling -c printenv PKGRE_CARGO)" >> "$GITHUB_ENV"
+      - name: Require a valid self-publishing state
+        run: ./result/bin/pkgre-rust self-publish-check . accepted
+      - name: Require converged self-publishing state
+        run: |
+          ./result/bin/pkgre-rust self-publish-lock .
+          changes="$(git status --porcelain=v1 --untracked-files=all -- self-publish)"
+          if [[ -n "$changes" ]]; then
+            printf '%s\n' "$changes" >&2
+            echo "self-publish is not fully applied and converged; run pkgre-rust self-publish-lock and commit every result" >&2
             exit 1
           fi

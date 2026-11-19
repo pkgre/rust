@@ -17,12 +17,15 @@ jobs:
       - name: Check out registry catalog
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
+          # two commits, so that the accepted state, the first parent of the
+          # checked-out commit, is present
+          fetch-depth: 2
           persist-credentials: false
       - name: Check out pinned indexer
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           repository: pkgre/pkgre
-          ref: 9982e0c92f9984ae2e59469abddeda0205f910af
+          ref: 28d5e4a5a65e9fe83fdc6b77b14cf7e860be05ab
           path: tooling
           persist-credentials: false
       - name: Install Nix
@@ -40,6 +43,53 @@ jobs:
             echo "registry is not fully applied and converged; run pkgre-rust lock and commit every result" >&2
             exit 1
           fi
+      - name: Check out accepted state
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          PUSH_BEFORE: ${{ github.event.before }}
+        run: |
+          # the accepted state is the first parent of the checked-out commit:
+          # the base branch of a pull request's merge commit, or, for a push
+          # to main, which takes only squash merges, the commit before it
+          parent="$(git rev-parse --verify 'HEAD^')"
+          if [[ "$EVENT_NAME" == push && ! "$PUSH_BEFORE" =~ ^0+$ && "$PUSH_BEFORE" != "$parent" ]]; then
+            echo "the push adds more than one commit; its accepted state is not the parent of its head" >&2
+            exit 1
+          fi
+          git worktree add --detach accepted "$parent"
+      - name: Require a valid serving transition
+        run: ./result/bin/pkgre-rust check-transition accepted/registry registry
+      - name: Require a buildable body-delivery snapshot
+        run: |
+          # the serving origin delivers bodies, so the empty archive store leaves every
+          # crates.io mirror body to the catalog itself
+          store="$(mktemp -d)"
+          ./result/bin/pkgre-rust check-serve registry --delivery=body --archive-store="$store"
+      - name: Prepare the Git-tag reproduction
+        run: |
+          # the reproduction packages each added tag with Cargo, so its temporary
+          # directory must lie below /tmp, and Cargo is the one that the tooling's
+          # development shell pins
+          echo "TMPDIR=$(mktemp -d /tmp/pkgre-git-tags.XXXXXX)" >> "$GITHUB_ENV"
+          echo "PKGRE_CARGO=$(nix develop ./tooling -c printenv PKGRE_CARGO)" >> "$GITHUB_ENV"
+      - name: Require reproduced Git tags
+        run: ./result/bin/pkgre-rust reproduce-git-tags accepted/registry registry
+      - name: Require the crates.io archives of added mirrors
+        run: |
+          # the catalog retains each mirror's archive and the origin serves it, so an
+          # added mirror's locked checksum must be that of the archive crates.io serves
+          python3 .github/check-crates-io-archives.py accepted/registry registry
+      - name: Require a reproducible site
+        run: |
+          site="$(mktemp -d)/site"
+          ./result/bin/pkgre-rust render registry "$site"
+          ./result/bin/pkgre-rust verify registry "$site"
+          echo "CANDIDATE_SITE=$site" >> "$GITHUB_ENV"
+      - name: Require a monotonic site
+        run: |
+          accepted="$(mktemp -d)/site"
+          ./result/bin/pkgre-rust render accepted/registry "$accepted"
+          ./result/bin/pkgre-rust verify-monotonic "$accepted" "$CANDIDATE_SITE"
 
   self-publish:
     name: Check self-publishing
@@ -71,7 +121,7 @@ jobs:
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           repository: pkgre/pkgre
-          ref: 9982e0c92f9984ae2e59469abddeda0205f910af
+          ref: 28d5e4a5a65e9fe83fdc6b77b14cf7e860be05ab
           path: tooling
           persist-credentials: false
       - name: Install Nix

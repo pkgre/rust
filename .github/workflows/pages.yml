@@ -25,7 +25,7 @@ jobs:
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           repository: pkgre/pkgre
-          ref: 28d5e4a5a65e9fe83fdc6b77b14cf7e860be05ab
+          ref: e43af71d067d082cab4bf5eddb64b6cb6c6af5fa
           path: tooling
           persist-credentials: false
       - name: Install Nix
@@ -121,7 +121,7 @@ jobs:
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           repository: pkgre/pkgre
-          ref: 28d5e4a5a65e9fe83fdc6b77b14cf7e860be05ab
+          ref: e43af71d067d082cab4bf5eddb64b6cb6c6af5fa
           path: tooling
           persist-credentials: false
       - name: Install Nix

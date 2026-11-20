@@ -74,10 +74,10 @@ jobs:
           echo "PKGRE_CARGO=$(nix develop ./tooling -c printenv PKGRE_CARGO)" >> "$GITHUB_ENV"
       - name: Require reproduced Git tags
         run: ./result/bin/pkgre-rust reproduce-git-tags accepted/registry registry
-      - name: Require the crates.io archives of added mirrors
+      - name: Require the crates.io archives and index rows of added mirrors
         run: |
-          # the catalog retains each mirror's archive and the origin serves it, so an
-          # added mirror's locked checksum must be that of the archive crates.io serves
+          # the catalog retains each mirror's archive and source row and the origin serves
+          # both, so each locked checksum must be that of what crates.io serves for them
           python3 .github/check-crates-io-archives.py accepted/registry registry
       - name: Require a reproducible site
         run: |

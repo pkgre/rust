@@ -32,6 +32,16 @@ jobs:
         uses: cachix/install-nix-action@13d8dd58da0234aa297dedd986986ccb8e7f3e24 # v31
       - name: Build pinned indexer
         run: nix build --print-build-logs ./tooling#indexer
+      - name: Refuse Git attribute files
+        run: |
+          # the serving origin reads a commit with git archive, which would apply a
+          # .gitattributes file, so it refuses a commit that holds one at any path
+          attributes="$(git ls-tree -r -z --name-only HEAD | tr '\0' '\n' | grep -E '(^|/)\.gitattributes$' || true)"
+          if [[ -n "$attributes" ]]; then
+            printf '%s\n' "$attributes" >&2
+            echo "the catalog repository must hold no .gitattributes" >&2
+            exit 1
+          fi
       - name: Require fully applied admissions
         run: ./result/bin/pkgre-rust check registry
       - name: Require converged catalog

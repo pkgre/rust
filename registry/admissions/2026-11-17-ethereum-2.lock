@@ -1,0 +1,3441 @@
+schema = 2
+manifest-sha256 = "2b43e05222171acbbca370bc5da32adb703b5d6488c0cc2076e43d0e806c2050"
+admitted-at = "2026-11-17T20:37:18Z"
+
+[plan]
+schema = 2
+indexer-version = "0.5.0"
+catalog-sha256 = "3803673525977c6fe8ba3768a747361e720a62ff6c287a1df943a08150582cfa"
+evaluated-at = "2026-11-17T20:37:18Z"
+min-release-age-days = 30
+dormant-release-gap-days = 365
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "alloy-rlp"
+activity = "new"
+sparse-index-sha256 = "f611bb5a9b022da4aca740cb8baeb33c3f4c023defac21094c7ff3c8b0b32d25"
+decision-history-sha256 = "98ac369029a0d028e8882d541f3fcb495acc109ff27338729f0af30ae8e27618"
+age-seconds = 11832839
+decision = "review-required"
+reasons = [
+    "new-package",
+    "new-dependency",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "0.3.16"
+published-at = "2026-07-03T21:43:19Z"
+source-row-sha256 = "dc312926364b5c0eaf09a92c283ae5f168b0c0e22d9f9af874e2c1f93b1b4e15"
+crate-sha256 = "24671b1f62edcf0f9b62994c7bf72cd621a04a4b99f5020ece1a647b40e2f103"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "b8822ad1559311ba43a884a9c42bcd76736183fe6aff860c7705e439d9a62d3f"
+compressed-bytes = 14674
+unpacked-bytes = 66048
+files = 10
+vcs-commit = "87cd1b72eddd24410b0cf782436ad3ea94262d05"
+vcs-path = "crates/rlp"
+
+[plan.candidates.candidate-archive.build-surface]
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "alloy-rlp-derive",
+    "arrayvec",
+    "bytes",
+    "const-hex",
+    "hex-literal",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "alloy-rlp-derive"
+package = "alloy-rlp-derive"
+requirement = "^0.3.16"
+features = []
+optional = true
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "arrayvec"
+package = "arrayvec"
+requirement = "^0.7"
+features = []
+optional = true
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "bytes"
+package = "bytes"
+requirement = "^1.4"
+features = []
+optional = false
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "hex"
+package = "const-hex"
+requirement = "^1"
+features = ["alloc"]
+optional = false
+default-features = false
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "hex-literal"
+package = "hex-literal"
+requirement = "^0.4"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[plan.candidates.api]
+response-sha256 = "0949f49fc8ad30864f49b9abf70adf2ff9c6a443201355b2076c7ad3eaf547ac"
+
+[plan.candidates.api.candidate]
+publisher-id = 9617
+publisher-login = "mattsse"
+repository = "https://github.com/alloy-rs/rlp"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/alloy-rs/rlp"
+commit = "87cd1b72eddd24410b0cf782436ad3ea94262d05"
+path = "crates/rlp"
+comparison_sha256 = "e49a73748b6fc4170007a51e74070d7d20ee4308a6a2b9a25c2432db91c57b55"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "ark-ff"
+activity = "active"
+sparse-index-sha256 = "a90e1877c8e66c1bb8518316bc7d7b4b301bbb25d5c6225d851fb67aec9a6307"
+decision-history-sha256 = "f36ae136ff90f6569af173b9026e78eba03cfc8771a7fba06f6cb29177926974"
+age-seconds = 171946807
+decision = "review-required"
+reasons = [
+    "new-dependency",
+    "build-surface-changed",
+    "predates-locked-releases",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "0.3.0"
+published-at = "2021-06-06T17:37:11Z"
+source-row-sha256 = "1c368b51eac34c4ad6c7f4ff84618bdf2e011b5e16658e6a528a7dcc4e92a12d"
+crate-sha256 = "6b3235cc41ee7a12aaaf2c575a2ad7b46713a8a50bda2fc3b003a04845c05dd6"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "24fd9a668cfc4d017f52bf074d101806ab744cecd4f89b19e61fe4b95b0a7793"
+compressed-bytes = 43997
+unpacked-bytes = 228352
+files = 27
+vcs-commit = "3b589fe211683dfb64ef73cd987fab1ba6676ae5"
+
+[plan.candidates.candidate-archive.build-surface]
+"file:build.rs:0644" = "d303f70b9961b0d9be0ddd2d01f771fddaafb1c3a2f01009571ee27ed36df466"
+"manifest:Cargo.toml.orig:build" = "d0d98998092552a1d3259338c2c71e118a5b8343dd4703c0c7f552ada7f9cb42"
+"manifest:Cargo.toml:build" = "d0d98998092552a1d3259338c2c71e118a5b8343dd4703c0c7f552ada7f9cb42"
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "ark-ff-asm",
+    "ark-ff-macros",
+    "ark-serialize",
+    "ark-std",
+    "derivative",
+    "num-bigint",
+    "num-traits",
+    "paste",
+    "rayon",
+    "rustc_version",
+    "zeroize",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "ark-ff-asm"
+package = "ark-ff-asm"
+requirement = "^0.3.0"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "ark-ff-macros"
+package = "ark-ff-macros"
+requirement = "^0.3.0"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "ark-serialize"
+package = "ark-serialize"
+requirement = "^0.3.0"
+features = []
+optional = false
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "ark-std"
+package = "ark-std"
+requirement = "^0.3.0"
+features = []
+optional = false
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "derivative"
+package = "derivative"
+requirement = "^2"
+features = ["use_core"]
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "num-bigint"
+package = "num-bigint"
+requirement = "^0.4.0"
+features = []
+optional = false
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "num-traits"
+package = "num-traits"
+requirement = "^0.2"
+features = []
+optional = false
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "paste"
+package = "paste"
+requirement = "^1.0"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "rayon"
+package = "rayon"
+requirement = "^1"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "rustc_version"
+package = "rustc_version"
+requirement = "^0.3"
+features = []
+optional = false
+default-features = true
+kind = "build"
+
+[[plan.candidates.dependencies.added]]
+name = "zeroize"
+package = "zeroize"
+requirement = "^1"
+features = ["zeroize_derive"]
+optional = false
+default-features = false
+kind = "normal"
+
+[plan.candidates.api]
+response-sha256 = "dbcc8d12a65f0fc1193fe4e2b2cbfc103638aa2c83254a5038ed72a9822f1919"
+
+[plan.candidates.api.candidate]
+publisher-id = 116786
+publisher-login = "weikengchen"
+repository = "https://github.com/arkworks-rs/algebra"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/arkworks-rs/algebra"
+commit = "3b589fe211683dfb64ef73cd987fab1ba6676ae5"
+path = ""
+comparison_sha256 = "bdf3dff56e7843a169ab8888bedaab4c93ae11dccab0e4c2a1d912c18837142b"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "ark-ff"
+activity = "active"
+sparse-index-sha256 = "a90e1877c8e66c1bb8518316bc7d7b4b301bbb25d5c6225d851fb67aec9a6307"
+decision-history-sha256 = "5f28713454e3fcd62129bc403bbda4e08e677661481e217a17d6e60a1d18cff1"
+age-seconds = 115815624
+decision = "review-required"
+reasons = [
+    "new-dependency",
+    "predates-locked-releases",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "0.4.2"
+published-at = "2023-03-18T09:36:54Z"
+source-row-sha256 = "a0e66f3e787ada81f8a978cba15021c640f11841e26970c6e49eccf7ee5d1df7"
+crate-sha256 = "ec847af850f44ad29048935519032c33da8aa03340876d351dfab5660d2966ba"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "befc76a81eed318144c0b52a54f1bcb8457e5470ace7981e0b8f5d49268aec89"
+compressed-bytes = 70558
+unpacked-bytes = 369152
+files = 41
+vcs-commit = "57be20e56a142b059bca05653961f8a9ca4f54ae"
+vcs-path = "ff"
+
+[plan.candidates.candidate-archive.build-surface]
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "ark-ff-asm",
+    "ark-ff-macros",
+    "ark-serialize",
+    "ark-std",
+    "ark-test-curves",
+    "blake2",
+    "derivative",
+    "digest",
+    "hex",
+    "itertools",
+    "libtest-mimic",
+    "num-bigint",
+    "num-traits",
+    "paste",
+    "rayon",
+    "rustc_version",
+    "serde",
+    "serde_derive",
+    "serde_json",
+    "sha2",
+    "sha3",
+    "zeroize",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "ark-ff-asm"
+package = "ark-ff-asm"
+requirement = "^0.4.2-alpha.1"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "ark-ff-macros"
+package = "ark-ff-macros"
+requirement = "^0.4.2-alpha.1"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "ark-serialize"
+package = "ark-serialize"
+requirement = "^0.4.2-alpha.1"
+features = []
+optional = false
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "ark-std"
+package = "ark-std"
+requirement = "^0.4.0"
+features = []
+optional = false
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "ark-test-curves"
+package = "ark-test-curves"
+requirement = "^0.4.2-alpha.1"
+features = [
+    "bls12_381_curve",
+    "mnt6_753",
+    "secp256k1",
+]
+optional = false
+default-features = false
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "blake2"
+package = "blake2"
+requirement = "^0.10"
+features = []
+optional = false
+default-features = false
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "derivative"
+package = "derivative"
+requirement = "^2"
+features = ["use_core"]
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "digest"
+package = "digest"
+requirement = "^0.10"
+features = ["alloc"]
+optional = false
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "hex"
+package = "hex"
+requirement = "^0.4"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "itertools"
+package = "itertools"
+requirement = "^0.10"
+features = []
+optional = false
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "libtest-mimic"
+package = "libtest-mimic"
+requirement = "^0.6.0"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "num-bigint"
+package = "num-bigint"
+requirement = "^0.4"
+features = []
+optional = false
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "num-traits"
+package = "num-traits"
+requirement = "^0.2"
+features = []
+optional = false
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "paste"
+package = "paste"
+requirement = "^1.0"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "rayon"
+package = "rayon"
+requirement = "^1"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "rustc_version"
+package = "rustc_version"
+requirement = "^0.4"
+features = []
+optional = false
+default-features = true
+kind = "build"
+
+[[plan.candidates.dependencies.added]]
+name = "serde"
+package = "serde"
+requirement = "^1.0.110"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "serde_derive"
+package = "serde_derive"
+requirement = "^1.0.110"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "serde_json"
+package = "serde_json"
+requirement = "^1.0.53"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "sha2"
+package = "sha2"
+requirement = "^0.10"
+features = []
+optional = false
+default-features = false
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "sha3"
+package = "sha3"
+requirement = "^0.10"
+features = []
+optional = false
+default-features = false
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "zeroize"
+package = "zeroize"
+requirement = "^1"
+features = ["zeroize_derive"]
+optional = false
+default-features = false
+kind = "normal"
+
+[plan.candidates.api]
+response-sha256 = "dbcc8d12a65f0fc1193fe4e2b2cbfc103638aa2c83254a5038ed72a9822f1919"
+
+[plan.candidates.api.candidate]
+publisher-id = 181318
+publisher-login = "mmagician"
+repository = "https://github.com/arkworks-rs/algebra"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/arkworks-rs/algebra"
+commit = "57be20e56a142b059bca05653961f8a9ca4f54ae"
+path = "ff"
+comparison_sha256 = "778c3513407c60a73db9601fb68970ac3f2539841d7d77031e920115ad92ea9d"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "ark-ff-asm"
+activity = "active"
+sparse-index-sha256 = "14e18b74adadf5a1005afeb155968a8dc8e70ae7274d31620a49e7ae620778b4"
+decision-history-sha256 = "3a3caf47b850c6f8f20ac93e3cf095ea18c46e2e43218fd8058bf8822db8b4ad"
+age-seconds = 171946950
+decision = "review-required"
+reasons = [
+    "new-dependency",
+    "build-surface-changed",
+    "predates-locked-releases",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "0.3.0"
+published-at = "2021-06-06T17:34:48Z"
+source-row-sha256 = "50abf0a195d5de0045131332acd17ecfdf4849ffb114a6910ec8238a541c2bf4"
+crate-sha256 = "db02d390bf6643fb404d3d22d31aee1c4bc4459600aef9113833d17e786c6e44"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "8e0b66c8289b46c9154a8dc035114b68f3d939c7fe8a39466ba0e6b0bf650db8"
+compressed-bytes = 10244
+unpacked-bytes = 41984
+files = 9
+vcs-commit = "3b589fe211683dfb64ef73cd987fab1ba6676ae5"
+
+[plan.candidates.candidate-archive.build-surface]
+"manifest:Cargo.toml.orig:proc-macro" = "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+"manifest:Cargo.toml:proc-macro" = "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "quote",
+    "syn",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "quote"
+package = "quote"
+requirement = "^1.0.0"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "syn"
+package = "syn"
+requirement = "^1.0.0"
+features = [
+    "extra-traits",
+    "full",
+    "parsing",
+]
+optional = false
+default-features = true
+kind = "normal"
+
+[plan.candidates.api]
+response-sha256 = "4662c06a4aace4f3fbb487077a5295997778dfdf64c64a9e11501be34ccc5dcf"
+
+[plan.candidates.api.candidate]
+publisher-id = 116786
+publisher-login = "weikengchen"
+repository = "https://github.com/arkworks-rs/algebra"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/arkworks-rs/algebra"
+commit = "3b589fe211683dfb64ef73cd987fab1ba6676ae5"
+path = ""
+comparison_sha256 = "55d4cc874c7bde97ec306a83ebbfbba8c9f9c18da843334153fa7bc4c4017ded"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "ark-ff-asm"
+activity = "active"
+sparse-index-sha256 = "14e18b74adadf5a1005afeb155968a8dc8e70ae7274d31620a49e7ae620778b4"
+decision-history-sha256 = "368a37954b885f381bb5108445c62595d8978c1aecc88a5e21da4659fcace776"
+age-seconds = 115815659
+decision = "review-required"
+reasons = [
+    "new-dependency",
+    "build-surface-changed",
+    "predates-locked-releases",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "0.4.2"
+published-at = "2023-03-18T09:36:19Z"
+source-row-sha256 = "eb9694d0844272af586199397a8fba6822714a2663cd9c250e5b0a05f165b2a0"
+crate-sha256 = "3ed4aa4fe255d0bc6d79373f7e31d2ea147bcf486cba1be5ba7ea85abdb92348"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "18b56a091a947422d5b4fdb6e17c4b693a720301a3cabcf514dbc85f5624027e"
+compressed-bytes = 8716
+unpacked-bytes = 35328
+files = 8
+vcs-commit = "57be20e56a142b059bca05653961f8a9ca4f54ae"
+vcs-path = "ff-asm"
+
+[plan.candidates.candidate-archive.build-surface]
+"manifest:Cargo.toml.orig:proc-macro" = "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+"manifest:Cargo.toml:proc-macro" = "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "quote",
+    "syn",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "quote"
+package = "quote"
+requirement = "^1.0.0"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "syn"
+package = "syn"
+requirement = "^1.0.0"
+features = [
+    "extra-traits",
+    "full",
+    "parsing",
+]
+optional = false
+default-features = true
+kind = "normal"
+
+[plan.candidates.api]
+response-sha256 = "4662c06a4aace4f3fbb487077a5295997778dfdf64c64a9e11501be34ccc5dcf"
+
+[plan.candidates.api.candidate]
+publisher-id = 181318
+publisher-login = "mmagician"
+repository = "https://github.com/arkworks-rs/algebra"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/arkworks-rs/algebra"
+commit = "57be20e56a142b059bca05653961f8a9ca4f54ae"
+path = "ff-asm"
+comparison_sha256 = "902b5f199349c46ca78a7f6410d060b92ab105ae61e61adbdf9d00129ccd46be"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "ark-ff-macros"
+activity = "active"
+sparse-index-sha256 = "9bcf64c08e71ba7daf7b26d1f89e0cb8720a6064b4d569e2e0286cdb8f05b435"
+decision-history-sha256 = "a137dafa54de01fbb4816664471437b536f492c5fa9b2871a9f555a31eba2623"
+age-seconds = 171946975
+decision = "review-required"
+reasons = [
+    "new-dependency",
+    "build-surface-changed",
+    "predates-locked-releases",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "0.3.0"
+published-at = "2021-06-06T17:34:23Z"
+source-row-sha256 = "af1cf7782a09aca0b8d49b97f9064543d247d12891a9befd8200868ff9c37ea5"
+crate-sha256 = "db2fd794a08ccb318058009eefdf15bcaaaaf6f8161eb3345f907222bac38b20"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "a5cb2c761bbce7264ed6133e6cb4ba86cbe92985ea73c6c5573e80a553c3c757"
+compressed-bytes = 6527
+unpacked-bytes = 23040
+files = 6
+vcs-commit = "3b589fe211683dfb64ef73cd987fab1ba6676ae5"
+
+[plan.candidates.candidate-archive.build-surface]
+"manifest:Cargo.toml.orig:proc-macro" = "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+"manifest:Cargo.toml:proc-macro" = "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "num-bigint",
+    "num-traits",
+    "quote",
+    "syn",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "num-bigint"
+package = "num-bigint"
+requirement = "^0.4"
+features = []
+optional = false
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "num-traits"
+package = "num-traits"
+requirement = "^0.2"
+features = []
+optional = false
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "quote"
+package = "quote"
+requirement = "^1.0.0"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "syn"
+package = "syn"
+requirement = "^1.0.0"
+features = [
+    "extra-traits",
+    "full",
+    "parsing",
+]
+optional = false
+default-features = true
+kind = "normal"
+
+[plan.candidates.api]
+response-sha256 = "86c4941e2a5234bf189a3a1a990eecad791937c2fffe3b6c8e812e4553c43d13"
+
+[plan.candidates.api.candidate]
+publisher-id = 116786
+publisher-login = "weikengchen"
+repository = "https://github.com/arkworks-rs/algebra"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/arkworks-rs/algebra"
+commit = "3b589fe211683dfb64ef73cd987fab1ba6676ae5"
+path = ""
+comparison_sha256 = "4a5e1cc169dd1baa242ce9bd43affed1a3ba4576910829c9e9e0b1f5ed0773c1"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "ark-ff-macros"
+activity = "active"
+sparse-index-sha256 = "9bcf64c08e71ba7daf7b26d1f89e0cb8720a6064b4d569e2e0286cdb8f05b435"
+decision-history-sha256 = "5df92ef5949f777c4481e1cb3606c14bafe0e943e3084c3e88cd75d3ca583688"
+age-seconds = 115815641
+decision = "review-required"
+reasons = [
+    "new-dependency",
+    "build-surface-changed",
+    "predates-locked-releases",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "0.4.2"
+published-at = "2023-03-18T09:36:37Z"
+source-row-sha256 = "5ff8cdcb186fa0b9c5a6c73c1a38cf1103d84ed81d7fd27b9cf58eece4f952f5"
+crate-sha256 = "7abe79b0e4288889c4574159ab790824d0033b9fdcb2a112a3182fac2e514565"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "06cdb4038f316b347c5d282d08d3afd2b2b61a2727bb424f8819a63b0733bfbd"
+compressed-bytes = 14480
+unpacked-bytes = 61952
+files = 15
+vcs-commit = "57be20e56a142b059bca05653961f8a9ca4f54ae"
+vcs-path = "ff-macros"
+
+[plan.candidates.candidate-archive.build-surface]
+"manifest:Cargo.toml.orig:proc-macro" = "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+"manifest:Cargo.toml:proc-macro" = "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "num-bigint",
+    "num-traits",
+    "proc-macro2",
+    "quote",
+    "syn",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "num-bigint"
+package = "num-bigint"
+requirement = "^0.4"
+features = []
+optional = false
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "num-traits"
+package = "num-traits"
+requirement = "^0.2"
+features = []
+optional = false
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "proc-macro2"
+package = "proc-macro2"
+requirement = "^1"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "quote"
+package = "quote"
+requirement = "^1.0.0"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "syn"
+package = "syn"
+requirement = "^1.0.0"
+features = [
+    "extra-traits",
+    "full",
+    "parsing",
+]
+optional = false
+default-features = true
+kind = "normal"
+
+[plan.candidates.api]
+response-sha256 = "86c4941e2a5234bf189a3a1a990eecad791937c2fffe3b6c8e812e4553c43d13"
+
+[plan.candidates.api.candidate]
+publisher-id = 181318
+publisher-login = "mmagician"
+repository = "https://github.com/arkworks-rs/algebra"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/arkworks-rs/algebra"
+commit = "57be20e56a142b059bca05653961f8a9ca4f54ae"
+path = "ff-macros"
+comparison_sha256 = "6c3e741d6c6e015565d5eeb124b3fe8b4cc599667c8f62a79aeac853e9934c10"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "ark-serialize"
+activity = "active"
+sparse-index-sha256 = "d599e3033fb023dc073e0272b610a697d3248ddcc5d38c6b64f18a1009020ff7"
+decision-history-sha256 = "9dc1d3b011e4ca8eec01f3a8cc14455ea9774a850d90074cf7cf187bc054e8da"
+age-seconds = 171946996
+decision = "review-required"
+reasons = [
+    "new-dependency",
+    "predates-locked-releases",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "0.3.0"
+published-at = "2021-06-06T17:34:02Z"
+source-row-sha256 = "69daf6e73d36761a45f22af79efa5b8caa573858098cdb63342e35133d7df5aa"
+crate-sha256 = "1d6c2b318ee6e10f8c2853e73a83adc0ccb88995aa978d8a3408d492ab2ee671"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "db24259ac2e0058713808156c99d48cb5e4787c13f634f4834d96ce94fa8acf5"
+compressed-bytes = 12392
+unpacked-bytes = 61952
+files = 8
+vcs-commit = "3b589fe211683dfb64ef73cd987fab1ba6676ae5"
+
+[plan.candidates.candidate-archive.build-surface]
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "ark-serialize-derive",
+    "ark-std",
+    "blake2",
+    "digest",
+    "sha2",
+    "sha3",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "ark-serialize-derive"
+package = "ark-serialize-derive"
+requirement = "^0.3.0"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "ark-std"
+package = "ark-std"
+requirement = "^0.3.0"
+features = []
+optional = false
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "blake2"
+package = "blake2"
+requirement = "^0.9.1"
+features = []
+optional = false
+default-features = false
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "digest"
+package = "digest"
+requirement = "^0.9"
+features = []
+optional = false
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "sha2"
+package = "sha2"
+requirement = "^0.9.3"
+features = []
+optional = false
+default-features = false
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "sha3"
+package = "sha3"
+requirement = "^0.9.1"
+features = []
+optional = false
+default-features = false
+kind = "dev"
+
+[plan.candidates.api]
+response-sha256 = "c77eb53f2dcc8d04d3ac4b4fcea52078d811d339b7f11fd8b377fc6d25eb30b3"
+
+[plan.candidates.api.candidate]
+publisher-id = 116786
+publisher-login = "weikengchen"
+repository = "https://github.com/arkworks-rs/algebra"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/arkworks-rs/algebra"
+commit = "3b589fe211683dfb64ef73cd987fab1ba6676ae5"
+path = ""
+comparison_sha256 = "99d97b4e00ea5fbcd0e06b63aa3a110d204479f738f2a3edd5433c46ed983114"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "ark-serialize"
+activity = "active"
+sparse-index-sha256 = "d599e3033fb023dc073e0272b610a697d3248ddcc5d38c6b64f18a1009020ff7"
+decision-history-sha256 = "f622d2a0edbeb86eced1adc68665faccf6c61642c7b8c5d85722435577313962"
+age-seconds = 115815673
+decision = "review-required"
+reasons = [
+    "new-dependency",
+    "predates-locked-releases",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "0.4.2"
+published-at = "2023-03-18T09:36:05Z"
+source-row-sha256 = "be9dc0de3c20522c96eadda9387d811d463d77f922187757a5eed27f10d4c741"
+crate-sha256 = "adb7b85a02b83d2f22f89bd5cac66c9c89474240cb6207cb1efc16d098e822a5"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "4959e82040cb9213ad25255e6e65694f1cc9d0382c862d8e5f93b28cc2d6511f"
+compressed-bytes = 13701
+unpacked-bytes = 68096
+files = 10
+vcs-commit = "57be20e56a142b059bca05653961f8a9ca4f54ae"
+vcs-path = "serialize"
+
+[plan.candidates.candidate-archive.build-surface]
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "ark-serialize-derive",
+    "ark-std",
+    "ark-test-curves",
+    "blake2",
+    "digest",
+    "num-bigint",
+    "sha2",
+    "sha3",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "ark-serialize-derive"
+package = "ark-serialize-derive"
+requirement = "^0.4.2-alpha.1"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "ark-std"
+package = "ark-std"
+requirement = "^0.4.0"
+features = []
+optional = false
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "ark-test-curves"
+package = "ark-test-curves"
+requirement = "^0.4.2-alpha.1"
+features = ["bls12_381_curve"]
+optional = false
+default-features = false
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "blake2"
+package = "blake2"
+requirement = "^0.10"
+features = []
+optional = false
+default-features = false
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "digest"
+package = "digest"
+requirement = "^0.10"
+features = []
+optional = false
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "num-bigint"
+package = "num-bigint"
+requirement = "^0.4"
+features = []
+optional = false
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "sha2"
+package = "sha2"
+requirement = "^0.10"
+features = []
+optional = false
+default-features = false
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "sha3"
+package = "sha3"
+requirement = "^0.10"
+features = []
+optional = false
+default-features = false
+kind = "dev"
+
+[plan.candidates.api]
+response-sha256 = "c77eb53f2dcc8d04d3ac4b4fcea52078d811d339b7f11fd8b377fc6d25eb30b3"
+
+[plan.candidates.api.candidate]
+publisher-id = 181318
+publisher-login = "mmagician"
+repository = "https://github.com/arkworks-rs/algebra"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/arkworks-rs/algebra"
+commit = "57be20e56a142b059bca05653961f8a9ca4f54ae"
+path = "serialize"
+comparison_sha256 = "8d39bc1ef0f39bb71af622195a25e50fd87a35ac6bec1c9154c296134d406fe8"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "ark-std"
+activity = "active"
+sparse-index-sha256 = "53fd7260bf0cfb4b6cb2c174b2b80721ff0d0a089270acee9b9dee8c41397886"
+decision-history-sha256 = "1c37c9133a9cb4a8eaca45d0be56e4b9ddbe64230461b5be53f3090f5dba4d77"
+age-seconds = 171982116
+decision = "review-required"
+reasons = [
+    "new-dependency",
+    "predates-locked-releases",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "0.3.0"
+published-at = "2021-06-06T07:48:42Z"
+source-row-sha256 = "d7e34c460f04852c15298fcd63272f08b374f630247f634bc18896e619b1cab5"
+crate-sha256 = "1df2c09229cbc5a028b1d70e00fdb2acee28b1055dfb5ca73eea49c5a25c4e7c"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "3aee448e4a2232e6e9251507cfdccf607d62d2d0288543f9019dd4be285fd809"
+compressed-bytes = 16518
+unpacked-bytes = 68608
+files = 12
+vcs-commit = "2b3568f4da4bf1ab03406eb67e0a1b06ec53b059"
+
+[plan.candidates.candidate-archive.build-surface]
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "colored",
+    "num-traits",
+    "rand",
+    "rayon",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "colored"
+package = "colored"
+requirement = "^2"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "num-traits"
+package = "num-traits"
+requirement = "^0.2"
+features = []
+optional = false
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "rand"
+package = "rand"
+requirement = "^0.8"
+features = ["std_rng"]
+optional = false
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "rayon"
+package = "rayon"
+requirement = "^1"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[plan.candidates.api]
+response-sha256 = "188e38e4b2d86a4f5e3899bc716aef6fb42b6b53661b78662d651e5241e38014"
+
+[plan.candidates.api.candidate]
+publisher-id = 10763
+publisher-login = "Pratyush"
+repository = "https://github.com/arkworks-rs/utils"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/arkworks-rs/utils"
+commit = "2b3568f4da4bf1ab03406eb67e0a1b06ec53b059"
+path = ""
+comparison_sha256 = "88d3ff6d3b45062f74ffe09eed15ce06c6af854a038803054c0d22ed28168854"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "ark-std"
+activity = "active"
+sparse-index-sha256 = "53fd7260bf0cfb4b6cb2c174b2b80721ff0d0a089270acee9b9dee8c41397886"
+decision-history-sha256 = "39e67952184be7da144d267f7d366a0aefa5c534a7ca4eb1556c076c6c343335"
+age-seconds = 120996672
+decision = "review-required"
+reasons = [
+    "new-dependency",
+    "predates-locked-releases",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "0.4.0"
+published-at = "2023-01-17T10:26:06Z"
+source-row-sha256 = "a96c32bb5205c72863c907077c5145912349cd63033305349cf702b1faefa4f6"
+crate-sha256 = "94893f1e0c6eeab764ade8dc4c0db24caf4fe7cbbaafc0eba0a9030f447b5185"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "af8857c9e18f29173312d5bc157023c309e2c1ea2105173608aa8623bb25c1a1"
+compressed-bytes = 18756
+unpacked-bytes = 78336
+files = 14
+vcs-commit = "6b7081d0162f1d0b8d4934538a9916f03d9554b1"
+vcs-path = ""
+
+[plan.candidates.candidate-archive.build-surface]
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "colored",
+    "num-traits",
+    "rand",
+    "rayon",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "colored"
+package = "colored"
+requirement = "^2"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "num-traits"
+package = "num-traits"
+requirement = "^0.2"
+features = []
+optional = false
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "rand"
+package = "rand"
+requirement = "^0.8"
+features = ["std"]
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "rand"
+package = "rand"
+requirement = "^0.8"
+features = ["std_rng"]
+optional = false
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "rayon"
+package = "rayon"
+requirement = "^1"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[plan.candidates.api]
+response-sha256 = "188e38e4b2d86a4f5e3899bc716aef6fb42b6b53661b78662d651e5241e38014"
+
+[plan.candidates.api.candidate]
+publisher-id = 181318
+publisher-login = "mmagician"
+repository = "https://github.com/arkworks-rs/std"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/arkworks-rs/std"
+commit = "6b7081d0162f1d0b8d4934538a9916f03d9554b1"
+path = ""
+comparison_sha256 = "881ec38f00456a74ab61c3e7ca460de2e35f3d91b7bfa17f290c1e0dc36eb40f"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "aurora-engine-modexp"
+activity = "new"
+sparse-index-sha256 = "5050a0d06bc5f3bd26d3c6ee26552af805359dbeb0f8801bf83d69a9fe4975d1"
+decision-history-sha256 = "3437e27f3b55bf6cfe8005a54bc1e27b201fd5bb05ced8d1757a48d2c407a19f"
+age-seconds = 5312010
+decision = "review-required"
+reasons = [
+    "new-package",
+    "new-dependency",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "1.3.0"
+published-at = "2026-09-17T09:03:48Z"
+source-row-sha256 = "a14dcfd8dc85c7bb40f7ac265258a510046c6238a5805b3e32dc92a7c0da5a48"
+crate-sha256 = "5188e264926edbd2e90d61bf8b33aa3471db8acdf427fa37946f9c82898fe502"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "1072cf0f6e15ff4458516dd350b6360dc6dce3425340d58f1d09f7d5db124ec8"
+compressed-bytes = 22321
+unpacked-bytes = 89088
+files = 9
+vcs-commit = "4173da04948a1b2f0f36760fec9d5cd525d6f245"
+vcs-path = "engine-modexp"
+
+[plan.candidates.candidate-archive.build-surface]
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "hex",
+    "ibig",
+    "num",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "hex"
+package = "hex"
+requirement = "^0.4"
+features = ["alloc"]
+optional = false
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "ibig"
+package = "ibig"
+requirement = "^0.3"
+features = ["num-traits"]
+optional = true
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "num"
+package = "num"
+requirement = "^0.4"
+features = ["alloc"]
+optional = false
+default-features = false
+kind = "normal"
+
+[plan.candidates.api]
+response-sha256 = "ea0cc08ae0139abaf46ec927fed28f1721188963111a8c40d9b465b717079011"
+
+[plan.candidates.api.candidate]
+publisher-id = 4457
+publisher-login = "aleksuss"
+repository = "https://github.com/aurora-is-near/aurora-engine"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/aurora-is-near/aurora-engine"
+commit = "4173da04948a1b2f0f36760fec9d5cd525d6f245"
+path = "engine-modexp"
+comparison_sha256 = "8310daa1799f9df45fea7607380290a929eaec440cfdb73acfe950cfb0b8d963"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "digest"
+activity = "active"
+sparse-index-sha256 = "59f9abb0ee56765e0b2c05ae52ccf037303a7ae6a090f5f340383334b9ea1c6e"
+decision-history-sha256 = "e9a3363400d701a25f3bc74049a49b9bb44698336869ed43bcda5cc3110c7a27"
+age-seconds = 203194970
+decision = "review-required"
+reasons = [
+    "new-dependency",
+    "predates-locked-releases",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "0.9.0"
+published-at = "2020-06-10T01:34:28Z"
+source-row-sha256 = "a61e36a382153e4f1364e67608b41fc69ca2ef8a164e8cc625c978954dee93b0"
+crate-sha256 = "d3dd60d1080a57a05ab032377049e0591415d2b31afd7028356dbf3cc6dcb066"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "c27a80d09ef6a02dafed493ad0cde72c5748fb4fd46da72b4342d37357448d7a"
+compressed-bytes = 13247
+unpacked-bytes = 58368
+files = 15
+vcs-commit = "783d06619cbdc83b8fb2b3be529b996600ffdd82"
+
+[plan.candidates.candidate-archive.build-surface]
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "blobby",
+    "generic-array",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "blobby"
+package = "blobby"
+requirement = "^0.1"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "generic-array"
+package = "generic-array"
+requirement = "^0.14"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[plan.candidates.api]
+response-sha256 = "8928fe51defcce1d4bfa91b9815e4c193c2423ba2ea585acd4408b653b42b0e9"
+
+[plan.candidates.api.candidate]
+publisher-id = 267
+publisher-login = "tarcieri"
+repository = "https://github.com/RustCrypto/traits"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/RustCrypto/traits"
+commit = "783d06619cbdc83b8fb2b3be529b996600ffdd82"
+path = ""
+comparison_sha256 = "64d92718a6eddfbcf6ea8c112e6feba44836f8c2006ba34303ebbc171f2c0cf7"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "fastrlp"
+activity = "new"
+sparse-index-sha256 = "f1272490b67bad194b80c803b39bc2795d1afb22f333c5a3b5b46b7997000860"
+decision-history-sha256 = "7ccf9a5f3f87cf21fcb074755aadf5984dd976f1330dc24f3fbe37662c297a05"
+age-seconds = 111181856
+decision = "review-required"
+reasons = [
+    "new-package",
+    "new-dependency",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "0.3.1"
+published-at = "2023-05-11T00:46:22Z"
+source-row-sha256 = "1d14e19c9df1dbda0c28ec563aafa49f928aa57890deeb929bbcc677afe7b3ea"
+crate-sha256 = "139834ddba373bbdd213dffe02c8d110508dcf1726c2be27e8d1f7d7e1856418"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "68892d1185b4706a546df1d7789bf941184b7f579176676fff49b8f26af31375"
+compressed-bytes = 14851
+unpacked-bytes = 78848
+files = 13
+vcs-commit = "30810f601c80cf3b863638364471900a90685b40"
+vcs-path = ""
+
+[plan.candidates.candidate-archive.build-surface]
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "arrayvec",
+    "auto_impl",
+    "bytes",
+    "criterion",
+    "ethereum-types",
+    "ethnum",
+    "fastrlp-derive",
+    "hex-literal",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "arrayvec"
+package = "arrayvec"
+requirement = "^0.7"
+features = []
+optional = false
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "auto_impl"
+package = "auto_impl"
+requirement = "^1"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "bytes"
+package = "bytes"
+requirement = "^1"
+features = []
+optional = false
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "criterion"
+package = "criterion"
+requirement = "^0.4"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "ethereum-types"
+package = "ethereum-types"
+requirement = "^0.14"
+features = []
+optional = true
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "ethnum"
+package = "ethnum"
+requirement = "^1"
+features = []
+optional = true
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "fastrlp-derive"
+package = "fastrlp-derive"
+requirement = "^0.2"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "hex-literal"
+package = "hex-literal"
+requirement = "^0.4"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[plan.candidates.api]
+response-sha256 = "84b33587f34c5d1b6df654d835953222b51ed85a65ffc7383b624983056d621e"
+
+[plan.candidates.api.candidate]
+publisher-id = 5051
+publisher-login = "vorot93"
+repository = "https://github.com/vorot93/fastrlp"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/vorot93/fastrlp"
+commit = "30810f601c80cf3b863638364471900a90685b40"
+path = ""
+comparison_sha256 = "0b178ae29c6d2c4743e9f90d14d7df3c45a10a06583f8e5276e4c907d24a138a"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "fastrlp"
+activity = "new"
+sparse-index-sha256 = "f1272490b67bad194b80c803b39bc2795d1afb22f333c5a3b5b46b7997000860"
+decision-history-sha256 = "ab1d9f461dce3ae2d0732540e45df0fd5fa1503c6a0b0f25b50601c63dbd5f3a"
+age-seconds = 68380864
+decision = "review-required"
+reasons = [
+    "new-package",
+    "new-dependency",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "0.4.0"
+published-at = "2024-09-17T09:56:14Z"
+source-row-sha256 = "38e05812d4265de304bc1d0d77fb4a3872ac1a1ee944324a416de1000f46bfa5"
+crate-sha256 = "ce8dba4714ef14b8274c371879b175aa55b16b30f269663f19d576f380018dc4"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "a1159c5b1c3871a4a43a35fe85ed32bb745d70d120575ea0b59e78dc0063b6da"
+compressed-bytes = 15263
+unpacked-bytes = 80384
+files = 13
+vcs-commit = "9de2798b15db18c81796289e0d2704dc7d910ca2"
+vcs-path = ""
+
+[plan.candidates.candidate-archive.build-surface]
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "arrayvec",
+    "auto_impl",
+    "bytes",
+    "criterion",
+    "ethereum-types",
+    "ethnum",
+    "fastrlp-derive",
+    "hex-literal",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "arrayvec"
+package = "arrayvec"
+requirement = "^0.7"
+features = []
+optional = false
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "auto_impl"
+package = "auto_impl"
+requirement = "^1"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "bytes"
+package = "bytes"
+requirement = "^1"
+features = []
+optional = false
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "criterion"
+package = "criterion"
+requirement = "^0.5"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "ethereum-types"
+package = "ethereum-types"
+requirement = "^0.15"
+features = []
+optional = true
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "ethnum"
+package = "ethnum"
+requirement = "^1"
+features = []
+optional = true
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "fastrlp-derive"
+package = "fastrlp-derive"
+requirement = "^0.2"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "hex-literal"
+package = "hex-literal"
+requirement = "^0.4"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[plan.candidates.api]
+response-sha256 = "84b33587f34c5d1b6df654d835953222b51ed85a65ffc7383b624983056d621e"
+
+[plan.candidates.api.candidate]
+publisher-id = 5051
+publisher-login = "vorot93"
+repository = "https://github.com/vorot93/fastrlp"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/vorot93/fastrlp"
+commit = "9de2798b15db18c81796289e0d2704dc7d910ca2"
+path = ""
+comparison_sha256 = "b75cd2fada33523065aa4d4cc41a90fcfe2b841922619d3c206e73bc2b544306"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "half"
+activity = "new"
+sparse-index-sha256 = "b4c64b31eab4b68c7205a33ab93d7691934454c865528776ea1858b6453eaf7a"
+decision-history-sha256 = "911e7386cb510208dc31a2fbaa41562f752ef47e55cf133009003e1744df93a5"
+age-seconds = 34533472
+decision = "review-required"
+reasons = [
+    "new-package",
+    "new-dependency",
+    "source-line-endings",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "2.7.1"
+published-at = "2025-10-14T03:59:26Z"
+source-row-sha256 = "6dd5abb8aab4826e5847f344e955ab67921a7f22ecee8d02611b4b99ef5d7c69"
+crate-sha256 = "6ea2d84b969582b4b1864a92dc5d27cd2b77b622a8d79306834f1be5ba20d84b"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "eac184befda55cf999208ae02676f70e1c72e24756f7fa10d0597df94c266b66"
+compressed-bytes = 61040
+unpacked-bytes = 362496
+files = 24
+vcs-commit = "8cc891f3e4aad956eca7fa79b1f42f87ecd141ae"
+vcs-path = ""
+
+[plan.candidates.candidate-archive.build-surface]
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "arbitrary",
+    "bytemuck",
+    "cfg-if",
+    "criterion",
+    "crunchy",
+    "num-traits",
+    "quickcheck",
+    "quickcheck_macros",
+    "rand",
+    "rand_distr",
+    "rkyv",
+    "serde",
+    "zerocopy",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "arbitrary"
+package = "arbitrary"
+requirement = "^1.4.1"
+features = ["derive"]
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "bytemuck"
+package = "bytemuck"
+requirement = "^1.4.1"
+features = ["derive"]
+optional = true
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "cfg-if"
+package = "cfg-if"
+requirement = "^1.0.0"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "criterion"
+package = "criterion"
+requirement = "^0.5"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "crunchy"
+package = "crunchy"
+requirement = "^0.2.2"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "crunchy"
+package = "crunchy"
+requirement = "^0.2.2"
+features = []
+optional = false
+default-features = true
+target = 'cfg(target_arch = "spirv")'
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "num-traits"
+package = "num-traits"
+requirement = "^0.2.16"
+features = ["libm"]
+optional = true
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "quickcheck"
+package = "quickcheck"
+requirement = "^1.0"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "quickcheck_macros"
+package = "quickcheck_macros"
+requirement = "^1.0"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "rand"
+package = "rand"
+requirement = "^0.9.0"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "rand"
+package = "rand"
+requirement = "^0.9.0"
+features = ["thread_rng"]
+optional = true
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "rand_distr"
+package = "rand_distr"
+requirement = "^0.5.0"
+features = []
+optional = true
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "rkyv"
+package = "rkyv"
+requirement = "^0.8.0"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "serde"
+package = "serde"
+requirement = "^1.0"
+features = ["derive"]
+optional = true
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "zerocopy"
+package = "zerocopy"
+requirement = "^0.8.26"
+features = [
+    "derive",
+    "simd",
+]
+optional = false
+default-features = false
+kind = "normal"
+
+[plan.candidates.api]
+response-sha256 = "af67f88e0ef5830c464035e07231de0346c24d3f83ea931f035440912aef5eb9"
+
+[plan.candidates.api.candidate]
+publisher-id = 3416
+publisher-login = "VoidStarKat"
+repository = "https://github.com/VoidStarKat/half-rs"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/VoidStarKat/half-rs"
+commit = "8cc891f3e4aad956eca7fa79b1f42f87ecd141ae"
+path = ""
+comparison_sha256 = "c671769b940d188765a74ffb2bf1f90bf918fd058910023793b36241a044bc83"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "pest"
+activity = "new"
+sparse-index-sha256 = "f8458fccc32b5048696fd71325973e23d9dcb0c0e7960f6ec94c72fd7436fe62"
+decision-history-sha256 = "09b6981fcfa2449ed51524116dd53e8380ff5d470513d533af0bf802c82ea6fb"
+age-seconds = 2825514
+decision = "review-required"
+reasons = [
+    "new-package",
+    "new-dependency",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "2.9.4"
+published-at = "2026-10-16T03:45:24Z"
+source-row-sha256 = "9085240bdc7ed7a734943f9a1fb0ec52f1a3aad10b28431c30c4bbe102d98428"
+crate-sha256 = "fd47a460a9cbc3b3429c7e22bf0d76653e779319bae45a499ca010c9a990bb23"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "e9e7417f9094d805d39295ab13d52356da64c51219dad2779cbafb56b99c49fd"
+compressed-bytes = 143395
+unpacked-bytes = 1537536
+files = 36
+vcs-commit = "66a059c9ba755ae1ca6626420ecd453b20a31b33"
+vcs-path = "pest"
+
+[plan.candidates.candidate-archive.build-surface]
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "criterion",
+    "memchr",
+    "miette",
+    "psm",
+    "serde",
+    "serde_json",
+    "stacker",
+    "ucd-trie",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "criterion"
+package = "criterion"
+requirement = "^0.5.1"
+features = ["html_reports"]
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "memchr"
+package = "memchr"
+requirement = "^2.4.0"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "miette"
+package = "miette"
+requirement = "^7.2.0"
+features = ["fancy"]
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "miette"
+package = "miette"
+requirement = "^7.2.0"
+features = ["fancy"]
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "psm"
+package = "psm"
+requirement = "=0.1.24"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "serde"
+package = "serde"
+requirement = "^1.0.145"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "serde_json"
+package = "serde_json"
+requirement = "^1.0.85"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "stacker"
+package = "stacker"
+requirement = "^0.1.25"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "ucd-trie"
+package = "ucd-trie"
+requirement = "^0.1.5"
+features = []
+optional = false
+default-features = false
+kind = "normal"
+
+[plan.candidates.api]
+response-sha256 = "0dfc9472ebd0dd7c106dc3f8654ba1045644e70d96e2516ff994f7c6af1b8cd0"
+
+[plan.candidates.api.candidate]
+repository = "https://github.com/pest-parser/pest"
+
+[plan.candidates.api.candidate.trusted-publishing]
+provider = "github"
+repository = "https://github.com/pest-parser/pest"
+commit = "66a059c9ba755ae1ca6626420ecd453b20a31b33"
+evidence-sha256 = "fb0fd7cd61473d16c7c3b3cb10c0336d0acab810c475bc05bafe9ca6f6ee1759"
+
+[plan.candidates.source]
+level = "registry-context-attested"
+repository = "https://github.com/pest-parser/pest"
+commit = "66a059c9ba755ae1ca6626420ecd453b20a31b33"
+path = "pest"
+comparison_sha256 = "0705d32eceef28a31bc0f9c7d6f1959e79b2a5d51bd3be6a3935fa5b73246310"
+attestation_sha256 = "fb0fd7cd61473d16c7c3b3cb10c0336d0acab810c475bc05bafe9ca6f6ee1759"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "plotters"
+activity = "new"
+sparse-index-sha256 = "6c1520fe6db08a0c4f3d19612c649353eb77be3865f9ceb38ab0814e92aa4605"
+decision-history-sha256 = "e5f15094fa663e4a143750e085c836234849242194d03bf853b486bb1008f750"
+age-seconds = 69140955
+decision = "review-required"
+reasons = [
+    "new-package",
+    "new-dependency",
+    "build-surface-changed",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "0.3.7"
+published-at = "2024-09-08T14:48:03Z"
+source-row-sha256 = "3cf2a5efc7830f3295fb93005c35eb66fc33eb510b098b66cb3bd0a8cb6a8af6"
+crate-sha256 = "5aeb6f403d7a4911efb1e33402027fc44f29b5bf6def3effcc22d7bb75f2b747"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "717d10d79dc646c92b18f567f4abfea305e1ddb59b70cd9acb4b56b47e7c75cd"
+compressed-bytes = 149031
+unpacked-bytes = 787968
+files = 114
+vcs-commit = "cb7791f6814024d85aa6f9968e73051a4b295bf0"
+vcs-path = "plotters"
+
+[plan.candidates.candidate-archive.build-surface]
+"file:.cargo/config:0644" = "9ff2ef513df9e780376850768592b6fffda0a564450146f0a776523b1aaa58c5"
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "ab_glyph",
+    "chrono",
+    "criterion",
+    "font-kit",
+    "image",
+    "itertools",
+    "lazy_static",
+    "num-traits",
+    "once_cell",
+    "pathfinder_geometry",
+    "plotters-backend",
+    "plotters-bitmap",
+    "plotters-svg",
+    "rand",
+    "rand_distr",
+    "rand_xorshift",
+    "rayon",
+    "serde",
+    "serde_derive",
+    "serde_json",
+    "ttf-parser",
+    "wasm-bindgen",
+    "wasm-bindgen-test",
+    "web-sys",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "ab_glyph"
+package = "ab_glyph"
+requirement = "^0.2.12"
+features = []
+optional = true
+default-features = true
+target = 'cfg(not(all(target_arch = "wasm32", not(target_os = "wasi"))))'
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "chrono"
+package = "chrono"
+requirement = "^0.4.32"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "criterion"
+package = "criterion"
+requirement = "^0.5.1"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "font-kit"
+package = "font-kit"
+requirement = "^0.14.2"
+features = []
+optional = true
+default-features = true
+target = 'cfg(not(all(target_arch = "wasm32", not(target_os = "wasi"))))'
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "image"
+package = "image"
+requirement = "^0.24.3"
+features = [
+    "bmp",
+    "jpeg",
+    "png",
+]
+optional = true
+default-features = false
+target = 'cfg(not(all(target_arch = "wasm32", not(target_os = "wasi"))))'
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "itertools"
+package = "itertools"
+requirement = "^0.10.0"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "lazy_static"
+package = "lazy_static"
+requirement = "^1.4.0"
+features = []
+optional = true
+default-features = true
+target = 'cfg(not(all(target_arch = "wasm32", not(target_os = "wasi"))))'
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "num-traits"
+package = "num-traits"
+requirement = "^0.2.14"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "once_cell"
+package = "once_cell"
+requirement = "^1.8.0"
+features = []
+optional = true
+default-features = true
+target = 'cfg(not(all(target_arch = "wasm32", not(target_os = "wasi"))))'
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "pathfinder_geometry"
+package = "pathfinder_geometry"
+requirement = "^0.5.1"
+features = []
+optional = true
+default-features = true
+target = 'cfg(not(all(target_arch = "wasm32", not(target_os = "wasi"))))'
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "plotters-backend"
+package = "plotters-backend"
+requirement = "^0.3.6"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "plotters-bitmap"
+package = "plotters-bitmap"
+requirement = "^0.3.6"
+features = []
+optional = true
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "plotters-svg"
+package = "plotters-svg"
+requirement = "^0.3.6"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "rand"
+package = "rand"
+requirement = "^0.8.3"
+features = []
+optional = false
+default-features = true
+target = 'cfg(not(target_arch = "wasm32"))'
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "rand_distr"
+package = "rand_distr"
+requirement = "^0.4.0"
+features = []
+optional = false
+default-features = true
+target = 'cfg(not(target_arch = "wasm32"))'
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "rand_xorshift"
+package = "rand_xorshift"
+requirement = "^0.3.0"
+features = []
+optional = false
+default-features = true
+target = 'cfg(not(target_arch = "wasm32"))'
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "rayon"
+package = "rayon"
+requirement = "^1.5.1"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "serde"
+package = "serde"
+requirement = "^1.0.139"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "serde_derive"
+package = "serde_derive"
+requirement = "^1.0.140"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "serde_json"
+package = "serde_json"
+requirement = "^1.0.82"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "ttf-parser"
+package = "ttf-parser"
+requirement = "^0.20.0"
+features = []
+optional = true
+default-features = true
+target = 'cfg(not(all(target_arch = "wasm32", not(target_os = "wasi"))))'
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "wasm-bindgen"
+package = "wasm-bindgen"
+requirement = "^0.2.89"
+features = []
+optional = false
+default-features = true
+target = 'cfg(all(target_arch = "wasm32", not(target_os = "wasi")))'
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "wasm-bindgen-test"
+package = "wasm-bindgen-test"
+requirement = "^0.3.39"
+features = []
+optional = false
+default-features = true
+target = 'cfg(all(target_arch = "wasm32", not(target_os = "wasi")))'
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "web-sys"
+package = "web-sys"
+requirement = "^0.3.66"
+features = [
+    "CanvasRenderingContext2d",
+    "Document",
+    "DomRect",
+    "Element",
+    "HtmlCanvasElement",
+    "HtmlElement",
+    "Node",
+    "Window",
+]
+optional = false
+default-features = true
+target = 'cfg(all(target_arch = "wasm32", not(target_os = "wasi")))'
+kind = "normal"
+
+[plan.candidates.api]
+response-sha256 = "16c97de51515382f20394b15445799c314c81568cd295e0f4001d71c10df077e"
+
+[plan.candidates.api.candidate]
+publisher-id = 108598
+publisher-login = "AaronErhardt"
+repository = "https://github.com/plotters-rs/plotters"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/plotters-rs/plotters"
+commit = "cb7791f6814024d85aa6f9968e73051a4b295bf0"
+path = "plotters"
+comparison_sha256 = "f5692b6d08bf03179c7f78335b023573135fe59a7e1164ec27af5648ab5aace3"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "plotters-backend"
+activity = "new"
+sparse-index-sha256 = "5e4d752d9e6fcb1eac250afa5e9a423f1b9f2c9aa5aca46a31434d1daf120d7d"
+decision-history-sha256 = "abb95e796ec592714d0194694b0c38fb02e7214b277f55829df94413c7da50ba"
+age-seconds = 69141031
+decision = "review-required"
+reasons = [
+    "new-package",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "0.3.7"
+published-at = "2024-09-08T14:46:47Z"
+source-row-sha256 = "84f41bc3a64339ef7b646f5d61434f6ae5d0fe6806793472d0e61aeacbb31423"
+crate-sha256 = "df42e13c12958a16b3f7f4386b9ab1f3e7933914ecea48da7139435263a4172a"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "09bee9b041301838de0298bd667fee976c02edf3b18c17ab59ae8514db4fbe35"
+compressed-bytes = 13709
+unpacked-bytes = 65536
+files = 14
+vcs-commit = "cb7791f6814024d85aa6f9968e73051a4b295bf0"
+vcs-path = "plotters-backend"
+
+[plan.candidates.candidate-archive.build-surface]
+
+[plan.candidates.dependencies]
+added = []
+removed = []
+new_packages = []
+
+[plan.candidates.api]
+response-sha256 = "04eac55076c6d7a547df9af12c704b355367de63d03cab59b888de6562f6d2cb"
+
+[plan.candidates.api.candidate]
+publisher-id = 108598
+publisher-login = "AaronErhardt"
+repository = "https://github.com/plotters-rs/plotters"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/plotters-rs/plotters"
+commit = "cb7791f6814024d85aa6f9968e73051a4b295bf0"
+path = "plotters-backend"
+comparison_sha256 = "6c3ec78fc21a7d18cf3d4998dd79f12d256971f15b3256e02eaed2018b6fe940"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "plotters-svg"
+activity = "new"
+sparse-index-sha256 = "27e85c236b131b181841fd74d750e0cad030a9e437f67cc57e42c6dc4d642d6d"
+decision-history-sha256 = "125f54358643073c129703abec3f852abed0ec5b09073a1547f36c331c04638d"
+age-seconds = 69140995
+decision = "review-required"
+reasons = [
+    "new-package",
+    "new-dependency",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "0.3.7"
+published-at = "2024-09-08T14:47:23Z"
+source-row-sha256 = "6ff76af6dfb2fe579873493d7306248e0bc42bc01630b67bfb1f9046f6359c16"
+crate-sha256 = "51bae2ac328883f7acdfea3d66a7c35751187f870bc81f94563733a154d7a670"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "d38cd9d25a632613c633b57e554e0355c0e198b2e677821c83ee5d75de702a05"
+compressed-bytes = 6715
+unpacked-bytes = 34304
+files = 7
+vcs-commit = "cb7791f6814024d85aa6f9968e73051a4b295bf0"
+vcs-path = "plotters-svg"
+
+[plan.candidates.candidate-archive.build-surface]
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "image",
+    "plotters-backend",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "image"
+package = "image"
+requirement = "^0.24.2"
+features = [
+    "bmp",
+    "jpeg",
+    "png",
+]
+optional = true
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "plotters-backend"
+package = "plotters-backend"
+requirement = "^0.3.6"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[plan.candidates.api]
+response-sha256 = "f31329b7171d7b772a45ff747d70145da4220691cde28f51355a2dae9fc02ffa"
+
+[plan.candidates.api.candidate]
+publisher-id = 108598
+publisher-login = "AaronErhardt"
+repository = "https://github.com/plotters-rs/plotters.git"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/plotters-rs/plotters"
+commit = "cb7791f6814024d85aa6f9968e73051a4b295bf0"
+path = "plotters-svg"
+comparison_sha256 = "d7619c97575e1b58e299744051f52e889be465590512a11d0becdafff2119c61"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "psm"
+activity = "new"
+sparse-index-sha256 = "bdb338d570e52a200721e3e4547aa40162b5ef665f75fd3049e6b0fd84e1d1d5"
+decision-history-sha256 = "be269a93e0d8d3df644ea77467f482dc4179f12cc931447cafb84494be0f8211"
+age-seconds = 63450860
+decision = "review-required"
+reasons = [
+    "new-package",
+    "new-dependency",
+    "build-surface-changed",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "0.1.24"
+published-at = "2024-11-13T11:22:58Z"
+source-row-sha256 = "9a3a10835b800241320293579364248ba09ffffb4ae2fb8d8d358d82fefa87fc"
+crate-sha256 = "200b9ff220857e53e184257720a14553b2f4aa02577d2ed9842d45d4b9654810"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "6d18608dd973471120661297d7bc71bd0e46e5c7778d3a39157d5a5ed228e7ba"
+compressed-bytes = 23294
+unpacked-bytes = 134144
+files = 43
+vcs-commit = "cf52a70cef8548843b29a1f1e378d79b83bbf16b"
+vcs-path = "psm"
+
+[plan.candidates.candidate-archive.build-surface]
+"file:build.rs:0644" = "312beb17f9279b0ea8302fa1974f47cc9aaaa423bf4a027e80dea94da206c11d"
+"file:src/arch/aarch64_armasm.asm:0644" = "1c737338287f3de981fbae97f104ac5e49425ba7fbcb4f7d80120afae47a86d5"
+"file:src/arch/aarch_aapcs64.s:0644" = "fa3988af9f7466e263482c3fda872c82cea9a3a935c2d5f7c6d3807db5958094"
+"file:src/arch/arm_aapcs.s:0644" = "4ada635e8528279bd0326654f5203b6bdc94dd68c94fdef5de551384ba1b1747"
+"file:src/arch/arm_armasm.asm:0644" = "e3b514169f19368b0b49374412de38bd9f50576e7b93b64d685a0f84fa8f4c91"
+"file:src/arch/loongarch64.s:0644" = "8bcdca0741c0cfd164e4541e0eaf00c80ca156479cd8a9c617bd388797551d5e"
+"file:src/arch/mips64_eabi.s:0644" = "4e6f95f89ba72fc4dd1a9a547920764f66d98251d236941cee4d227010484520"
+"file:src/arch/mips_eabi.s:0644" = "8b7927fd63660eb276e2951f28df6b11920f04be4dc17a16b66ad386da12c4c3"
+"file:src/arch/powerpc32.s:0644" = "0b508a65dec7254ba2e0dc65a2c9e86c21069fe62f5d7c41f5190415a4885912"
+"file:src/arch/powerpc64.s:0644" = "c1602d09d12ba1df48fc96af0f827f8679fc93cee728813527fb1b817a788911"
+"file:src/arch/powerpc64_aix.s:0644" = "79af120692de207ea9e78efca92127ed1b522dcac62f6d17ed48f88458203a01"
+"file:src/arch/powerpc64_openpower.s:0644" = "421b11cc7381427d1e2acb4e681c9836ccfea0b79930492f0a99ec4d27495e58"
+"file:src/arch/psm.h:0644" = "2cebda3740aa73b167b8ec18e3d2202ca46e400a081a46329b86051abd1a872a"
+"file:src/arch/riscv.s:0644" = "81a40bd95f7e93990725c5872dbef90d4844af05b15b910dde05787bdcf8482b"
+"file:src/arch/riscv64.s:0644" = "5a60ac5df014152cb7630121bf97b143075211a738717993c17a70ea9519ac49"
+"file:src/arch/sparc64.s:0644" = "6250acbd938aea2e440061663a79fbb2dac0592b3a193f027b6b910e2a8e3af1"
+"file:src/arch/sparc_sysv.s:0644" = "c2da7576e1fbe2234cc8a5cf937f7676e125435295f8c32089bfa0b0f27fde5e"
+"file:src/arch/wasm32.o:0644" = "d7279f419cb7e169cae2af2463507652e0393b801c2f4580244de70d3def58b6"
+"file:src/arch/wasm32.s:0644" = "1ebdc90de48f13e6474ee17c406578fc090ff61e57c1f560ecf6e6b75c7ef10a"
+"file:src/arch/x86.s:0644" = "1919a4af1474895f904ed4281a4a8fcdd0428dab257bff4ea262db83ed63b445"
+"file:src/arch/x86_64.s:0644" = "656090fce2301392350d19fb36d6bcee893d637400c7dd4ac42e154b815361b8"
+"file:src/arch/x86_64_msvc.asm:0644" = "85683bc65a03371ea7d8d79dcbe487f690cc2460c359817fc63c30d575ad8957"
+"file:src/arch/x86_64_windows_gnu.s:0644" = "44637034e094ec0ad76dbe1232e97271c8155eb93bcb1dd86fe825acd05978a0"
+"file:src/arch/x86_msvc.asm:0644" = "1735d4b19f8e46d0699fc9538baa7ab0885d27531ef7d9960e2027ad8137769b"
+"file:src/arch/x86_windows_gnu.s:0644" = "b94d907a86f230c5c8ca1c708ede173f73c5269496f3959e08e4a92155e160d7"
+"file:src/arch/zseries_linux.s:0644" = "5c3379a76e31bf13abf240efda12596fabce108cf63f60f9d0495e82ab8f1717"
+"manifest:Cargo.toml.orig:build" = "d0d98998092552a1d3259338c2c71e118a5b8343dd4703c0c7f552ada7f9cb42"
+"manifest:Cargo.toml:build" = "d0d98998092552a1d3259338c2c71e118a5b8343dd4703c0c7f552ada7f9cb42"
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = ["cc"]
+
+[[plan.candidates.dependencies.added]]
+name = "cc"
+package = "cc"
+requirement = "^1.1.22"
+features = []
+optional = false
+default-features = true
+kind = "build"
+
+[plan.candidates.api]
+response-sha256 = "2f0e9d051582f28949ca9477a7d9857a179f574c1e7977b6909a1e14f424c6ae"
+
+[plan.candidates.api.candidate]
+publisher-id = 726
+publisher-login = "nagisa"
+repository = "https://github.com/rust-lang/stacker/"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/rust-lang/stacker"
+commit = "cf52a70cef8548843b29a1f1e378d79b83bbf16b"
+path = "psm"
+comparison_sha256 = "f215cfe7cb54b1761c966ede873f75e17f213a4e0c292698eba9c7d829a2da7b"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "rayon-core"
+activity = "new"
+sparse-index-sha256 = "b24f6c5185e4d927a341b6a65a19a47f6848efb4b87d98126c21369cf44094cc"
+decision-history-sha256 = "cf4d7cfbd23c36c77b347f4ecbb625d7bd7dd5fa3d4b2a5725f17cc9ef7f33e3"
+age-seconds = 39906927
+decision = "review-required"
+reasons = [
+    "new-package",
+    "new-dependency",
+    "build-surface-changed",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "1.13.0"
+published-at = "2025-08-12T23:21:51Z"
+source-row-sha256 = "670f281ab98f79623d489a0d6bac6a1e018fedc4e38e01b80ff3c5c539e732f7"
+crate-sha256 = "22e18b0f0062d30d4230b2e85ff77fdfe4326feb054b9783a3460d8435c8ab91"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "95bf5e9970c2ad66204b90b265805b59a70dd74e1ee5b0cd277e8de1f562a683"
+compressed-bytes = 73151
+unpacked-bytes = 320512
+files = 42
+vcs-commit = "7af20d7692d5decbcb4adcaa079cd607e3e50814"
+vcs-path = "rayon-core"
+
+[plan.candidates.candidate-archive.build-surface]
+"file:build.rs:0644" = "fa31cb198b772600d100a7c403ddedccef637d2e6b2da431fa7f02ca41307fc6"
+"manifest:Cargo.toml.orig:build" = "d0d98998092552a1d3259338c2c71e118a5b8343dd4703c0c7f552ada7f9cb42"
+"manifest:Cargo.toml.orig:links" = "29d3a4876b59aedb2e4e4c1e828a46c72551877d23fb6704b7311aa08f9eac21"
+"manifest:Cargo.toml:build" = "d0d98998092552a1d3259338c2c71e118a5b8343dd4703c0c7f552ada7f9cb42"
+"manifest:Cargo.toml:links" = "29d3a4876b59aedb2e4e4c1e828a46c72551877d23fb6704b7311aa08f9eac21"
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "crossbeam-deque",
+    "crossbeam-utils",
+    "libc",
+    "rand",
+    "rand_xorshift",
+    "scoped-tls",
+    "wasm_sync",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "crossbeam-deque"
+package = "crossbeam-deque"
+requirement = "^0.8.1"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "crossbeam-utils"
+package = "crossbeam-utils"
+requirement = "^0.8.0"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "libc"
+package = "libc"
+requirement = "^0.2"
+features = []
+optional = false
+default-features = true
+target = "cfg(unix)"
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "rand"
+package = "rand"
+requirement = "^0.9"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "rand_xorshift"
+package = "rand_xorshift"
+requirement = "^0.4"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "scoped-tls"
+package = "scoped-tls"
+requirement = "^1.0"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "wasm_sync"
+package = "wasm_sync"
+requirement = "^0.1.0"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[plan.candidates.api]
+response-sha256 = "f57d35d978a515f0d82ba119e5aceb002ceb67895b59dab8e69aadbc618089c0"
+
+[plan.candidates.api.candidate]
+publisher-id = 539
+publisher-login = "cuviper"
+repository = "https://github.com/rayon-rs/rayon"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/rayon-rs/rayon"
+commit = "7af20d7692d5decbcb4adcaa079cd607e3e50814"
+path = "rayon-core"
+comparison_sha256 = "6208c26563f97cce7f3de8ac642fcdaef8dadc27cfcfdbc81d57d0640a1e68e6"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "rustc_version"
+activity = "active"
+sparse-index-sha256 = "fce6ebea45687b22dfee8cf68e28b6181aaf2fb204515ea3a64066682ec75ac9"
+decision-history-sha256 = "529a70afc7db89a44ab26601021bd7d33b486452b135ecf03f2330ffbf6a279c"
+age-seconds = 183992261
+decision = "review-required"
+reasons = [
+    "new-dependency",
+    "predates-locked-releases",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "0.3.3"
+published-at = "2021-01-18T07:39:37Z"
+source-row-sha256 = "5a35bef2ce92d584a79ec7b9d54281163763f9f60a4c985d44967bcc8383248f"
+crate-sha256 = "f0dfe2087c51c460008730de8b57e6a320782fbfb312e1f4d520e6c6fae155ee"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "54f0d5bfeb047a3d2c867955b9da1ed63e46c4e4bb377cce3422e05afaa6dbeb"
+compressed-bytes = 12119
+unpacked-bytes = 54272
+files = 11
+vcs-commit = "bede9a62ff53ba3fe12058fccb6e5ff5ec03946e"
+
+[plan.candidates.candidate-archive.build-surface]
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "doc-comment",
+    "semver",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "doc-comment"
+package = "doc-comment"
+requirement = "^0.3"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "semver"
+package = "semver"
+requirement = "^0.11"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[plan.candidates.api]
+response-sha256 = "b839338409b21d33cb8f44684dfdb7704be77ca5bba121a4071f0c256d1a7c7d"
+
+[plan.candidates.api.candidate]
+publisher-id = 4556
+publisher-login = "djc"
+repository = "https://github.com/Kimundi/rustc-version-rs"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/Kimundi/rustc-version-rs"
+commit = "bede9a62ff53ba3fe12058fccb6e5ff5ec03946e"
+path = ""
+comparison_sha256 = "3414258ba5b2a2aae23918d9cf033ad57fa6262b7abdf8337aef7d1e9f268606"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "semver"
+activity = "active"
+sparse-index-sha256 = "9ba964837f38bc25aed784bde55c745be4b4d48c21d1e180fb234c8dca2bf4d0"
+decision-history-sha256 = "e17e751a78a40e0659a8aa365be7715c8c9e737d80cce3ec442958a6b575cde2"
+age-seconds = 193992497
+decision = "review-required"
+reasons = [
+    "new-dependency",
+    "source-unavailable",
+    "predates-locked-releases",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "0.11.0"
+published-at = "2020-09-24T13:49:01Z"
+source-row-sha256 = "bce48954761ab36d20ed667b4a2ddac38c0ebcd55c7fa9032e67d18053c2d4b8"
+crate-sha256 = "f301af10236f6df4160f7c3f04eec6dbc70ace82d23326abad5edee88801c6b6"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "b9ecf7bfba57b0630fabf38854f452e3758aa8a1e092a5d12835a5664e02bc68"
+compressed-bytes = 20826
+unpacked-bytes = 116736
+files = 17
+vcs-commit = "2748f5cba2ce9c1cab13b0d07fd7a36cf0f3029d"
+
+[plan.candidates.candidate-archive.build-surface]
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "diesel",
+    "semver-parser",
+    "serde",
+    "serde_derive",
+    "serde_json",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "diesel"
+package = "diesel"
+requirement = "^1.1"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "semver-parser"
+package = "semver-parser"
+requirement = "^0.10.0"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "serde"
+package = "serde"
+requirement = "^1.0"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "serde_derive"
+package = "serde_derive"
+requirement = "^1.0"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "serde_json"
+package = "serde_json"
+requirement = "^1.0"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[plan.candidates.api]
+response-sha256 = "263a11656970a804b6ca907c0e243a5da33f204179e95c428844be6dcbdf2079"
+
+[plan.candidates.api.candidate]
+publisher-id = 8
+publisher-login = "steveklabnik"
+repository = "https://github.com/steveklabnik/semver"
+
+[plan.candidates.source]
+level = "unavailable"
+reason = "repository-package-path-not-located"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "semver-parser"
+activity = "new"
+sparse-index-sha256 = "81563125e1cc8c4737e1a5486af16c3381394fdbd1c1934110ebf9e71483a5b2"
+decision-history-sha256 = "c975777d3a35db25b1aeeb10699a7d23091ccbd60ce204efbfc5cfccd52d7d30"
+age-seconds = 62976158
+decision = "review-required"
+reasons = [
+    "new-package",
+    "new-dependency",
+    "source-unavailable",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "0.10.3"
+published-at = "2024-11-18T23:14:40Z"
+source-row-sha256 = "7ac1c31c2d677e8a30e1d7f7aae7859eaa8fd114fbbc8dc793415229c4257281"
+crate-sha256 = "9900206b54a3527fdc7b8a938bffd94a568bac4f4aa8113b209df75a09c0dec2"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "2276bce9e3b1721cdf263bf4b838296e8c23360dadafcd8d7bc92193c6aaff60"
+compressed-bytes = 24805
+unpacked-bytes = 215552
+files = 17
+
+[plan.candidates.candidate-archive.build-surface]
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "pest",
+    "pest_generator",
+    "proc-macro2",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "pest"
+package = "pest"
+requirement = "^2.1.0"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "pest_generator"
+package = "pest_generator"
+requirement = "^2.1"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "proc-macro2"
+package = "proc-macro2"
+requirement = "^1.0"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[plan.candidates.api]
+response-sha256 = "4e11abedb3f32738cc14ac547e8451c5e18fb0b9cb86f4d5a37be0951b1638e6"
+
+[plan.candidates.api.candidate]
+publisher-id = 8
+publisher-login = "steveklabnik"
+repository = "https://github.com/steveklabnik/semver-parser"
+
+[plan.candidates.source]
+level = "unavailable"
+reason = "archive-has-no-vcs-commit"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "stacker"
+activity = "new"
+sparse-index-sha256 = "f4e07d658e211e7c994b5d56b0ef955dbd13e7cc4d099f1ead2e643dd5f96991"
+decision-history-sha256 = "0d38743087d192851b7d8d6d3e3746d4c60229fdb9c8dad07606f7a281c58b99"
+age-seconds = 9284772
+decision = "review-required"
+reasons = [
+    "new-package",
+    "new-dependency",
+    "build-surface-changed",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "0.1.25"
+published-at = "2026-08-02T09:31:06Z"
+source-row-sha256 = "d15b2155d74975d77d51c40ad24b7bb8f448134c6edf56966dfd1ae059a5db9f"
+crate-sha256 = "707f49d46706bacf8a2b00d51dace3f9de527c13eec3778f570c411f89e69967"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "3fb6485a1846407bf12bcd52293e35eb55cd6d851c089e3e98be91b49ceaac56"
+compressed-bytes = 17498
+unpacked-bytes = 78848
+files = 23
+vcs-commit = "cdf19cf36cd0343a97c174ee6f7f8241f88b35f0"
+vcs-path = ""
+
+[plan.candidates.candidate-archive.build-surface]
+"file:build.rs:0644" = "59c0421d7ddee3b574397ebea45d17b2d850539183705e45ea6c816d1d7d698e"
+"file:src/arch/asm.h:0644" = "4c4db945e854e4ce3f0b7ba8da3755613c0e4513a7aab0604bd6a67c0ff2192d"
+"file:src/arch/windows.c:0644" = "e98e08f6b5102480b8fa4dfa7ee13441845202f5ba81c60b13da2800e0a8630c"
+"manifest:Cargo.toml.orig:build" = "d0d98998092552a1d3259338c2c71e118a5b8343dd4703c0c7f552ada7f9cb42"
+"manifest:Cargo.toml:build" = "d0d98998092552a1d3259338c2c71e118a5b8343dd4703c0c7f552ada7f9cb42"
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "cc",
+    "cfg-if",
+    "libc",
+    "psm",
+    "windows-sys",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "cc"
+package = "cc"
+requirement = "^1.2.33"
+features = []
+optional = false
+default-features = true
+kind = "build"
+
+[[plan.candidates.dependencies.added]]
+name = "cfg-if"
+package = "cfg-if"
+requirement = "^1.0.0"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "libc"
+package = "libc"
+requirement = "^0.2.156"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "psm"
+package = "psm"
+requirement = "^0.1.7"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "windows-sys"
+package = "windows-sys"
+requirement = ">=0.60.0, <0.62.0"
+features = [
+    "Win32_Foundation",
+    "Win32_System_Memory",
+    "Win32_System_Threading",
+]
+optional = false
+default-features = true
+target = "arm64ec-pc-windows-msvc"
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "windows-sys"
+package = "windows-sys"
+requirement = ">=0.60.0, <0.62.0"
+features = [
+    "Win32_Foundation",
+    "Win32_System_Memory",
+    "Win32_System_Threading",
+]
+optional = false
+default-features = true
+target = 'cfg(all(windows, not(target_arch = "arm64ec")))'
+kind = "normal"
+
+[plan.candidates.api]
+response-sha256 = "fa755dd209f8be202e43c132b9cf7b4b4839c6f89fe72f4bbc0f485f58ceabd2"
+
+[plan.candidates.api.candidate]
+publisher-id = 726
+publisher-login = "nagisa"
+repository = "https://github.com/rust-lang/stacker"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/rust-lang/stacker"
+commit = "cdf19cf36cd0343a97c174ee6f7f8241f88b35f0"
+path = ""
+comparison_sha256 = "f69d720c7b63e92fd525d4ea1568c0fe9d13ff89a856ae26768673a31a52aa38"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "tinytemplate"
+activity = "new"
+sparse-index-sha256 = "8bfb4e466cb50d64c2cf5d299560362c94faf6f9db3c74c48088c2bacee25a1d"
+decision-history-sha256 = "b7d5c7e86770b3c743e7ae0c822ffaefcbf76384ce867692e86d50db90563517"
+age-seconds = 180131530
+decision = "review-required"
+reasons = [
+    "new-package",
+    "new-dependency",
+    "build-surface-changed",
+    "source-file-mode",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "1.2.1"
+published-at = "2021-03-04T00:05:08Z"
+source-row-sha256 = "20218b1bb66d264321b42e6bc4668265ac7c1b6bee775d87233551eb9f9825e0"
+crate-sha256 = "be4d6b5f19ff7664e8c98d03e2139cb510db9b0a60b55f8e8709b689d939b6bc"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "7564fc59d8a2a7eed7e5e72e0f0965338cccac04af3c057af354a40d3ce03b21"
+compressed-bytes = 26490
+unpacked-bytes = 127488
+files = 17
+vcs-commit = "522605e72e04dbd6ededa29743a485d2fad29dd4"
+
+[plan.candidates.candidate-archive.build-surface]
+"file:.github/workflows/ci.yml:100777" = "c1ca03bfcec8221313c2fbf006b81246c0ab561dcf0e877939f5d41ab7778c93"
+"file:.gitignore:100777" = "6b937008e0a58a438c32574627db6961a4d2aff4bf5c703d4e45cb56ef3b168a"
+"file:CHANGELOG.md:100777" = "59b98fa1a2681e85842dea1e7f6424e57322da775d90a49c4de18169b2551caf"
+"file:CONTRIBUTING.md:100777" = "d9b4e8d9a4449b075d618f3f0c1454558f3140fb51a8013610dd9a9e882ecef1"
+"file:Cargo.toml.orig:100777" = "7f723f75d9cbe31fb1b99503247c76699ca4598edeebee327eac713502ea1fc3"
+"file:LICENSE-APACHE:100777" = "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+"file:LICENSE-MIT:100777" = "b6d10b8851a36aa6ec9612a186e56c2fcea0ad7db7b90c3dda1d16ae27c0077e"
+"file:README.md:100777" = "46a42e03b08a4d9910650bdeb4dd708f80c97000066fab4b3eac0ee14f5c7f9b"
+"file:benches/benchmarks.rs:100777" = "43e0f13f15cb13edb0dfc8c155e86eec966b13ed36f524c2988afd04938f3f92"
+"file:src/compiler.rs:100777" = "d0da5a0f0048c1ef64d89f51c8a7c4500a431353897007e55d158398bcd591b9"
+"file:src/error.rs:100777" = "7aacecb663cf36dea3b685354b735790527ac7dac64a5dc0668281b46ea751e9"
+"file:src/instruction.rs:100777" = "f8bf799553a5a60266d33fbde10468e7b27571f0af96703914bf5c39294444ea"
+"file:src/lib.rs:100777" = "57fca7200d4316f73e75ca3610b558b8c4e6d5e3f5d6857310af122a43d7105b"
+"file:src/syntax.rs:100777" = "f2077403cc8dd3ec5f53513d59dbbca3fbae0e14bcab6690f27ad45f39a484fe"
+"file:src/template.rs:100777" = "6096b2cfe303365d09cf3773b9427dc5d2c86c7fd92e326f8089e9a9123b3557"
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "criterion",
+    "serde",
+    "serde_derive",
+    "serde_json",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "criterion"
+package = "criterion"
+requirement = "^0.3"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "serde"
+package = "serde"
+requirement = "^1.0"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "serde_derive"
+package = "serde_derive"
+requirement = "^1.0"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "serde_json"
+package = "serde_json"
+requirement = "^1.0"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[plan.candidates.api]
+response-sha256 = "3b6a45208f704fe49395aef0dcf8f156b40f3ae43cec9fc2cf4b82f204047938"
+
+[plan.candidates.api.candidate]
+publisher-id = 8785
+publisher-login = "bheisler"
+repository = "https://github.com/bheisler/TinyTemplate"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/bheisler/TinyTemplate"
+commit = "522605e72e04dbd6ededa29743a485d2fad29dd4"
+path = ""
+comparison_sha256 = "074dadcc18ecb777b7353fc2fa5f165b962c4f9e90525a299b26987b420b5059"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "ucd-trie"
+activity = "new"
+sparse-index-sha256 = "7ea4ec565319e1295276a830be52dd6dd738d21a5373d388463f6d1a4896ed7a"
+decision-history-sha256 = "7249e5251742dec177610889d0287592d2bcc3f43dbf1b3842959f411ab4b205"
+age-seconds = 67335588
+decision = "review-required"
+reasons = [
+    "new-package",
+    "new-dependency",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "0.1.7"
+published-at = "2024-09-29T12:17:30Z"
+source-row-sha256 = "66c60958e7145e64aadcf27b5446f28f6776af2ab10943c47ce30137c072e4aa"
+crate-sha256 = "2896d95c02a80c6d6a5d6e953d479f5ddf2dfdb6a244441010e373ac0fb88971"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "46ffd10656d3961f3d54e74c916638597bff1b2b653818a6f61de75fdeb155d7"
+compressed-bytes = 46795
+unpacked-bytes = 172032
+files = 10
+vcs-commit = "6035dbb69169e68c9fcf309f9d16676aae4a16ae"
+vcs-path = "ucd-trie"
+
+[plan.candidates.candidate-archive.build-surface]
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = ["once_cell"]
+
+[[plan.candidates.dependencies.added]]
+name = "once_cell"
+package = "once_cell"
+requirement = "^1"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[plan.candidates.api]
+response-sha256 = "d61280407ca326188834b2f05d24eab3f6705cff4c8b391788a4754e21a23e38"
+
+[plan.candidates.api.candidate]
+publisher-id = 189
+publisher-login = "BurntSushi"
+repository = "https://github.com/BurntSushi/ucd-generate"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/BurntSushi/ucd-generate"
+commit = "6035dbb69169e68c9fcf309f9d16676aae4a16ae"
+path = "ucd-trie"
+comparison_sha256 = "9b4bc1e22cc892fea1d6a5fefb7d401cc395eaf5f44414c8838eaad74dc9f564"
+
+[[admit]]
+category = "main/general"
+name = "alloy-rlp"
+version = "0.3.16"
+
+[[admit]]
+category = "main/general"
+name = "ark-ff"
+version = "0.3.0"
+
+[[admit]]
+category = "main/general"
+name = "ark-ff"
+version = "0.4.2"
+
+[[admit]]
+category = "main/general"
+name = "ark-ff-asm"
+version = "0.3.0"
+
+[[admit]]
+category = "main/general"
+name = "ark-ff-asm"
+version = "0.4.2"
+
+[[admit]]
+category = "main/general"
+name = "ark-ff-macros"
+version = "0.3.0"
+
+[[admit]]
+category = "main/general"
+name = "ark-ff-macros"
+version = "0.4.2"
+
+[[admit]]
+category = "main/general"
+name = "ark-serialize"
+version = "0.3.0"
+
+[[admit]]
+category = "main/general"
+name = "ark-serialize"
+version = "0.4.2"
+
+[[admit]]
+category = "main/general"
+name = "ark-std"
+version = "0.3.0"
+
+[[admit]]
+category = "main/general"
+name = "ark-std"
+version = "0.4.0"
+
+[[admit]]
+category = "main/general"
+name = "aurora-engine-modexp"
+version = "1.3.0"
+
+[[admit]]
+category = "main/general"
+name = "digest"
+version = "0.9.0"
+
+[[admit]]
+category = "main/general"
+name = "fastrlp"
+version = "0.3.1"
+
+[[admit]]
+category = "main/general"
+name = "fastrlp"
+version = "0.4.0"
+
+[[admit]]
+category = "main/general"
+name = "half"
+version = "2.7.1"
+
+[[admit]]
+category = "main/general"
+name = "pest"
+version = "2.9.4"
+
+[[admit]]
+category = "main/general"
+name = "plotters"
+version = "0.3.7"
+
+[[admit]]
+category = "main/general"
+name = "plotters-backend"
+version = "0.3.7"
+
+[[admit]]
+category = "main/general"
+name = "plotters-svg"
+version = "0.3.7"
+
+[[admit]]
+category = "main/general"
+name = "psm"
+version = "0.1.24"
+
+[[admit]]
+category = "main/general"
+name = "rayon-core"
+version = "1.13.0"
+
+[[admit]]
+category = "main/general"
+name = "rustc_version"
+version = "0.3.3"
+
+[[admit]]
+category = "main/general"
+name = "semver"
+version = "0.11.0"
+
+[[admit]]
+category = "main/general"
+name = "semver-parser"
+version = "0.10.3"
+
+[[admit]]
+category = "main/general"
+name = "stacker"
+version = "0.1.25"
+
+[[admit]]
+category = "main/general"
+name = "tinytemplate"
+version = "1.2.1"
+
+[[admit]]
+category = "main/general"
+name = "ucd-trie"
+version = "0.1.7"

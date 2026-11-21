@@ -86,10 +86,14 @@ Curator schema/workflow/security documentation:[`pkgre/pkgre`](https://github.co
 
 | Path | Authority/purpose |
 |---|---|
-| `self-publish/crates-io.toml` | Human authority:crates.io owners, the self-publishing repositories and their release-tag prefixes, name mappings, abandoned versions |
+| `self-publish/crates-io.toml` | Human authority:crates.io owners, the self-publishing repositories with their release-tag prefixes and the registry their release tags' manifests are written for, name mappings, abandoned versions |
 | `self-publish/crates-io.lock` | Generated authority:one entry per crate version released to crates.io, with its crates.io name, both archive checksums, and the release tag and commit |
 
-A release tag `rust/vX.Y.Z` of `pkgre/pkgre` publishes each crate whose `publish` is `["pkgre"]` at that commit;`pkgre-rust` reaches crates.io as `pkgre-pkgs-pkgre-rust` unless `[names]` gives another name. Only `pkgre-rust self-publish-lock` writes the lock, and no one edits it by hand:a crates.io version cannot be replaced, so an entry is permanent. CI runs `pkgre-rust self-publish-check` against the accepted state of the change, and rejects any `self-publish/` change that a `pkgre-rust self-publish-lock` run would produce. The validate job's registry checks read the same accepted state, and both jobs derive it as the first parent of the change and pin the same tooling revision.
+A release tag `rust/vX.Y.Z` of `pkgre/pkgre` publishes each crate whose `publish` is `["pkgre"]` at that commit;`pkgre-rust` reaches crates.io as `pkgre-pkgs-pkgre-rust` unless `[names]` gives another name.
+
+A repository may instead declare `manifests = "crates-io"`: its release tags keep plain crates.io manifests, which nothing rewrites. Such a tag publishes each workspace member whose `publish` is absent or `true`, every other member sets `publish = false`, and the tag commits its workspace `Cargo.lock`. Its crates keep their own names on crates.io, so `[names]` holds no key for them, and one archive, the tag's own packaging, serves both `rust.pkg.re` and crates.io. The key is optional, `"pkgre"` is the default and the mode above, and its value is permanent once declared.
+
+Only `pkgre-rust self-publish-lock` writes the lock, and no one edits it by hand:a crates.io version cannot be replaced, so an entry is permanent. CI runs `pkgre-rust self-publish-check` against the accepted state of the change, and rejects any `self-publish/` change that a `pkgre-rust self-publish-lock` run would produce. The validate job's registry checks read the same accepted state, and both jobs derive it as the first parent of the change and pin the same tooling revision.
 
 Formats, name rules, the derivation and the upload routine:[`docs/self-publish.md`](https://github.com/pkgre/pkgre/blob/main/docs/self-publish.md).
 

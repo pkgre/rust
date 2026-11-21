@@ -8,6 +8,16 @@ owners = ["sorpaas"]
 git = "https://github.com/pkgre/pkgre"
 tag-prefix = "rust/v"
 
+[[repositories]]
+git = "https://github.com/rust-ethereum/evm"
+tag-prefix = "v"
+manifests = "crates-io"
+
+[[repositories]]
+git = "https://github.com/rust-ethereum/evm-legacy"
+tag-prefix = "v"
+manifests = "crates-io"
+
 # Optional crates.io names; other crates get "pkgre-pkgs-" + name.
 [names]
 pkgre = "pkgre"

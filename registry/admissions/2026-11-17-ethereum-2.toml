@@ -1,0 +1,141 @@
+schema = 2
+
+[[admit]]
+category = "main/general"
+name = "alloy-rlp"
+version = "0.3.16"
+
+[[admit]]
+category = "main/general"
+name = "ark-ff"
+version = "0.3.0"
+
+[[admit]]
+category = "main/general"
+name = "ark-ff"
+version = "0.4.2"
+
+[[admit]]
+category = "main/general"
+name = "ark-ff-asm"
+version = "0.3.0"
+
+[[admit]]
+category = "main/general"
+name = "ark-ff-asm"
+version = "0.4.2"
+
+[[admit]]
+category = "main/general"
+name = "ark-ff-macros"
+version = "0.3.0"
+
+[[admit]]
+category = "main/general"
+name = "ark-ff-macros"
+version = "0.4.2"
+
+[[admit]]
+category = "main/general"
+name = "ark-serialize"
+version = "0.3.0"
+
+[[admit]]
+category = "main/general"
+name = "ark-serialize"
+version = "0.4.2"
+
+[[admit]]
+category = "main/general"
+name = "ark-std"
+version = "0.3.0"
+
+[[admit]]
+category = "main/general"
+name = "ark-std"
+version = "0.4.0"
+
+[[admit]]
+category = "main/general"
+name = "aurora-engine-modexp"
+version = "1.3.0"
+
+[[admit]]
+category = "main/general"
+name = "digest"
+version = "0.9.0"
+
+[[admit]]
+category = "main/general"
+name = "fastrlp"
+version = "0.3.1"
+
+[[admit]]
+category = "main/general"
+name = "fastrlp"
+version = "0.4.0"
+
+[[admit]]
+category = "main/general"
+name = "half"
+version = "2.7.1"
+
+[[admit]]
+category = "main/general"
+name = "pest"
+version = "2.9.4"
+
+[[admit]]
+category = "main/general"
+name = "plotters"
+version = "0.3.7"
+
+[[admit]]
+category = "main/general"
+name = "plotters-backend"
+version = "0.3.7"
+
+[[admit]]
+category = "main/general"
+name = "plotters-svg"
+version = "0.3.7"
+
+[[admit]]
+category = "main/general"
+name = "psm"
+version = "0.1.24"
+
+[[admit]]
+category = "main/general"
+name = "rayon-core"
+version = "1.13.0"
+
+[[admit]]
+category = "main/general"
+name = "rustc_version"
+version = "0.3.3"
+
+[[admit]]
+category = "main/general"
+name = "semver"
+version = "0.11.0"
+
+[[admit]]
+category = "main/general"
+name = "semver-parser"
+version = "0.10.3"
+
+[[admit]]
+category = "main/general"
+name = "stacker"
+version = "0.1.25"
+
+[[admit]]
+category = "main/general"
+name = "tinytemplate"
+version = "1.2.1"
+
+[[admit]]
+category = "main/general"
+name = "ucd-trie"
+version = "0.1.7"

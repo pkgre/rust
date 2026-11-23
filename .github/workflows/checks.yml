@@ -1,0 +1,271 @@
+name: Check pull request
+
+# The checks of a pull request run from main: this file, the scripts it calls
+# and the tooling pin are main's, and the pull request's tree is fetched by its
+# commit and read as data. No step runs anything from that tree, so a pull
+# request cannot change the checks it must pass; its changes to the checks take
+# effect from the first pull request after it merges.
+#
+# "Catalog checks" is the one check to require: it passes only when every check
+# job passed.
+
+on:
+  pull_request_target:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: check-pull-request-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  registry:
+    name: Registry
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - name: Check out main
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          path: main
+          persist-credentials: false
+      - name: Require main at the commit of this run
+        env:
+          ACCEPTED_SHA: ${{ github.sha }}
+        run: |
+          # under pull_request_target this checkout is main's tip, whose workflow
+          # runs; that commit is the accepted state of every check
+          sha="$(git -C main rev-parse HEAD)"
+          if [[ "$sha" != "$ACCEPTED_SHA" ]]; then
+            printf 'main is checked out at %s, not at the commit of this run %s\n' "$sha" "$ACCEPTED_SHA" >&2
+            exit 1
+          fi
+      - name: Check out pinned tooling
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          repository: pkgre/pkgre
+          ref: 310f4929f5ba2792371455c3d60d8309d362a517
+          path: tooling
+          # full history, so that the pin's ancestry on pkgre/pkgre main can be shown
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Require the pinned tooling on main
+        env:
+          TOOLING_PIN: 310f4929f5ba2792371455c3d60d8309d362a517
+        run: |
+          # GitHub serves any commit of a fork network through the parent repository
+          # by its hash, so the pin could name a commit that only a fork holds; it
+          # must lie on pkgre/pkgre main before anything of it is built
+          git -C tooling fetch --quiet --no-tags origin '+refs/heads/main:refs/remotes/origin/main'
+          if ! git -C tooling merge-base --is-ancestor "$TOOLING_PIN" refs/remotes/origin/main; then
+            printf 'the pinned tooling %s is not on pkgre/pkgre main\n' "$TOOLING_PIN" >&2
+            exit 1
+          fi
+      - name: Install Nix
+        uses: cachix/install-nix-action@13d8dd58da0234aa297dedd986986ccb8e7f3e24 # v31
+      - name: Build pinned indexer
+        run: nix build --print-build-logs ./tooling#indexer
+      - name: Prepare the pinned Cargo
+        run: |
+          # the checks run Cargo from the tooling's development shell, so the shell
+          # is evaluated from main's tooling before the pull request's tree exists
+          # in the job
+          echo "PKGRE_CARGO=$(nix develop ./tooling -c printenv PKGRE_CARGO)" >> "$GITHUB_ENV"
+      - name: Fetch the pull request's tree as data
+        env:
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          PULL_NUMBER: ${{ github.event.pull_request.number }}
+          ACCEPTED_SHA: ${{ github.sha }}
+          REPOSITORY_URL: ${{ github.server_url }}/${{ github.repository }}
+        run: |
+          # the only values of the pull request that the checks read, taken through
+          # the environment and checked to be a commit hash and a number before they
+          # reach Git; the fetch refuses a tree that holds a link, a submodule or a
+          # .gitattributes file, and writes the rest without applying any of it
+          for value in "$HEAD_SHA" "$ACCEPTED_SHA"; do
+            if [[ ! "$value" =~ ^[0-9a-f]{40}$ ]]; then
+              printf 'not a commit hash: %s\n' "$value" >&2
+              exit 1
+            fi
+          done
+          if [[ ! "$PULL_NUMBER" =~ ^[1-9][0-9]*$ ]]; then
+            printf 'the pull request number is not a decimal number: %s\n' "$PULL_NUMBER" >&2
+            exit 1
+          fi
+          ./main/.github/fetch-candidate.sh "$REPOSITORY_URL" "$HEAD_SHA" "$ACCEPTED_SHA" "$PULL_NUMBER"
+      - name: Require fully applied admissions
+        run: ./result/bin/pkgre-rust check candidate/registry
+      - name: Require converged catalog
+        run: |
+          ./result/bin/pkgre-rust lock candidate/registry
+          # Git runs as the fetch runs it, so that an attribute, a filter or a hook
+          # of the candidate cannot hide a file that lock adds
+          changes="$(
+            GIT_CONFIG_NOSYSTEM=1 GIT_CONFIG_GLOBAL=/dev/null GIT_ATTR_NOSYSTEM=1 \
+              git -C candidate -c core.hooksPath=/dev/null \
+                -c core.attributesFile=/dev/null \
+                -c protocol.allow=never -c protocol.https.allow=always \
+                status --porcelain=v1 --untracked-files=all --ignored -- registry
+          )"
+          if [[ -n "$changes" ]]; then
+            printf '%s\n' "$changes" >&2
+            echo "registry is not fully applied and converged; run pkgre-rust lock and commit every result" >&2
+            exit 1
+          fi
+      - name: Require a valid serving transition
+        run: ./result/bin/pkgre-rust check-transition main/registry candidate/registry
+      - name: Require a buildable body-delivery snapshot
+        run: |
+          # the serving origin delivers bodies, so the empty archive store leaves every
+          # crates.io mirror body to the catalog itself
+          store="$(mktemp -d)"
+          ./result/bin/pkgre-rust check-serve candidate/registry --delivery=body --archive-store="$store"
+      - name: Prepare the Git-tag reproduction
+        run: |
+          # the reproduction packages each added tag with Cargo, so its temporary
+          # directory must lie below /tmp, outside the candidate
+          echo "TMPDIR=$(mktemp -d /tmp/pkgre-git-tags.XXXXXX)" >> "$GITHUB_ENV"
+      - name: Require reproduced Git tags
+        run: ./result/bin/pkgre-rust reproduce-git-tags main/registry candidate/registry
+      - name: Require the crates.io archives and index rows of added mirrors
+        run: |
+          # the catalog retains each mirror's archive and source row and the origin serves
+          # both, so each locked checksum must be that of what crates.io serves for them
+          python3 main/.github/check-crates-io-archives.py main/registry candidate/registry
+      - name: Require a reproducible site
+        run: |
+          site="$(mktemp -d)/site"
+          ./result/bin/pkgre-rust render candidate/registry "$site"
+          ./result/bin/pkgre-rust verify candidate/registry "$site"
+          echo "CANDIDATE_SITE=$site" >> "$GITHUB_ENV"
+      - name: Require a monotonic site
+        run: |
+          accepted="$(mktemp -d)/site"
+          ./result/bin/pkgre-rust render main/registry "$accepted"
+          ./result/bin/pkgre-rust verify-monotonic "$accepted" "$CANDIDATE_SITE"
+
+  self-publish:
+    name: Self-publishing
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - name: Check out main
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          path: main
+          persist-credentials: false
+      - name: Require main at the commit of this run
+        env:
+          ACCEPTED_SHA: ${{ github.sha }}
+        run: |
+          # under pull_request_target this checkout is main's tip, whose workflow
+          # runs; that commit is the accepted state of every check
+          sha="$(git -C main rev-parse HEAD)"
+          if [[ "$sha" != "$ACCEPTED_SHA" ]]; then
+            printf 'main is checked out at %s, not at the commit of this run %s\n' "$sha" "$ACCEPTED_SHA" >&2
+            exit 1
+          fi
+      - name: Check out pinned tooling
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          repository: pkgre/pkgre
+          ref: 310f4929f5ba2792371455c3d60d8309d362a517
+          path: tooling
+          # full history, so that the pin's ancestry on pkgre/pkgre main can be shown
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Require the pinned tooling on main
+        env:
+          TOOLING_PIN: 310f4929f5ba2792371455c3d60d8309d362a517
+        run: |
+          # GitHub serves any commit of a fork network through the parent repository
+          # by its hash, so the pin could name a commit that only a fork holds; it
+          # must lie on pkgre/pkgre main before anything of it is built
+          git -C tooling fetch --quiet --no-tags origin '+refs/heads/main:refs/remotes/origin/main'
+          if ! git -C tooling merge-base --is-ancestor "$TOOLING_PIN" refs/remotes/origin/main; then
+            printf 'the pinned tooling %s is not on pkgre/pkgre main\n' "$TOOLING_PIN" >&2
+            exit 1
+          fi
+      - name: Install Nix
+        uses: cachix/install-nix-action@13d8dd58da0234aa297dedd986986ccb8e7f3e24 # v31
+      - name: Build pinned indexer
+        run: nix build --print-build-logs ./tooling#indexer
+      - name: Prepare the pinned Cargo
+        run: |
+          # the checks run Cargo from the tooling's development shell, so the shell
+          # is evaluated from main's tooling before the pull request's tree exists
+          # in the job
+          echo "PKGRE_CARGO=$(nix develop ./tooling -c printenv PKGRE_CARGO)" >> "$GITHUB_ENV"
+      - name: Fetch the pull request's tree as data
+        env:
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          PULL_NUMBER: ${{ github.event.pull_request.number }}
+          ACCEPTED_SHA: ${{ github.sha }}
+          REPOSITORY_URL: ${{ github.server_url }}/${{ github.repository }}
+        run: |
+          # the only values of the pull request that the checks read, taken through
+          # the environment and checked to be a commit hash and a number before they
+          # reach Git; the fetch refuses a tree that holds a link, a submodule or a
+          # .gitattributes file, and writes the rest without applying any of it
+          for value in "$HEAD_SHA" "$ACCEPTED_SHA"; do
+            if [[ ! "$value" =~ ^[0-9a-f]{40}$ ]]; then
+              printf 'not a commit hash: %s\n' "$value" >&2
+              exit 1
+            fi
+          done
+          if [[ ! "$PULL_NUMBER" =~ ^[1-9][0-9]*$ ]]; then
+            printf 'the pull request number is not a decimal number: %s\n' "$PULL_NUMBER" >&2
+            exit 1
+          fi
+          ./main/.github/fetch-candidate.sh "$REPOSITORY_URL" "$HEAD_SHA" "$ACCEPTED_SHA" "$PULL_NUMBER"
+      - name: Prepare the self-publishing checks
+        run: |
+          # the derivation refuses to run Cargo below a Cargo configuration, so
+          # its temporary directory must lie below /tmp, outside the candidate
+          echo "TMPDIR=$(mktemp -d /tmp/pkgre-self-publish.XXXXXX)" >> "$GITHUB_ENV"
+      - name: Require a valid self-publishing state
+        run: ./result/bin/pkgre-rust self-publish-check candidate main
+      - name: Require converged self-publishing state
+        run: |
+          ./result/bin/pkgre-rust self-publish-lock candidate
+          # Git runs as the fetch runs it, so that an attribute, a filter or a hook
+          # of the candidate cannot hide a file that lock adds
+          changes="$(
+            GIT_CONFIG_NOSYSTEM=1 GIT_CONFIG_GLOBAL=/dev/null GIT_ATTR_NOSYSTEM=1 \
+              git -C candidate -c core.hooksPath=/dev/null \
+                -c core.attributesFile=/dev/null \
+                -c protocol.allow=never -c protocol.https.allow=always \
+                status --porcelain=v1 --untracked-files=all --ignored -- self-publish
+          )"
+          if [[ -n "$changes" ]]; then
+            printf '%s\n' "$changes" >&2
+            echo "self-publish is not fully applied and converged; run pkgre-rust self-publish-lock and commit every result" >&2
+            exit 1
+          fi
+
+  catalog-checks:
+    name: Catalog checks
+    needs: [registry, self-publish]
+    # a skipped job counts as a success, so this job runs whatever the checks did
+    # and fails unless every one of them succeeded
+    if: ${{ always() }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions: {}
+    steps:
+      - name: Require every check
+        env:
+          REGISTRY: ${{ needs.registry.result }}
+          SELF_PUBLISH: ${{ needs.self-publish.result }}
+        run: |
+          status=0
+          for job in REGISTRY SELF_PUBLISH; do
+            result="${!job}"
+            if [[ "$result" != success ]]; then
+              printf '%s: %s\n' "$job" "$result" >&2
+              status=1
+            fi
+          done
+          exit "$status"

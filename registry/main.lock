@@ -5430,6 +5430,19 @@ admitted-at = "2021-09-04T11:07:33Z"
 kind = "crates-io"
 
 [[packages]]
+name = "castaway"
+version = "0.2.4"
+state = "active"
+crate-sha256 = "dec551ab6e7578819132c713a93c022a05d60159dc86e7a7050223577484c55a"
+source-row-sha256 = "4895975658f6d845dc84fb3ede0a8ea522bf8998429b81260a1dd507ce73a58a"
+index-row-sha256 = "76e5ea000f93bdc768e625f5c664907b2e93739a015fde4e9f0d750aff0db5ab"
+admission-sha256 = "dea4aa5d355537fc714e72495a1383ddb006e1c7ca0dc5f8889dfc35c7064419"
+admitted-at = "2025-07-12T16:49:05Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
 name = "cbc"
 version = "0.1.2"
 state = "active"
@@ -5769,6 +5782,19 @@ admitted-at = "2024-04-10T09:56:27Z"
 kind = "crates-io"
 
 [[packages]]
+name = "compact_str"
+version = "0.10.0"
+state = "active"
+crate-sha256 = "79fcda08c33bb58b97008b2cdada6622500e949e060f5913361763121abd2416"
+source-row-sha256 = "848fff3fd8bae3ea93b5a3d644c7d928be72b47623cf64c21c5576f12cc65d12"
+index-row-sha256 = "aba9e6a3ea9dfd9f0865fa7273d5cb2a927455fa658ac460424672c41a47de2d"
+admission-sha256 = "dea4aa5d355537fc714e72495a1383ddb006e1c7ca0dc5f8889dfc35c7064419"
+admitted-at = "2026-07-13T13:10:59Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
 name = "compression-codecs"
 version = "0.4.38"
 state = "active"
@@ -5824,6 +5850,32 @@ crate-sha256 = "a6ef517f0926dd24a1582492c791b6a4818a4d94e789a334894aa15b0d12f55c
 source-row-sha256 = "764e60cfda999eb0fc824806e2824721488678b9e2a3d012a74aad8d83a73cd3"
 index-row-sha256 = "ae47b5a22922b043fddf28681ee7ac04773a0ffee048fddaf878373f642d0cd8"
 admitted-at = "2026-01-07T23:11:57Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "const-random"
+version = "0.1.18"
+state = "active"
+crate-sha256 = "87e00182fe74b066627d63b85fd550ac2998d4b0bd86bfed477a0ae4c7c71359"
+source-row-sha256 = "291374da92ccfc6eaa4ccc6b2e1d800cda9bb086d94b02a7451898893984dbaa"
+index-row-sha256 = "67cf9eec918de1529ff4dfab9bbca141ea1575be9a7719207c01724f58c19d33"
+admission-sha256 = "dea4aa5d355537fc714e72495a1383ddb006e1c7ca0dc5f8889dfc35c7064419"
+admitted-at = "2024-03-03T23:32:56Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "const-random-macro"
+version = "0.1.16"
+state = "active"
+crate-sha256 = "f9d839f2a20b0aee515dc581a6172f2321f96cab76c1a38a4c584a194955390e"
+source-row-sha256 = "ee383e521fd3e20b80aa907e88c0d3855e6710087c9abfac41b4076b94fa8b59"
+index-row-sha256 = "d18e4948417e3d9a4c5e6a9b0ed87c4e8b9ee2effcb11455e9e272c9439cc545"
+admission-sha256 = "dea4aa5d355537fc714e72495a1383ddb006e1c7ca0dc5f8889dfc35c7064419"
+admitted-at = "2023-10-23T19:07:26Z"
 
 [packages.source]
 kind = "crates-io"
@@ -10167,6 +10219,19 @@ admitted-at = "2022-07-31T18:21:15Z"
 kind = "crates-io"
 
 [[packages]]
+name = "portable-atomic"
+version = "1.13.1"
+state = "active"
+crate-sha256 = "c33a9471896f1c69cecef8d20cbe2f7accd12527ce60845ff44c153bb2a21b49"
+source-row-sha256 = "3a5743a6ada29077930f9971c1b0d94871cc0ac4f7d855d4314b8bcb891eec72"
+index-row-sha256 = "58516fd6273dc3f2501ffe688865bd3282e689a52b19665a46b605835f8bde77"
+admission-sha256 = "dea4aa5d355537fc714e72495a1383ddb006e1c7ca0dc5f8889dfc35c7064419"
+admitted-at = "2026-01-31T15:53:52Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
 name = "portable-pty"
 version = "0.9.0"
 state = "active"
@@ -10986,6 +11051,32 @@ crate-sha256 = "f8dd2a808d456c4a54e300a23e9f5a67e122c3024119acbfd73e3bf664491cb2
 source-row-sha256 = "77518f729291c25e833810e2e3810c2ccd226329fa49578a13cf801d8a870520"
 index-row-sha256 = "fa8fcbe009e5005daba8f4c9e7e8c807ff2a1ebceb39eb0da6bbe4086676cfe6"
 admitted-at = "2023-02-28T20:35:07Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "rhai"
+version = "1.26.1"
+state = "active"
+crate-sha256 = "0334639972c0ea5a3fd366aa36116754a11431b619fec3ed559b3f73bcbcebf5"
+source-row-sha256 = "bee5caa1368ef88f9132b11c692136da731beeef99db56913bbf1ba02deeb093"
+index-row-sha256 = "05ef4ba8c8fb6b5bf894ca4d0b0dc020c75b38b8b784231249ed6ee295bffffd"
+admission-sha256 = "dea4aa5d355537fc714e72495a1383ddb006e1c7ca0dc5f8889dfc35c7064419"
+admitted-at = "2026-09-10T01:36:21Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "rhai_codegen"
+version = "3.2.0"
+state = "active"
+crate-sha256 = "3cd3a7535e50bf36857e7be7bec276d334e8c2dfa469c2201226fd01638ea5ca"
+source-row-sha256 = "9d25a8ca237de48afd2362c8decaff4f338d27ade4ded1e295aa28cabb8a79ea"
+index-row-sha256 = "2b67679866af6527bc516ac76d165c701ea3295e4120fb83f5f07c55c525d647"
+admission-sha256 = "dea4aa5d355537fc714e72495a1383ddb006e1c7ca0dc5f8889dfc35c7064419"
+admitted-at = "2026-05-24T09:06:02Z"
 
 [packages.source]
 kind = "crates-io"
@@ -12193,6 +12284,19 @@ admitted-at = "2026-06-11T20:52:32Z"
 kind = "crates-io"
 
 [[packages]]
+name = "smartstring"
+version = "1.0.1"
+state = "active"
+crate-sha256 = "3fb72c633efbaa2dd666986505016c32c3044395ceaf881518399d2f4127ee29"
+source-row-sha256 = "c235e74d3076d7e0231df7a30c92242283e76f2cbde74f3200e33a00c1a6167f"
+index-row-sha256 = "1e061dbef33eb38fc8ccbc9a93c3533bf617ec4eeaf51bff01f93dc46a1f5fee"
+admission-sha256 = "dea4aa5d355537fc714e72495a1383ddb006e1c7ca0dc5f8889dfc35c7064419"
+admitted-at = "2022-03-24T18:30:52Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
 name = "socket2"
 version = "0.6.3"
 state = "active"
@@ -12506,6 +12610,19 @@ crate-sha256 = "5fed54709c5b3a53d09bb1c113ea4f5ceafd1e772ddcb0030a82e1d56c087b08
 source-row-sha256 = "852350a60871a0fd943a9625245bc6b8b20a29720e9fc5491ab68b2bab13fd19"
 index-row-sha256 = "5014d37da60430290e87c3dc16a7b8ba968e161d235031d5030f6068337c30a9"
 admitted-at = "2026-07-06T14:29:34Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "thin-vec"
+version = "0.2.21"
+state = "active"
+crate-sha256 = "d6a4b9ba8738cb4a4f399d37e266becfd475e75eb73425b87a05a2f2039ba63e"
+source-row-sha256 = "91457dd2a3b91b1a6942eab4f51af329773e0d57268a02d7df755ff9c74be6c7"
+index-row-sha256 = "ff0c6db02f63a876707e9a6b1cb1ae50aa1a2c5e38086239a377705630193bc1"
+admission-sha256 = "dea4aa5d355537fc714e72495a1383ddb006e1c7ca0dc5f8889dfc35c7064419"
+admitted-at = "2026-10-07T22:46:15Z"
 
 [packages.source]
 kind = "crates-io"

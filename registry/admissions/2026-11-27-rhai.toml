@@ -1,0 +1,46 @@
+schema = 2
+
+[[admit]]
+category = "main/general"
+name = "castaway"
+version = "0.2.4"
+
+[[admit]]
+category = "main/general"
+name = "compact_str"
+version = "0.10.0"
+
+[[admit]]
+category = "main/general"
+name = "const-random"
+version = "0.1.18"
+
+[[admit]]
+category = "main/general"
+name = "const-random-macro"
+version = "0.1.16"
+
+[[admit]]
+category = "main/general"
+name = "portable-atomic"
+version = "1.13.1"
+
+[[admit]]
+category = "main/general"
+name = "rhai"
+version = "1.26.1"
+
+[[admit]]
+category = "main/general"
+name = "rhai_codegen"
+version = "3.2.0"
+
+[[admit]]
+category = "main/general"
+name = "smartstring"
+version = "1.0.1"
+
+[[admit]]
+category = "main/general"
+name = "thin-vec"
+version = "0.2.21"

@@ -1079,6 +1079,38 @@ name = "eventsource-stream"
 category = "sse"
 
 [[names]]
+name = "evm"
+category = "ethereum"
+
+[[names]]
+name = "evm-core"
+category = "ethereum"
+
+[[names]]
+name = "evm-gasometer"
+category = "ethereum"
+
+[[names]]
+name = "evm-interpreter"
+category = "ethereum"
+
+[[names]]
+name = "evm-legacy"
+category = "ethereum"
+
+[[names]]
+name = "evm-mainnet"
+category = "ethereum"
+
+[[names]]
+name = "evm-precompile"
+category = "ethereum"
+
+[[names]]
+name = "evm-runtime"
+category = "ethereum"
+
+[[names]]
 name = "exhaustigen"
 category = "general"
 
@@ -6579,6 +6611,158 @@ admitted-at = "2022-02-17T19:33:45Z"
 
 [packages.source]
 kind = "crates-io"
+
+[[packages]]
+name = "evm"
+version = "1.2.0"
+state = "active"
+crate-sha256 = "78a2c2d6ef8ff07272fc63ee117560724f258b50237bcaad8ba6d5dd347051c3"
+source-row-sha256 = "069dcc97b2aa69b7d38e2b3c0b507063847b5122a176a158f230400328529033"
+index-row-sha256 = "21f55541674a602de83373df7c0717abb4ded8b4f6625f60019dfddbd2729f75"
+admitted-at = "2026-11-27T11:19:54Z"
+
+[packages.source]
+kind = "git-tag"
+git = "https://github.com/rust-ethereum/evm"
+tag = "v1.2.0"
+tag-oid = "8bd736495e9d8dfc97ada4b70f9fa5f34a702a1b"
+commit = "dc1b3c8485333af8ed36d9604a5a04155ddcca91"
+package = "evm"
+path = "."
+cargo-version = "1.95.0"
+
+[[packages]]
+name = "evm-core"
+version = "0.44.0"
+state = "active"
+crate-sha256 = "a397a947c07f3232091131af5f739ec7edb518e07bb421186f761dfc34df74b5"
+source-row-sha256 = "f9c08f0d23cc54979f50959a1a09f8ad5e6af141d28a74fde01b585f4b25fdbd"
+index-row-sha256 = "5977e6af2066c79fdd2012768e27a8665017cbfb68cb3e7266652e2f34c14f11"
+admitted-at = "2026-11-27T11:36:33Z"
+
+[packages.source]
+kind = "git-tag"
+git = "https://github.com/rust-ethereum/evm-legacy"
+tag = "v0.44.0"
+tag-oid = "4fcb54783fac461ba2a13b97bc967413c39d0e8c"
+commit = "380fecba1f4a0194d70fd579b9f2b442cbf2183b"
+package = "evm-core"
+path = "core"
+cargo-version = "1.95.0"
+
+[[packages]]
+name = "evm-gasometer"
+version = "0.44.0"
+state = "active"
+crate-sha256 = "0ba1e98b3d91c6915db223a594d17ede311beeb3226211af341f74476a96f62e"
+source-row-sha256 = "042b27835b7497c5dfe7117f8c126e3b075065811feb22303bbdcf3bc2535480"
+index-row-sha256 = "322e238767dded66856a01965fd36692da60fc944f2a647df384a76f391095e8"
+admitted-at = "2026-11-27T11:36:33Z"
+
+[packages.source]
+kind = "git-tag"
+git = "https://github.com/rust-ethereum/evm-legacy"
+tag = "v0.44.0"
+tag-oid = "4fcb54783fac461ba2a13b97bc967413c39d0e8c"
+commit = "380fecba1f4a0194d70fd579b9f2b442cbf2183b"
+package = "evm-gasometer"
+path = "gasometer"
+cargo-version = "1.95.0"
+
+[[packages]]
+name = "evm-interpreter"
+version = "1.2.0"
+state = "active"
+crate-sha256 = "5500d599fd1724e34f0301dfbedce2ffadf272ccc147055754d6c1b54ce4a1e7"
+source-row-sha256 = "6d98dfb91cd89a93a9dc01871f804329d902843a9db455978c88da91a2286a19"
+index-row-sha256 = "9e08e171b303e44ec8c1dc0f5de121eb452ae22caa821e2a68eb510e9c47f9b5"
+admitted-at = "2026-11-27T11:19:54Z"
+
+[packages.source]
+kind = "git-tag"
+git = "https://github.com/rust-ethereum/evm"
+tag = "v1.2.0"
+tag-oid = "8bd736495e9d8dfc97ada4b70f9fa5f34a702a1b"
+commit = "dc1b3c8485333af8ed36d9604a5a04155ddcca91"
+package = "evm-interpreter"
+path = "interpreter"
+cargo-version = "1.95.0"
+
+[[packages]]
+name = "evm-legacy"
+version = "0.44.0"
+state = "active"
+crate-sha256 = "0932d142982e975e914ead93c7800b7e9b3853227c22d4d5d8d07dad181c1711"
+source-row-sha256 = "98e6921de040170d1fc6c632ac9d7c3a355d0db6092a36654139a56fb8ac7c95"
+index-row-sha256 = "5518acba2b22adde38ea9263b1250953a84ba5aa6f843045dc1e484dc642621a"
+admitted-at = "2026-11-27T11:36:33Z"
+
+[packages.source]
+kind = "git-tag"
+git = "https://github.com/rust-ethereum/evm-legacy"
+tag = "v0.44.0"
+tag-oid = "4fcb54783fac461ba2a13b97bc967413c39d0e8c"
+commit = "380fecba1f4a0194d70fd579b9f2b442cbf2183b"
+package = "evm-legacy"
+path = "."
+cargo-version = "1.95.0"
+
+[[packages]]
+name = "evm-mainnet"
+version = "1.2.0"
+state = "active"
+crate-sha256 = "3d94d0a184a82464a10fe33c54f7362f4f2e2d6b5577c86bb3cb539ad5bba2bf"
+source-row-sha256 = "bbd5603f865779814fe9c2c1dfec817988f2e7c641c838eb24ee054fcdd1dccd"
+index-row-sha256 = "997f403af26dc4923159ebd0e17319d5821ed9c878be65aac01aa1c736d0e887"
+admitted-at = "2026-11-27T11:19:54Z"
+
+[packages.source]
+kind = "git-tag"
+git = "https://github.com/rust-ethereum/evm"
+tag = "v1.2.0"
+tag-oid = "8bd736495e9d8dfc97ada4b70f9fa5f34a702a1b"
+commit = "dc1b3c8485333af8ed36d9604a5a04155ddcca91"
+package = "evm-mainnet"
+path = "mainnet"
+cargo-version = "1.95.0"
+
+[[packages]]
+name = "evm-precompile"
+version = "1.2.0"
+state = "active"
+crate-sha256 = "00d69f7f97e5e321453c6da4147749cccbae45de2b782abdd96c9bc3889b9c88"
+source-row-sha256 = "edcee7674fb59811d1e8fbf618e4b1883ea18fcee047d72afc47dfb077b89f83"
+index-row-sha256 = "147139cad682dcd3610bb46b9a8e1eec1682589d76c99b40d6c593b63666bb15"
+admitted-at = "2026-11-27T11:19:54Z"
+
+[packages.source]
+kind = "git-tag"
+git = "https://github.com/rust-ethereum/evm"
+tag = "v1.2.0"
+tag-oid = "8bd736495e9d8dfc97ada4b70f9fa5f34a702a1b"
+commit = "dc1b3c8485333af8ed36d9604a5a04155ddcca91"
+package = "evm-precompile"
+path = "precompile"
+cargo-version = "1.95.0"
+
+[[packages]]
+name = "evm-runtime"
+version = "0.44.0"
+state = "active"
+crate-sha256 = "0e1a8ba33fc45905993b09c38d9675d72075da0b48ff98afafb4999c6f35cb4d"
+source-row-sha256 = "cd3322567adf76e23f537bf0077d32cdf1ba45d695ef0fae803ecb2438ec591f"
+index-row-sha256 = "0e5e9643f24f92ae3ab5c9f04cd786fcad402aff026880b8700f787ce0b3ac9d"
+admitted-at = "2026-11-27T11:36:33Z"
+
+[packages.source]
+kind = "git-tag"
+git = "https://github.com/rust-ethereum/evm-legacy"
+tag = "v0.44.0"
+tag-oid = "4fcb54783fac461ba2a13b97bc967413c39d0e8c"
+commit = "380fecba1f4a0194d70fd579b9f2b442cbf2183b"
+package = "evm-runtime"
+path = "runtime"
+cargo-version = "1.95.0"
 
 [[packages]]
 name = "eyeball"

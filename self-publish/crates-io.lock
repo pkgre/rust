@@ -1,6 +1,94 @@
 schema = 1
 
 [[packages]]
+name = "evm"
+version = "1.2.0"
+crates-io-name = "evm"
+crate-sha256 = "78a2c2d6ef8ff07272fc63ee117560724f258b50237bcaad8ba6d5dd347051c3"
+pkgre-crate-sha256 = "78a2c2d6ef8ff07272fc63ee117560724f258b50237bcaad8ba6d5dd347051c3"
+git = "https://github.com/rust-ethereum/evm"
+tag = "v1.2.0"
+commit = "dc1b3c8485333af8ed36d9604a5a04155ddcca91"
+cargo-version = "1.95.0"
+
+[[packages]]
+name = "evm-core"
+version = "0.44.0"
+crates-io-name = "evm-core"
+crate-sha256 = "a397a947c07f3232091131af5f739ec7edb518e07bb421186f761dfc34df74b5"
+pkgre-crate-sha256 = "a397a947c07f3232091131af5f739ec7edb518e07bb421186f761dfc34df74b5"
+git = "https://github.com/rust-ethereum/evm-legacy"
+tag = "v0.44.0"
+commit = "380fecba1f4a0194d70fd579b9f2b442cbf2183b"
+cargo-version = "1.95.0"
+
+[[packages]]
+name = "evm-gasometer"
+version = "0.44.0"
+crates-io-name = "evm-gasometer"
+crate-sha256 = "0ba1e98b3d91c6915db223a594d17ede311beeb3226211af341f74476a96f62e"
+pkgre-crate-sha256 = "0ba1e98b3d91c6915db223a594d17ede311beeb3226211af341f74476a96f62e"
+git = "https://github.com/rust-ethereum/evm-legacy"
+tag = "v0.44.0"
+commit = "380fecba1f4a0194d70fd579b9f2b442cbf2183b"
+cargo-version = "1.95.0"
+
+[[packages]]
+name = "evm-interpreter"
+version = "1.2.0"
+crates-io-name = "evm-interpreter"
+crate-sha256 = "5500d599fd1724e34f0301dfbedce2ffadf272ccc147055754d6c1b54ce4a1e7"
+pkgre-crate-sha256 = "5500d599fd1724e34f0301dfbedce2ffadf272ccc147055754d6c1b54ce4a1e7"
+git = "https://github.com/rust-ethereum/evm"
+tag = "v1.2.0"
+commit = "dc1b3c8485333af8ed36d9604a5a04155ddcca91"
+cargo-version = "1.95.0"
+
+[[packages]]
+name = "evm-legacy"
+version = "0.44.0"
+crates-io-name = "evm-legacy"
+crate-sha256 = "0932d142982e975e914ead93c7800b7e9b3853227c22d4d5d8d07dad181c1711"
+pkgre-crate-sha256 = "0932d142982e975e914ead93c7800b7e9b3853227c22d4d5d8d07dad181c1711"
+git = "https://github.com/rust-ethereum/evm-legacy"
+tag = "v0.44.0"
+commit = "380fecba1f4a0194d70fd579b9f2b442cbf2183b"
+cargo-version = "1.95.0"
+
+[[packages]]
+name = "evm-mainnet"
+version = "1.2.0"
+crates-io-name = "evm-mainnet"
+crate-sha256 = "3d94d0a184a82464a10fe33c54f7362f4f2e2d6b5577c86bb3cb539ad5bba2bf"
+pkgre-crate-sha256 = "3d94d0a184a82464a10fe33c54f7362f4f2e2d6b5577c86bb3cb539ad5bba2bf"
+git = "https://github.com/rust-ethereum/evm"
+tag = "v1.2.0"
+commit = "dc1b3c8485333af8ed36d9604a5a04155ddcca91"
+cargo-version = "1.95.0"
+
+[[packages]]
+name = "evm-precompile"
+version = "1.2.0"
+crates-io-name = "evm-precompile"
+crate-sha256 = "00d69f7f97e5e321453c6da4147749cccbae45de2b782abdd96c9bc3889b9c88"
+pkgre-crate-sha256 = "00d69f7f97e5e321453c6da4147749cccbae45de2b782abdd96c9bc3889b9c88"
+git = "https://github.com/rust-ethereum/evm"
+tag = "v1.2.0"
+commit = "dc1b3c8485333af8ed36d9604a5a04155ddcca91"
+cargo-version = "1.95.0"
+
+[[packages]]
+name = "evm-runtime"
+version = "0.44.0"
+crates-io-name = "evm-runtime"
+crate-sha256 = "0e1a8ba33fc45905993b09c38d9675d72075da0b48ff98afafb4999c6f35cb4d"
+pkgre-crate-sha256 = "0e1a8ba33fc45905993b09c38d9675d72075da0b48ff98afafb4999c6f35cb4d"
+git = "https://github.com/rust-ethereum/evm-legacy"
+tag = "v0.44.0"
+commit = "380fecba1f4a0194d70fd579b9f2b442cbf2183b"
+cargo-version = "1.95.0"
+
+[[packages]]
 name = "pkgre"
 version = "0.5.0"
 crates-io-name = "pkgre"

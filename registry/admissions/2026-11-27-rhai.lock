@@ -1,0 +1,1529 @@
+schema = 2
+manifest-sha256 = "3d0bea0d2fab8e4debfc659c52b58657364962602831e465d792820e614c9f22"
+admitted-at = "2026-11-27T12:59:28Z"
+
+[plan]
+schema = 2
+indexer-version = "0.5.0"
+catalog-sha256 = "5524f30e461dcbd637c3354f3bd1637f831103042f436b48821e48632428ee14"
+evaluated-at = "2026-11-27T12:59:28Z"
+min-release-age-days = 30
+dormant-release-gap-days = 365
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "castaway"
+activity = "new"
+sparse-index-sha256 = "2c571a912cc9d05fb35666589f85bb8cefbf28672d1afe59ee152c8d3932cad2"
+decision-history-sha256 = "1f65ed41ae03edeba9ec828d6430d9d23c5982f69dc94646eb8bb9ccccb91db4"
+age-seconds = 43445423
+decision = "review-required"
+reasons = [
+    "new-package",
+    "new-dependency",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "0.2.4"
+published-at = "2025-07-12T16:49:05Z"
+source-row-sha256 = "4895975658f6d845dc84fb3ede0a8ea522bf8998429b81260a1dd507ce73a58a"
+crate-sha256 = "dec551ab6e7578819132c713a93c022a05d60159dc86e7a7050223577484c55a"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "b88cc13dde2bd1165b4424290f4870dbc53ccaa750600013e679fda1455436ca"
+compressed-bytes = 12546
+unpacked-bytes = 58368
+files = 16
+vcs-commit = "c6cb7e3086001a01d976d27c76fb52da93214511"
+vcs-path = ""
+
+[plan.candidates.candidate-archive.build-surface]
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "paste",
+    "rustversion",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "paste"
+package = "paste"
+requirement = "^1"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "rustversion"
+package = "rustversion"
+requirement = "^1"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[plan.candidates.api]
+response-sha256 = "94df0c85f6bea96c4681b71b799b75b152e54d33cdd02ad3c8d592f190f83d71"
+
+[plan.candidates.api.candidate]
+repository = "https://github.com/sagebind/castaway"
+
+[plan.candidates.api.candidate.trusted-publishing]
+provider = "github"
+repository = "https://github.com/sagebind/castaway"
+commit = "c6cb7e3086001a01d976d27c76fb52da93214511"
+evidence-sha256 = "d63ac7acbedca38e1717f6ec82c805b8382ba37c7c8f46689f75c1c187fdd040"
+
+[plan.candidates.source]
+level = "registry-context-attested"
+repository = "https://github.com/sagebind/castaway"
+commit = "c6cb7e3086001a01d976d27c76fb52da93214511"
+path = ""
+comparison_sha256 = "ad11ef1b84723b0ff95e7ff43a85b63f45bc31252bdd7792f6d36e2b7012fd7b"
+attestation_sha256 = "d63ac7acbedca38e1717f6ec82c805b8382ba37c7c8f46689f75c1c187fdd040"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "compact_str"
+activity = "new"
+sparse-index-sha256 = "605b3af114bae9a6e0cd67c9c3aecbe98fcea912d4bb752a4dc68d43a391dac2"
+decision-history-sha256 = "2cbb56cac368d4f4946f6fa4174658facca08633c4e1c3342a10a1f131b6136e"
+age-seconds = 11836109
+decision = "review-required"
+reasons = [
+    "new-package",
+    "new-dependency",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "0.10.0"
+published-at = "2026-07-13T13:10:59Z"
+source-row-sha256 = "848fff3fd8bae3ea93b5a3d644c7d928be72b47623cf64c21c5576f12cc65d12"
+crate-sha256 = "79fcda08c33bb58b97008b2cdada6622500e949e060f5913361763121abd2416"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "f31da72e0bd7db6590802e8d468895741196e9642684b1d042025f7011a55178"
+compressed-bytes = 104319
+unpacked-bytes = 491520
+files = 43
+vcs-commit = "9696af7f7a9451478766b19dedac7371594eee0d"
+vcs-path = "compact_str"
+
+[plan.candidates.candidate-archive.build-surface]
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "arbitrary",
+    "bevy_reflect",
+    "borsh",
+    "bytes",
+    "castaway",
+    "cfg-if",
+    "defmt",
+    "diesel",
+    "garde",
+    "itoa",
+    "markup",
+    "proptest",
+    "pyo3",
+    "quickcheck",
+    "quickcheck_macros",
+    "rayon",
+    "rkyv",
+    "schemars",
+    "serde",
+    "serde_json",
+    "smallvec",
+    "sqlx",
+    "static_assertions",
+    "test-case",
+    "test-strategy",
+    "utoipa",
+    "valuable",
+    "zeroize",
+    "zmij",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "arbitrary"
+package = "arbitrary"
+requirement = "^1"
+features = []
+optional = true
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "bevy_reflect"
+package = "bevy_reflect"
+requirement = "^0.19"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "borsh"
+package = "borsh"
+requirement = "^1"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "bytes"
+package = "bytes"
+requirement = "^1"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "castaway"
+package = "castaway"
+requirement = "^0.2.3"
+features = ["alloc"]
+optional = false
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "cfg-if"
+package = "cfg-if"
+requirement = "^1"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "cfg-if"
+package = "cfg-if"
+requirement = "^1"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "defmt"
+package = "defmt"
+requirement = "^1"
+features = []
+optional = true
+default-features = true
+target = 'cfg(not(target_os = "windows"))'
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "diesel"
+package = "diesel"
+requirement = "^2"
+features = []
+optional = true
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "garde"
+package = "garde"
+requirement = "^0.23"
+features = ["derive"]
+optional = true
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "itoa"
+package = "itoa"
+requirement = "^1"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "markup"
+package = "markup"
+requirement = "^0.16"
+features = []
+optional = true
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "proptest"
+package = "proptest"
+requirement = "^1"
+features = ["std"]
+optional = false
+default-features = false
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "proptest"
+package = "proptest"
+requirement = "^1"
+features = ["std"]
+optional = true
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "pyo3"
+package = "pyo3"
+requirement = "^0.29"
+features = []
+optional = true
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "quickcheck"
+package = "quickcheck"
+requirement = "^1"
+features = []
+optional = false
+default-features = false
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "quickcheck"
+package = "quickcheck"
+requirement = "^1"
+features = []
+optional = true
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "quickcheck_macros"
+package = "quickcheck_macros"
+requirement = "^1"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "rayon"
+package = "rayon"
+requirement = "^1"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "rkyv"
+package = "rkyv"
+requirement = "^0.8"
+features = []
+optional = true
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "rkyv"
+package = "rkyv"
+requirement = "^0.8"
+features = [
+    "alloc",
+    "bytecheck",
+]
+optional = false
+default-features = false
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "schemars"
+package = "schemars"
+requirement = "^1"
+features = []
+optional = true
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "serde"
+package = "serde"
+requirement = "^1"
+features = [
+    "alloc",
+    "derive",
+]
+optional = true
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "serde"
+package = "serde"
+requirement = "^1"
+features = ["derive"]
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "serde_json"
+package = "serde_json"
+requirement = "^1"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "smallvec"
+package = "smallvec"
+requirement = "^1"
+features = ["union"]
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "sqlx"
+package = "sqlx"
+requirement = "^0.9"
+features = []
+optional = true
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "static_assertions"
+package = "static_assertions"
+requirement = "^1"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "test-case"
+package = "test-case"
+requirement = "^3"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "test-strategy"
+package = "test-strategy"
+requirement = "^0.3"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "utoipa"
+package = "utoipa"
+requirement = "^5"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "valuable"
+package = "valuable"
+requirement = "^0.1.1"
+features = []
+optional = true
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "zeroize"
+package = "zeroize"
+requirement = "^1"
+features = []
+optional = true
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "zeroize"
+package = "zeroize"
+requirement = "^1"
+features = ["alloc"]
+optional = false
+default-features = false
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "zmij"
+package = "zmij"
+requirement = "=1.0.21"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "zmij"
+package = "zmij"
+requirement = "^1"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[plan.candidates.api]
+response-sha256 = "8938acad597c6668c20b446ae905df581c7aaa0f15f30902c0daaa7d27274e79"
+
+[plan.candidates.api.candidate]
+publisher-id = 75844
+publisher-login = "ParkMyCar"
+repository = "https://github.com/ParkMyCar/compact_str"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/ParkMyCar/compact_str"
+commit = "9696af7f7a9451478766b19dedac7371594eee0d"
+path = "compact_str"
+comparison_sha256 = "cff22c5c67e1c5ecddbfa48c69a738404c5819013874947eebfc668df05e112f"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "const-random"
+activity = "new"
+sparse-index-sha256 = "185bd319e6c761dbf237e4c97cc59d47a6e48443d7d9b8e0be12e95c9efbbe67"
+decision-history-sha256 = "104b2ce503ff646a1a31f297aace536f089d061e4645ce7a5ec1e756ff705fc7"
+age-seconds = 86275592
+decision = "review-required"
+reasons = [
+    "new-package",
+    "new-dependency",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "0.1.18"
+published-at = "2024-03-03T23:32:56Z"
+source-row-sha256 = "291374da92ccfc6eaa4ccc6b2e1d800cda9bb086d94b02a7451898893984dbaa"
+crate-sha256 = "87e00182fe74b066627d63b85fd550ac2998d4b0bd86bfed477a0ae4c7c71359"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "8c1bd381e9772e156ffd3986fc4e628e226795083dbd36706939c7247581b24e"
+compressed-bytes = 6646
+unpacked-bytes = 27648
+files = 10
+vcs-commit = "4f71cb510e77eb6a26f8c7296c17811d0416fd41"
+vcs-path = ""
+
+[plan.candidates.candidate-archive.build-surface]
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = ["const-random-macro"]
+
+[[plan.candidates.dependencies.added]]
+name = "const-random-macro"
+package = "const-random-macro"
+requirement = "^0.1.16"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[plan.candidates.api]
+response-sha256 = "adaf1226a4981e434971046b79eea5eaebdc94430eb5ea4f31e41bf4722ef6f2"
+
+[plan.candidates.api.candidate]
+publisher-id = 25353
+publisher-login = "tkaitchuck"
+repository = "https://github.com/tkaitchuck/constrandom"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/tkaitchuck/constrandom"
+commit = "4f71cb510e77eb6a26f8c7296c17811d0416fd41"
+path = ""
+comparison_sha256 = "af446df7ba78fca462ecb3ce9b22da907d31e6c5cd6a2c1db0fff78217add58f"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "const-random-macro"
+activity = "new"
+sparse-index-sha256 = "d649019e0284f05c3901d6d1735cfaf2b7612cec3a97995d5de8f32766234e2e"
+decision-history-sha256 = "c374fa74cb4ad1132e5e305bfcc3f88b647b6d84f6b2106cafa9d2863fcdb082"
+age-seconds = 97696322
+decision = "review-required"
+reasons = [
+    "new-package",
+    "new-dependency",
+    "build-surface-changed",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "0.1.16"
+published-at = "2023-10-23T19:07:26Z"
+source-row-sha256 = "ee383e521fd3e20b80aa907e88c0d3855e6710087c9abfac41b4076b94fa8b59"
+crate-sha256 = "f9d839f2a20b0aee515dc581a6172f2321f96cab76c1a38a4c584a194955390e"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "30210d5768706fb8fb3ecbb33e4ca2d635713077d8ee5446598b49b8c47008e7"
+compressed-bytes = 6657
+unpacked-bytes = 25600
+files = 7
+vcs-commit = "58c94b75e2be66c35213e573ba72e59af846e1ce"
+vcs-path = "macro"
+
+[plan.candidates.candidate-archive.build-surface]
+"manifest:Cargo.toml.orig:proc-macro" = "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+"manifest:Cargo.toml:proc-macro" = "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "getrandom",
+    "once_cell",
+    "tiny-keccak",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "getrandom"
+package = "getrandom"
+requirement = "^0.2.0"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "once_cell"
+package = "once_cell"
+requirement = "^1.15"
+features = [
+    "alloc",
+    "race",
+]
+optional = false
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "tiny-keccak"
+package = "tiny-keccak"
+requirement = "^2.0.2"
+features = ["shake"]
+optional = false
+default-features = true
+kind = "normal"
+
+[plan.candidates.api]
+response-sha256 = "c7ed44fd2e443d40caa3dcdfc5d6921a6296764880034bfd27a3d05aa355caa0"
+
+[plan.candidates.api.candidate]
+publisher-id = 25353
+publisher-login = "tkaitchuck"
+repository = "https://github.com/tkaitchuck/constrandom"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/tkaitchuck/constrandom"
+commit = "58c94b75e2be66c35213e573ba72e59af846e1ce"
+path = "macro"
+comparison_sha256 = "51cafe2fd66aa96846b3b00d0231eded8d759600e8dbcbd44d3dc3755cdf28ad"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "portable-atomic"
+activity = "new"
+sparse-index-sha256 = "077036e01b4f68452698ee8ad474c713e6d5a96302a8280e75658926165e749b"
+decision-history-sha256 = "4491072952afda1bd638f3d3b18a8cd941520500a28e374b2238c618c2428409"
+age-seconds = 25909536
+decision = "review-required"
+reasons = [
+    "new-package",
+    "new-dependency",
+    "build-surface-changed",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "1.13.1"
+published-at = "2026-01-31T15:53:52Z"
+source-row-sha256 = "3a5743a6ada29077930f9971c1b0d94871cc0ac4f7d855d4314b8bcb891eec72"
+crate-sha256 = "c33a9471896f1c69cecef8d20cbe2f7accd12527ce60845ff44c153bb2a21b49"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "6ebdb87c4f2c15a37409735e8833356af82af56a9c8b19e2c03b49adfb225b6a"
+compressed-bytes = 197001
+unpacked-bytes = 1322496
+files = 67
+vcs-commit = "1639861c663868f83a38dd7798aae30c5bb21c62"
+vcs-path = ""
+
+[plan.candidates.candidate-archive.build-surface]
+"file:build.rs:0644" = "4bd0a08a8377b9a468a97a98197db80312a802221b1d7421d6efb40e9e447e2a"
+"file:src/gen/build.rs:0644" = "4ad2fa43f8f725631e9754338f39b80f64a2e61facdb3bd735efc215b95a6597"
+"manifest:Cargo.toml:build" = "d0d98998092552a1d3259338c2c71e118a5b8343dd4703c0c7f552ada7f9cb42"
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "build-context",
+    "crabgrind",
+    "critical-section",
+    "crossbeam-utils",
+    "fastrand",
+    "libc",
+    "paste",
+    "quickcheck",
+    "rustversion",
+    "serde",
+    "sptr",
+    "static_assertions",
+    "windows-sys",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "build-context"
+package = "build-context"
+requirement = "^0.1"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "crabgrind"
+package = "crabgrind"
+requirement = "^0.1"
+features = []
+optional = false
+default-features = true
+target = "cfg(valgrind)"
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "critical-section"
+package = "critical-section"
+requirement = "^1"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "crossbeam-utils"
+package = "crossbeam-utils"
+requirement = "=0.8.16"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "fastrand"
+package = "fastrand"
+requirement = "^2"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "libc"
+package = "libc"
+requirement = "=0.2.163"
+features = []
+optional = false
+default-features = true
+target = "cfg(unix)"
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "paste"
+package = "paste"
+requirement = "^1"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "quickcheck"
+package = "quickcheck"
+requirement = "^1"
+features = []
+optional = false
+default-features = false
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "rustversion"
+package = "rustversion"
+requirement = "^1"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "serde"
+package = "serde"
+requirement = "^1.0.60"
+features = []
+optional = true
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "sptr"
+package = "sptr"
+requirement = "^0.3"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "static_assertions"
+package = "static_assertions"
+requirement = "^1"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "windows-sys"
+package = "windows-sys"
+requirement = "^0.61"
+features = [
+    "Win32_Foundation",
+    "Win32_System_Threading",
+]
+optional = false
+default-features = true
+target = "cfg(windows)"
+kind = "dev"
+
+[plan.candidates.api]
+response-sha256 = "5f04fab36247ee90a19e021ddd410524d457d5b7560265a72c927182df0f3041"
+
+[plan.candidates.api.candidate]
+publisher-id = 33035
+publisher-login = "taiki-e"
+repository = "https://github.com/taiki-e/portable-atomic"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/taiki-e/portable-atomic"
+commit = "1639861c663868f83a38dd7798aae30c5bb21c62"
+path = ""
+comparison_sha256 = "2cc2f7eea02ddf22630f780d10ab465ba1bf4e9ed6d335c5e955f88fd5b51a62"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "rhai"
+activity = "new"
+sparse-index-sha256 = "6fd0714dbb14aa7842a24431f32163d55a7cdc15a49b19f7e750dbec35bd3439"
+decision-history-sha256 = "711273f4499257bfe3945e1a580ac7cefe1481082292b4e57542c4d1d4c9cae8"
+age-seconds = 6780187
+decision = "review-required"
+reasons = [
+    "new-package",
+    "new-dependency",
+    "source-line-endings",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "1.26.1"
+published-at = "2026-09-10T01:36:21Z"
+source-row-sha256 = "bee5caa1368ef88f9132b11c692136da731beeef99db56913bbf1ba02deeb093"
+crate-sha256 = "0334639972c0ea5a3fd366aa36116754a11431b619fec3ed559b3f73bcbcebf5"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "f804ce4d0e3067f64c08cde1af06d6219dae76ead96c9761919ecac65f21def5"
+compressed-bytes = 501003
+unpacked-bytes = 2854400
+files = 139
+vcs-commit = "1b331030f18681617c4b27a01208b6cba908abe4"
+vcs-path = ""
+
+[plan.candidates.candidate-archive.build-surface]
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "ahash",
+    "arbitrary",
+    "bitflags",
+    "core-error",
+    "document-features",
+    "getrandom",
+    "hashbrown",
+    "libm",
+    "no-std-compat",
+    "num-traits",
+    "once_cell",
+    "rhai_codegen",
+    "rmp-serde",
+    "rust_decimal",
+    "rustyline",
+    "serde",
+    "serde_json",
+    "smallvec",
+    "smartstring",
+    "thin-vec",
+    "unicode-xid",
+    "web-time",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "ahash"
+package = "ahash"
+requirement = "^0.8.4"
+features = ["compile-time-rng"]
+optional = false
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "arbitrary"
+package = "arbitrary"
+requirement = "^1.3.2"
+features = ["derive"]
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "bitflags"
+package = "bitflags"
+requirement = "^2.3.3"
+features = []
+optional = false
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "core-error"
+package = "core-error"
+requirement = "^0.0.0"
+features = ["alloc"]
+optional = true
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "document-features"
+package = "document-features"
+requirement = "^0.2.0"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "getrandom"
+package = "getrandom"
+requirement = "^0.3.4"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "hashbrown"
+package = "hashbrown"
+requirement = "^0.16.0"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "libm"
+package = "libm"
+requirement = "^0.2.0"
+features = []
+optional = true
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "no-std-compat"
+package = "no-std-compat"
+requirement = "^0.4.1"
+features = ["alloc"]
+optional = true
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "num-traits"
+package = "num-traits"
+requirement = "^0.2.14"
+features = []
+optional = false
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "once_cell"
+package = "once_cell"
+requirement = "^1.20.1"
+features = [
+    "alloc",
+    "portable-atomic",
+    "race",
+]
+optional = false
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "rhai_codegen"
+package = "rhai_codegen"
+requirement = "^3.2.0"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "rmp-serde"
+package = "rmp-serde"
+requirement = "^1.1.1"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "rust_decimal"
+package = "rust_decimal"
+requirement = "^1.24.0"
+features = ["maths"]
+optional = true
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "rustyline"
+package = "rustyline"
+requirement = "^15.0.0"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "serde"
+package = "serde"
+requirement = "^1.0.136"
+features = [
+    "alloc",
+    "derive",
+]
+optional = true
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "serde_json"
+package = "serde_json"
+requirement = "^1.0.45"
+features = ["alloc"]
+optional = false
+default-features = false
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "serde_json"
+package = "serde_json"
+requirement = "^1.0.45"
+features = ["alloc"]
+optional = true
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "smallvec"
+package = "smallvec"
+requirement = "^1.7.0"
+features = [
+    "const_generics",
+    "const_new",
+    "union",
+]
+optional = false
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "smartstring"
+package = "smartstring"
+requirement = "^1.0.0"
+features = []
+optional = false
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "thin-vec"
+package = "thin-vec"
+requirement = "^0.2.13"
+features = []
+optional = false
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "unicode-xid"
+package = "unicode-xid"
+requirement = "^0.2.0"
+features = []
+optional = true
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "web-time"
+package = "web-time"
+requirement = "^1.1.0"
+features = []
+optional = false
+default-features = true
+target = 'cfg(target_family = "wasm")'
+kind = "normal"
+
+[plan.candidates.api]
+response-sha256 = "02d6061a56f07895b8ed233877e98423b6664f06c9d84a669081b9256e37266e"
+
+[plan.candidates.api.candidate]
+publisher-id = 55221
+publisher-login = "schungx"
+repository = "https://github.com/rhaiscript/rhai"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/rhaiscript/rhai"
+commit = "1b331030f18681617c4b27a01208b6cba908abe4"
+path = ""
+comparison_sha256 = "afa0c1da4b4402f444db72d6489299e03cb83ea2a7e0003d3d0586d48d82e17a"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "rhai_codegen"
+activity = "new"
+sparse-index-sha256 = "c99a5e6c5db4df0c68cecde7abb68c3bcdf742b959b06621e550262d57031592"
+decision-history-sha256 = "aa7fe9edd6f2eea9f47bbbe68d623663b66f0bdaa1167b4b99067ea7ec266a34"
+age-seconds = 16170806
+decision = "review-required"
+reasons = [
+    "new-package",
+    "new-dependency",
+    "build-surface-changed",
+    "source-line-endings",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "3.2.0"
+published-at = "2026-05-24T09:06:02Z"
+source-row-sha256 = "9d25a8ca237de48afd2362c8decaff4f338d27ade4ded1e295aa28cabb8a79ea"
+crate-sha256 = "3cd3a7535e50bf36857e7be7bec276d334e8c2dfa469c2201226fd01638ea5ca"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "eb5afa55e59ab72010aebc58381ccd786b900fef11f1430500af68462ba12ec7"
+compressed-bytes = 41077
+unpacked-bytes = 432640
+files = 148
+vcs-commit = "b247dd730de3f2c97fa1e46f138a17f9d844de67"
+vcs-path = "codegen"
+
+[plan.candidates.candidate-archive.build-surface]
+"manifest:Cargo.toml.orig:proc-macro" = "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+"manifest:Cargo.toml:proc-macro" = "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "proc-macro2",
+    "quote",
+    "rhai",
+    "syn",
+    "trybuild",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "proc-macro2"
+package = "proc-macro2"
+requirement = "^1.0.0"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "quote"
+package = "quote"
+requirement = "^1.0.0"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "rhai"
+package = "rhai"
+requirement = "^1.17.0"
+features = ["metadata"]
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "syn"
+package = "syn"
+requirement = "^2.0.0"
+features = [
+    "extra-traits",
+    "full",
+    "parsing",
+    "printing",
+    "proc-macro",
+]
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "trybuild"
+package = "trybuild"
+requirement = "^1.0.0"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[plan.candidates.api]
+response-sha256 = "61f3386dffaa8a258da753acecab1e436f359f79d69a4e83f9412f0182f5a86f"
+
+[plan.candidates.api.candidate]
+publisher-id = 55221
+publisher-login = "schungx"
+repository = "https://github.com/rhaiscript/rhai"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/rhaiscript/rhai"
+commit = "b247dd730de3f2c97fa1e46f138a17f9d844de67"
+path = "codegen"
+comparison_sha256 = "f8f892a7739518e01abe47224f8abda7f7461ee3a6acf4c6c44bc1185e6eae27"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "smartstring"
+activity = "new"
+sparse-index-sha256 = "22980a45bafe13fa22ab14fe7a9d7f164464f9df29e77a5464ee4f10276c2f62"
+decision-history-sha256 = "326c9c226faff5f456a956205843ccdf5d6896080efbced8c38c7e97db5288b5"
+age-seconds = 147637716
+decision = "review-required"
+reasons = [
+    "new-package",
+    "new-dependency",
+    "build-surface-changed",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "1.0.1"
+published-at = "2022-03-24T18:30:52Z"
+source-row-sha256 = "c235e74d3076d7e0231df7a30c92242283e76f2cbde74f3200e33a00c1a6167f"
+crate-sha256 = "3fb72c633efbaa2dd666986505016c32c3044395ceaf881518399d2f4127ee29"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "db55834c181ceea696356722412e6c2e317feb77bcd4f7b13ce635eceef1c5dd"
+compressed-bytes = 29555
+unpacked-bytes = 142336
+files = 25
+vcs-commit = "e407ca23c747257a812d2d2e70bf336412718c3a"
+vcs-path = ""
+
+[plan.candidates.candidate-archive.build-surface]
+"file:build.rs:0644" = "886c53ccbc437fdf53350881b108a8279e6843f59c09daac3c93398b440e6b22"
+"manifest:Cargo.toml.orig:build" = "f6ed531936ff7d8811a037317452ec2653673d154531ade2d81793f12a0b8097"
+"manifest:Cargo.toml:build" = "f6ed531936ff7d8811a037317452ec2653673d154531ade2d81793f12a0b8097"
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "arbitrary",
+    "autocfg",
+    "criterion",
+    "proptest",
+    "proptest-derive",
+    "rand",
+    "serde",
+    "serde_test",
+    "static_assertions",
+    "version_check",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "arbitrary"
+package = "arbitrary"
+requirement = "^1"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "autocfg"
+package = "autocfg"
+requirement = "^1"
+features = []
+optional = false
+default-features = true
+kind = "build"
+
+[[plan.candidates.dependencies.added]]
+name = "criterion"
+package = "criterion"
+requirement = "^0.3"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "proptest"
+package = "proptest"
+requirement = "^1"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "proptest"
+package = "proptest"
+requirement = "^1"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "proptest-derive"
+package = "proptest-derive"
+requirement = "^0.3"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "rand"
+package = "rand"
+requirement = "^0.8"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "serde"
+package = "serde"
+requirement = "^1"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "serde_test"
+package = "serde_test"
+requirement = "^1"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "static_assertions"
+package = "static_assertions"
+requirement = "^1"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "version_check"
+package = "version_check"
+requirement = "^0.9"
+features = []
+optional = false
+default-features = true
+kind = "build"
+
+[plan.candidates.api]
+response-sha256 = "1dd7bcc923b29bd1e64a121df9cba9ae2da76827fa373077528a0cc2e5795b20"
+
+[plan.candidates.api.candidate]
+publisher-id = 6446
+publisher-login = "bodil"
+repository = "https://github.com/bodil/smartstring"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/bodil/smartstring"
+commit = "e407ca23c747257a812d2d2e70bf336412718c3a"
+path = ""
+comparison_sha256 = "45431d66e2b4e9727e1eaaba6ee6aa18a70d500af5c37e142fbe825ffa6cbec9"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "thin-vec"
+activity = "new"
+sparse-index-sha256 = "75e776836162566b203ca51e58203b80ebd51df6f1021a6be94d22e8ca2100a3"
+decision-history-sha256 = "63d7067dc92f60c73467330cfd2d2bc41367ba860f2412743a6e07b280d14673"
+age-seconds = 4371193
+decision = "review-required"
+reasons = [
+    "new-package",
+    "new-dependency",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "0.2.21"
+published-at = "2026-10-07T22:46:15Z"
+source-row-sha256 = "91457dd2a3b91b1a6942eab4f51af329773e0d57268a02d7df755ff9c74be6c7"
+crate-sha256 = "d6a4b9ba8738cb4a4f399d37e266becfd475e75eb73425b87a05a2f2039ba63e"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "c4f38c68136ddcc778197ff319710257edabd8c101f46e0cb7af6956a6daf4d7"
+compressed-bytes = 40544
+unpacked-bytes = 186880
+files = 11
+vcs-commit = "326a2260b184146bbc3f12653993a115f7ec7d5e"
+vcs-path = ""
+
+[plan.candidates.candidate-archive.build-surface]
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "malloc_size_of",
+    "serde",
+    "serde_test",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "malloc_size_of"
+package = "malloc_size_of"
+requirement = "^0.1"
+features = []
+optional = true
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "serde"
+package = "serde"
+requirement = "^1.0"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "serde_test"
+package = "serde_test"
+requirement = "^1.0"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[plan.candidates.api]
+response-sha256 = "beb229d7773cb767639235d431a9d582189c5af678de1946097b77a2b43a9dfd"
+
+[plan.candidates.api.candidate]
+publisher-id = 3788
+publisher-login = "emilio"
+repository = "https://github.com/mozilla/thin-vec"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/mozilla/thin-vec"
+commit = "326a2260b184146bbc3f12653993a115f7ec7d5e"
+path = ""
+comparison_sha256 = "96e411e96b18f1b4f754aac5856e4cb4ae34fac8254a4b892283ac89dc248195"
+
+[[admit]]
+category = "main/general"
+name = "castaway"
+version = "0.2.4"
+
+[[admit]]
+category = "main/general"
+name = "compact_str"
+version = "0.10.0"
+
+[[admit]]
+category = "main/general"
+name = "const-random"
+version = "0.1.18"
+
+[[admit]]
+category = "main/general"
+name = "const-random-macro"
+version = "0.1.16"
+
+[[admit]]
+category = "main/general"
+name = "portable-atomic"
+version = "1.13.1"
+
+[[admit]]
+category = "main/general"
+name = "rhai"
+version = "1.26.1"
+
+[[admit]]
+category = "main/general"
+name = "rhai_codegen"
+version = "3.2.0"
+
+[[admit]]
+category = "main/general"
+name = "smartstring"
+version = "1.0.1"
+
+[[admit]]
+category = "main/general"
+name = "thin-vec"
+version = "0.2.21"

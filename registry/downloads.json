@@ -983,6 +983,16 @@
     },
     {
       "registry": "main",
+      "name": "castaway",
+      "version": "0.2.4",
+      "sha256": "dec551ab6e7578819132c713a93c022a05d60159dc86e7a7050223577484c55a",
+      "delivery": {
+        "delivery": "retained",
+        "path": "main/objects/crates/dec551ab6e7578819132c713a93c022a05d60159dc86e7a7050223577484c55a.crate"
+      }
+    },
+    {
+      "registry": "main",
       "name": "cbc",
       "version": "0.1.2",
       "sha256": "26b52a9543ae338f279b96b0b9fed9c8093744685043739079ce85cd58f289a6",
@@ -1263,6 +1273,16 @@
     },
     {
       "registry": "main",
+      "name": "compact_str",
+      "version": "0.10.0",
+      "sha256": "79fcda08c33bb58b97008b2cdada6622500e949e060f5913361763121abd2416",
+      "delivery": {
+        "delivery": "retained",
+        "path": "main/objects/crates/79fcda08c33bb58b97008b2cdada6622500e949e060f5913361763121abd2416.crate"
+      }
+    },
+    {
+      "registry": "main",
       "name": "compression-codecs",
       "version": "0.4.38",
       "sha256": "ce2548391e9c1929c21bf6aa2680af86fe4c1b33e6cea9ac1cfeec0bd11218cf",
@@ -1309,6 +1329,26 @@
       "delivery": {
         "delivery": "retained",
         "path": "main/objects/crates/a6ef517f0926dd24a1582492c791b6a4818a4d94e789a334894aa15b0d12f55c.crate"
+      }
+    },
+    {
+      "registry": "main",
+      "name": "const-random",
+      "version": "0.1.18",
+      "sha256": "87e00182fe74b066627d63b85fd550ac2998d4b0bd86bfed477a0ae4c7c71359",
+      "delivery": {
+        "delivery": "retained",
+        "path": "main/objects/crates/87e00182fe74b066627d63b85fd550ac2998d4b0bd86bfed477a0ae4c7c71359.crate"
+      }
+    },
+    {
+      "registry": "main",
+      "name": "const-random-macro",
+      "version": "0.1.16",
+      "sha256": "f9d839f2a20b0aee515dc581a6172f2321f96cab76c1a38a4c584a194955390e",
+      "delivery": {
+        "delivery": "retained",
+        "path": "main/objects/crates/f9d839f2a20b0aee515dc581a6172f2321f96cab76c1a38a4c584a194955390e.crate"
       }
     },
     {
@@ -4813,6 +4853,16 @@
     },
     {
       "registry": "main",
+      "name": "portable-atomic",
+      "version": "1.13.1",
+      "sha256": "c33a9471896f1c69cecef8d20cbe2f7accd12527ce60845ff44c153bb2a21b49",
+      "delivery": {
+        "delivery": "retained",
+        "path": "main/objects/crates/c33a9471896f1c69cecef8d20cbe2f7accd12527ce60845ff44c153bb2a21b49.crate"
+      }
+    },
+    {
+      "registry": "main",
       "name": "portable-pty",
       "version": "0.9.0",
       "sha256": "b4a596a2b3d2752d94f51fac2d4a96737b8705dddd311a32b9af47211f08671e",
@@ -5489,6 +5539,26 @@
       "delivery": {
         "delivery": "retained",
         "path": "main/objects/crates/f8dd2a808d456c4a54e300a23e9f5a67e122c3024119acbfd73e3bf664491cb2.crate"
+      }
+    },
+    {
+      "registry": "main",
+      "name": "rhai",
+      "version": "1.26.1",
+      "sha256": "0334639972c0ea5a3fd366aa36116754a11431b619fec3ed559b3f73bcbcebf5",
+      "delivery": {
+        "delivery": "retained",
+        "path": "main/objects/crates/0334639972c0ea5a3fd366aa36116754a11431b619fec3ed559b3f73bcbcebf5.crate"
+      }
+    },
+    {
+      "registry": "main",
+      "name": "rhai_codegen",
+      "version": "3.2.0",
+      "sha256": "3cd3a7535e50bf36857e7be7bec276d334e8c2dfa469c2201226fd01638ea5ca",
+      "delivery": {
+        "delivery": "retained",
+        "path": "main/objects/crates/3cd3a7535e50bf36857e7be7bec276d334e8c2dfa469c2201226fd01638ea5ca.crate"
       }
     },
     {
@@ -6483,6 +6553,16 @@
     },
     {
       "registry": "main",
+      "name": "smartstring",
+      "version": "1.0.1",
+      "sha256": "3fb72c633efbaa2dd666986505016c32c3044395ceaf881518399d2f4127ee29",
+      "delivery": {
+        "delivery": "retained",
+        "path": "main/objects/crates/3fb72c633efbaa2dd666986505016c32c3044395ceaf881518399d2f4127ee29.crate"
+      }
+    },
+    {
+      "registry": "main",
       "name": "socket2",
       "version": "0.6.3",
       "sha256": "3a766e1110788c36f4fa1c2b71b387a7815aa65f88ce0229841826633d93723e",
@@ -6739,6 +6819,16 @@
       "delivery": {
         "delivery": "retained",
         "path": "main/objects/crates/5fed54709c5b3a53d09bb1c113ea4f5ceafd1e772ddcb0030a82e1d56c087b08.crate"
+      }
+    },
+    {
+      "registry": "main",
+      "name": "thin-vec",
+      "version": "0.2.21",
+      "sha256": "d6a4b9ba8738cb4a4f399d37e266becfd475e75eb73425b87a05a2f2039ba63e",
+      "delivery": {
+        "delivery": "retained",
+        "path": "main/objects/crates/d6a4b9ba8738cb4a4f399d37e266becfd475e75eb73425b87a05a2f2039ba63e.crate"
       }
     },
     {

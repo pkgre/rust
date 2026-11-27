@@ -379,6 +379,10 @@ name = "bencher"
 category = "general"
 
 [[names]]
+name = "bevy_reflect"
+category = "general"
+
+[[names]]
 name = "bigdecimal"
 category = "general"
 
@@ -479,6 +483,10 @@ name = "bstr"
 category = "general"
 
 [[names]]
+name = "build-context"
+category = "general"
+
+[[names]]
 name = "bumpalo"
 category = "general"
 
@@ -524,6 +532,10 @@ category = "general"
 
 [[names]]
 name = "cast"
+category = "general"
+
+[[names]]
+name = "castaway"
 category = "general"
 
 [[names]]
@@ -643,6 +655,10 @@ name = "combine"
 category = "general"
 
 [[names]]
+name = "compact_str"
+category = "general"
+
+[[names]]
 name = "compiler_builtins"
 category = "general"
 
@@ -683,6 +699,10 @@ name = "const-random"
 category = "general"
 
 [[names]]
+name = "const-random-macro"
+category = "general"
+
+[[names]]
 name = "const-str"
 category = "general"
 
@@ -716,6 +736,10 @@ category = "general"
 
 [[names]]
 name = "cookie_store"
+category = "general"
+
+[[names]]
+name = "core-error"
 category = "general"
 
 [[names]]
@@ -1899,6 +1923,10 @@ name = "maplit"
 category = "general"
 
 [[names]]
+name = "markup"
+category = "general"
+
+[[names]]
 name = "markup5ever"
 category = "general"
 
@@ -2076,6 +2104,10 @@ category = "general"
 
 [[names]]
 name = "no-panic"
+category = "general"
+
+[[names]]
+name = "no-std-compat"
 category = "general"
 
 [[names]]
@@ -2703,6 +2735,14 @@ name = "rfc6979"
 category = "general"
 
 [[names]]
+name = "rhai"
+category = "general"
+
+[[names]]
+name = "rhai_codegen"
+category = "general"
+
+[[names]]
 name = "ring"
 category = "general"
 
@@ -2920,6 +2960,10 @@ category = "general"
 
 [[names]]
 name = "rusty-fork"
+category = "general"
+
+[[names]]
+name = "rustyline"
 category = "general"
 
 [[names]]
@@ -3187,6 +3231,10 @@ name = "smallvec"
 category = "general"
 
 [[names]]
+name = "smartstring"
+category = "general"
+
+[[names]]
 name = "smol"
 category = "general"
 
@@ -3224,6 +3272,10 @@ category = "general"
 
 [[names]]
 name = "spmc"
+category = "general"
+
+[[names]]
+name = "sptr"
 category = "general"
 
 [[names]]
@@ -3380,6 +3432,10 @@ category = "general"
 
 [[names]]
 name = "tester"
+category = "general"
+
+[[names]]
+name = "thin-vec"
 category = "general"
 
 [[names]]
@@ -3732,6 +3788,10 @@ category = "general"
 
 [[names]]
 name = "utf8parse"
+category = "general"
+
+[[names]]
+name = "utoipa"
 category = "general"
 
 [[names]]

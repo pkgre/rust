@@ -22,6 +22,38 @@ may-depend-on = ["main/ethereum", "main/general"]
 [categories.ethereum.mirror]
 ethereum = ["0.18.2"]
 
+[categories.ethereum.publish.evm]
+git = "https://github.com/rust-ethereum/evm"
+tags = ["v1.2.0"]
+
+[categories.ethereum.publish.evm-core]
+git = "https://github.com/rust-ethereum/evm-legacy"
+tags = ["v0.44.0"]
+
+[categories.ethereum.publish.evm-gasometer]
+git = "https://github.com/rust-ethereum/evm-legacy"
+tags = ["v0.44.0"]
+
+[categories.ethereum.publish.evm-interpreter]
+git = "https://github.com/rust-ethereum/evm"
+tags = ["v1.2.0"]
+
+[categories.ethereum.publish.evm-legacy]
+git = "https://github.com/rust-ethereum/evm-legacy"
+tags = ["v0.44.0"]
+
+[categories.ethereum.publish.evm-mainnet]
+git = "https://github.com/rust-ethereum/evm"
+tags = ["v1.2.0"]
+
+[categories.ethereum.publish.evm-precompile]
+git = "https://github.com/rust-ethereum/evm"
+tags = ["v1.2.0"]
+
+[categories.ethereum.publish.evm-runtime]
+git = "https://github.com/rust-ethereum/evm-legacy"
+tags = ["v0.44.0"]
+
 [categories.filesystem]
 may-depend-on = ["main/filesystem", "main/general"]
 

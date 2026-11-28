@@ -1,0 +1,1454 @@
+schema = 2
+manifest-sha256 = "9cf5c99f70716d7d7bacbd71f26d228c0e4bb4608af5007821cf9bf0c849a310"
+admitted-at = "2026-11-28T03:24:44Z"
+
+[plan]
+schema = 2
+indexer-version = "0.5.0"
+catalog-sha256 = "196820d3df12c7d12eae05c15184f0a2ca97c287a1eef137a2d4792dd7bbb67f"
+evaluated-at = "2026-11-28T03:24:44Z"
+min-release-age-days = 30
+dormant-release-gap-days = 365
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "bytemuck"
+activity = "new"
+sparse-index-sha256 = "75adb41646bbe374f95fdba25a33dfd19c2fc7cfc4e2e9f63130d238c72a1787"
+decision-history-sha256 = "a036000fc5b7ebee178ff66203348a1f183cf693605922c42b88be77bf24ce8f"
+age-seconds = 11346508
+decision = "review-required"
+reasons = [
+    "new-package",
+    "new-dependency",
+    "build-surface-changed",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "1.25.2"
+published-at = "2026-07-19T19:36:16Z"
+source-row-sha256 = "bafb6d2940e7f7840d9c609e627ba8612c49dd8a3869bd41eafab34a6f6698e3"
+crate-sha256 = "95832e849adfb21180ccb6826a99da14e5d266ae5c2e668e1602cf234f153797"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "51548e9c1b13052b006d24de2765fc9f27ad58d170562a7c3e2d559bc78d821c"
+compressed-bytes = 54075
+unpacked-bytes = 261632
+files = 38
+vcs-commit = "f363643e951a7ac9e4b9921de982f2b0918902e3"
+vcs-path = ""
+
+[plan.candidates.candidate-archive.build-surface]
+"file:.cargo/config.toml:0644" = "c6988f34757fa1e12d28081df4a893e3035de09901bfaef5e3169c7ed083e54c"
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "bytemuck_derive",
+    "rustversion",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "bytemuck_derive"
+package = "bytemuck_derive"
+requirement = "^1.10.2"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "rustversion"
+package = "rustversion"
+requirement = "^1.0.22"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[plan.candidates.api]
+response-sha256 = "b9e7647acbd0da28386c1efd4ebec418d78f0857862df45d13f6ff6bb90e49f7"
+
+[plan.candidates.api.candidate]
+publisher-id = 7211
+publisher-login = "Lokathor"
+repository = "https://github.com/Lokathor/bytemuck"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/Lokathor/bytemuck"
+commit = "f363643e951a7ac9e4b9921de982f2b0918902e3"
+path = ""
+comparison_sha256 = "afa8b09ec3350d74e3da07cc0d2118e11b8ef601677d7fc64d669b3bba22a637"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "byteorder-lite"
+activity = "new"
+sparse-index-sha256 = "4d420d3c0e1b0614cccc4446ddaf25a85400f4c13a66c3b54aad241dbe4eb872"
+decision-history-sha256 = "611ff8115e43803004ba2bb76bb8c42e20d68a6a58ad111c7f982de94eed4b05"
+age-seconds = 83319338
+decision = "review-required"
+reasons = [
+    "new-package",
+    "new-dependency",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "0.1.0"
+published-at = "2024-04-07T19:09:06Z"
+source-row-sha256 = "4d420d3c0e1b0614cccc4446ddaf25a85400f4c13a66c3b54aad241dbe4eb872"
+crate-sha256 = "8f1fe948ff07f4bd06c30984e69f5b4899c516a3ef74f34df92a2df2ab535495"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "2ab247c703663f8a4a4200672f3b59d0f28fafadd0cfd0f68725267f5a7fd1df"
+compressed-bytes = 15909
+unpacked-bytes = 152576
+files = 8
+vcs-commit = "7d44da06a48fe10d7e23efd9a932d18a7a2def63"
+vcs-path = ""
+
+[plan.candidates.candidate-archive.build-surface]
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "quickcheck",
+    "rand",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "quickcheck"
+package = "quickcheck"
+requirement = "^0.9.2"
+features = []
+optional = false
+default-features = false
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "rand"
+package = "rand"
+requirement = "^0.7"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[plan.candidates.api]
+response-sha256 = "ffea61a11f09dec9887eeee9ef9d6a7a9f0068452a330a6c2c10c19589bba0f1"
+
+[plan.candidates.api.candidate]
+publisher-id = 5862
+publisher-login = "fintelia"
+repository = "https://github.com/image-rs/byteorder-lite"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/image-rs/byteorder-lite"
+commit = "7d44da06a48fe10d7e23efd9a932d18a7a2def63"
+path = ""
+comparison_sha256 = "c75b2d67093c21cb4ba7ab65cffddb54caac11ab8be45991efdc2e2eb2b65f3a"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "color_quant"
+activity = "new"
+sparse-index-sha256 = "0962b9a8821cffd8c68884814c81f13ee159c50fa94996c340776b9859ee9215"
+decision-history-sha256 = "8c9be4ecd7f4a7351e69298a394c7ea4a7186d97672d95530f96a2b890bddf7e"
+age-seconds = 193565247
+decision = "review-required"
+reasons = [
+    "new-package",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "1.1.0"
+published-at = "2020-10-09T19:17:17Z"
+source-row-sha256 = "b50c5e8bacaebf7b550cc1b158f17909e0eeb9fe52c03ea4cedbece931a2bb61"
+crate-sha256 = "3d7b894f5411737b7867f4827955924d7c254fc9f4d91a6aad6b097804b1018b"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "3f12cc0a2b250e7042bc7c4f6cc624ae7ba09e7fa7f2f32570f22742abc8aa86"
+compressed-bytes = 6649
+unpacked-bytes = 30208
+files = 10
+vcs-commit = "6c302d2d1540496584476d513dd75b815f14e7a1"
+
+[plan.candidates.candidate-archive.build-surface]
+
+[plan.candidates.dependencies]
+added = []
+removed = []
+new_packages = []
+
+[plan.candidates.api]
+response-sha256 = "0c92ae1e827905a25efee7f71734ebc90d3441d5df56e0fe813fd3e2297e1157"
+
+[plan.candidates.api.candidate]
+publisher-id = 11453
+publisher-login = "197g"
+repository = "https://github.com/image-rs/color_quant.git"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/image-rs/color_quant"
+commit = "6c302d2d1540496584476d513dd75b815f14e7a1"
+path = ""
+comparison_sha256 = "1520380d65ebec1f97a894856931662c8885b6d26fe45b39aa79e9815aa53d5c"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "fdeflate"
+activity = "new"
+sparse-index-sha256 = "db72e15338fe09dbb96da7072e4aa13e7f0b7942cf55e78c83296b6cbc2600b1"
+decision-history-sha256 = "24ede8ea57c11378a9c3d951219f4c6338709dc6c5544d1616410445e49a65fc"
+age-seconds = 62381312
+decision = "review-required"
+reasons = [
+    "new-package",
+    "new-dependency",
+    "build-surface-changed",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "0.3.7"
+published-at = "2024-12-06T03:16:12Z"
+source-row-sha256 = "26312ded42f253b3adba9e9aed5b80e6beb8b907f7404608524dbf723426db02"
+crate-sha256 = "1e6853b52649d4ac5c0bd02320cddc5ba956bdb407c4b75a2c6b75bf51500f8c"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "fe244f663bf7ce0caeae25abaaf4dce77963adc8724afa9b39555a8456781d63"
+compressed-bytes = 27188
+unpacked-bytes = 121856
+files = 16
+vcs-commit = "c365c7e6ffa81feb2e1fb762eed7299f05c9b0ca"
+vcs-path = ""
+
+[plan.candidates.candidate-archive.build-surface]
+"file:tests/input-chunking-sensitivity-example1.zz:0644" = "215d6eafcce032f917f0559c3f35e575fdfcccd5548df8fed5092bc70cf24812"
+"file:tests/input-chunking-sensitivity-example2.zz:0644" = "9eafada86c8d8af16b90b280e77fd4aa750fa8fb54e31623dc3aaac8097d0c2f"
+"file:tests/input-chunking-sensitivity-example3.zz:0644" = "bf63f178c0c288e004339e2d3084adce4c43064697b860accf13bb81fa5fa1f2"
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "miniz_oxide",
+    "rand",
+    "simd-adler32",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "miniz_oxide"
+package = "miniz_oxide"
+requirement = "^0.7.1"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "rand"
+package = "rand"
+requirement = "^0.8.5"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "simd-adler32"
+package = "simd-adler32"
+requirement = "^0.3.4"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[plan.candidates.api]
+response-sha256 = "780998f65a4d805a5d97dcde985ed251c940c07dd2d5172f0ab1c512c13fcae7"
+
+[plan.candidates.api.candidate]
+publisher-id = 5862
+publisher-login = "fintelia"
+repository = "https://github.com/image-rs/fdeflate"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/image-rs/fdeflate"
+commit = "c365c7e6ffa81feb2e1fb762eed7299f05c9b0ca"
+path = ""
+comparison_sha256 = "6798077a9115146524485f1b1b543eeec1d0887b131c51b9218e6b70e445cbdf"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "gif"
+activity = "new"
+sparse-index-sha256 = "725ea86e2e3ea6922b7f5ba83c944a4a9738516af4ff39354f4ee04258eb5110"
+decision-history-sha256 = "e184deb4b8cb7536b603fd675adc0c6704fbf332177b4be9d4b8aa2e590fba0c"
+age-seconds = 20075077
+decision = "review-required"
+reasons = [
+    "new-package",
+    "new-dependency",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "0.14.2"
+published-at = "2026-04-09T19:00:07Z"
+source-row-sha256 = "838031ba44af62013d31f484eb7637397b5d421fc8390e9e4a46ec4552c53406"
+crate-sha256 = "ee8cfcc411d9adbbaba82fb72661cc1bcca13e8bba98b364e62b2dba8f960159"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "550838a6b3b4426951848b848aa95babff8b3d06c5f509c29e998002c611fa04"
+compressed-bytes = 38710
+unpacked-bytes = 162816
+files = 16
+vcs-commit = "a0127e2acbef333398414bb61d097c19c1b09d8a"
+vcs-path = ""
+
+[plan.candidates.candidate-archive.build-surface]
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "color_quant",
+    "criterion",
+    "glob",
+    "png",
+    "rayon",
+    "weezl",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "color_quant"
+package = "color_quant"
+requirement = "^1.1"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "criterion"
+package = "criterion"
+requirement = "^0.7.0"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "glob"
+package = "glob"
+requirement = "^0.3"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "png"
+package = "png"
+requirement = "^0.18.0"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "rayon"
+package = "rayon"
+requirement = "^1.10.0"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "weezl"
+package = "weezl"
+requirement = "^0.1.10"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[plan.candidates.api]
+response-sha256 = "26befd26d22539a6e72200984a47827b7b4eadb097e454e28dd2dbda547d9371"
+
+[plan.candidates.api.candidate]
+publisher-id = 11453
+publisher-login = "197g"
+repository = "https://github.com/image-rs/image-gif"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/image-rs/image-gif"
+commit = "a0127e2acbef333398414bb61d097c19c1b09d8a"
+path = ""
+comparison_sha256 = "7fc989b4dd0c8368c643f311d3e65f1aa9f83462be0da78bd0efd6829b4cbf6f"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "image"
+activity = "new"
+sparse-index-sha256 = "417b8383ded498c1fe7940390a26f0e91ce5581350272eee9d9c232d772eb3fa"
+decision-history-sha256 = "7a809a4532543265f5834c8666ac4ec543e76b87bae92be0f56449fba52d9eea"
+age-seconds = 22676126
+decision = "review-required"
+reasons = [
+    "new-package",
+    "new-dependency",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "0.25.10"
+published-at = "2026-03-10T16:29:18Z"
+source-row-sha256 = "99b42db8fb995bd1258eb782a0672b1162e62e79e188bc9c94a67b1e39226c75"
+crate-sha256 = "85ab80394333c02fe689eaf900ab500fbd0c2213da414687ebf995a65d5a6104"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "68815e7ef40f2a08d76ad008e28e7a37313ded5c89422daf38654ef62542ceae"
+compressed-bytes = 303647
+unpacked-bytes = 1479168
+files = 86
+vcs-commit = "76e57184f22772dad1138e96954e57945406b15e"
+vcs-path = ""
+
+[plan.candidates.candidate-archive.build-surface]
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "bytemuck",
+    "byteorder-lite",
+    "color_quant",
+    "crc32fast",
+    "criterion",
+    "dav1d",
+    "exr",
+    "gif",
+    "glob",
+    "image-webp",
+    "moxcms",
+    "mp4parse",
+    "num-complex",
+    "num-traits",
+    "png",
+    "qoi",
+    "quickcheck",
+    "ravif",
+    "rayon",
+    "rgb",
+    "serde",
+    "tiff",
+    "zune-core",
+    "zune-jpeg",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "bytemuck"
+package = "bytemuck"
+requirement = "^1.8.0"
+features = ["extern_crate_alloc"]
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "byteorder-lite"
+package = "byteorder-lite"
+requirement = "^0.1.0"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "color_quant"
+package = "color_quant"
+requirement = "^1.1"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "crc32fast"
+package = "crc32fast"
+requirement = "^1.2.0"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "criterion"
+package = "criterion"
+requirement = "^0.5.0"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "dav1d"
+package = "dav1d"
+requirement = "^0.11.0"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "exr"
+package = "exr"
+requirement = "^1.74.0"
+features = []
+optional = true
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "gif"
+package = "gif"
+requirement = "^0.14.0"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "glob"
+package = "glob"
+requirement = "^0.3"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "image-webp"
+package = "image-webp"
+requirement = "^0.2.0"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "moxcms"
+package = "moxcms"
+requirement = "^0.8.0"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "mp4parse"
+package = "mp4parse"
+requirement = "^0.17.0"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "num-complex"
+package = "num-complex"
+requirement = "^0.4"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "num-traits"
+package = "num-traits"
+requirement = "^0.2.0"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "png"
+package = "png"
+requirement = "^0.18.0"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "qoi"
+package = "qoi"
+requirement = "^0.4"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "quickcheck"
+package = "quickcheck"
+requirement = "^1"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "ravif"
+package = "ravif"
+requirement = "^0.13"
+features = []
+optional = true
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "rayon"
+package = "rayon"
+requirement = "^1.7.0"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "rgb"
+package = "rgb"
+requirement = "^0.8.48"
+features = []
+optional = true
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "serde"
+package = "serde"
+requirement = "^1.0.214"
+features = ["derive"]
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "tiff"
+package = "tiff"
+requirement = "^0.11.2"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "zune-core"
+package = "zune-core"
+requirement = "^0.5.0"
+features = []
+optional = true
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "zune-jpeg"
+package = "zune-jpeg"
+requirement = "^0.5.5"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[plan.candidates.api]
+response-sha256 = "713572de8cb748c4ccce9ed9cdc293498299ac7a0a345e404e886fae3e11760e"
+
+[plan.candidates.api.candidate]
+publisher-id = 11453
+publisher-login = "197g"
+repository = "https://github.com/image-rs/image"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/image-rs/image"
+commit = "76e57184f22772dad1138e96954e57945406b15e"
+path = ""
+comparison_sha256 = "8fc75efd43d7ec9e93a3599f9c71dd9a251b0f8a81cea6e683060164b1023d39"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "image-webp"
+activity = "new"
+sparse-index-sha256 = "1e111cbf763e11e2bf33ad6d3df0b3e303eb03e3f4a2f85e7efff261c79cd46a"
+decision-history-sha256 = "b70887a97ebadbd4d85941a1d18390c4df7c5dacf2c70eb69e79312082f3c55e"
+age-seconds = 39577409
+decision = "review-required"
+reasons = [
+    "new-package",
+    "new-dependency",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "0.2.4"
+published-at = "2025-08-27T01:41:15Z"
+source-row-sha256 = "3d1533b6dd8dbaf63f04f7a619a4f4a799df01f5295d0ae0f654c7d85f47d5b6"
+crate-sha256 = "525e9ff3e1a4be2fbea1fdf0e98686a6d98b4d8f937e1bf7402245af1909e8c3"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "42c7d7962182ce5cc06e7557d1423e73f76812efeb868fe09df0bfaca8c08473"
+compressed-bytes = 68478
+unpacked-bytes = 340480
+files = 21
+vcs-commit = "08b57d473c90148dd4b37a075df365afc3dfcc2b"
+vcs-path = ""
+
+[plan.candidates.candidate-archive.build-surface]
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "byteorder-lite",
+    "paste",
+    "png",
+    "quick-error",
+    "rand",
+    "webp",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "byteorder-lite"
+package = "byteorder-lite"
+requirement = "^0.1.0"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "paste"
+package = "paste"
+requirement = "^1.0.14"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "png"
+package = "png"
+requirement = "^0.17.12"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "quick-error"
+package = "quick-error"
+requirement = "^2.0.1"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "rand"
+package = "rand"
+requirement = "^0.8.5"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "webp"
+package = "webp"
+requirement = "^0.3.0"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[plan.candidates.api]
+response-sha256 = "fe6aaa7b3f3b9b780363c4242ee47e63443c943880beca332f58ca8fa4751fab"
+
+[plan.candidates.api.candidate]
+publisher-id = 5862
+publisher-login = "fintelia"
+repository = "https://github.com/image-rs/image-webp"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/image-rs/image-webp"
+commit = "08b57d473c90148dd4b37a075df365afc3dfcc2b"
+path = ""
+comparison_sha256 = "271d768ba214c919f8180146a1821f869898d73cdf0cd8669ae36f67a46a0bf4"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "moxcms"
+activity = "new"
+sparse-index-sha256 = "3fb0a292e3e81d5dd8c157c31c461586628565cebac16fb9a6da388072b25466"
+decision-history-sha256 = "703ba634041fa1b58dc53a1b14315f9704f43c58b7211c65eee76bc5c51ca3fa"
+age-seconds = 22937850
+decision = "review-required"
+reasons = [
+    "new-package",
+    "new-dependency",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "0.8.1"
+published-at = "2026-03-07T15:47:14Z"
+source-row-sha256 = "0f04a95902444f56fef7cd0d9b1dbcc0cbd661e62f6f99bde61c9714adc5c8ba"
+crate-sha256 = "bb85c154ba489f01b25c0d36ae69a87e4a1c73a72631fc6c0eb6dde34a73e44b"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "0cef9fb1c8c59d8731393a175adcbdda81c99f6e3adc1b8f8294218487ef223f"
+compressed-bytes = 188252
+unpacked-bytes = 1651200
+files = 127
+vcs-commit = "c4affa196727d17f21a7f6f148a558867decb470"
+vcs-path = ""
+
+[plan.candidates.candidate-archive.build-surface]
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "num-traits",
+    "pxfm",
+    "rand",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "num-traits"
+package = "num-traits"
+requirement = "^0.2"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "pxfm"
+package = "pxfm"
+requirement = "^0.1.1"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "rand"
+package = "rand"
+requirement = "^0.10.0"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[plan.candidates.api]
+response-sha256 = "90d1da00dfe8264e38c7d2873b4da739c2e4bee6ead76d2d0a902f51e30f05ac"
+
+[plan.candidates.api.candidate]
+publisher-id = 266802
+publisher-login = "awxkee"
+repository = "https://github.com/awxkee/moxcms.git"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/awxkee/moxcms"
+commit = "c4affa196727d17f21a7f6f148a558867decb470"
+path = ""
+comparison_sha256 = "fd7fbef6db66e52cac7bff05bd7c1b6f5026517ce34480a3f34731ee6e58b394"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "png"
+activity = "new"
+sparse-index-sha256 = "92fd85cf0700c484e544ecf661a42422e616f846a943d6154fc230662150f3c6"
+decision-history-sha256 = "7c3d368ef0b707e18b262815f468ba132cb802ffdff18b796d0321ec0d67b690"
+age-seconds = 24750034
+decision = "review-required"
+reasons = [
+    "new-package",
+    "new-dependency",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "0.18.1"
+published-at = "2026-02-14T16:24:10Z"
+source-row-sha256 = "b0736b1a40701d93fc1d5218c6d9dbdf7715e4aafee1f8b2f77a3c2078de925c"
+crate-sha256 = "60769b8b31b2a9f263dae2776c37b1b28ae246943cf719eb6946a1db05128a61"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "b471665ed67d36ae4bc620e76fb65668ab86acb12f3500a3c5e7b5a2326708a8"
+compressed-bytes = 125800
+unpacked-bytes = 596480
+files = 39
+vcs-commit = "2a3f980245e3ae38b82ade96533e7b450e8477bb"
+vcs-path = ""
+
+[plan.candidates.candidate-archive.build-surface]
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "approx",
+    "bitflags",
+    "byteorder",
+    "clap",
+    "crc32fast",
+    "criterion",
+    "fdeflate",
+    "flate2",
+    "glob",
+    "miniz_oxide",
+    "rand",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "approx"
+package = "approx"
+requirement = "^0.5.1"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "bitflags"
+package = "bitflags"
+requirement = "^2.0"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "byteorder"
+package = "byteorder"
+requirement = "^1.5.0"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "clap"
+package = "clap"
+requirement = "^4.0"
+features = ["derive"]
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "crc32fast"
+package = "crc32fast"
+requirement = "^1.2.0"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "criterion"
+package = "criterion"
+requirement = "^0.7.0"
+features = []
+optional = false
+default-features = true
+target = 'cfg(not(target_arch = "wasm32"))'
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "criterion"
+package = "criterion"
+requirement = "^0.7.0"
+features = ["cargo_bench_support"]
+optional = false
+default-features = false
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "fdeflate"
+package = "fdeflate"
+requirement = "^0.3.3"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "flate2"
+package = "flate2"
+requirement = "^1.0.35"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "glob"
+package = "glob"
+requirement = "^0.3"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "miniz_oxide"
+package = "miniz_oxide"
+requirement = "^0.8"
+features = ["simd"]
+optional = false
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "rand"
+package = "rand"
+requirement = "^0.9.2"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[plan.candidates.api]
+response-sha256 = "e4fda1fa7d6b33f3c92f776c65d846fd1c2ad41b3004d784ab5388fce4895699"
+
+[plan.candidates.api.candidate]
+publisher-id = 11453
+publisher-login = "197g"
+repository = "https://github.com/image-rs/image-png"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/image-rs/image-png"
+commit = "2a3f980245e3ae38b82ade96533e7b450e8477bb"
+path = ""
+comparison_sha256 = "bce1d0bbd3b4fbba1deb2aec12f3385f41df8711f414351c9720a8c096004b9c"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "pxfm"
+activity = "new"
+sparse-index-sha256 = "2be7100bf535496e9fc4a7fac7ca83e0387a590925afbd34fc3d36d31bb6b923"
+decision-history-sha256 = "3301237a014d0bfc0d26f82f6dc56d8ec5631f258c4705786e446c6853a33a14"
+age-seconds = 12516049
+decision = "review-required"
+reasons = [
+    "new-package",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "0.1.30"
+published-at = "2026-07-06T06:43:55Z"
+source-row-sha256 = "7a4be2bc8bf9a87c10fbc36f58952c485d736da0ba25ae8369aa804ed4e9241d"
+crate-sha256 = "d55d956fa96f5ec02be2e13af0e20391a5aa83d6a074e3ad368959d0fab299ea"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "02042fb32fde8e6ee133b831a1b1bddd8f5cb627d5e165be647428084163eed3"
+compressed-bytes = 879463
+unpacked-bytes = 4025856
+files = 266
+vcs-commit = "acf7acd00cfc845307eda7b7b2de19e42303de82"
+vcs-path = ""
+
+[plan.candidates.candidate-archive.build-surface]
+
+[plan.candidates.dependencies]
+added = []
+removed = []
+new_packages = []
+
+[plan.candidates.api]
+response-sha256 = "9d56f21bc1801b79fd36e41d627bbc39223d0f7a82caf8808ef281a5b5b24823"
+
+[plan.candidates.api.candidate]
+publisher-id = 266802
+publisher-login = "awxkee"
+repository = "https://github.com/awxkee/pxfm"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/awxkee/pxfm"
+commit = "acf7acd00cfc845307eda7b7b2de19e42303de82"
+path = ""
+comparison_sha256 = "9039bd52a38ce926b69a3aa9e59a419bf5fd73f63fea123480ad25a0321acf8b"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "quick-error"
+activity = "new"
+sparse-index-sha256 = "7006e618051766d19656e4858f3013c40ee8454a17674574700bd7d4e65b4b76"
+decision-history-sha256 = "4169ce9ee3e559cce56d1b5d3d0e427cf7bbecc44f19c50c062847a47458f6bc"
+age-seconds = 175446874
+decision = "review-required"
+reasons = [
+    "new-package",
+    "source-unavailable",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "2.0.1"
+published-at = "2021-05-07T12:10:10Z"
+source-row-sha256 = "4483b8bd19e0b2955a6f71649c3358615e1372e1dae7cbe898e08796a92496b0"
+crate-sha256 = "a993555f31e5a609f617c12db6250dedcac1b0a85076912c436e6fc9b2c8e6a3"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "af5c1e1f8fc13525eaa42dfc052b1dbe4403eb3392944165df5119d749dbdf15"
+compressed-bytes = 14265
+unpacked-bytes = 74752
+files = 13
+vcs-commit = "25ab982bb0c43130ae48485151f4a232eeab7d0c"
+
+[plan.candidates.candidate-archive.build-surface]
+
+[plan.candidates.dependencies]
+added = []
+removed = []
+new_packages = []
+
+[plan.candidates.api]
+response-sha256 = "231ef8f459ddb868e8b4fd34cf3e727643dee36a848394c15c2723a023de52fc"
+
+[plan.candidates.api.candidate]
+publisher-id = 892
+publisher-login = "tailhook"
+repository = "http://github.com/tailhook/quick-error"
+
+[plan.candidates.source]
+level = "unavailable"
+reason = "version-repository-is-unsupported"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "weezl"
+activity = "new"
+sparse-index-sha256 = "3c8365216f2ed327e0792447796327166758c580cc71647072fad7d58b3cfb6d"
+decision-history-sha256 = "c21d72bbdb7f6f1f2c6103805ca6a85cc51facb44de537b174cfd3d50c60da23"
+age-seconds = 32944275
+decision = "review-required"
+reasons = [
+    "new-package",
+    "new-dependency",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "0.1.12"
+published-at = "2025-11-11T20:13:29Z"
+source-row-sha256 = "932b6f02064f5b3e06fb8b132ef463b9f4c0ed37a0b3f301dd54ee08dcd587e8"
+crate-sha256 = "a28ac98ddc8b9274cb41bb4d9d4d5c425b6020c50c46f25559911905610b4a88"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "0940790db13728585e561682eb0e8892d8c34b470b42ad0a9882946380b1eb24"
+compressed-bytes = 46045
+unpacked-bytes = 195072
+files = 25
+vcs-commit = "c75ea1f6d935cc56bad8674396b7cb0dd7275f99"
+vcs-path = ""
+
+[plan.candidates.candidate-archive.build-surface]
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "criterion",
+    "futures",
+    "tokio",
+    "tokio-util",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "criterion"
+package = "criterion"
+requirement = "^0.3.1"
+features = []
+optional = false
+default-features = true
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "futures"
+package = "futures"
+requirement = "^0.3.12"
+features = ["std"]
+optional = true
+default-features = false
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "tokio"
+package = "tokio"
+requirement = "^1"
+features = [
+    "io-util",
+    "macros",
+    "net",
+    "rt",
+    "rt-multi-thread",
+]
+optional = false
+default-features = false
+kind = "dev"
+
+[[plan.candidates.dependencies.added]]
+name = "tokio-util"
+package = "tokio-util"
+requirement = "^0.6.2"
+features = ["compat"]
+optional = false
+default-features = false
+kind = "dev"
+
+[plan.candidates.api]
+response-sha256 = "361333b4327a2a3e5ffd833ba4199b4044074cffafb871bade781fccceb7b160"
+
+[plan.candidates.api.candidate]
+publisher-id = 11453
+publisher-login = "197g"
+repository = "https://github.com/image-rs/weezl"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/image-rs/weezl"
+commit = "c75ea1f6d935cc56bad8674396b7cb0dd7275f99"
+path = ""
+comparison_sha256 = "d51c98c3c3d2d5ee9502e9ad0f152a06c77459043b3a05f47cce2e1aa9473a9b"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "zune-core"
+activity = "new"
+sparse-index-sha256 = "e139ddaa3beea1a63cd05c28b4930758243defacf3c4ff01aee2f36f33a845ef"
+decision-history-sha256 = "94a358dfd6c4b47cda7bbcd4d69e2513cc64646b93ac81bf5e9cc4681da2c903"
+age-seconds = 9700140
+decision = "review-required"
+reasons = [
+    "new-package",
+    "new-dependency",
+    "source-unavailable",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "0.5.3"
+published-at = "2026-08-07T20:55:44Z"
+source-row-sha256 = "53f872010ff00cd2028512c3799d0ba804f4a70637e3a870ed38cd365f1e963e"
+crate-sha256 = "d56377fd46368984a170bc5aac5567e52ca5da874caa60bea39fcbca78fb658b"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "1e3aefd3d023f771c3898f5c33aa2cef19e9716c49eba19c5857f93e306a297e"
+compressed-bytes = 30419
+unpacked-bytes = 143872
+files = 27
+vcs-commit = "de5dfc800cfa063116eb695edb6ccd01cb96ea7a"
+vcs-path = "crates/zune-core"
+
+[plan.candidates.candidate-archive.build-surface]
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = [
+    "log",
+    "serde",
+]
+
+[[plan.candidates.dependencies.added]]
+name = "log"
+package = "log"
+requirement = "^0.4"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[[plan.candidates.dependencies.added]]
+name = "serde"
+package = "serde"
+requirement = "^1.0"
+features = []
+optional = true
+default-features = true
+kind = "normal"
+
+[plan.candidates.api]
+response-sha256 = "169ce983e14e07989d78d61c8d5e982ec11af1fec75576c141dccd32f2b7f89b"
+
+[plan.candidates.api.candidate]
+publisher-id = 159371
+publisher-login = "etemesi254"
+repository = "https://github.com/etemesi254/zune-image"
+
+[plan.candidates.source]
+level = "unavailable"
+reason = "public-git-fetch-failed"
+
+[[plan.candidates]]
+registry = "main"
+category = "main/general"
+name = "zune-jpeg"
+activity = "new"
+sparse-index-sha256 = "698370f12a5ad2507284ff40deef0eaef3f37f74bdd177dfc4f1f5ecf1a57c42"
+decision-history-sha256 = "d07ff4cadf19cb178b8f42e8f35c7750de0dabf52314688dae0416bd257e2119"
+age-seconds = 21274011
+decision = "review-required"
+reasons = [
+    "new-package",
+    "new-dependency",
+    "explicit-candidate",
+]
+
+[plan.candidates.candidate]
+version = "0.5.15"
+published-at = "2026-03-26T21:57:53Z"
+source-row-sha256 = "2192b9c9c9012b197c008269950d614e823f98a83439324b178264774337905c"
+crate-sha256 = "27bc9d5b815bc103f142aa054f561d9187d191692ec7c2d1e2b4737f8dbd7296"
+
+[plan.candidates.candidate-archive]
+analysis-sha256 = "8bb3a30375a24a1b4e6100430a75253b4f92544c733a332fafcbcd39872007f1"
+compressed-bytes = 88879
+unpacked-bytes = 406016
+files = 39
+vcs-commit = "31d81fed7551c8ccea456d9d8e2b1fd8bebb6995"
+vcs-path = "crates/zune-jpeg"
+
+[plan.candidates.candidate-archive.build-surface]
+
+[plan.candidates.dependencies]
+removed = []
+new_packages = ["zune-core"]
+
+[[plan.candidates.dependencies.added]]
+name = "zune-core"
+package = "zune-core"
+requirement = "^0.5.1"
+features = []
+optional = false
+default-features = true
+kind = "normal"
+
+[plan.candidates.api]
+response-sha256 = "23ae7d3e44964cdfc9acef252db65d30be7c5a50eb25fce4fb92ff8856968413"
+
+[plan.candidates.api.candidate]
+publisher-id = 159371
+publisher-login = "etemesi254"
+repository = "https://github.com/etemesi254/zune-image/tree/dev/crates/zune-jpeg"
+
+[plan.candidates.source]
+level = "publisher-asserted"
+repository = "https://github.com/etemesi254/zune-image"
+commit = "31d81fed7551c8ccea456d9d8e2b1fd8bebb6995"
+path = "crates/zune-jpeg"
+comparison_sha256 = "4fceb4fe70cb99f8f0ed0cb748b920c2a1a2b87a69d1877aba47bd56574acc08"
+
+[[admit]]
+category = "main/general"
+name = "bytemuck"
+version = "1.25.2"
+
+[[admit]]
+category = "main/general"
+name = "byteorder-lite"
+version = "0.1.0"
+
+[[admit]]
+category = "main/general"
+name = "color_quant"
+version = "1.1.0"
+
+[[admit]]
+category = "main/general"
+name = "fdeflate"
+version = "0.3.7"
+
+[[admit]]
+category = "main/general"
+name = "gif"
+version = "0.14.2"
+
+[[admit]]
+category = "main/general"
+name = "image"
+version = "0.25.10"
+
+[[admit]]
+category = "main/general"
+name = "image-webp"
+version = "0.2.4"
+
+[[admit]]
+category = "main/general"
+name = "moxcms"
+version = "0.8.1"
+
+[[admit]]
+category = "main/general"
+name = "png"
+version = "0.18.1"
+
+[[admit]]
+category = "main/general"
+name = "pxfm"
+version = "0.1.30"
+
+[[admit]]
+category = "main/general"
+name = "quick-error"
+version = "2.0.1"
+
+[[admit.evidence]]
+kind = "manual-full-archive"
+note = "Compared every archive member with the tag v2.0.1 (25ab982bb0c43130ae48485151f4a232eeab7d0c) of github.com/tailhook/quick-error, whose http repository URL the planner does not read: all match."
+
+[[admit]]
+category = "main/general"
+name = "weezl"
+version = "0.1.12"
+
+[[admit]]
+category = "main/general"
+name = "zune-core"
+version = "0.5.3"
+
+[[admit.evidence]]
+kind = "manual-full-archive"
+note = "The recorded commit de5dfc800cfa063116eb695edb6ccd01cb96ea7a is not on GitHub. Compared every archive member with crates/zune-core at the release commit 4c08cfd2 on the dev branch of github.com/etemesi254/zune-image: all match, the license files through the repository's links to its root."
+
+[[admit]]
+category = "main/general"
+name = "zune-jpeg"
+version = "0.5.15"

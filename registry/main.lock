@@ -5449,6 +5449,19 @@ admitted-at = "2025-06-03T06:59:49Z"
 kind = "crates-io"
 
 [[packages]]
+name = "bytemuck"
+version = "1.25.2"
+state = "active"
+crate-sha256 = "95832e849adfb21180ccb6826a99da14e5d266ae5c2e668e1602cf234f153797"
+source-row-sha256 = "bafb6d2940e7f7840d9c609e627ba8612c49dd8a3869bd41eafab34a6f6698e3"
+index-row-sha256 = "837dc81f6dc8a84627d91437e4a0825ea091da30eea6151caddea2d75e9748da"
+admission-sha256 = "c032a892cbbecb4e0c4492a51deb2d6db985576292ceda02d34c6f3c8849ed0a"
+admitted-at = "2026-07-19T19:36:16Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
 name = "byteorder"
 version = "1.5.0"
 state = "active"
@@ -5456,6 +5469,19 @@ crate-sha256 = "1fd0f2584146f6f2ef48085050886acf353beff7305ebd1ae69500e27c67f64b
 source-row-sha256 = "c2386b6b339a8aadbe0fc91a584dbde77d0b9d1621f3ff2af979562017db0a7f"
 index-row-sha256 = "240c006bc2c765ed54bb895744b4e5a84500614c8c2aa6fe7e005cbef73cfb4f"
 admitted-at = "2023-10-06T00:45:57Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "byteorder-lite"
+version = "0.1.0"
+state = "active"
+crate-sha256 = "8f1fe948ff07f4bd06c30984e69f5b4899c516a3ef74f34df92a2df2ab535495"
+source-row-sha256 = "4d420d3c0e1b0614cccc4446ddaf25a85400f4c13a66c3b54aad241dbe4eb872"
+index-row-sha256 = "f4bb0108e2525841e0aade863e214087230d731a59266cf4724c53b89877ffc0"
+admission-sha256 = "c032a892cbbecb4e0c4492a51deb2d6db985576292ceda02d34c6f3c8849ed0a"
+admitted-at = "2024-04-07T19:09:06Z"
 
 [packages.source]
 kind = "crates-io"
@@ -5833,6 +5859,19 @@ crate-sha256 = "c0f78a02292a74a88ac736019ab962ece0bc380e3f977bf72e376c5d78ff0678
 source-row-sha256 = "92be2729d949757f37e6a2e1375e3d69c94f6c0b1646ef4f21c7bfad550baf43"
 index-row-sha256 = "2e1c66acf2070030392a7ea668d39152f67a012d941674938321d1c5e9ec9806"
 admitted-at = "2026-03-26T17:58:29Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "color_quant"
+version = "1.1.0"
+state = "active"
+crate-sha256 = "3d7b894f5411737b7867f4827955924d7c254fc9f4d91a6aad6b097804b1018b"
+source-row-sha256 = "b50c5e8bacaebf7b550cc1b158f17909e0eeb9fe52c03ea4cedbece931a2bb61"
+index-row-sha256 = "1fe518f4767d61e6f990dfe829042311b2d314a1745816880a63cc65fb5d26c4"
+admission-sha256 = "c032a892cbbecb4e0c4492a51deb2d6db985576292ceda02d34c6f3c8849ed0a"
+admitted-at = "2020-10-09T19:17:17Z"
 
 [packages.source]
 kind = "crates-io"
@@ -7079,6 +7118,19 @@ admitted-at = "2024-09-17T09:56:14Z"
 kind = "crates-io"
 
 [[packages]]
+name = "fdeflate"
+version = "0.3.7"
+state = "active"
+crate-sha256 = "1e6853b52649d4ac5c0bd02320cddc5ba956bdb407c4b75a2c6b75bf51500f8c"
+source-row-sha256 = "26312ded42f253b3adba9e9aed5b80e6beb8b907f7404608524dbf723426db02"
+index-row-sha256 = "575135130a244ded39375a954f05a77326586dfd6a1b38dbdcacbcf168c89033"
+admission-sha256 = "c032a892cbbecb4e0c4492a51deb2d6db985576292ceda02d34c6f3c8849ed0a"
+admitted-at = "2024-12-06T03:16:12Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
 name = "ff"
 version = "0.13.1"
 state = "active"
@@ -7580,6 +7632,19 @@ crate-sha256 = "300e883d756b2e4ec94e02791f39b04b522276138852cfc41d9fb7e904106099
 source-row-sha256 = "e773721a76e0fda65c6617e1e91579d18cec4a8f02e384cd8720b13314685f0e"
 index-row-sha256 = "712cbaf0f80f605ec11335fa1fe21ed58f0909bb41b6f29868f88c5aa7f4af82"
 admitted-at = "2026-06-17T18:01:59Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "gif"
+version = "0.14.2"
+state = "active"
+crate-sha256 = "ee8cfcc411d9adbbaba82fb72661cc1bcca13e8bba98b364e62b2dba8f960159"
+source-row-sha256 = "838031ba44af62013d31f484eb7637397b5d421fc8390e9e4a46ec4552c53406"
+index-row-sha256 = "421b9da7096cc91835cd14ba8b8c86be5eddb6754b6625d94932e3f2a6a1e3f7"
+admission-sha256 = "c032a892cbbecb4e0c4492a51deb2d6db985576292ceda02d34c6f3c8849ed0a"
+admitted-at = "2026-04-09T19:00:07Z"
 
 [packages.source]
 kind = "crates-io"
@@ -8319,6 +8384,32 @@ crate-sha256 = "cb68373c0d6620ef8105e855e7745e18b0d00d3bdb07fb532e434244cdb9a714
 source-row-sha256 = "2b2e516e816547ffde9b0bc2dc676b498ae5663173980587119e1f8b087977df"
 index-row-sha256 = "cf99b3ede66047a0ea2d89c13b618eab8081c86caf319c098edaa5ce56d8c605"
 admitted-at = "2026-04-27T17:45:54Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "image"
+version = "0.25.10"
+state = "active"
+crate-sha256 = "85ab80394333c02fe689eaf900ab500fbd0c2213da414687ebf995a65d5a6104"
+source-row-sha256 = "99b42db8fb995bd1258eb782a0672b1162e62e79e188bc9c94a67b1e39226c75"
+index-row-sha256 = "bbb168afc7d4218c83d33ac38030f831b13fe4f824fc0765fb89bf3ae5a6dfe3"
+admission-sha256 = "c032a892cbbecb4e0c4492a51deb2d6db985576292ceda02d34c6f3c8849ed0a"
+admitted-at = "2026-03-10T16:29:18Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "image-webp"
+version = "0.2.4"
+state = "active"
+crate-sha256 = "525e9ff3e1a4be2fbea1fdf0e98686a6d98b4d8f937e1bf7402245af1909e8c3"
+source-row-sha256 = "3d1533b6dd8dbaf63f04f7a619a4f4a799df01f5295d0ae0f654c7d85f47d5b6"
+index-row-sha256 = "9814b04782abd49272bb240600bc0abed17a9b72154b7b8c73c4ac0b3a560ef0"
+admission-sha256 = "c032a892cbbecb4e0c4492a51deb2d6db985576292ceda02d34c6f3c8849ed0a"
+admitted-at = "2025-08-27T01:41:15Z"
 
 [packages.source]
 kind = "crates-io"
@@ -9489,6 +9580,19 @@ admitted-at = "2026-07-13T15:39:09Z"
 kind = "crates-io"
 
 [[packages]]
+name = "moxcms"
+version = "0.8.1"
+state = "active"
+crate-sha256 = "bb85c154ba489f01b25c0d36ae69a87e4a1c73a72631fc6c0eb6dde34a73e44b"
+source-row-sha256 = "0f04a95902444f56fef7cd0d9b1dbcc0cbd661e62f6f99bde61c9714adc5c8ba"
+index-row-sha256 = "dbef5b9d310167e6eef84c402eaac3c910af0cc226990f182d7a90931cd77fad"
+admission-sha256 = "c032a892cbbecb4e0c4492a51deb2d6db985576292ceda02d34c6f3c8849ed0a"
+admitted-at = "2026-03-07T15:47:14Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
 name = "new_debug_unreachable"
 version = "1.0.6"
 state = "active"
@@ -10275,6 +10379,19 @@ admitted-at = "2024-09-08T14:47:23Z"
 kind = "crates-io"
 
 [[packages]]
+name = "png"
+version = "0.18.1"
+state = "active"
+crate-sha256 = "60769b8b31b2a9f263dae2776c37b1b28ae246943cf719eb6946a1db05128a61"
+source-row-sha256 = "b0736b1a40701d93fc1d5218c6d9dbdf7715e4aafee1f8b2f77a3c2078de925c"
+index-row-sha256 = "5903b7279a7457fb1c1b2b5f76902f4af651dce78f5e102c85a5c7a17554a530"
+admission-sha256 = "c032a892cbbecb4e0c4492a51deb2d6db985576292ceda02d34c6f3c8849ed0a"
+admitted-at = "2026-02-14T16:24:10Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
 name = "polling"
 version = "3.11.0"
 state = "active"
@@ -10575,6 +10692,32 @@ crate-sha256 = "007d8adb5ddab6f8e3f491ac63566a7d5002cc7ed73901f72057943fa71ae1ae
 source-row-sha256 = "1ac4a09fdd3ba6ca910bde9cb9f15c7869b38f47b1347867378bb8d752836e06"
 index-row-sha256 = "822f9c513873daebbb1ec322ad769ba09a2f5527a457a86ffa0b5df00a108141"
 admitted-at = "2024-05-15T17:28:34Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "pxfm"
+version = "0.1.30"
+state = "active"
+crate-sha256 = "d55d956fa96f5ec02be2e13af0e20391a5aa83d6a074e3ad368959d0fab299ea"
+source-row-sha256 = "7a4be2bc8bf9a87c10fbc36f58952c485d736da0ba25ae8369aa804ed4e9241d"
+index-row-sha256 = "b57b0739233c823ea658982e43fcd05755d90b6eed99982ecf1abdcfe22914de"
+admission-sha256 = "c032a892cbbecb4e0c4492a51deb2d6db985576292ceda02d34c6f3c8849ed0a"
+admitted-at = "2026-07-06T06:43:55Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "quick-error"
+version = "2.0.1"
+state = "active"
+crate-sha256 = "a993555f31e5a609f617c12db6250dedcac1b0a85076912c436e6fc9b2c8e6a3"
+source-row-sha256 = "4483b8bd19e0b2955a6f71649c3358615e1372e1dae7cbe898e08796a92496b0"
+index-row-sha256 = "e212440473153baebaa84baf4009692286a1124138a3a0aa1cf9caf483bea078"
+admission-sha256 = "c032a892cbbecb4e0c4492a51deb2d6db985576292ceda02d34c6f3c8849ed0a"
+admitted-at = "2021-05-07T12:10:10Z"
 
 [packages.source]
 kind = "crates-io"
@@ -14036,6 +14179,19 @@ admitted-at = "2026-07-18T09:30:44Z"
 kind = "crates-io"
 
 [[packages]]
+name = "weezl"
+version = "0.1.12"
+state = "active"
+crate-sha256 = "a28ac98ddc8b9274cb41bb4d9d4d5c425b6020c50c46f25559911905610b4a88"
+source-row-sha256 = "932b6f02064f5b3e06fb8b132ef463b9f4c0ed37a0b3f301dd54ee08dcd587e8"
+index-row-sha256 = "00ebc77830510ed0460301741e794330c011bd95120c0b54b160e52c06f6fab2"
+admission-sha256 = "c032a892cbbecb4e0c4492a51deb2d6db985576292ceda02d34c6f3c8849ed0a"
+admitted-at = "2025-11-11T20:13:29Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
 name = "wildmatch"
 version = "2.6.1"
 state = "active"
@@ -15053,6 +15209,32 @@ crate-sha256 = "29666d0abbfad1e3dc4dcf6144730dd3a3ab225bbbdac83319345b1b44ccfc1b
 source-row-sha256 = "b8529d184ee036ff25309d3183e247963d0c5bdb754d30767109d7711fd0ef94"
 index-row-sha256 = "f761eabd5ca38e3cdf1e57a2c5114e3bae8a2f71f8860861cc0474d97eecb35a"
 admitted-at = "2026-07-13T12:58:53Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "zune-core"
+version = "0.5.3"
+state = "active"
+crate-sha256 = "d56377fd46368984a170bc5aac5567e52ca5da874caa60bea39fcbca78fb658b"
+source-row-sha256 = "53f872010ff00cd2028512c3799d0ba804f4a70637e3a870ed38cd365f1e963e"
+index-row-sha256 = "30605d3153e509ca621182d3bf04c2deef77fc06836f3b600a163883b018be84"
+admission-sha256 = "c032a892cbbecb4e0c4492a51deb2d6db985576292ceda02d34c6f3c8849ed0a"
+admitted-at = "2026-08-07T20:55:44Z"
+
+[packages.source]
+kind = "crates-io"
+
+[[packages]]
+name = "zune-jpeg"
+version = "0.5.15"
+state = "active"
+crate-sha256 = "27bc9d5b815bc103f142aa054f561d9187d191692ec7c2d1e2b4737f8dbd7296"
+source-row-sha256 = "2192b9c9c9012b197c008269950d614e823f98a83439324b178264774337905c"
+index-row-sha256 = "b0566b17865bb1c783162aec47314095d9350a41c1b4a5803b30806f685dbae2"
+admission-sha256 = "c032a892cbbecb4e0c4492a51deb2d6db985576292ceda02d34c6f3c8849ed0a"
+admitted-at = "2026-03-26T21:57:53Z"
 
 [packages.source]
 kind = "crates-io"

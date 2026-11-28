@@ -507,7 +507,15 @@ name = "bytemuck"
 category = "general"
 
 [[names]]
+name = "bytemuck_derive"
+category = "general"
+
+[[names]]
 name = "byteorder"
+category = "general"
+
+[[names]]
+name = "byteorder-lite"
 category = "general"
 
 [[names]]
@@ -640,6 +648,10 @@ category = "general"
 
 [[names]]
 name = "color-print"
+category = "general"
+
+[[names]]
+name = "color_quant"
 category = "general"
 
 [[names]]
@@ -860,6 +872,10 @@ category = "general"
 
 [[names]]
 name = "date_header"
+category = "general"
+
+[[names]]
+name = "dav1d"
 category = "general"
 
 [[names]]
@@ -1143,6 +1159,10 @@ name = "expect-test"
 category = "general"
 
 [[names]]
+name = "exr"
+category = "general"
+
+[[names]]
 name = "eyeball"
 category = "general"
 
@@ -1188,6 +1208,10 @@ category = "general"
 
 [[names]]
 name = "fastrlp-derive"
+category = "general"
+
+[[names]]
+name = "fdeflate"
 category = "general"
 
 [[names]]
@@ -1352,6 +1376,10 @@ category = "general"
 
 [[names]]
 name = "getrandom"
+category = "general"
+
+[[names]]
+name = "gif"
 category = "general"
 
 [[names]]
@@ -1576,6 +1604,10 @@ category = "general"
 
 [[names]]
 name = "image"
+category = "general"
+
+[[names]]
+name = "image-webp"
 category = "general"
 
 [[names]]
@@ -2083,6 +2115,14 @@ name = "mockall"
 category = "general"
 
 [[names]]
+name = "moxcms"
+category = "general"
+
+[[names]]
+name = "mp4parse"
+category = "general"
+
+[[names]]
 name = "multer"
 category = "general"
 
@@ -2427,6 +2467,10 @@ name = "pnet_datalink"
 category = "general"
 
 [[names]]
+name = "png"
+category = "general"
+
+[[names]]
 name = "polling"
 category = "general"
 
@@ -2559,11 +2603,19 @@ name = "pure-rust-locales"
 category = "general"
 
 [[names]]
+name = "pxfm"
+category = "general"
+
+[[names]]
 name = "pyo3"
 category = "general"
 
 [[names]]
 name = "qlog"
+category = "general"
+
+[[names]]
+name = "qoi"
 category = "general"
 
 [[names]]
@@ -2644,6 +2696,10 @@ category = "general"
 
 [[names]]
 name = "rapidhash"
+category = "general"
+
+[[names]]
+name = "ravif"
 category = "general"
 
 [[names]]
@@ -2732,6 +2788,10 @@ category = "general"
 
 [[names]]
 name = "rfc6979"
+category = "general"
+
+[[names]]
+name = "rgb"
 category = "general"
 
 [[names]]
@@ -3451,6 +3511,10 @@ name = "thread_local"
 category = "general"
 
 [[names]]
+name = "tiff"
+category = "general"
+
+[[names]]
 name = "time"
 category = "general"
 
@@ -3959,11 +4023,19 @@ name = "web_atoms"
 category = "general"
 
 [[names]]
+name = "webp"
+category = "general"
+
+[[names]]
 name = "webpki-root-certs"
 category = "general"
 
 [[names]]
 name = "webpki-roots"
+category = "general"
+
+[[names]]
+name = "weezl"
 category = "general"
 
 [[names]]
@@ -4224,6 +4296,14 @@ category = "general"
 
 [[names]]
 name = "zstd-safe"
+category = "general"
+
+[[names]]
+name = "zune-core"
+category = "general"
+
+[[names]]
+name = "zune-jpeg"
 category = "general"
 
 [[packages]]

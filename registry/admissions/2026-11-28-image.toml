@@ -1,0 +1,79 @@
+schema = 2
+
+[[admit]]
+category = "main/general"
+name = "bytemuck"
+version = "1.25.2"
+
+[[admit]]
+category = "main/general"
+name = "byteorder-lite"
+version = "0.1.0"
+
+[[admit]]
+category = "main/general"
+name = "color_quant"
+version = "1.1.0"
+
+[[admit]]
+category = "main/general"
+name = "fdeflate"
+version = "0.3.7"
+
+[[admit]]
+category = "main/general"
+name = "gif"
+version = "0.14.2"
+
+[[admit]]
+category = "main/general"
+name = "image"
+version = "0.25.10"
+
+[[admit]]
+category = "main/general"
+name = "image-webp"
+version = "0.2.4"
+
+[[admit]]
+category = "main/general"
+name = "moxcms"
+version = "0.8.1"
+
+[[admit]]
+category = "main/general"
+name = "png"
+version = "0.18.1"
+
+[[admit]]
+category = "main/general"
+name = "pxfm"
+version = "0.1.30"
+
+[[admit]]
+category = "main/general"
+name = "quick-error"
+version = "2.0.1"
+
+[[admit.evidence]]
+kind = "manual-full-archive"
+note = "Compared every archive member with the tag v2.0.1 (25ab982bb0c43130ae48485151f4a232eeab7d0c) of github.com/tailhook/quick-error, whose http repository URL the planner does not read: all match."
+
+[[admit]]
+category = "main/general"
+name = "weezl"
+version = "0.1.12"
+
+[[admit]]
+category = "main/general"
+name = "zune-core"
+version = "0.5.3"
+
+[[admit.evidence]]
+kind = "manual-full-archive"
+note = "The recorded commit de5dfc800cfa063116eb695edb6ccd01cb96ea7a is not on GitHub. Compared every archive member with crates/zune-core at the release commit 4c08cfd2 on the dev branch of github.com/etemesi254/zune-image: all match, the license files through the repository's links to its root."
+
+[[admit]]
+category = "main/general"
+name = "zune-jpeg"
+version = "0.5.15"

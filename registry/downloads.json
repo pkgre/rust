@@ -933,12 +933,32 @@
     },
     {
       "registry": "main",
+      "name": "bytemuck",
+      "version": "1.25.2",
+      "sha256": "95832e849adfb21180ccb6826a99da14e5d266ae5c2e668e1602cf234f153797",
+      "delivery": {
+        "delivery": "retained",
+        "path": "main/objects/crates/95832e849adfb21180ccb6826a99da14e5d266ae5c2e668e1602cf234f153797.crate"
+      }
+    },
+    {
+      "registry": "main",
       "name": "byteorder",
       "version": "1.5.0",
       "sha256": "1fd0f2584146f6f2ef48085050886acf353beff7305ebd1ae69500e27c67f64b",
       "delivery": {
         "delivery": "retained",
         "path": "main/objects/crates/1fd0f2584146f6f2ef48085050886acf353beff7305ebd1ae69500e27c67f64b.crate"
+      }
+    },
+    {
+      "registry": "main",
+      "name": "byteorder-lite",
+      "version": "0.1.0",
+      "sha256": "8f1fe948ff07f4bd06c30984e69f5b4899c516a3ef74f34df92a2df2ab535495",
+      "delivery": {
+        "delivery": "retained",
+        "path": "main/objects/crates/8f1fe948ff07f4bd06c30984e69f5b4899c516a3ef74f34df92a2df2ab535495.crate"
       }
     },
     {
@@ -1249,6 +1269,16 @@
       "delivery": {
         "delivery": "retained",
         "path": "main/objects/crates/c0f78a02292a74a88ac736019ab962ece0bc380e3f977bf72e376c5d78ff0678.crate"
+      }
+    },
+    {
+      "registry": "main",
+      "name": "color_quant",
+      "version": "1.1.0",
+      "sha256": "3d7b894f5411737b7867f4827955924d7c254fc9f4d91a6aad6b097804b1018b",
+      "delivery": {
+        "delivery": "retained",
+        "path": "main/objects/crates/3d7b894f5411737b7867f4827955924d7c254fc9f4d91a6aad6b097804b1018b.crate"
       }
     },
     {
@@ -2223,6 +2253,16 @@
     },
     {
       "registry": "main",
+      "name": "fdeflate",
+      "version": "0.3.7",
+      "sha256": "1e6853b52649d4ac5c0bd02320cddc5ba956bdb407c4b75a2c6b75bf51500f8c",
+      "delivery": {
+        "delivery": "retained",
+        "path": "main/objects/crates/1e6853b52649d4ac5c0bd02320cddc5ba956bdb407c4b75a2c6b75bf51500f8c.crate"
+      }
+    },
+    {
+      "registry": "main",
       "name": "ff",
       "version": "0.13.1",
       "sha256": "c0b50bfb653653f9ca9095b427bed08ab8d75a137839d9ad64eb11810d5b6393",
@@ -2639,6 +2679,16 @@
       "delivery": {
         "delivery": "retained",
         "path": "main/objects/crates/300e883d756b2e4ec94e02791f39b04b522276138852cfc41d9fb7e904106099.crate"
+      }
+    },
+    {
+      "registry": "main",
+      "name": "gif",
+      "version": "0.14.2",
+      "sha256": "ee8cfcc411d9adbbaba82fb72661cc1bcca13e8bba98b364e62b2dba8f960159",
+      "delivery": {
+        "delivery": "retained",
+        "path": "main/objects/crates/ee8cfcc411d9adbbaba82fb72661cc1bcca13e8bba98b364e62b2dba8f960159.crate"
       }
     },
     {
@@ -3249,6 +3299,26 @@
       "delivery": {
         "delivery": "retained",
         "path": "main/objects/crates/cb68373c0d6620ef8105e855e7745e18b0d00d3bdb07fb532e434244cdb9a714.crate"
+      }
+    },
+    {
+      "registry": "main",
+      "name": "image",
+      "version": "0.25.10",
+      "sha256": "85ab80394333c02fe689eaf900ab500fbd0c2213da414687ebf995a65d5a6104",
+      "delivery": {
+        "delivery": "retained",
+        "path": "main/objects/crates/85ab80394333c02fe689eaf900ab500fbd0c2213da414687ebf995a65d5a6104.crate"
+      }
+    },
+    {
+      "registry": "main",
+      "name": "image-webp",
+      "version": "0.2.4",
+      "sha256": "525e9ff3e1a4be2fbea1fdf0e98686a6d98b4d8f937e1bf7402245af1909e8c3",
+      "delivery": {
+        "delivery": "retained",
+        "path": "main/objects/crates/525e9ff3e1a4be2fbea1fdf0e98686a6d98b4d8f937e1bf7402245af1909e8c3.crate"
       }
     },
     {
@@ -4213,6 +4283,16 @@
     },
     {
       "registry": "main",
+      "name": "moxcms",
+      "version": "0.8.1",
+      "sha256": "bb85c154ba489f01b25c0d36ae69a87e4a1c73a72631fc6c0eb6dde34a73e44b",
+      "delivery": {
+        "delivery": "retained",
+        "path": "main/objects/crates/bb85c154ba489f01b25c0d36ae69a87e4a1c73a72631fc6c0eb6dde34a73e44b.crate"
+      }
+    },
+    {
+      "registry": "main",
       "name": "new_debug_unreachable",
       "version": "1.0.6",
       "sha256": "650eef8c711430f1a879fdd01d4745a7deea475becfb90269c06775983bbf086",
@@ -4833,6 +4913,16 @@
     },
     {
       "registry": "main",
+      "name": "png",
+      "version": "0.18.1",
+      "sha256": "60769b8b31b2a9f263dae2776c37b1b28ae246943cf719eb6946a1db05128a61",
+      "delivery": {
+        "delivery": "retained",
+        "path": "main/objects/crates/60769b8b31b2a9f263dae2776c37b1b28ae246943cf719eb6946a1db05128a61.crate"
+      }
+    },
+    {
+      "registry": "main",
       "name": "polling",
       "version": "3.11.0",
       "sha256": "5d0e4f59085d47d8241c88ead0f274e8a0cb551f3625263c05eb8dd897c34218",
@@ -5079,6 +5169,26 @@
       "delivery": {
         "delivery": "retained",
         "path": "main/objects/crates/007d8adb5ddab6f8e3f491ac63566a7d5002cc7ed73901f72057943fa71ae1ae.crate"
+      }
+    },
+    {
+      "registry": "main",
+      "name": "pxfm",
+      "version": "0.1.30",
+      "sha256": "d55d956fa96f5ec02be2e13af0e20391a5aa83d6a074e3ad368959d0fab299ea",
+      "delivery": {
+        "delivery": "retained",
+        "path": "main/objects/crates/d55d956fa96f5ec02be2e13af0e20391a5aa83d6a074e3ad368959d0fab299ea.crate"
+      }
+    },
+    {
+      "registry": "main",
+      "name": "quick-error",
+      "version": "2.0.1",
+      "sha256": "a993555f31e5a609f617c12db6250dedcac1b0a85076912c436e6fc9b2c8e6a3",
+      "delivery": {
+        "delivery": "retained",
+        "path": "main/objects/crates/a993555f31e5a609f617c12db6250dedcac1b0a85076912c436e6fc9b2c8e6a3.crate"
       }
     },
     {
@@ -7933,6 +8043,16 @@
     },
     {
       "registry": "main",
+      "name": "weezl",
+      "version": "0.1.12",
+      "sha256": "a28ac98ddc8b9274cb41bb4d9d4d5c425b6020c50c46f25559911905610b4a88",
+      "delivery": {
+        "delivery": "retained",
+        "path": "main/objects/crates/a28ac98ddc8b9274cb41bb4d9d4d5c425b6020c50c46f25559911905610b4a88.crate"
+      }
+    },
+    {
+      "registry": "main",
       "name": "wildmatch",
       "version": "2.6.1",
       "sha256": "29333c3ea1ba8b17211763463ff24ee84e41c78224c16b001cd907e663a38c68",
@@ -8779,6 +8899,26 @@
       "delivery": {
         "delivery": "retained",
         "path": "main/objects/crates/29666d0abbfad1e3dc4dcf6144730dd3a3ab225bbbdac83319345b1b44ccfc1b.crate"
+      }
+    },
+    {
+      "registry": "main",
+      "name": "zune-core",
+      "version": "0.5.3",
+      "sha256": "d56377fd46368984a170bc5aac5567e52ca5da874caa60bea39fcbca78fb658b",
+      "delivery": {
+        "delivery": "retained",
+        "path": "main/objects/crates/d56377fd46368984a170bc5aac5567e52ca5da874caa60bea39fcbca78fb658b.crate"
+      }
+    },
+    {
+      "registry": "main",
+      "name": "zune-jpeg",
+      "version": "0.5.15",
+      "sha256": "27bc9d5b815bc103f142aa054f561d9187d191692ec7c2d1e2b4737f8dbd7296",
+      "delivery": {
+        "delivery": "retained",
+        "path": "main/objects/crates/27bc9d5b815bc103f142aa054f561d9187d191692ec7c2d1e2b4737f8dbd7296.crate"
       }
     }
   ]
